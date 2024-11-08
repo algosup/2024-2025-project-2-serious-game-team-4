@@ -36,11 +36,17 @@ Note: Ensure that Godot, Aseprite, and FL Studio are installed if you wish to mo
 
 # Team Members
 
-| Name             | Picture                                                 | Role               | LinkedIn                                                      | GitHub                                           |
-|------------------|---------------------------------------------------------|--------------------|---------------------------------------------------------------|--------------------------------------------------|
-| Julian Reine     | ![Julian's Photo](link-to-photo)                        | Project Manager    | [LinkedIn Profile](https://www.linkedin.com/in/julian-reine-b2952632a) | [GitHub Profile](https://github.com/julian) |
-| Ian Laurent      | ![Ian's Photo](link-to-photo)                           | Program Manager    | [LinkedIn Profile](https://www.linkedin.com/in/ian-h-laurent/)         | [GitHub Profile](https://github.com/ian)       |
-| Raphaël Chiocchi | ![Raphaël's Photo](link-to-photo)                       | Software Engineer  | [LinkedIn Profile](https://www.linkedin.com/in/rapha%C3%ABl-chiocchi-50169632a/)  | [GitHub Profile](https://github.com/raphael)     |
-| Mariem Zaiane    | ![Mariem's Photo](link-to-photo)                        | Technical Lead     | [LinkedIn Profile](https://www.linkedin.com/in/mariem-zaiane-2b2165225)     | [GitHub Profile](https://github.com/mariem)      |
-| Emilien Chinsy   | ![Emilien's Photo](link-to-photo)                       | Technical Writer   | [LinkedIn Profile](https://www.linkedin.com/in/emilien-chinsy-5a794632b/)    | [GitHub Profile](https://github.com/emilien)     |
-| Mathis Pascucci  | ![Mathis's Photo](link-to-photo)                        | Quality Assurance  | [LinkedIn Profile](https://www.linkedin.com/in/mathis-pascucci-8b759732a/)   | [GitHub Profile](https://github.com/mathis)      |
+| Name             | Picture                                                                                     | Role               | LinkedIn                                                      | GitHub                                           |
+|------------------|---------------------------------------------------------------------------------------------|--------------------|---------------------------------------------------------------|--------------------------------------------------|
+| Julian Reine     | <img src="https://avatars.githubusercontent.com/u/182214272?v=4" width="100" height="100">  | Project Manager    | [LinkedIn Profile](https://www.linkedin.com/in/julian-reine-b2952632a) | [GitHub Profile](https://github.com/JulianREINE) |
+| Ian Laurent      | <img src="https://avatars.githubusercontent.com/u/146005340?v=4" width="100" height="100">  | Program Manager    | [LinkedIn Profile](https://www.linkedin.com/in/ian-h-laurent/)         | [GitHub Profile](https://github.com/Ianlaur)       |
+| Raphaël Chiocchi | <img src="https://avatars.githubusercontent.com/u/182256778?v=4" width="100" height="100">  | Software Engineer  | [LinkedIn Profile](https://www.linkedin.com/in/rapha%C3%ABl-chiocchi-50169632a/)  | [GitHub Profile](https://github.com/Raphaneuil?tab=following)     |
+| Mariem Zaiane    | <img src="https://avatars.githubusercontent.com/u/159240038?v=4" width="100" height="100">  | Technical Lead     | [LinkedIn Profile](https://www.linkedin.com/in/mariem-zaiane-2b2165225)     | [GitHub Profile](https://github.com/Mariem-Zaiane)      |
+| Emilien Chinsy   | <img src="https://avatars.githubusercontent.com/u/182214919?v=4" width="100" height="100">  | Technical Writer   | [LinkedIn Profile](https://www.linkedin.com/in/emilien-chinsy-5a794632b/)    | [GitHub Profile](https://github.com/EmilienChinsy)     |
+| Mathis Pascucci  | <img src="https://avatars.githubusercontent.com/u/182209815?v=4" width="100" height="100">  | Quality Assurance  | [LinkedIn Profile](https://www.linkedin.com/in/mathis-pascucci-8b759732a/)   | [GitHub Profile](https://github.com/Mathis441)      |
+
+## Roadmap
+- Phase 1: Complete basic gameplay mechanics and zone design.
+- Phase 2: Integrate custom sprites, sounds, and environmental details.
+- Phase 3: Playtesting, bug fixes, and polishing.
+- Phase 4: Final launch and promotion.
