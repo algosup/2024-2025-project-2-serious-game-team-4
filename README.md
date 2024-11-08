@@ -1,16 +1,16 @@
 # 2024-2025 Project 2 - Serious Game Team 4
 
 ## Project Overview
-This project is a serious game developed by Team 4 for the 2024-2025 academic year. Our game addresses climate change challenges through an interactive journey where the player must restore an uninhabitable Earth. To win the game, players will navigate and purify four distinct zones, each representing a unique environmental crisis.
+This project is a serious game developed by Team 4. Our game addresses climate change challenges through an interactive journey where the player must restore an uninhabitable Earth. To win the game, players will navigate and purify four distinct zones, each representing a unique environmental crisis.
 
 The goal of the game is to raise awareness about climate issues and inspire players to think about solutions in a challenging and engaging way.
 
 ## Gameplay and Features
 - **Four Zones:** Each zone is associated with a different environmental problem caused by human actions. Players must complete specific tasks in each zone to make Earth habitable again.
-  - **Zone 1:** Extreme heat and radiation
-  - **Zone 2:** Nuclear contamination
+  - **Zone 1:** Extreme heat and radiation (desert)
+  - **Zone 2:** Nuclear problems
   - **Zone 3:** Oxygen depletion
-  - **Zone 4:** Toxic waste
+  - **Zone 4:** Floads
 - **Safe Zone:** A central hub where players can recharge, craft items, and prepare for the next challenge.
 - **Customizable Characters:** Players can choose from different characters with unique sprites.
 - **Custom Assets:** We’ve created customized sprites, sounds, and music to give the game a distinctive feel.
@@ -25,16 +25,12 @@ The goal of the game is to raise awareness about climate issues and inspire play
 ## Installation and Setup
 To run this project locally:
 
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/2024-2025-project-2-serious-game-team-4.git
+1. Clone the repository.
 2. Open the project in Godot by navigating to the main project file.
 3. Run the game from within Godot to test or make modifications.
 Note: Ensure that Godot, Aseprite, and FL Studio are installed if you wish to modify assets or sounds.
 
 ## Team Members
-
-# Team Members
 
 | Name             | Picture                                                                                     | Role               | LinkedIn                                                      | GitHub                                           |
 |------------------|---------------------------------------------------------------------------------------------|--------------------|---------------------------------------------------------------|--------------------------------------------------|
