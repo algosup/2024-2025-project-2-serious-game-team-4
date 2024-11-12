@@ -28,7 +28,7 @@
 
 | Term | Definition | Source |
 | ---- | ---------- | ------ |
-|**Smoke test** <a id="4">[4]</a>| A smoke test is a test which checks basic functionalities | [Wikipedia](https://en.wikipedia.org/wiki/Smoke_testing_(software)) |
+|<a id="1">[1]</a> **Smoke test**| A smoke test is a test which checks basic functionalities | [Wikipedia](https://en.wikipedia.org/wiki/Smoke_testing_(software)) |
 
 
 
@@ -64,5 +64,5 @@ For the game, we'll test each feature defined in the functional specifications t
 
 ### 2. Strategy
 
-Since the game is moderately complex, we’ll primarily conduct manual testing to cover specific features and interactions without excessive automation. We’ll start with smoke testing<sup><a href="#4">[4]</a></sup> to verify that basic game functions work properly. If the smoke test is successful, we’ll proceed with deeper functional tests, focusing on critical gameplay mechanics like resource management, recycling, and ecological actions.
+Since the game is moderately complex, we’ll primarily conduct manual testing to cover specific features and interactions without excessive automation. We’ll start with smoke testing<sup><a href="#1">[1]</a></sup> to verify that basic game functions work properly. If the smoke test is successful, we’ll proceed with deeper functional tests, focusing on critical gameplay mechanics like resource management, recycling, and ecological actions.
 
