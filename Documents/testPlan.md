@@ -36,20 +36,20 @@
 
 ### 1. Overview
 
-Our team was tasked with creating a serious game to raise awareness about ecology and climate change. Set in a post-apocalyptic world where humanity has abandoned a devastated Earth, players return centuries later to restore the planet. Through challenges like recycling, renewable energy use, and innovative solutions, players will learn about the consequences of environmental neglect and the steps needed to heal the planet. Our goal is to inspire players, especially young ones, to appreciate and protect our world, blending fun with impactful education.
+Our team has been assigned to develop a serious game with a focus on ecology and climate awareness. Players follow the story of Marie, a young woman who, after needing to repair a broken toaster, embarks on a journey of ecological discovery. Inspired by her small town's emphasis on sustainable living, she learns to recycle, compost, plant, and harness renewable energy. Through engaging activities and interactions, players will not only explore Marie’s story but will also gain practical insights into environmental preservation and sustainable habits that they can apply in real life. This game merges entertainment with ecological awareness, encouraging players of all ages to make positive changes for a healthier planet.
 
 ### 2. Targeted audience
 
 As testers, we need to put ourselves in the users' shoes. This means identifying all the different types of users who might interact with the product. By doing so, we can test the product from various perspectives, ensuring it meets the needs of all user types.
 
 ##### Former players
-Former players are those already familiar with games focused on ecology or serious games in general. They’ll expect a polished experience that respects the genre's conventions while offering something new.
+Former players are familiar with serious games or eco-themed educational content. They’ll expect a seamless experience that respects the conventions of educational gaming while providing new insights into sustainability practices.
 
 ##### New players
-New players may have little experience with serious games or ecology themes. They’ll need clear instructions and an intuitive layout to enjoy the game and understand its message about the environment.
+New players may not have experience with educational games or ecology themes. They’ll need clear, accessible instructions and an intuitive layout to help them easily understand the game mechanics and its environmental message.
 
 ##### Competitive players
-Competitive players will be looking for challenges, such as achieving high scores or completing difficult tasks. They’ll expect replayable content, leaderboards, and rewarding challenges that test their skills.
+Competitive players will look for challenges within the game, such as achieving specific ecological goals or completing tasks efficiently. They’ll appreciate replayable content with rewarding challenges that encourage them to refine their skills in managing resources and making eco-friendly decisions.
 
 ## III. Testing
 
