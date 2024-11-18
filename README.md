@@ -22,7 +22,7 @@ To run this project locally:
 2. Open the project in Godot by navigating to the main project file.
 3. Run the game from within Godot to test or make modifications.
 
->Note: Ensure that [Godot™](https://godotengine.org/) is intalled.
+>Note: Ensure that [Godot™](https://godotengine.org/) is installed.
 
 
 ## Team Members
