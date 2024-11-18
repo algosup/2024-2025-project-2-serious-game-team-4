@@ -1,18 +1,19 @@
 # 2024-2025 Project 2 - Serious Game Team 4
 
 ## Project Overview
-This project is a serious game developed by Team 4.
-
+This project is a serious game developed by Team 4. Our game addresses climate change challenges through an interactive journey where the player will travel over the world to help country with their climate problemes. 
 The goal of the game is to raise awareness about climate issues and inspire players to think about solutions in a challenging and engaging way.
 
-## Gameplay and Features
-- **Game Engine:** Developed in Godot for efficient 2D gameplay.
-- **Art and Audio:** Characters and visuals are designed in Aseprite, and sound effects and music are created in FL Studio.
+## Gameplay and Key Features
+- **Custom UI:** Our game will include original and working UI to allow you to customise you game experience.
+- **Customs Sprites:** Our game will include original customs sprites.
+- **Interesting Game Experience:** The story of our game will keep the player captivated while being able to make him learn new things.
+- **Visuals and Audio:** Characters and visuals are designed in Aseprite, and sound effects and music are created on FL Studio & Abelton Live.
 
 ## Technologies Used
-- **Game Engine:** [Godot](https://godotengine.org/)
-- **Character Design & Sprites:** [Aseprite](https://www.aseprite.org/)
-- **Sound & Music Creation:** [FL Studio](https://www.image-line.com/fl-studio/)
+- **Game Engine:** [Godot™](https://godotengine.org/)
+- **Designs & Sprites:** [Aseprite™](https://www.aseprite.org/)
+- **SFX & OST DAWs:** [FL Studio™](https://www.image-line.com/fl-studio/) and [Ableton™](https://www.ableton.com/fr/live/)
 
 ## Installation and Setup
 To run this project locally:
@@ -20,7 +21,9 @@ To run this project locally:
 1. Clone the repository.
 2. Open the project in Godot by navigating to the main project file.
 3. Run the game from within Godot to test or make modifications.
-Note: Ensure that Godot, Aseprite, and FL Studio are installed if you wish to modify assets or sounds.
+
+>Note: Ensure that [Godot™](https://godotengine.org/) is intalled.
+
 
 ## Team Members
 
@@ -38,3 +41,6 @@ Note: Ensure that Godot, Aseprite, and FL Studio are installed if you wish to mo
 - Phase 2: Integrate custom sprites, sounds, and environmental details.
 - Phase 3: Playtesting, bug fixes, and polishing.
 - Phase 4: Final launch and promotion.
+
+___
+>COPYRIGHTS: [MIT license](https://opensource.org/license/mit)
