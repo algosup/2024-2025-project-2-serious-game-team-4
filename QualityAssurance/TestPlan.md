@@ -3,7 +3,7 @@
 |Authors|Mathis PASCUCCI|
 |---|---|
 |Created|11/06/2024|
-|Last Modified|11/07/2023|
+|Last Modified|11/24/2023|
 ---
 <details>
 <summary>Table of Contents</summary>
@@ -16,13 +16,17 @@
             - [Former players](#former-players)
             - [New players](#new-players)
             - [Competitive players](#competitive-players)
+            - [3. Technology We Used for the Game](#3-technology-we-used-for-the-game)
     - [III. Testing](#iii-testing)
         - [1. Scope](#1-scope)
             - [Documentation](#documentation)
             - [Gameplay Mechanics](#gameplay-mechanics)
             - [Educational Content](#educational-content)
         - [2. Strategy](#2-strategy)
-        
+        - [3. Defining Priorities](#3-defining-priorities)
+        - [4. Test Tools](#4-test-tools)
+            - [Operating Systems](#operating-systems)
+            - [GitHub](#github)
 </details>
 
 ---
@@ -38,7 +42,7 @@
 ## II. Introduction
 
 ### 1. Overview
-Our team has been tasked to develop a serious game focused on raising awareness about climate change and ecological solutions. In this game, the player embodies Milo, a climate-conscious person who decides to take action against the accelerating environmental crisis. Starting from his eco-friendly home, Milo travels across five continents to uncover specific climate challenges affecting each region.
+Our team has been tasked to develop a serious game focused on raising awareness about climate change and ecological solutions. In this game, the player embodies Terra, a climate-conscious person who decides to take action against the accelerating environmental crisis. Starting from his eco-friendly home, Terra travels across five continents to uncover specific climate challenges affecting each region.
 
 Each continent features a character representing its unique environmental problems. Through dialogue and guided choices, players will learn about these challenges and choose actions to address them, such as planting trees, adopting water-saving techniques, or reducing CO2 emissions. Players gain feedback on their choices and perform activities, visualized through progress bars and CO2 reduction metrics, making the game both informative and engaging.
 
@@ -53,6 +57,15 @@ New players may not have experience with educational games or ecology themes. Th
 
 ##### Competitive players
 Competitive players will look for challenges within the game, such as achieving specific ecological goals or completing tasks efficiently. They’ll appreciate replayable content with rewarding challenges that encourage them to refine their skills in managing resources and making eco-friendly decisions.
+
+
+### 3. Technology We Used for the Game
+
+**Game Engine**: [Godot™](https://godotengine.org/)
+**Language Used**: [GDScript](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
+**Designs & Sprites**: Created using [Aseprite™](https://www.aseprite.org/) for pixel art and animation.
+**SFX & OST DAWs**: Developed with [FL Studio™](https://www.image-line.com/fl-studio/) and [Ableton™](https://www.ableton.com/fr/live/) for high-quality sound effects and original soundtracks.
+**Deployment Platform**: The game will be uploaded to [itch.io](https://itch.io/) to allow players to launch it directly on the web, ensuring accessibility and ease of use.
 
 ## III. Testing
 
@@ -79,4 +92,19 @@ The game’s features will primarily be tested manually, as the variety of inter
 - **Functional Testing**: Validating key features, such as player actions, question feedback, and activity progression.
 - **Exploratory Testing**: Navigating freely across continents to identify unforeseen issues in interactions or performance.
 
+### 3. Defining Priorities
+Establishing priorities is essential to determine the sequence in which tests should be conducted. These priorities will align with those outlined in the functional specifications. We will categorize priorities into four levels:
+- Critical
+- High
+- Medium
+- Low
 
+It’s important to note that priorities are not fixed and may evolve as the project progresses. For instance, a feature initially marked as high-priority might be reassigned to a lower priority if it proves overly ambitious or less impactful than anticipated.
+
+### 4. Test Tools
+
+#### Operating Systems
+Team members are using a mix of operating systems for development and testing, including Windows and macOS, ensuring broad compatibility.
+
+#### GitHub
+The project is hosted on GitHub, where we utilize the Issues feature to manage test cases and bug reports. This approach enables transparent tracking of tasks and bugs, allowing anyone reviewing the project to see outstanding implementations and reported issues.
