@@ -113,7 +113,7 @@
 
 
 ### 1.1 Project overview
-This project involves the development of a serious educational game designed to teach players about climate change [^1] and its environmental impacts. The game will focus on key concepts such as global warming, the role of  [^2], carbon footprints [^3], and the importance of sustainable practices [^4]. Set in a miniature world divided by 5 different zones inpired by 5 different continents (America, Asia, Europe, Africa, Australia) each representing one critical climate issue, the player will explore these five zones following the paths of the main character named Terra. Through interactive gameplay, players will gain a deeper understanding of how human activities contribute to climate change and how making informed, eco-conscious decisions can help mitigate its effects.
+This project involves the development of a serious educational game designed to teach players about climate change and its environmental impacts. The game will focus on key concepts such as global warming, the role of  [^2], carbon footprints [^3], and the importance of sustainable practices [^4]. Set in a miniature world divided by 5 different zones inpired by 5 different continents (America, Asia, Europe, Africa, Australia) each representing one critical climate issue, the player will explore these five zones following the paths of the main character named Terra. Through interactive gameplay, players will gain a deeper understanding of how human activities contribute to climate change and how making informed, eco-conscious decisions can help mitigate its effects.
 
 The game’s goal is to provide a fun and engaging platform for learning complex climate science topics. It will target a diverse audience, offering tailored experiences to different user groups, such as middle school students, urban adults, and even political leaders in developing countries. The game is intended to serve as both an educational tool and a catalyst for real-world behavior change, fostering greater awareness and action around climate change.
 
@@ -125,11 +125,11 @@ The scope of this project includes the development of an educational game design
 
 **Key aspects of the project include:**
 
-- **Game Development:** Design, implementation, and testing of the game using the  [^5].
+- **Game Development:** Design, implementation, and testing of the game using the Godot game engine.
 - **Educational Content:** The game will integrate key climate change topics such as global warming, the impact of human activities on the environment, and actions that can mitigate climate change. These foundational topics will be woven into the gameplay to ensure that players not only enjoy the game but also learn valuable information about sustainability and environmental stewardship.
 - **Target Audience:** The game will be designed to cater to middle school students, urban adults, and even policymakers, with content adaptable for these different groups. This will allow people to have a clear understanding of the impact they can have to reduce climate change through simple actions. This game is a call to action to bring a change to the environmental issues that we are facing today.
 - **Interactivity:** Players will engage in tasks such as planting trees and finding sustainable energy solutions. Each decision will impact the virtual environment, making it more pleasant as sustainable choices are made.
-- **Platform:** The game will be designed for web browsers [^9], running on the Godot engine, and accessible via the itch.io platform. This decision aims to maximize audience reach and ensure global accessibility through the internet.
+- **Platform:** The game will be designed for web browsers, running on the Godot engine, and accessible via the itch.io platform. This decision aims to maximize audience reach and ensure global accessibility through the internet.
 
 **Out of scope:**
 
@@ -258,11 +258,11 @@ This module will collect and analyze data on player behavior and game performanc
 
 ## 5. User Interaction and Design
 ### 5.1 User Interface
-The in-game user [10] interface will include:
+The in-game user interface will include:
 - **Mini Map:** Displayed in the top left corner, showing the player's real-time position.
 - **Hotbar:** Positioned at the bottom of the screen, displaying picked-up items. Customizable via the inventory.
-- **Inventory:** [11]Accessible with a dedicated key, showing all collected items. Hovering over items reveals their uses.
-- **Pause Button:** Allows the player to pause the game, access settings [12], or quit.
+- **Inventory:** Accessible with a dedicated key, showing all collected items. Hovering over items reveals their uses.
+- **Pause Button:** Allows the player to pause the game, access settings, or quit.
 
 
 ### 5.2 User Journey
