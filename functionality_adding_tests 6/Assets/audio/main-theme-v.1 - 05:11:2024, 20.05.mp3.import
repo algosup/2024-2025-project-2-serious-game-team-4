@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rl1xk8vt81ri"
+path="res://.godot/imported/main-theme-v.1 - 05:11:2024, 20.05.mp3-6f49f0dabead2b0766f44a25bd14a5d2.mp3str"
+
+[deps]
+
+source_file="res://Assets/audio/main-theme-v.1 - 05:11:2024, 20.05.mp3"
+dest_files=["res://.godot/imported/main-theme-v.1 - 05:11:2024, 20.05.mp3-6f49f0dabead2b0766f44a25bd14a5d2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

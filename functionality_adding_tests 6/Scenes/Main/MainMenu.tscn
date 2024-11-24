@@ -1,0 +1,114 @@
+[gd_scene load_steps=8 format=3 uid="uid://du7hr6ku0f72h"]
+
+[ext_resource type="Script" path="res://Scripts/Main/main_menu.gd" id="1_70vwb"]
+[ext_resource type="AudioStream" uid="uid://cc0pi6ah4fv8p" path="res://Assets/audio/select_sfx.mp3" id="2_d0yet"]
+[ext_resource type="Texture2D" uid="uid://c2b65ok6lqyr5" path="res://Assets/Screenshot 2024-11-14 114117.png" id="2_iweuf"]
+[ext_resource type="AudioStream" uid="uid://454wya8o2hy7" path="res://Assets/audio/main-theme-v.2 - 05:11:2024, 21.57.mp3" id="3_w11kl"]
+
+[sub_resource type="SystemFont" id="SystemFont_pti1t"]
+font_names = PackedStringArray("Impact")
+font_weight = 700
+font_stretch = 125
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_4bus7"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_d7ss8"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_70vwb")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.607843, 0.607843, 0.607843, 0.443137)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_iweuf")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="seperator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556953, 0.556953, 0.556953, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_pti1t")
+theme_override_font_sizes/font_size = 60
+text = "Serious game team 4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="seperator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Start_button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_4bus7")
+theme_override_font_sizes/font_size = 24
+text = "Play"
+
+[node name="Settings_button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_d7ss8")
+theme_override_font_sizes/font_size = 24
+text = "Settings"
+
+[node name="Exit_button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_d7ss8")
+theme_override_font_sizes/font_size = 24
+text = "Exit"
+
+[node name="Credits_button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_d7ss8")
+theme_override_font_sizes/font_size = 24
+text = "Credits"
+
+[node name="click" type="AudioStreamPlayer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+stream = ExtResource("2_d0yet")
+volume_db = -15.0
+
+[node name="Menu_theme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_w11kl")
+parameters/looping = true
