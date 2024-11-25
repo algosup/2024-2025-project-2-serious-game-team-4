@@ -16,7 +16,7 @@
             - [Former players](#former-players)
             - [New players](#new-players)
             - [Competitive players](#competitive-players)
-            - [3. Technology We Used for the Game](#3-technology-we-used-for-the-game)
+        - [3. Technology We Used for the Game](#3-technology-we-used-for-the-game)
     - [III. Testing](#iii-testing)
         - [1. Scope](#1-scope)
             - [Documentation](#documentation)
