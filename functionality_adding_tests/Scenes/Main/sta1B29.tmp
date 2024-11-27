@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://ccw3o0orfl6ev"]
+
+[ext_resource type="Script" path="res://Scripts/Main/Main_Script.gd" id="1_cpqyx"]
+[ext_resource type="Texture2D" uid="uid://c2b65ok6lqyr5" path="res://Assets/Screenshot 2024-11-14 114117.png" id="2_6klk6"]
+[ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="3_7dml7"]
+[ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="5_p13dx"]
+[ext_resource type="PackedScene" uid="uid://4esnetqov2pm" path="res://Scenes/Characters/NPC/npc.tscn" id="5_yypua"]
+[ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="6_kl7yv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tl5pc"]
+size = Vector2(655, 70)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_cpqyx")
+
+[node name="BG" type="Sprite2D" parent="."]
+texture = ExtResource("2_6klk6")
+
+[node name="npc" parent="." instance=ExtResource("5_yypua")]
+position = Vector2(-75, -75)
+
+[node name="Player" parent="." instance=ExtResource("3_7dml7")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+offset_right = 120.0
+offset_bottom = 120.0
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(120, 120)
+render_target_update_mode = 4
+script = ExtResource("5_p13dx")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
+texture = ExtResource("2_6klk6")
+
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer"]
+position = Vector2(60, 60)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("6_kl7yv")
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+offset_top = 120.0
+offset_right = 120.0
+offset_bottom = 152.0
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="ItemSpawnArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemSpawnArea"]
+position = Vector2(1.5, 14)
+shape = SubResource("RectangleShape2D_tl5pc")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Control" type="Control" parent="CanvasLayer2"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/Control"]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 1.0
+offset_right = 676.0
+offset_bottom = 102.0
+
+[node name="pink_potion" type="Button" parent="CanvasLayer2/Control/VBoxContainer"]
+layout_mode = 2
+text = "Pink_Potion"
+
+[node name="blue_potion" type="Button" parent="CanvasLayer2/Control/VBoxContainer"]
+layout_mode = 2
+text = "Blue_potion"
+
+[node name="shroom" type="Button" parent="CanvasLayer2/Control/VBoxContainer"]
+layout_mode = 2
+text = "shroom"
+
+[node name="Marker2D" type="Marker2D" parent="." groups=["NPC_Test"]]
+position = Vector2(-73, 26)
+
+[node name="Marker2D2" type="Marker2D" parent="." groups=["NPC_Test"]]
+position = Vector2(-75, -186)
+
+[connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/pink_potion" to="." method="_on_pink_potion_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]
