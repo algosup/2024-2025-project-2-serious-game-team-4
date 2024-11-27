@@ -55,7 +55,6 @@ func _on_shroom_pressed() -> void:
 	var player = get_node("Player")
 	spawn_items(Global.spawnable_items[2], player.position)
 
-
 func _on_player_tree_spawn() -> void:
 	if visible_trees < 10:
 		visible_trees += 1

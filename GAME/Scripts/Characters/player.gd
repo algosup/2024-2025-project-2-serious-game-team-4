@@ -4,11 +4,12 @@ extends CharacterBody2D
 @onready var Interact_Pick_Up_UI = $Interact_Pick_Up_UI
 @onready var hotbar_UI = $Inventory_Hotbar
 @onready var animated_sprite = $AnimatedSprite2D
+@onready var No_More_trees = $No_More_trees
 
 var speed = 150
-var move = true
 var last_move = ""
 var in_tree_spawn = false
+var called = false
 
 signal tree_spawn
 
@@ -25,9 +26,8 @@ func _ready():
 	Pickup_Label.text="Press %s to pickup" % [InputMap.action_get_events("PICKUP")[0].as_text()]
 
 func get_input():
-	if move:
-		var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
-		velocity=input_direction * speed
+	var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
+	velocity=input_direction * speed
 		
 #basic left, right, up, down movement for the player
 func _physics_process(delta: float) -> void:
@@ -58,8 +58,6 @@ func _input(event):
 	if event.is_action_pressed("INVENTORY"):
 		Inventory_UI.visible = !Inventory_UI.visible
 		hotbar_UI.visible = !hotbar_UI.visible
-		move = !Inventory_UI.visible
-		get_tree().paused = !get_tree().paused
 	if event.is_action_pressed("SETTINGS"):
 		saved_player_pos=PlayerData.set_position(self.position)
 		saved_player_rot=PlayerData.set_rotation(last_move)
@@ -105,13 +103,17 @@ func _unhandled_input(event: InputEvent) -> void:
 				use_hotbar_item(i)
 				break
 
-
 func _on_tree_planting_area_body_entered(body: Node2D) -> void:
 	in_tree_spawn = true
 
 func _on_tree_planting_area_body_exited(body: Node2D) -> void:
 	in_tree_spawn = false
 
-
 func _on_main_too_many_trees() -> void:
-	pass # Replace with function body.
+	if not called:
+		print("je sais")
+		No_More_trees.visible = true
+		called = true
+		await get_tree().create_timer(2).timeout
+		No_More_trees.visible = false
+		called = false

@@ -239,25 +239,25 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 20
 text = "Press \"Space\" to pick up"
 
-[node name="No More trees" type="CanvasLayer" parent="."]
+[node name="No_More_trees" type="CanvasLayer" parent="."]
 visible = false
 
-[node name="ColorRect" type="ColorRect" parent="No More trees"]
+[node name="ColorRect" type="ColorRect" parent="No_More_trees"]
 self_modulate = Color(0.192157, 0.376471, 0.321569, 1)
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1155.0
-offset_top = -550.0
-offset_right = -755.0
-offset_bottom = -500.0
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.514
+anchor_right = 0.5
+anchor_bottom = 0.514
+offset_left = -195.0
+offset_top = -25.12
+offset_right = 205.0
+offset_bottom = 24.88
 grow_horizontal = 0
 grow_vertical = 0
 color = Color(0.0901961, 1, 1, 1)
 
-[node name="Label" type="Label" parent="No More trees/ColorRect"]
+[node name="Label" type="Label" parent="No_More_trees/ColorRect"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
