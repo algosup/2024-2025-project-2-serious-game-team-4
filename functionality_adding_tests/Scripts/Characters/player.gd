@@ -8,6 +8,7 @@ extends CharacterBody2D
 var speed = 150
 var move = true
 var last_move = ""
+var in_tree_spawn = false
 
 signal tree_spawn
 
@@ -78,8 +79,9 @@ func apply_item_effect(item):
 		"Test":
 			print("test")
 		"Plant_a_tree":
-			tree_spawn.emit()
-			print("tree")
+			if in_tree_spawn:
+				tree_spawn.emit()
+				print("tree")
 
 #Hotbar shortcut keys
 func use_hotbar_item(slot_index):
@@ -102,3 +104,14 @@ func _unhandled_input(event: InputEvent) -> void:
 			if Input.is_action_just_pressed("HOTBAR" + str(i + 1)):
 				use_hotbar_item(i)
 				break
+
+
+func _on_tree_planting_area_body_entered(body: Node2D) -> void:
+	in_tree_spawn = true
+
+func _on_tree_planting_area_body_exited(body: Node2D) -> void:
+	in_tree_spawn = false
+
+
+func _on_main_too_many_trees() -> void:
+	pass # Replace with function body.
