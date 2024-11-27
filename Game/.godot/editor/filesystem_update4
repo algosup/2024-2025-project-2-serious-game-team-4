@@ -1,1 +1,10 @@
 res://Scenes/Main/MainMenu.tscn
+res://Scenes/Characters/NPC/npc.tscn
+res://Scenes/Characters/NPC/wander.tscn
+res://Scripts/Characters/NPC/npc.gd
+res://Scenes/Characters/NPC/npc2.tscn
+res://Scenes/Islands/Island_2.tscn
+res://Scenes/Main/start_from_scratch.tscn
+res://Scripts/Characters/NPC/npc2.gd
+res://Scripts/Characters/NPC/wander2.gd
+res://Scripts/Characters/NPC/wander.gd
