@@ -9,7 +9,12 @@ var inventory = []
 var spawnable_items = [
 	{"type": "Consumable", "name": "pink potion", "effect": "SpeedIncrease", "texture": preload("res://Assets/Icons/icon1.png")},
 	{"type": "Consumable", "name": "blue potion", "effect": "InvertedControls", "texture": preload("res://Assets/Icons/icon3.png")},
-	{"type": "Consumable", "name": "shroom", "effect": "Test", "texture": preload("res://Assets/Icons/icon32.png")}
+	{"type": "Consumable", "name": "shroom", "effect": "Test", "texture": preload("res://Assets/Icons/icon32.png")},
+]
+
+#This will be the items that are available only for specific areas
+var Asia_items =[
+	{"type": "Consumable", "name": "seed", "effect": "Plant_a_tree ", "texture": preload("res://Assets/Icons/icon21.png")}
 ]
 
 #Hotbar inventory
@@ -30,6 +35,7 @@ func _ready():
 	hotbar_inventory.resize(hotbar_size)
 
 func add_item(item, to_hotbar = false):
+	print(item)
 	var added_to_hotbar = false
 	#add to hotbar
 	if to_hotbar:

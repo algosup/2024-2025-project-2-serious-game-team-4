@@ -16,10 +16,10 @@ script = ExtResource("1_cpqyx")
 [node name="BG" type="Sprite2D" parent="."]
 texture = ExtResource("2_6klk6")
 
+[node name="Player" parent="." instance=ExtResource("3_7dml7")]
+
 [node name="npc" parent="." instance=ExtResource("5_yypua")]
 position = Vector2(-75, -75)
-
-[node name="Player" parent="." instance=ExtResource("3_7dml7")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -91,6 +91,7 @@ position = Vector2(-73, 26)
 [node name="Marker2D2" type="Marker2D" parent="." groups=["NPC_Test"]]
 position = Vector2(-75, -186)
 
+[connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/pink_potion" to="." method="_on_pink_potion_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]

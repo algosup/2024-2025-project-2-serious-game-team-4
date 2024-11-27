@@ -7,6 +7,7 @@ extends Node2D
 
 func _ready():
 	spawn_random_items(10)
+	Global.add_item({"quantity": 99, "type": "Consumable", "name": "seed", "effect": "Plant_a_tree", "texture": preload("res://Assets/Icons/icon21.png")}, false)
 
 #Gets random position within the collision shape
 func get_random_position():
@@ -49,3 +50,9 @@ func _on_blue_potion_pressed() -> void:
 func _on_shroom_pressed() -> void:
 	var player = get_node("Player")
 	spawn_items(Global.spawnable_items[2], player.position)
+
+
+func _on_player_tree_spawn() -> void:
+	var pos=get_node("Player").position
+	var test = self.get_child(2)
+	self.add_child(test)

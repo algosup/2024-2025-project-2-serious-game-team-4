@@ -9,6 +9,8 @@ var speed = 150
 var move = true
 var last_move = ""
 
+signal tree_spawn
+
 var saved_player_pos=PlayerData.get_position()
 var saved_player_rot=PlayerData.get_rotation()
 
@@ -75,6 +77,9 @@ func apply_item_effect(item):
 			print("Controls inverted, good luck")
 		"Test":
 			print("test")
+		"Plant_a_tree":
+			tree_spawn.emit()
+			print("tree")
 
 #Hotbar shortcut keys
 func use_hotbar_item(slot_index):
