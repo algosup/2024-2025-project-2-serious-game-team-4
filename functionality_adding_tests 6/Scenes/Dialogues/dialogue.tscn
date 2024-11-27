@@ -38,4 +38,4 @@ offset_top = 16.0
 offset_right = 233.0
 offset_bottom = 86.0
 scale = Vector2(0.4, 0.4)
-text = "Tete de neuil va"
+text = "Description"

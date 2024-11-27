@@ -6,6 +6,7 @@ extends Node2D
 @onready var dev_tool = $CanvasLayer2
 
 func _ready():
+	spawn_random_items(10)
 	pass #spawn_random_items(10)
 
 #Gets random position within the collision shape

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ccw3o0orfl6ev"]
+[gd_scene load_steps=10 format=3 uid="uid://ccw3o0orfl6ev"]
 
 [ext_resource type="Script" path="res://Scripts/Main/Main_Script.gd" id="1_cpqyx"]
 [ext_resource type="Texture2D" uid="uid://c2b65ok6lqyr5" path="res://Assets/Screenshot 2024-11-14 114117.png" id="2_6klk6"]
@@ -6,6 +6,8 @@
 [ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="5_p13dx"]
 [ext_resource type="PackedScene" uid="uid://4esnetqov2pm" path="res://Scenes/Characters/NPC/npc.tscn" id="5_yypua"]
 [ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="6_kl7yv"]
+[ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="7_0alif"]
+[ext_resource type="Script" path="res://Scripts/portals/portal.gd" id="8_pmod4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tl5pc"]
 size = Vector2(655, 70)
@@ -26,6 +28,8 @@ position = Vector2(-75, -75)
 [node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
 offset_right = 120.0
 offset_bottom = 120.0
+scale = Vector2(2.5, 2.5)
+metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
 handle_input_locally = false
@@ -45,9 +49,10 @@ scale = Vector2(0.1, 0.1)
 texture = ExtResource("6_kl7yv")
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
-offset_top = 120.0
-offset_right = 120.0
-offset_bottom = 152.0
+offset_left = 4.0
+offset_top = 312.0
+offset_right = 124.0
+offset_bottom = 344.0
 
 [node name="Items" type="Node2D" parent="."]
 
@@ -90,6 +95,10 @@ position = Vector2(-73, 26)
 
 [node name="Marker2D2" type="Marker2D" parent="." groups=["NPC_Test"]]
 position = Vector2(-75, -186)
+
+[node name="portal" parent="." instance=ExtResource("7_0alif")]
+position = Vector2(142, -48)
+script = ExtResource("8_pmod4")
 
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/pink_potion" to="." method="_on_pink_potion_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]

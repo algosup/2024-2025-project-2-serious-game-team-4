@@ -1,0 +1,80 @@
+[gd_scene load_steps=11 format=3 uid="uid://de7bfhp0dnals"]
+
+[ext_resource type="Texture2D" uid="uid://bh0ajn6ypk6j4" path="res://Assets/Island_2/2.png" id="1_njbse"]
+[ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="2_yc0ns"]
+[ext_resource type="Script" path="res://Scripts/portals/portal_back.gd" id="3_7whsd"]
+[ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="4_8ytvg"]
+[ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="5_mkh6q"]
+[ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="7_c2v85"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_o5ubc"]
+distance = -416.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0qn84"]
+distance = -512.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7q0d3"]
+distance = -416.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_b5rub"]
+distance = -507.0
+
+[node name="Island2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_njbse")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_o5ubc")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_0qn84")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+rotation = -3.14159
+shape = SubResource("WorldBoundaryShape2D_7q0d3")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+position = Vector2(5, 0)
+rotation = -1.5708
+shape = SubResource("WorldBoundaryShape2D_b5rub")
+
+[node name="portal_back" parent="." instance=ExtResource("2_yc0ns")]
+position = Vector2(-16, 168)
+script = ExtResource("3_7whsd")
+
+[node name="Player" parent="." instance=ExtResource("4_8ytvg")]
+position = Vector2(0, 368)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+offset_right = 120.0
+offset_bottom = 120.0
+scale = Vector2(2.5, 2.5)
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(120, 120)
+render_target_update_mode = 4
+script = ExtResource("5_mkh6q")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
+texture = ExtResource("1_njbse")
+
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer"]
+position = Vector2(60, 60)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("7_c2v85")
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+offset_top = 304.0
+offset_right = 120.0
+offset_bottom = 336.0
