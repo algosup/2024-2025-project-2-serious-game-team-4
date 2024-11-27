@@ -13,7 +13,6 @@ func _ready():
 	Settings_button.button_down.connect(on_settings_pressed)
 	Exit_button.button_down.connect(on_exit_pressed)
 	Credits_button.button_down.connect(on_credits_pressed)
-	$Menu_theme.play()
 	
 func on_start_pressed() -> void:
 	get_tree().change_scene_to_packed(start_level)
@@ -24,5 +23,4 @@ func on_exit_pressed() -> void:
 	get_tree().quit()
 	
 func on_credits_pressed() -> void:
-	$MarginContainer/HBoxContainer/VBoxContainer/click.play()
 	pass

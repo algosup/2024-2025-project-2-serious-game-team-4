@@ -141,5 +141,3 @@ func swap_hotbar_items(index1, index2):
 	inventory_updated.emit()
 	return true
 	
-func on_settings_pressed(): 
-	get_tree().change_scene_to_file("res://Scenes/Menus/settings_menus.tscn")

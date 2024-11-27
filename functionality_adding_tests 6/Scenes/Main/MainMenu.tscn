@@ -1,9 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://du7hr6ku0f72h"]
+[gd_scene load_steps=6 format=3 uid="uid://du7hr6ku0f72h"]
 
 [ext_resource type="Script" path="res://Scripts/Main/main_menu.gd" id="1_70vwb"]
-[ext_resource type="AudioStream" uid="uid://cc0pi6ah4fv8p" path="res://Assets/audio/select_sfx.mp3" id="2_d0yet"]
 [ext_resource type="Texture2D" uid="uid://c2b65ok6lqyr5" path="res://Assets/Screenshot 2024-11-14 114117.png" id="2_iweuf"]
-[ext_resource type="AudioStream" uid="uid://454wya8o2hy7" path="res://Assets/audio/main-theme-v.2 - 05:11:2024, 21.57.mp3" id="3_w11kl"]
 
 [sub_resource type="SystemFont" id="SystemFont_pti1t"]
 font_names = PackedStringArray("Impact")
@@ -104,11 +102,3 @@ layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_d7ss8")
 theme_override_font_sizes/font_size = 24
 text = "Credits"
-
-[node name="click" type="AudioStreamPlayer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-stream = ExtResource("2_d0yet")
-volume_db = -15.0
-
-[node name="Menu_theme" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_w11kl")
-parameters/looping = true
