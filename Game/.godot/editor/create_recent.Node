@@ -1,0 +1,14 @@
+Sprite2D
+StaticBody2D
+TileMapLayer
+CollisionShape2D
+TileMap
+Marker2D
+Area2D
+CharacterBody2D
+AnimatedSprite2D
+ProgressBar
+VBoxContainer
+Button
+Control
+CanvasLayer
