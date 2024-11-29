@@ -36,7 +36,7 @@ func next_script():
 	if current_dialogue_id >= len(dialogue):
 		d_active = false
 		$NinePatchRect.visible = false
-		emit_signal("d_finished")
+		d_finished.emit()
 		return
 	
 	

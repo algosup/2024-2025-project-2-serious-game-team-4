@@ -25,7 +25,7 @@ func _ready() -> void:
 		sprite.texture=item_texture
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	#This checks if we are in the editor or the game, That way, I can test stuff easier while in the editor, without creating test code or affecting the game
 	if Engine.is_editor_hint():
 		sprite.texture=item_texture
