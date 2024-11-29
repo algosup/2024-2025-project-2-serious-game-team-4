@@ -57,6 +57,7 @@ position = Vector2(1.5, 14)
 shape = SubResource("RectangleShape2D_tl5pc")
 
 [node name="Tree_planting_area" type="Area2D" parent="."]
+visible = false
 position = Vector2(3, -153)
 
 [node name="ColorRect" type="ColorRect" parent="Tree_planting_area"]
@@ -160,4 +161,5 @@ position = Vector2(-75, -75)
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/pink_potion" to="." method="_on_pink_potion_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]
+[connection signal="spawn_tree_area" from="npc" to="." method="_on_npc_spawn_tree_area"]
 [connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]
