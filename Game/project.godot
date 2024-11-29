@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Functionality_adding_tests"
+config/name="Game"
 run/main_scene="res://Scenes/Main/MainMenu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 run/max_fps=60
@@ -19,10 +19,16 @@ config/icon="res://Assets/icon.svg"
 [autoload]
 
 Global="*res://Scripts/Global_(autoload)/Global.gd"
+PlayerData="*res://Scripts/Global_(autoload)/Player_data.gd"
 
 [display]
 
-window/size/mode=4
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
+window/stdout/print_fps=false
+window/max_fps=0
 
 [input]
 
@@ -58,7 +64,7 @@ PICKUP={
 }
 SETTINGS={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194309,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
 HOTBAR1={
@@ -106,6 +112,10 @@ INTERACT={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
 ]
 }
+
+[internationalization]
+
+pseudolocalization/expansion_ratio=2.0
 
 [rendering]
 

@@ -5,9 +5,13 @@ extends Node2D
 @onready var Collision_Shape = $ItemSpawnArea/CollisionShape2D
 @onready var dev_tool = $CanvasLayer2
 
+var visible_trees=1
+
+signal too_many_trees
+
 func _ready():
 	spawn_random_items(10)
-	pass #spawn_random_items(10)
+	Global.add_item({"quantity": 99, "type": "Consumable", "name": "seed", "effect": "Plant_a_tree", "texture": preload("res://Assets/Icons/icon21.png")}, false)
 
 #Gets random position within the collision shape
 func get_random_position():
@@ -36,8 +40,6 @@ func spawn_items(data, position):
 	items.add_child(item_instance)
 
 func _input(event: InputEvent) -> void:
-		if event.is_action_pressed("SETTINGS"):
-			get_tree().change_scene_to_file("res://Scenes/Menus/settings.tscn")
 		if event.is_action_pressed("SHOWDEVTOOL"):
 			dev_tool.visible = !dev_tool.visible
 
@@ -52,3 +54,12 @@ func _on_blue_potion_pressed() -> void:
 func _on_shroom_pressed() -> void:
 	var player = get_node("Player")
 	spawn_items(Global.spawnable_items[2], player.position)
+
+func _on_player_tree_spawn() -> void:
+	if visible_trees < 10:
+		visible_trees += 1
+		var area = get_child(4)
+		var tree = area.get_child(visible_trees)
+		tree.visible = true
+	else:
+		too_many_trees.emit()

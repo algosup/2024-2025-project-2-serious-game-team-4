@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ccw3o0orfl6ev"]
+[gd_scene load_steps=12 format=3 uid="uid://ccw3o0orfl6ev"]
 
 [ext_resource type="Script" path="res://Scripts/Main/Main_Script.gd" id="1_cpqyx"]
 [ext_resource type="Texture2D" uid="uid://c2b65ok6lqyr5" path="res://Assets/Screenshot 2024-11-14 114117.png" id="2_6klk6"]
@@ -6,11 +6,15 @@
 [ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="5_p13dx"]
 [ext_resource type="PackedScene" uid="uid://4esnetqov2pm" path="res://Scenes/Characters/NPC/npc.tscn" id="5_yypua"]
 [ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="6_kl7yv"]
-[ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="7_0alif"]
-[ext_resource type="Script" path="res://Scripts/portals/portal.gd" id="8_pmod4"]
+[ext_resource type="Texture2D" uid="uid://dswd2isskfmyr" path="res://Assets/Icons/icon10.png" id="7_4t460"]
+[ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="8_ey5kp"]
+[ext_resource type="Script" path="res://Scripts/portals/portal.gd" id="9_gi7r2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tl5pc"]
 size = Vector2(655, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yuscc"]
+size = Vector2(99, 97)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_cpqyx")
@@ -18,22 +22,15 @@ script = ExtResource("1_cpqyx")
 [node name="BG" type="Sprite2D" parent="."]
 texture = ExtResource("2_6klk6")
 
-[node name="npc" parent="." instance=ExtResource("5_yypua")]
-position = Vector2(-75, -75)
-
-[node name="Player" parent="." instance=ExtResource("3_7dml7")]
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
-offset_right = 120.0
-offset_bottom = 120.0
-scale = Vector2(2.5, 2.5)
-metadata/_edit_use_anchors_ = true
+offset_right = 240.0
+offset_bottom = 240.0
 
 [node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
 handle_input_locally = false
-size = Vector2i(120, 120)
+size = Vector2i(240, 240)
 render_target_update_mode = 4
 script = ExtResource("5_p13dx")
 
@@ -44,15 +41,14 @@ texture = ExtResource("2_6klk6")
 zoom = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer"]
-position = Vector2(60, 60)
+position = Vector2(120, 120)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("6_kl7yv")
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
-offset_left = 4.0
-offset_top = 312.0
-offset_right = 124.0
-offset_bottom = 344.0
+offset_top = 240.0
+offset_right = 120.0
+offset_bottom = 272.0
 
 [node name="Items" type="Node2D" parent="."]
 
@@ -61,6 +57,65 @@ offset_bottom = 344.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemSpawnArea"]
 position = Vector2(1.5, 14)
 shape = SubResource("RectangleShape2D_tl5pc")
+
+[node name="Tree_planting_area" type="Area2D" parent="."]
+position = Vector2(3, -153)
+
+[node name="ColorRect" type="ColorRect" parent="Tree_planting_area"]
+offset_left = -2.0
+offset_top = -95.0
+offset_right = 96.0
+offset_bottom = 7.0
+color = Color(0.422121, 0.188378, 0.108222, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree_planting_area"]
+position = Vector2(46, -43)
+shape = SubResource("RectangleShape2D_yuscc")
+
+[node name="Tree_1" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(12, -73)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_2" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(13, -41)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_3" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(13, -10)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_4" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(45, -73)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_7" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(77, -72)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_5" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(46, -41)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_6" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(46, -8)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_8" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(79, -41)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_9" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(80, -8)
+texture = ExtResource("7_4t460")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 visible = false
@@ -90,16 +145,25 @@ text = "Blue_potion"
 layout_mode = 2
 text = "shroom"
 
-[node name="Marker2D" type="Marker2D" parent="." groups=["NPC_Test"]]
-position = Vector2(-73, 26)
-
 [node name="Marker2D2" type="Marker2D" parent="." groups=["NPC_Test"]]
 position = Vector2(-75, -186)
 
-[node name="portal" parent="." instance=ExtResource("7_0alif")]
-position = Vector2(142, -48)
-script = ExtResource("8_pmod4")
+[node name="Marker2D" type="Marker2D" parent="." groups=["NPC_Test"]]
+position = Vector2(-73, 26)
 
+[node name="npc" parent="." instance=ExtResource("5_yypua")]
+position = Vector2(-75, -75)
+
+[node name="Player" parent="." instance=ExtResource("3_7dml7")]
+
+[node name="portal" parent="." instance=ExtResource("8_ey5kp")]
+position = Vector2(142, -49)
+script = ExtResource("9_gi7r2")
+
+[connection signal="too_many_trees" from="." to="Player" method="_on_main_too_many_trees"]
+[connection signal="body_entered" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_entered"]
+[connection signal="body_exited" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_exited"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/pink_potion" to="." method="_on_pink_potion_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]
+[connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]

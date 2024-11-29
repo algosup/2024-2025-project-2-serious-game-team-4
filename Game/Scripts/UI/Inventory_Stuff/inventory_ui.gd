@@ -9,6 +9,7 @@ var dragged_slot = null
 func _ready():
 	Global.inventory_updated.connect(_on_inventory_updated)
 	_on_inventory_updated()
+	
 
 func _on_inventory_updated():
 	clear_grid_container()

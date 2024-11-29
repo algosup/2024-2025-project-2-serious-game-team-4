@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d2aa8x21srtpj"
+path="res://.godot/imported/Yellow_MEDIUMTRUCK_CLEAN_WEST_004.png-a35d2b44b4a7ed4e41d760ea94751546.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assets/TopDown Vehicles v1/MEDIUM TRUCK TOPDOWN/Yellow/MOVE/WEST/SEPARATED/Yellow_MEDIUMTRUCK_CLEAN_WEST_004.png"
+dest_files=["res://.godot/imported/Yellow_MEDIUMTRUCK_CLEAN_WEST_004.png-a35d2b44b4a7ed4e41d760ea94751546.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

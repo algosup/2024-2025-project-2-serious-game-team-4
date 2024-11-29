@@ -1,13 +1,20 @@
 extends Node
 
-#This script exist to store information in between scenes as godot does not do that by default
 
+#This script exist to store information in between scenes as godot does not do that by default
+#It is called a singleton
+#I would like to rename it Global_Inventory but it would break everything on the github so I will wait a bit for that
 #Inventory Items:
 var inventory = []
 var spawnable_items = [
 	{"type": "Consumable", "name": "pink potion", "effect": "SpeedIncrease", "texture": preload("res://Assets/Icons/icon1.png")},
 	{"type": "Consumable", "name": "blue potion", "effect": "InvertedControls", "texture": preload("res://Assets/Icons/icon3.png")},
-	{"type": "Consumable", "name": "shroom", "effect": "Test", "texture": preload("res://Assets/Icons/icon32.png")}
+	{"type": "Consumable", "name": "shroom", "effect": "Test", "texture": preload("res://Assets/Icons/icon32.png")},
+]
+
+#This will be the items that are available only for specific areas
+var Asia_items =[
+	{"type": "Consumable", "name": "seed", "effect": "Plant_a_tree ", "texture": preload("res://Assets/Icons/icon21.png")}
 ]
 
 #Hotbar inventory
@@ -22,12 +29,16 @@ signal inventory_updated
 var player_node: Node = null
 @onready var inventory_slot_scene = preload("res://Scenes/UI/Inventory_Stuff/inventory_slot.tscn")
 
+
+
 func _ready():
 	#Initializes the number of slots in the inventory, changing the value will change the number of slots
-	inventory.resize(30)
+	inventory.resize(27)
 	hotbar_inventory.resize(hotbar_size)
 
+
 func add_item(item, to_hotbar = false):
+	print(item)
 	var added_to_hotbar = false
 	#add to hotbar
 	if to_hotbar:
@@ -140,4 +151,3 @@ func swap_hotbar_items(index1, index2):
 	hotbar_inventory[index2] = temp
 	inventory_updated.emit()
 	return true
-	

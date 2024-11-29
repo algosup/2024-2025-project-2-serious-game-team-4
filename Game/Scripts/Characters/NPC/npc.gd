@@ -34,7 +34,7 @@ func _input(event: InputEvent) -> void:
 
 func _physics_process(delta: float) -> void:
 	if not stopped:
-		velocity = wander_direction.direction * 20
+		velocity = wander_direction.direction * 50
 		move_and_slide()
 		update_animations()
 	else:

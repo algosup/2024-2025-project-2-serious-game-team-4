@@ -25,8 +25,6 @@ func _get_positions():
 func _get_next_position():
 	if temp_positions.is_empty():
 		_get_positions()
-	print(current_position)
 	current_position = temp_positions.pop_front()
-	print(current_position)
 	direction = to_local(current_position.position).normalized()
 	

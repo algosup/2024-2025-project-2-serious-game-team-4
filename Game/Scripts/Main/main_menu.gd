@@ -18,7 +18,7 @@ func on_start_pressed() -> void:
 	get_tree().change_scene_to_packed(start_level)
 	
 func on_settings_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Menus/settings_menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Menus/settings.tscn")
 func on_exit_pressed() -> void:
 	get_tree().quit()
 	

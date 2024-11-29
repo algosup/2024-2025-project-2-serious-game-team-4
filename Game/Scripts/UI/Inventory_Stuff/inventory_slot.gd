@@ -1,14 +1,14 @@
 extends Control
 
-@onready var icon = $InnerBorder/ItemIcon
-@onready var Quantity_label = $InnerBorder/ItemQuantity
+@onready var icon = $TextureRect/ItemIcon
+@onready var Quantity_label = $TextureRect/ItemQuantity
 @onready var Details_Panel = $DetailsPanel
 @onready var Item_Name = $DetailsPanel/ItemName
 @onready var Item_Type = $DetailsPanel/ItemType
 @onready var Item_Effect = $DetailsPanel/ItemEffect
 @onready var Usage_Panel = $UsagePanel
 @onready var Assign_Button = $UsagePanel/AssignButton
-@onready var outer_border = $OuterBorder
+@onready var Texture_Rect = $TextureRect
 
 #Signals
 signal drag_start(slot)
@@ -94,8 +94,8 @@ func _on_item_button_gui_input(event: InputEvent) -> void:
 		#This will show that a panel is being clicked on, the color will change to show that and the signal that it is being dragged is emitted
 		if event.button_index == MOUSE_BUTTON_RIGHT:
 			if event.is_pressed():
-				outer_border.modulate = Color (1, 1, 0)
+				Texture_Rect.modulate = Color (1, 1, 0)
 				drag_start.emit(self)
 			else:
-				outer_border.modulate = Color (1, 1, 1)
+				Texture_Rect.modulate = Color (1, 1, 1)
 				drag_stop.emit()
