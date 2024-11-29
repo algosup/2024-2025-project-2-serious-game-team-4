@@ -94,7 +94,6 @@ The game’s features will primarily be tested manually, as the variety of inter
 
 ### 3. Defining Priorities
 Establishing priorities is essential to determine the sequence in which tests should be conducted. These priorities will align with those outlined in the functional specifications. We will categorize priorities into four levels:
-
 - Critical
 - High
 - Medium
