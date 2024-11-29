@@ -13,6 +13,7 @@ var tree_area_visible = false
 signal too_many_trees
 
 func _ready():
+	spawn_random_items(10)
 	if tree_area_visible:
 		Tree_planting_area.visible = true
 

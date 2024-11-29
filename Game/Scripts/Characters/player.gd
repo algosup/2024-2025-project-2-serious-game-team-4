@@ -19,6 +19,8 @@ var saved_player_rot=null
 @onready var Pickup_Label = $Interact_Pick_Up_UI/ColorRect/Label
 
 func _ready():
+	speed = PlayerData.get_player_speed()
+	print(speed)
 	saved_player_pos = PlayerData.get_position(get_parent().name)
 	saved_player_rot = PlayerData.get_rotation(get_parent().name)
 	self.position=saved_player_pos
@@ -61,11 +63,7 @@ func _input(event):
 		Inventory_UI.visible = !Inventory_UI.visible
 		hotbar_UI.visible = !hotbar_UI.visible
 	if event.is_action_pressed("SETTINGS"):
-		print(get_parent().name)
-		PlayerData.set_parent_path(get_parent().get_scene_file_path())
-		print(get_parent().get_scene_file_path())
-		saved_player_pos=PlayerData.set_position(self.position, get_parent().name)
-		saved_player_rot=PlayerData.set_rotation(last_move, get_parent().name)
+		save_player_data()
 		get_tree().change_scene_to_file("res://Scenes/Menus/settings.tscn")
 
 func apply_item_effect(item):
@@ -122,10 +120,14 @@ func _on_main_too_many_trees() -> void:
 		No_More_trees.visible = false
 		called = false
 
+func save_player_data():
+	PlayerData.set_parent_path(get_parent().get_scene_file_path())
+	PlayerData.set_position(self.position, get_parent().name)
+	PlayerData.set_rotation(last_move, get_parent().name)
+	PlayerData.set_player_speed(speed)
+
 func _on_portal_portal_entered() -> void:
-	saved_player_pos=PlayerData.set_position(self.position, get_parent().name)
-	saved_player_rot=PlayerData.set_rotation("Idle_Down", get_parent().name)
+	save_player_data()
 
 func _on_portal_back_portal_entered() -> void:
-	saved_player_pos=PlayerData.set_position(self.position, get_parent().name)
-	saved_player_rot=PlayerData.set_rotation("Idle_Down", get_parent().name)
+	save_player_data()

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732872946
+::res://::1732887493
 export_presets.cfg::TextFile::-1::1732871765::0::1::::<><>::
 ::res://Assets/::1732872292
 chatbox.png::CompressedTexture2D::6757282332037016617::1732871765::1732872292::1::::<><>::
@@ -8928,28 +8928,27 @@ WAGON_Burntl_006.png::CompressedTexture2D::6607404039672331797::1732871765::1732
 WAGON_Burntl_007.png::CompressedTexture2D::660661755890900265::1732871765::1732872292::1::::<><>::
 ::res://functionality_adding_tests/::1732871729
 ::res://Scenes/::1732871765
-::res://Scenes/Characters/::1732871765
-player.tscn::PackedScene::5524558896042972865::1732871765::0::1::::<><>::res://Scripts/Characters/player.gd<>uid://kqwcvuky7iy5::::res://Assets/TerraOffSprites/down/TerraDownFour.png<>uid://cn3srniqu7uh7::::res://Scenes/UI/Inventory_Stuff/inventory_ui.tscn<>uid://nfwpd06btt0d::::res://Assets/TerraOffSprites/left/TerraLeftOne.png<>uid://bkemhx163eifg::::res://Assets/TerraOffSprites/down/TerraDownOne.png<>uid://bwt1krhe52kyc::::res://Assets/TerraOffSprites/right/TerraRightTwo.png<>uid://hrgaw6b8cluj::::res://Assets/TerraOffSprites/down/TerraDownTwo.png<>uid://7hpao30aru8e::::res://Assets/TerraOffSprites/up/TerraUpOne.png<>uid://dr4oxfh8ki4us::::res://Scenes/UI/Inventory_Stuff/hotbar.tscn<>uid://v8yxd6hdpa1n::::res://Assets/TerraOffSprites/down/TerraDownThree.png<>uid://dhgbbsavjf8fi::::res://Assets/TerraOffSprites/left/TerraLeftFour.png<>uid://c3210jnod3k3q::::res://Assets/TerraOffSprites/left/TerraLeftTwo.png<>uid://bc0cfryp7ad4i::::res://Assets/TerraOffSprites/left/TerraLeftThree.png<>uid://cotg5cvopdntn::::res://Assets/TerraOffSprites/right/TerraRightThree.png<>uid://b6nvo50ku5i2y::::res://Assets/TerraOffSprites/right/TerraRightFour.png<>uid://wiumei5y5jf0::::res://Assets/TerraOffSprites/right/TerraRightOne.png<>uid://dnl3r0pqlaavw::::res://Assets/TerraOffSprites/up/TerraUpFour.png<>uid://dholursxqbqb3::::res://Assets/TerraOffSprites/up/TerraUpTwo.png<>uid://kcy1p0gw3vvn::::res://Assets/TerraOffSprites/up/TerraUpThree.png
+::res://Scenes/Characters/::1732887412
+player.tscn::PackedScene::5524558896042972865::1732887412::0::1::::<><>::res://Scripts/Characters/player.gd<>uid://kqwcvuky7iy5::::res://Assets/TerraOffSprites/down/TerraDownFour.png<>uid://cn3srniqu7uh7::::res://Scenes/UI/Inventory_Stuff/inventory_ui.tscn<>uid://nfwpd06btt0d::::res://Assets/TerraOffSprites/left/TerraLeftOne.png<>uid://bkemhx163eifg::::res://Assets/TerraOffSprites/down/TerraDownOne.png<>uid://bwt1krhe52kyc::::res://Assets/TerraOffSprites/right/TerraRightTwo.png<>uid://hrgaw6b8cluj::::res://Assets/TerraOffSprites/down/TerraDownTwo.png<>uid://7hpao30aru8e::::res://Assets/TerraOffSprites/up/TerraUpOne.png<>uid://dr4oxfh8ki4us::::res://Scenes/UI/Inventory_Stuff/hotbar.tscn<>uid://v8yxd6hdpa1n::::res://Assets/TerraOffSprites/down/TerraDownThree.png<>uid://dhgbbsavjf8fi::::res://Assets/TerraOffSprites/left/TerraLeftFour.png<>uid://c3210jnod3k3q::::res://Assets/TerraOffSprites/left/TerraLeftTwo.png<>uid://bc0cfryp7ad4i::::res://Assets/TerraOffSprites/left/TerraLeftThree.png<>uid://cotg5cvopdntn::::res://Assets/TerraOffSprites/right/TerraRightThree.png<>uid://b6nvo50ku5i2y::::res://Assets/TerraOffSprites/right/TerraRightFour.png<>uid://wiumei5y5jf0::::res://Assets/TerraOffSprites/right/TerraRightOne.png<>uid://dnl3r0pqlaavw::::res://Assets/TerraOffSprites/up/TerraUpFour.png<>uid://dholursxqbqb3::::res://Assets/TerraOffSprites/up/TerraUpTwo.png<>uid://kcy1p0gw3vvn::::res://Assets/TerraOffSprites/up/TerraUpThree.png
 ::res://Scenes/Characters/NPC/::1732871765
 npc2.tscn::PackedScene::203592705322303174::1732871765::0::1::::<><>::res://Scripts/Characters/NPC/npc.gd<>uid://pvbo0rau6khl::::res://Assets/JULIAN (Final).png<>uid://brt7mbbpey68h::::res://Scenes/Dialogues/dialogue.tscn<>uid://cjabwy13oufuc::::res://Scenes/Characters/NPC/wander.tscn
 npc.tscn::PackedScene::2044850337900955326::1732871765::0::1::::<><>::res://Scripts/Characters/NPC/npc.gd<>uid://bw1b50v4vegqw::::res://Assets/Mariem Fixed.png<>uid://brt7mbbpey68h::::res://Scenes/Dialogues/dialogue.tscn<>uid://cjabwy13oufuc::::res://Scenes/Characters/NPC/wander.tscn
 wander.tscn::PackedScene::5404642266604179134::1732871765::0::1::::<><>::res://Scripts/Characters/NPC/wander.gd
 ::res://Scenes/Dialogues/::1732871765
 dialogue.tscn::PackedScene::3620818630918184453::1732871765::0::1::::<><>::res://Scripts/Dialogues/dialogue.gd<>uid://c3jjpnnf67x5b::::res://Assets/chatbox.png
-::res://Scenes/Islands/::1732871765
+::res://Scenes/Islands/::1732887411
 island_2.gd::GDScript::-1::1732871765::0::1::::<>Node2D<>::
-Island_2.tscn::PackedScene::7506147551699559680::1732871765::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://jucxx065s6up::::res://Assets/Island_2/Factory (Finish).png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>res://Scripts/portals/portal_back.gd<>uid://bp2gk4odjasda::::res://Assets/Island_2/roads2W.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>res://Scripts/UI/Minimap.gd<>uid://c5ve3jstlwg1::::res://Scenes/Characters/NPC/npc2.tscn<>uid://bawpce85nfff5::::res://Assets/star_01.png<>res://Scenes/Islands/SpawnPlayer.gd<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png<>uid://bet307304r81m::::res://Assets/Island_2/Building (1).png<>uid://cdf32sul7ef65::::res://Assets/TopDown Vehicles v1/JEEP TOP DOWN/Yellow/SEPARATED/Yellow_JEEP_CLEAN_All_041.png<>uid://der4j84ry2wjm::::res://Assets/TopDown Vehicles v1/CIVIC TOPDOWN/Brown/SEPARATED/Brown_CIVIC_CLEAN_All_011.png<>uid://cwieudl41clqv::::res://Assets/Island_2/helicopter/separated_frames/helicopter_1.png<>uid://bqc2uq47o42di::::res://Assets/Island_2/helicopter/separated_frames/helicopter_2.png<>uid://chbfp2cjctwmg::::res://Assets/TopDown Vehicles v1/VAN TOP DOWN/White/SEPARATED/White_VAN_CLEAN_All_043.png<>uid://bh612ki6xs6dg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_3.png<>uid://748bo18lp40w::::res://Assets/Island_2/helicopter/separated_frames/helicopter_4.png<>uid://8u3yhs7qgtfg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_5.png<>uid://32cb0awc2hy5::::res://Assets/Island_2/helicopter/separated_frames/helicopter_6.png<>uid://datlmma4cjtb8::::res://Assets/Island_2/helicopter/separated_frames/helicopter_7.png<>uid://c85ywclf51ohf::::res://Assets/Island_2/helicopter/separated_frames/helicopter_8.png<>uid://d03ecydwi4nki::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png<>uid://di4hxgflwpvit::::res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED/LIMO_CLEAN_ALLD0036.png
+Island_2.tscn::PackedScene::7506147551699559680::1732887411::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://jucxx065s6up::::res://Assets/Island_2/Factory (Finish).png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>res://Scripts/portals/portal_back.gd<>uid://bp2gk4odjasda::::res://Assets/Island_2/roads2W.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>res://Scripts/UI/Minimap.gd<>uid://c5ve3jstlwg1::::res://Scenes/Characters/NPC/npc2.tscn<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png<>uid://bet307304r81m::::res://Assets/Island_2/Building (1).png<>uid://cdf32sul7ef65::::res://Assets/TopDown Vehicles v1/JEEP TOP DOWN/Yellow/SEPARATED/Yellow_JEEP_CLEAN_All_041.png<>uid://der4j84ry2wjm::::res://Assets/TopDown Vehicles v1/CIVIC TOPDOWN/Brown/SEPARATED/Brown_CIVIC_CLEAN_All_011.png<>uid://cwieudl41clqv::::res://Assets/Island_2/helicopter/separated_frames/helicopter_1.png<>uid://bqc2uq47o42di::::res://Assets/Island_2/helicopter/separated_frames/helicopter_2.png<>uid://chbfp2cjctwmg::::res://Assets/TopDown Vehicles v1/VAN TOP DOWN/White/SEPARATED/White_VAN_CLEAN_All_043.png<>uid://bh612ki6xs6dg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_3.png<>uid://748bo18lp40w::::res://Assets/Island_2/helicopter/separated_frames/helicopter_4.png<>uid://8u3yhs7qgtfg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_5.png<>uid://32cb0awc2hy5::::res://Assets/Island_2/helicopter/separated_frames/helicopter_6.png<>uid://datlmma4cjtb8::::res://Assets/Island_2/helicopter/separated_frames/helicopter_7.png<>uid://c85ywclf51ohf::::res://Assets/Island_2/helicopter/separated_frames/helicopter_8.png<>uid://d03ecydwi4nki::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png<>uid://di4hxgflwpvit::::res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED/LIMO_CLEAN_ALLD0036.png
 Island_3.tscn::PackedScene::3782855754139250367::1732871765::0::1::::<><>::
 Island_4.tscn::PackedScene::3592230641963098564::1732871765::0::1::::<><>::
 Island_5.tscn::PackedScene::7311904147130726023::1732871765::0::1::::<><>::
 Island_6.tscn::PackedScene::6704442424878840212::1732871765::0::1::::<><>::
-SpawnPlayer.gd::GDScript::-1::1732871765::0::1::::<>Marker2D<>::
-::res://Scenes/Main/::1732872533
-MainMenu.tscn::PackedScene::8629556034029862101::1732872533::0::1::::<><>::res://Scripts/Main/main_menu.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png
-start_from_scratch.tscn::PackedScene::4960361777654279137::1732871765::0::1::::<><>::res://Scripts/Main/Main_Script.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>res://Scripts/UI/Minimap.gd<>uid://4esnetqov2pm::::res://Scenes/Characters/NPC/npc.tscn<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://dswd2isskfmyr::::res://Assets/Icons/icon10.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scripts/portals/portal.gd
-::res://Scenes/MapFeatures/::1732871765
-portal.tscn::PackedScene::8795923097765957602::1732871765::0::1::::<><>::
-portal_back.tscn::PackedScene::4405398819802061983::1732871765::0::1::::<><>::uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn
+::res://Scenes/Main/::1732887411
+MainMenu.tscn::PackedScene::8629556034029862101::1732887410::0::1::::<><>::res://Scripts/Main/main_menu.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png
+start_from_scratch.tscn::PackedScene::4960361777654279137::1732887411::0::1::::<><>::res://Scripts/Main/Main_Script.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>res://Scripts/UI/Minimap.gd<>uid://4esnetqov2pm::::res://Scenes/Characters/NPC/npc.tscn<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://dswd2isskfmyr::::res://Assets/Icons/icon10.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scripts/portals/portal.gd
+::res://Scenes/MapFeatures/::1732887410
+portal.tscn::PackedScene::8795923097765957602::1732887410::0::1::::<><>::
+portal_back.tscn::PackedScene::4405398819802061983::1732887410::0::1::::<><>::uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn
 ::res://Scenes/Menus/::1732871765
 keybinds.tscn::PackedScene::9109403115266922729::1732871765::0::1::::<><>::res://Scripts/Menus/keybinds.gd
 settings.tscn::PackedScene::5348599586857400175::1732871765::0::1::::<><>::res://Scripts/Menus/settings.gd<>uid://d10qmoevsvn76::::res://Assets/freakyMenu.ogg
@@ -8961,31 +8960,31 @@ inventory_item.tscn::PackedScene::2134815066993997264::1732871765::0::1::::<><>:
 inventory_slot.tscn::PackedScene::6275134571658132928::1732871765::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/inventory_slot.gd<>uid://bw36f1dkp2ul::::res://Assets/InventoryBox.png
 inventory_ui.tscn::PackedScene::5744222872077438238::1732871765::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/inventory_ui.gd
 ::res://Scripts/::1732871765
-::res://Scripts/Characters/::1732871765
-player.gd::GDScript::-1::1732871765::0::1::::<>CharacterBody2D<>::
-::res://Scripts/Characters/NPC/::1732871765
-npc.gd::GDScript::-1::1732871765::0::1::::<>CharacterBody2D<>::
-wander.gd::GDScript::-1::1732871765::0::1::::<>Node2D<>::
-::res://Scripts/Dialogues/::1732871765
-dialogue.gd::GDScript::-1::1732871765::0::1::::<>Control<>::
+::res://Scripts/Characters/::1732887386
+player.gd::GDScript::-1::1732887386::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Characters/NPC/::1732876773
+npc.gd::GDScript::-1::1732876487::0::1::::<>CharacterBody2D<>::
+wander.gd::GDScript::-1::1732876773::0::1::::<>Node2D<>::
+::res://Scripts/Dialogues/::1732876238
+dialogue.gd::GDScript::-1::1732876238::0::1::::<>Control<>::
 test_npc.json::JSON::-1::1732871765::0::1::::<><>::
-::res://Scripts/Global_(autoload)/::1732871765
+::res://Scripts/Global_(autoload)/::1732875675
 Global.gd::GDScript::-1::1732871765::0::1::::<>Node<>::
-Player_data.gd::GDScript::-1::1732871173::0::1::::<>Node<>::
-::res://Scripts/Main/::1732871765
+Player_data.gd::GDScript::-1::1732875675::0::1::::<>Node<>::
+::res://Scripts/Main/::1732887409
 Main.gd::GDScript::-1::1732871765::0::1::::<>RefCounted<>::
-main_menu.gd::GDScript::-1::1732871765::0::1::::MainMenu<>Control<>::
-Main_Script.gd::GDScript::-1::1732871765::0::1::::<>Node2D<>::
-::res://Scripts/Menus/::1732871765
+main_menu.gd::GDScript::-1::1732879508::0::1::::MainMenu<>Control<>::
+Main_Script.gd::GDScript::-1::1732887409::0::1::::<>Node2D<>::
+::res://Scripts/Menus/::1732875706
 keybinds.gd::GDScript::-1::1732871765::0::1::::<>Control<>::
-settings.gd::GDScript::-1::1732871765::0::1::::Settings<>Control<>::
-::res://Scripts/portals/::1732871765
-portal.gd::GDScript::-1::1732871765::0::1::::<>Area2D<>::
-portal_back.gd::GDScript::-1::1732871765::0::1::::<>Area2D<>::
-::res://Scripts/UI/::1732871765
-Minimap.gd::GDScript::-1::1732871765::0::1::::<>SubViewport<>::
-::res://Scripts/UI/Inventory_Stuff/::1732871765
+settings.gd::GDScript::-1::1732875706::0::1::::Settings<>Control<>::
+::res://Scripts/portals/::1732878911
+portal.gd::GDScript::-1::1732878911::0::1::::<>Area2D<>::
+portal_back.gd::GDScript::-1::1732878860::0::1::::<>Area2D<>::
+::res://Scripts/UI/::1732876773
+Minimap.gd::GDScript::-1::1732876773::0::1::::<>SubViewport<>::
+::res://Scripts/UI/Inventory_Stuff/::1732876816
 Inventory_Hotbar.gd::GDScript::-1::1732871765::0::1::::<>Control<>::
-inventory_item.gd::GDScript::-1::1732871765::0::1::::<>Node2D<>::
+inventory_item.gd::GDScript::-1::1732876816::0::1::::<>Node2D<>::
 inventory_slot.gd::GDScript::-1::1732871765::0::1::::<>Control<>::
 inventory_ui.gd::GDScript::-1::1732871765::0::1::::<>Control<>::
