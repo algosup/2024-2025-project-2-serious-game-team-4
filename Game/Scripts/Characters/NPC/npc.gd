@@ -4,6 +4,9 @@ extends CharacterBody2D
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var dialogue = $dialogue
 
+signal spawn_tree_area
+
+var tree_spawned = false
 var done = false
 var is_chatting = false
 var player
@@ -32,7 +35,7 @@ func _input(event: InputEvent) -> void:
 		$dialogue.start()
 		is_chatting = true
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if not stopped:
 		velocity = wander_direction.direction * 50
 		move_and_slide()
@@ -57,6 +60,9 @@ func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 
 func _on_dialogue_d_finished() -> void:
 	done = true
+	if not tree_spawned:
+		tree_spawned = true
+		spawn_tree_area.emit()
 
 func Where_to_look():
 	var relative_pos = Global.player_node.position - self.position

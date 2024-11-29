@@ -1,21 +1,35 @@
 extends Node
 
 # This is a singleton to store the players position
-
+#This is to know where the player is before they change zones
+var parent_path = ""
 #Player position
-var player_pos : Vector2 = Vector2.ZERO
+var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2.ZERO}
 #Player rotation
-var player_rot : String = ""
+var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down"}
+#Player speed
+var player_speed : int = 150
 
-func set_position(pos: Vector2):
-	player_pos = pos
+func set_position(pos: Vector2, place: String):
+	player_pos [place] = pos
 
-func set_rotation(rot : String):
-	player_rot = rot
-	print(player_rot)
+func set_rotation(rot : String, place: String):
+	player_rot [place] = rot
 
-func get_position():
-	return player_pos
+func set_parent_path(path):
+	parent_path = path
 
-func get_rotation():
-	return player_rot
+func set_player_speed(speed):
+	player_speed = speed
+
+func get_position(place):
+	return player_pos [place]
+
+func get_rotation(place):
+	return player_rot [place]
+
+func get_parent_path():
+	return parent_path
+
+func get_player_speed():
+	return player_speed

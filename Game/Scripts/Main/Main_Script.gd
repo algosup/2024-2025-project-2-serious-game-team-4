@@ -4,14 +4,18 @@ extends Node2D
 @onready var Item_Spawn_Area = $ItemSpawnArea
 @onready var Collision_Shape = $ItemSpawnArea/CollisionShape2D
 @onready var dev_tool = $CanvasLayer2
+@onready var Progress_bar = $CanvasLayer/ProgressBar
+@onready var Tree_planting_area = $Tree_planting_area
 
 var visible_trees=1
+var tree_area_visible = false
 
 signal too_many_trees
 
 func _ready():
 	spawn_random_items(10)
-	Global.add_item({"quantity": 99, "type": "Consumable", "name": "seed", "effect": "Plant_a_tree", "texture": preload("res://Assets/Icons/icon21.png")}, false)
+	if tree_area_visible:
+		Tree_planting_area.visible = true
 
 #Gets random position within the collision shape
 func get_random_position():
@@ -57,9 +61,15 @@ func _on_shroom_pressed() -> void:
 
 func _on_player_tree_spawn() -> void:
 	if visible_trees < 10:
+		Progress_bar.value += 10
 		visible_trees += 1
 		var area = get_child(4)
 		var tree = area.get_child(visible_trees)
 		tree.visible = true
 	else:
 		too_many_trees.emit()
+
+func _on_npc_spawn_tree_area() -> void:
+	Tree_planting_area.visible = true
+	tree_area_visible = true
+	Global.add_item({"quantity": 99, "type": "Consumable", "name": "seed", "effect": "Plant_a_tree", "texture": preload("res://Assets/Icons/icon21.png")}, false)

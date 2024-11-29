@@ -47,7 +47,7 @@ texture = ExtResource("6_kl7yv")
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
 offset_top = 240.0
-offset_right = 120.0
+offset_right = 240.0
 offset_bottom = 272.0
 
 [node name="Items" type="Node2D" parent="."]
@@ -59,6 +59,7 @@ position = Vector2(1.5, 14)
 shape = SubResource("RectangleShape2D_tl5pc")
 
 [node name="Tree_planting_area" type="Area2D" parent="."]
+visible = false
 position = Vector2(3, -153)
 
 [node name="ColorRect" type="ColorRect" parent="Tree_planting_area"]
@@ -92,11 +93,6 @@ visible = false
 position = Vector2(45, -73)
 texture = ExtResource("7_4t460")
 
-[node name="Tree_7" type="Sprite2D" parent="Tree_planting_area"]
-visible = false
-position = Vector2(77, -72)
-texture = ExtResource("7_4t460")
-
 [node name="Tree_5" type="Sprite2D" parent="Tree_planting_area"]
 visible = false
 position = Vector2(46, -41)
@@ -105,6 +101,11 @@ texture = ExtResource("7_4t460")
 [node name="Tree_6" type="Sprite2D" parent="Tree_planting_area"]
 visible = false
 position = Vector2(46, -8)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_7" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(77, -72)
 texture = ExtResource("7_4t460")
 
 [node name="Tree_8" type="Sprite2D" parent="Tree_planting_area"]
@@ -166,4 +167,7 @@ script = ExtResource("9_gi7r2")
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/pink_potion" to="." method="_on_pink_potion_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]
+[connection signal="spawn_tree_area" from="npc" to="." method="_on_npc_spawn_tree_area"]
 [connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]
+[connection signal="body_exited" from="portal" to="portal" method="_on_body_exited"]
+[connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
