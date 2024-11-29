@@ -70,7 +70,6 @@ func _on_player_tree_spawn() -> void:
 		too_many_trees.emit()
 
 func _on_npc_spawn_tree_area() -> void:
-	print("received")
 	Tree_planting_area.visible = true
 	tree_area_visible = true
 	Global.add_item({"quantity": 99, "type": "Consumable", "name": "seed", "effect": "Plant_a_tree", "texture": preload("res://Assets/Icons/icon21.png")}, false)

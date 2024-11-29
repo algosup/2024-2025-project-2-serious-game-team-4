@@ -11,6 +11,7 @@ offset_left = 1031.0
 offset_top = 527.0
 offset_right = 1151.0
 offset_bottom = 647.0
+metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 handle_input_locally = false

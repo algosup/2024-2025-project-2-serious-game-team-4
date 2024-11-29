@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var Interact_Pick_Up_UI = $Interact_Pick_Up_UI
 @onready var hotbar_UI = $Inventory_Hotbar
 @onready var animated_sprite = $AnimatedSprite2D
-@onready var No_More_trees = $No_More_trees
+@onready var No_More_Trees = $No_More_Trees
 
 var speed = 150
 var last_move = ""
@@ -13,12 +13,16 @@ var called = false
 
 signal tree_spawn
 
-var saved_player_pos=PlayerData.get_position()
-var saved_player_rot=PlayerData.get_rotation()
+var saved_player_pos=null
+var saved_player_rot=null
 
 @onready var Pickup_Label = $Interact_Pick_Up_UI/ColorRect/Label
 
 func _ready():
+	print(PlayerData.get_player_speed())
+	speed = PlayerData.get_player_speed()
+	saved_player_pos = PlayerData.get_position(get_parent().name)
+	saved_player_rot = PlayerData.get_rotation(get_parent().name)
 	self.position=saved_player_pos
 	last_move=saved_player_rot
 	animated_sprite.play(last_move)
@@ -30,7 +34,7 @@ func get_input():
 	velocity=input_direction * speed
 		
 #basic left, right, up, down movement for the player
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	get_input()
 	move_and_slide()
 	update_animations()
@@ -59,8 +63,7 @@ func _input(event):
 		Inventory_UI.visible = !Inventory_UI.visible
 		hotbar_UI.visible = !hotbar_UI.visible
 	if event.is_action_pressed("SETTINGS"):
-		saved_player_pos=PlayerData.set_position(self.position)
-		saved_player_rot=PlayerData.set_rotation(last_move)
+		save_player_data()
 		get_tree().change_scene_to_file("res://Scenes/Menus/settings.tscn")
 
 func apply_item_effect(item):
@@ -103,17 +106,29 @@ func _unhandled_input(event: InputEvent) -> void:
 				use_hotbar_item(i)
 				break
 
-func _on_tree_planting_area_body_entered(body: Node2D) -> void:
+func _on_tree_planting_area_body_entered(_body: Node2D) -> void:
 	in_tree_spawn = true
 
-func _on_tree_planting_area_body_exited(body: Node2D) -> void:
+func _on_tree_planting_area_body_exited(_body: Node2D) -> void:
 	in_tree_spawn = false
 
 func _on_main_too_many_trees() -> void:
 	if not called:
-		print("je sais")
-		No_More_trees.visible = true
+		No_More_Trees.visible = true
 		called = true
 		await get_tree().create_timer(2).timeout
-		No_More_trees.visible = false
+		No_More_Trees.visible = false
 		called = false
+
+func save_player_data():
+	PlayerData.set_parent_path(get_parent().get_scene_file_path())
+	PlayerData.set_position(self.position, get_parent().name)
+	PlayerData.set_rotation(last_move, get_parent().name)
+	print(speed)
+	PlayerData.set_player_speed(speed)
+
+func _on_portal_portal_entered() -> void:
+	save_player_data()
+
+func _on_portal_back_portal_entered() -> void:
+	save_player_data()

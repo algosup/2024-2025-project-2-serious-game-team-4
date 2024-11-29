@@ -1,9 +1,9 @@
 extends Node
 
+
 #This script exist to store information in between scenes as godot does not do that by default
 #It is called a singleton
 #I would like to rename it Global_Inventory but it would break everything on the github so I will wait a bit for that
-
 #Inventory Items:
 var inventory = []
 var spawnable_items = [
@@ -29,10 +29,13 @@ signal inventory_updated
 var player_node: Node = null
 @onready var inventory_slot_scene = preload("res://Scenes/UI/Inventory_Stuff/inventory_slot.tscn")
 
+
+
 func _ready():
 	#Initializes the number of slots in the inventory, changing the value will change the number of slots
 	inventory.resize(27)
 	hotbar_inventory.resize(hotbar_size)
+
 
 func add_item(item, to_hotbar = false):
 	print(item)

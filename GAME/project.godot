@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Functionality_adding_tests"
+config/name="Game"
 run/main_scene="res://Scenes/Main/MainMenu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 run/max_fps=60

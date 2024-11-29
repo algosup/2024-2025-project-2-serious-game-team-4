@@ -17,4 +17,4 @@ func _on_keybinds_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Menus/keybinds.tscn")
 
 func _on_back_to_game_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Main/start_from_scratch.tscn")
+	get_tree().change_scene_to_file(PlayerData.get_parent_path())

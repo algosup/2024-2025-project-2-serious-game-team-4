@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxk2tk8iffno1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbp0v"]
+size = Vector2(34, 61.5)
+
+[node name="portal" type="Area2D" groups=["Player", "happy"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Player", "happy"]]
+position = Vector2(7, -33.25)
+shape = SubResource("RectangleShape2D_cbp0v")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
