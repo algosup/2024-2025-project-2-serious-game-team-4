@@ -1,6 +1,6 @@
 extends Node
 
-# This is a singleton to store the players position
+# This is a singleton to store the players position 
 
 #Player position
 var player_pos : Vector2 = Vector2.ZERO
