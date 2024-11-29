@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw1b50v4vegqw"
-path="res://.godot/imported/Mariem Fixed.png-00ef5a8039f8cdc1436ae278230cf822.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://cus545kv530mw"
+valid=false
 
 [deps]
 
-source_file="res://Assets/Mariem Fixed.png"
-dest_files=["res://.godot/imported/Mariem Fixed.png-00ef5a8039f8cdc1436ae278230cf822.ctex"]
+source_file="res://Assets/TerraOffSprites/__MACOSX/TerraOffSprites/down/._TerraDownThree.png"
 
 [params]
 

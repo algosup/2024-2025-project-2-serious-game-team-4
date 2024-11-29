@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pvbo0rau6khl"
-path="res://.godot/imported/JULIAN (Final).png-955824bf81087266a7b0809f9d9a81b8.ctex"
+uid="uid://4d2twx41ilag"
+path="res://.godot/imported/TerraDownThree.png-0a9e7a981e59ab35f2821cd9ed522165.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/JULIAN (Final).png"
-dest_files=["res://.godot/imported/JULIAN (Final).png-955824bf81087266a7b0809f9d9a81b8.ctex"]
+source_file="res://Assets/TerraOffSprites/TerraOffSprites/down/TerraDownThree.png"
+dest_files=["res://.godot/imported/TerraDownThree.png-0a9e7a981e59ab35f2821cd9ed522165.ctex"]
 
 [params]
 

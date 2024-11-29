@@ -45,7 +45,7 @@ texture = ExtResource("6_kl7yv")
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
 offset_top = 240.0
-offset_right = 120.0
+offset_right = 240.0
 offset_bottom = 272.0
 
 [node name="Items" type="Node2D" parent="."]
@@ -90,11 +90,6 @@ visible = false
 position = Vector2(45, -73)
 texture = ExtResource("7_4t460")
 
-[node name="Tree_7" type="Sprite2D" parent="Tree_planting_area"]
-visible = false
-position = Vector2(77, -72)
-texture = ExtResource("7_4t460")
-
 [node name="Tree_5" type="Sprite2D" parent="Tree_planting_area"]
 visible = false
 position = Vector2(46, -41)
@@ -103,6 +98,11 @@ texture = ExtResource("7_4t460")
 [node name="Tree_6" type="Sprite2D" parent="Tree_planting_area"]
 visible = false
 position = Vector2(46, -8)
+texture = ExtResource("7_4t460")
+
+[node name="Tree_7" type="Sprite2D" parent="Tree_planting_area"]
+visible = false
+position = Vector2(77, -72)
 texture = ExtResource("7_4t460")
 
 [node name="Tree_8" type="Sprite2D" parent="Tree_planting_area"]
