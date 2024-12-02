@@ -1,12 +1,12 @@
 # 2024-2025 Project 2 - Serious Game Team 4
 
 ## Project Overview
-This project is a serious game developed by Team 4. Our game addresses climate change challenges through an interactive journey where the player will travel over the world to help country with their climate problemes. 
+This project is a serious game developed by Team 4. Our game addresses climate change challenges through an interactive journey where the player will travel over the world to help continents with their climate problems. 
 The goal of the game is to raise awareness about climate issues and inspire players to think about solutions in a challenging and engaging way.
 
 ## Gameplay and Key Features
-- **Custom UI:** Our game will include original and working UI to allow you to customise you game experience.
-- **Customs Sprites:** Our game will include original customs sprites.
+- **Custom UI:** The game features an original and functional user interface that enhances your gameplay experience.
+- **Customs Sprites:** The game includes meticulously designed, pixel-by-pixel sprites to create a unique and immersive experience.
 - **Interesting Game Experience:** The story of our game will keep the player captivated while being able to make him learn new things.
 - **Visuals and Audio:** Characters and visuals are designed in Aseprite, and sound effects and music are created on FL Studio & Abelton Live.
 
@@ -19,8 +19,10 @@ The goal of the game is to raise awareness about climate issues and inspire play
 To run this project locally:
 
 1. Clone the repository.
-2. Open the project in Godot by navigating to the main project file.
-3. Run the game from within Godot to test or make modifications.
+2. Open Godot.
+3. Click import.
+4. Select your folder to import it.
+5. Run the game from within Godot to test or make modifications.
 
 >Note: Ensure that [Godot™](https://godotengine.org/) is installed.
 
