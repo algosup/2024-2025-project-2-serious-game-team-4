@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2c2ku2snolsn"
-path="res://.godot/imported/Mariem Sprite.png-3534e1a8cad6d1cf32b57bc6e4f6f3a6.ctex"
+uid="uid://bmmw0n2auju8w"
+path="res://.godot/imported/Mariem Fixed (1).png-c546791d6bc4e17254278dc0cc410808.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mariem Sprite.png"
-dest_files=["res://.godot/imported/Mariem Sprite.png-3534e1a8cad6d1cf32b57bc6e4f6f3a6.ctex"]
+source_file="res://Assets/Mariem Fixed (1).png"
+dest_files=["res://.godot/imported/Mariem Fixed (1).png-c546791d6bc4e17254278dc0cc410808.ctex"]
 
 [params]
 

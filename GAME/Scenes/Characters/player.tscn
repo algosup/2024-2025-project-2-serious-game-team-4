@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://ckyexbu8v7e3j"]
+[gd_scene load_steps=42 format=3 uid="uid://ckyexbu8v7e3j"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/player.gd" id="1_2s006"]
 [ext_resource type="Texture2D" uid="uid://kqwcvuky7iy5" path="res://Assets/TerraOffSprites/down/TerraDownFour.png" id="3_ngj72"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://dnl3r0pqlaavw" path="res://Assets/TerraOffSprites/up/TerraUpFour.png" id="15_ks4yn"]
 [ext_resource type="Texture2D" uid="uid://dholursxqbqb3" path="res://Assets/TerraOffSprites/up/TerraUpTwo.png" id="16_7nwop"]
 [ext_resource type="Texture2D" uid="uid://kcy1p0gw3vvn" path="res://Assets/TerraOffSprites/up/TerraUpThree.png" id="17_h1cu1"]
+[ext_resource type="PackedScene" uid="uid://cig5wh0g3chs6" path="res://Scenes/Menus/settings.tscn" id="20_e1rfp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o441m"]
 atlas = ExtResource("4_7mwwp")
@@ -284,6 +285,8 @@ layout_mode = 1
 [node name="Inventory_Hotbar" type="CanvasLayer" parent="."]
 
 [node name="Inventory_Hotbar2" parent="Inventory_Hotbar" instance=ExtResource("6_3i3iy")]
+offset_left = 140.0
+offset_right = 140.0
 
 [node name="No_More_Trees" type="CanvasLayer" parent="."]
 visible = false
@@ -318,3 +321,31 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
 text = "You can no longer plant seeds in this area"
+
+[node name="Settings_UI" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Settings_UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.35, 0.945833, 1, 0.454902)
+
+[node name="Settings" parent="Settings_UI" instance=ExtResource("20_e1rfp")]
+
+[node name="Keybinds" type="Button" parent="Settings_UI"]
+offset_left = 870.0
+offset_top = 570.0
+offset_right = 1055.0
+offset_bottom = 601.0
+text = "Keybinds"
+
+[node name="Back_to_game" type="Button" parent="Settings_UI"]
+offset_left = 870.0
+offset_top = 627.0
+offset_right = 1055.0
+offset_bottom = 658.0
+text = "Back to game"
+
+[node name="Keybinds_UI" type="CanvasLayer" parent="."]
