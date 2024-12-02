@@ -3,7 +3,7 @@
 |Authors|Mathis PASCUCCI|
 |---|---|
 |Created|11/06/2024|
-|Last Modified|11/26/2023|
+|Last Modified|12/02/2024|
 ---
 <details>
 <summary>Table of Contents</summary>
@@ -70,11 +70,11 @@ Competitive players will look for challenges within the game, such as achieving 
 
 ### 3. Technology Used for the Game
 
-**Game Engine**: [Godot™](https://godotengine.org/)
-**Language Used**: [GDScript](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
-**Designs & Sprites**: Created using [Aseprite™](https://www.aseprite.org/) for pixel art and animation.
-**SFX & OST DAWs**: Developed with [FL Studio™](https://www.image-line.com/fl-studio/) and [Ableton™](https://www.ableton.com/fr/live/) for high-quality sound effects and original soundtracks.
-**Deployment Platform**: The game will be uploaded to [itch.io](https://itch.io/) to allow players to launch it directly on the web, ensuring accessibility and ease of use.
+- **Game Engine**: [Godot™](https://godotengine.org/)
+- **Language Used**: [GDScript](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
+- **Designs & Sprites**: Created using [Aseprite™](https://www.aseprite.org/) for pixel art and animation.
+- **SFX & OST DAWs**: Developed with [FL Studio™](https://www.image-line.com/fl-studio/) and [Ableton™](https://www.ableton.com/fr/live/) for high-quality sound effects and original soundtracks.
+- **Deployment Platform**: The game will be uploaded to [itch.io](https://itch.io/) to allow players to launch it directly on the web, ensuring accessibility and ease of use.
 
 ---
 
