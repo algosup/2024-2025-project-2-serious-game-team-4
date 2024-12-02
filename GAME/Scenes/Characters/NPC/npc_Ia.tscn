@@ -193,8 +193,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_dx4b5"]
 radius = 37.0
 
-[node name="npc_I" type="CharacterBody2D" node_paths=PackedStringArray("wander_direction")]
+[node name="npc_Ian" type="CharacterBody2D" node_paths=PackedStringArray("wander_direction")]
 script = ExtResource("1_pntwe")
+NPCname = "Ian"
 wander_direction = NodePath("Wander")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -216,7 +217,7 @@ offset_right = -50.0
 offset_bottom = -69.0
 
 [node name="Wander" parent="." instance=ExtResource("4_njyn6")]
-group_name = "NPC_Julian"
+group_name = "Ian"
 
 [connection signal="body_entered" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]

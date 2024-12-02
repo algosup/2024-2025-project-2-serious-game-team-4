@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://cry7n3hxaidi"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/NPC/npc.gd" id="1_u66dy"]
-[ext_resource type="Texture2D" uid="uid://bw1b50v4vegqw" path="res://Assets/Mariem Fixed.png" id="2_i6c5y"]
+[ext_resource type="Texture2D" uid="uid://cl63n7t2ajvdh" path="res://Assets/Mariem Fixed.png" id="2_i6c5y"]
 [ext_resource type="PackedScene" uid="uid://brt7mbbpey68h" path="res://Scenes/Dialogues/dialogue.tscn" id="3_t03od"]
 [ext_resource type="PackedScene" uid="uid://cjabwy13oufuc" path="res://Scenes/Characters/NPC/wander.tscn" id="4_pyb25"]
 

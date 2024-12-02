@@ -1,13 +1,13 @@
+TileMapLayer
+TileMap
 Sprite2D
 CollisionShape2D
 Area2D
 AnimatedSprite2D
 Node2D
-TileMapLayer
 CollisionPolygon2D
 PhysicalBone2D
 StaticBody2D
-TileMap
 Marker2D
 ColorRect
 TextureRect

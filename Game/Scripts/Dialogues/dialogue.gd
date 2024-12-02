@@ -57,14 +57,9 @@ func next_script(current):
 	current_dialogue_id += 1
 	if current_dialogue_id >= len(current):
 		d_active = false
-<<<<<<< HEAD:Game/Scripts/Dialogues/dialogue.gd
-		$NinePatchRect.visible = false
-		d_finished.emit()
-=======
 		container.visible = false
 		d_finished.emit(willing)
 		response = null
->>>>>>> Emilien:GAME/Scripts/Dialogues/dialogue.gd
 		return
 	container_name.text = current[current_dialogue_id]['name']
 	container_text.text = current[current_dialogue_id]['text']

@@ -36,7 +36,7 @@ func _input(event: InputEvent) -> void:
 		$dialogue.start()
 		is_chatting = true
 
-func _physics_process(_delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	if not stopped:
 		velocity = wander_direction.direction * 50
 		move_and_slide()

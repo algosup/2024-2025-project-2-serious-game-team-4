@@ -1,16 +1,2 @@
-res://Scenes/Islands/Island_2_1.tscn
-res://Scripts/Characters/NPC/wander.gd
-res://Scenes/Main/MainMenu.tscn
-res://Scenes/Characters/NPC/npc.tscn
-res://Scenes/Characters/NPC/wander.tscn
-res://Scenes/Characters/NPC/npc_Ia.tscn
-res://Scenes/Main/start_from_scratch.tscn
-res://Scenes/Characters/player.tscn
-res://Scenes/Characters/NPC/npc_Ju.tscn
-res://Scenes/Characters/NPC/Car_mov.tscn
 res://Scenes/Islands/Island_2.tscn
-res://Scenes/MapFeatures/portal_back2.gd
-res://Scenes/MapFeatures/portal2.gd
-res://Scripts/Global_(autoload)/Player_data.gd
-res://Scripts/Characters/player.gd
-res://Scripts/portals/portal.gd
+res://Scripts/Characters/NPC/wander.gd
