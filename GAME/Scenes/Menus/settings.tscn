@@ -104,14 +104,6 @@ text = "Mute
 [node name="mute" type="CheckBox" parent="VBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Keybinds" type="Button" parent="VBoxContainer/VBoxContainer"]
-layout_mode = 2
-text = "Keybinds"
-
-[node name="Back to game" type="Button" parent="VBoxContainer/VBoxContainer"]
-layout_mode = 2
-text = "Back to game"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_auf2d")
 volume_db = -80.0
@@ -120,5 +112,3 @@ volume_db = -80.0
 [connection signal="value_changed" from="VBoxContainer/VBoxContainer/Music_volume" to="." method="_on_music_volume_value_changed"]
 [connection signal="value_changed" from="VBoxContainer/VBoxContainer/SFX_volume" to="." method="_on_sfx_volume_value_changed"]
 [connection signal="toggled" from="VBoxContainer/VBoxContainer/mute" to="." method="_on_check_box_toggled"]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer/Keybinds" to="." method="_on_keybinds_pressed"]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer/Back to game" to="." method="_on_back_to_game_pressed"]

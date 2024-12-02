@@ -5,6 +5,8 @@ extends CharacterBody2D
 @onready var hotbar_UI = $Inventory_Hotbar
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var No_More_Trees = $No_More_Trees
+@onready var Settingss = $Settings
+@onready var Keybinds = $Keybinds
 
 var speed = 150
 var last_move = ""
@@ -63,8 +65,8 @@ func _input(event):
 		Inventory_UI.visible = !Inventory_UI.visible
 		hotbar_UI.visible = !hotbar_UI.visible
 	if event.is_action_pressed("SETTINGS"):
-		save_player_data()
-		get_tree().change_scene_to_file("res://Scenes/Menus/settings.tscn")
+		Settingss.visible = !Settingss.visible
+		
 
 func apply_item_effect(item):
 	match item["effect"]:
@@ -132,3 +134,16 @@ func _on_portal_portal_entered() -> void:
 
 func _on_portal_back_portal_entered() -> void:
 	save_player_data()
+
+
+func _on_keybinds_pressed() -> void:
+	Keybinds.visible = true
+	Settingss.visible = false
+
+func _on_back_to_game_pressed() -> void:
+	Keybinds.visible = false
+	Settingss.visible = false
+
+func _on_back_pressed() -> void:
+	Keybinds.visible = false
+	Settingss.visible = true
