@@ -15,18 +15,12 @@ var called = false
 
 signal tree_spawn
 
-var saved_player_pos=null
-var saved_player_rot=null
-
 @onready var Pickup_Label = $Interact_Pick_Up_UI/ColorRect/Label
 
 func _ready():
-	print(PlayerData.get_player_speed())
 	speed = PlayerData.get_player_speed()
-	saved_player_pos = PlayerData.get_position(get_parent().name)
-	saved_player_rot = PlayerData.get_rotation(get_parent().name)
-	self.position=saved_player_pos
-	last_move=saved_player_rot
+	self.position=PlayerData.get_position(get_parent().name)
+	last_move=PlayerData.get_rotation(get_parent().name)
 	animated_sprite.play(last_move)
 	Global.set_player_reference(self)
 	Pickup_Label.text="Press %s to pickup" % [InputMap.action_get_events("PICKUP")[0].as_text()]
@@ -126,7 +120,10 @@ func save_player_data():
 	PlayerData.set_parent_path(get_parent().get_scene_file_path())
 	PlayerData.set_position(self.position, get_parent().name)
 	PlayerData.set_rotation(last_move, get_parent().name)
+<<<<<<< HEAD:Game/Scripts/Characters/player.gd
 	print(speed)
+=======
+>>>>>>> Emilien:GAME/Scripts/Characters/player.gd
 	PlayerData.set_player_speed(speed)
 
 func _on_portal_portal_entered() -> void:
@@ -135,7 +132,10 @@ func _on_portal_portal_entered() -> void:
 func _on_portal_back_portal_entered() -> void:
 	save_player_data()
 
+<<<<<<< HEAD:Game/Scripts/Characters/player.gd
 
+=======
+>>>>>>> Emilien:GAME/Scripts/Characters/player.gd
 func _on_keybinds_pressed() -> void:
 	Keybinds.visible = true
 	Settingss.visible = false
@@ -147,6 +147,7 @@ func _on_back_to_game_pressed() -> void:
 func _on_back_pressed() -> void:
 	Keybinds.visible = false
 	Settingss.visible = true
+<<<<<<< HEAD:Game/Scripts/Characters/player.gd
 
 
 func _on_portal_2_portal_2() -> void:
@@ -155,3 +156,5 @@ func _on_portal_2_portal_2() -> void:
 
 func _on_portal_portal_2() -> void:
 	save_player_data()
+=======
+>>>>>>> Emilien:GAME/Scripts/Characters/player.gd

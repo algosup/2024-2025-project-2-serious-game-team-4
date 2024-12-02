@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b31ajl2wumgol"]
+
+[ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="1_egvpk"]
+
+[node name="portal_back" instance=ExtResource("1_egvpk")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, -48)

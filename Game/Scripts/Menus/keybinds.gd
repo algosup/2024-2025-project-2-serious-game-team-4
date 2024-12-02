@@ -46,13 +46,6 @@ func change_action_key(new_key):
 	
 	update_action_keys()
 
-func _on_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Menus/settings.tscn")
-
-func _on_back_to_game_pressed() -> void:
-	get_tree().paused = false
-	get_tree().change_scene_to_file("res://Scenes/Main/start_from_scratch.tscn")
-
 func _on_move_up_button_pressed() -> void:
 	toggle_action_button(ACTIONS.UP)
 
@@ -100,3 +93,9 @@ func _on_show_dev_tool_button_pressed() -> void:
 
 func _on_interact_button_pressed() -> void:
 	toggle_action_button(ACTIONS.INTERACT)
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Menus/settings.tscn")
+
+func _on_back_to_game_pressed() -> void:
+	get_tree().change_scene_to_file(PlayerData.get_parent_path())

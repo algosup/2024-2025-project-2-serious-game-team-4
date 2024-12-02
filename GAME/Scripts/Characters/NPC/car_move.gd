@@ -14,7 +14,7 @@ func update_animations():
 			else:
 				animated_sprite.play("Walk_Left")
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if not stopped:
 		velocity = wander_direction.direction2 * 500
 		move_and_slide()
