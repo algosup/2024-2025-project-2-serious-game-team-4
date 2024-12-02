@@ -309,6 +309,30 @@ size_flags_horizontal = 3
 [node name="VScrollBar" type="VScrollBar" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 570.0
+offset_right = 160.0
+offset_bottom = 601.0
+grow_horizontal = 2
+text = "Back"
+
+[node name="Back to Game" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 615.0
+offset_right = 160.0
+offset_bottom = 646.0
+grow_horizontal = 2
+text = "Back to Game"
+
 [connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_UP/Button" to="." method="_on_move_up_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_DOWN/Button" to="." method="_on_move_down_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_LEFT/Button" to="." method="_on_move_left_button_pressed"]
@@ -325,3 +349,5 @@ layout_mode = 2
 [connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR7/Button" to="." method="_on_hotbar_7_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_SHOWDEVTOOL/Button" to="." method="_on_show_dev_tool_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_INTERACT/Button" to="." method="_on_interact_button_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Back to Game" to="." method="_on_back_to_game_pressed"]

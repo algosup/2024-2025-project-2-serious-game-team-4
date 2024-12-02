@@ -108,7 +108,25 @@ layout_mode = 2
 stream = ExtResource("2_auf2d")
 volume_db = -80.0
 
+[node name="Keybinds" type="Button" parent="."]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 520.0
+offset_right = 1055.0
+offset_bottom = 551.0
+text = "Keybinds"
+
+[node name="Back to Game" type="Button" parent="."]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 570.0
+offset_right = 1055.0
+offset_bottom = 601.0
+text = "Back to Game"
+
 [connection signal="value_changed" from="VBoxContainer/VBoxContainer/Master_volume" to="." method="_on_master_volume_value_changed"]
 [connection signal="value_changed" from="VBoxContainer/VBoxContainer/Music_volume" to="." method="_on_music_volume_value_changed"]
 [connection signal="value_changed" from="VBoxContainer/VBoxContainer/SFX_volume" to="." method="_on_sfx_volume_value_changed"]
 [connection signal="toggled" from="VBoxContainer/VBoxContainer/mute" to="." method="_on_check_box_toggled"]
+[connection signal="pressed" from="Keybinds" to="." method="_on_keybinds_pressed"]
+[connection signal="pressed" from="Back to Game" to="." method="_on_back_to_game_pressed"]
