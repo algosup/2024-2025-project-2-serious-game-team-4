@@ -80,4 +80,6 @@ func Where_to_look():
 		where_to_look = x_side
 	else:
 		where_to_look = y_side
-	
+
+func _on_top_choice(choice: Variant) -> void:
+	pass # Replace with function body.

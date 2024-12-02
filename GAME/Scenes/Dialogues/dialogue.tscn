@@ -18,8 +18,8 @@ script = ExtResource("1_6jmpk")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_right = 98.0
-offset_bottom = 47.0
+offset_right = 200.0
+offset_bottom = 50.0
 texture = ExtResource("1_7bdki")
 patch_margin_left = 1
 patch_margin_top = 1
@@ -39,7 +39,7 @@ text = "Name : "
 layout_mode = 0
 offset_left = 3.0
 offset_top = 16.0
-offset_right = 233.0
-offset_bottom = 86.0
+offset_right = 253.0
+offset_bottom = 216.0
 scale = Vector2(0.4, 0.4)
 text = "Tete de neuil va"

@@ -21,10 +21,6 @@ config/icon="res://Assets/icon.svg"
 Global="*res://Scripts/Global_(autoload)/Global.gd"
 PlayerData="*res://Scripts/Global_(autoload)/Player_data.gd"
 
-[debug]
-
-settings/stdout/print_fps=true
-
 [display]
 
 window/size/viewport_width=1920
