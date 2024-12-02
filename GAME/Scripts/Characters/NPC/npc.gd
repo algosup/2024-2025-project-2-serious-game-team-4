@@ -1,10 +1,12 @@
 extends CharacterBody2D
 
+@export var NPCname : String
 @export var wander_direction : Node2D
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var dialogue = $dialogue
 
 signal spawn_tree_area
+signal choice
 
 var tree_spawned = false
 var done = false
@@ -31,7 +33,6 @@ func update_animations():
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("INTERACT") and not done:
-		print ("chatting w npc")
 		$dialogue.start()
 		is_chatting = true
 
@@ -58,9 +59,9 @@ func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 		stopped = false
 		dialogue.visible = false
 
-func _on_dialogue_d_finished() -> void:
+func _on_dialogue_d_finished(willing) -> void:
 	done = true
-	if not tree_spawned:
+	if not tree_spawned and willing:
 		tree_spawned = true
 		spawn_tree_area.emit()
 
@@ -80,6 +81,3 @@ func Where_to_look():
 		where_to_look = x_side
 	else:
 		where_to_look = y_side
-
-func _on_top_choice(choice: Variant) -> void:
-	pass # Replace with function body.

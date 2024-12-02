@@ -1,11 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://4esnetqov2pm"]
+[gd_scene load_steps=29 format=3 uid="uid://4esnetqov2pm"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/NPC/npc.gd" id="1_jiu1v"]
 [ext_resource type="Texture2D" uid="uid://cl63n7t2ajvdh" path="res://Assets/Mariem Fixed.png" id="2_b2fk5"]
 [ext_resource type="Texture2D" uid="uid://bmmw0n2auju8w" path="res://Assets/Mariem Fixed (1).png" id="2_drq6p"]
 [ext_resource type="PackedScene" uid="uid://brt7mbbpey68h" path="res://Scenes/Dialogues/dialogue.tscn" id="3_rxceu"]
 [ext_resource type="PackedScene" uid="uid://cjabwy13oufuc" path="res://Scenes/Characters/NPC/wander.tscn" id="4_lgqlr"]
-[ext_resource type="PackedScene" uid="uid://cbpmskn24rrx2" path="res://Scenes/Dialogues/choice_dialog.tscn" id="6_71e4v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ig7p"]
 atlas = ExtResource("2_b2fk5")
@@ -221,14 +220,6 @@ metadata/_edit_use_anchors_ = true
 [node name="Wander" parent="." instance=ExtResource("4_lgqlr")]
 group_name = "NPC_Test"
 
-[node name="Top" parent="." instance=ExtResource("6_71e4v")]
-visible = false
-offset_left = 52.0
-offset_top = -68.0
-offset_right = 52.0
-offset_bottom = -68.0
-
-[connection signal="spawn_tree_area" from="." to="Top" method="_on_npc_spawn_tree_area"]
 [connection signal="body_entered" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]
 [connection signal="d_finished" from="dialogue" to="." method="_on_dialogue_d_finished"]

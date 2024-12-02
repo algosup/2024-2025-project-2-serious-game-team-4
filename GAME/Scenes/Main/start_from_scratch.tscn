@@ -154,6 +154,7 @@ position = Vector2(-73, 26)
 
 [node name="npc" parent="." instance=ExtResource("5_yypua")]
 position = Vector2(-75, -75)
+NPCname = "Mariem"
 
 [node name="Player" parent="." instance=ExtResource("3_7dml7")]
 
