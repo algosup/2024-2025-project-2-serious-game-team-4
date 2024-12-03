@@ -1,35 +1,33 @@
-[gd_scene load_steps=39 format=4 uid="uid://bglturxgofueg"]
+[gd_scene load_steps=37 format=4 uid="uid://bm5tlc677n8yt"]
 
-[ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
-[ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_rclli"]
-[ext_resource type="Texture2D" uid="uid://bp2gk4odjasda" path="res://Assets/Island_2/roads2W.png" id="3_ub604"]
-[ext_resource type="Texture2D" uid="uid://yvhqvd2elmna" path="res://Assets/Island_2/rpg city assets.png" id="4_u8f8x"]
-[ext_resource type="Texture2D" uid="uid://b5krmx80cot0c" path="res://Assets/Island_2/rpg city assets turned.png" id="5_dawgt"]
-[ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="6_tc8lt"]
-[ext_resource type="Texture2D" uid="uid://dsny3oddb5bqg" path="res://Assets/Island_2/Building Vers 4.png" id="7_lwn08"]
-[ext_resource type="Texture2D" uid="uid://v6ax4totv7s0" path="res://Assets/Island_2/Building Vers 3.png" id="8_4b1vt"]
-[ext_resource type="Texture2D" uid="uid://b8knhi5u8v8v4" path="res://Assets/Island_2/Factory 2.png" id="9_k6tbp"]
-[ext_resource type="Texture2D" uid="uid://de3vky72a61ub" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png" id="9_rac4u"]
-[ext_resource type="Texture2D" uid="uid://dgtplutnjcw1i" path="res://Assets/Island_2/Factory 5.png" id="10_jwf35"]
-[ext_resource type="Texture2D" uid="uid://bwfemnb074k55" path="res://Assets/Island_2/1 fence Side 2.png" id="11_yon4i"]
-[ext_resource type="Texture2D" uid="uid://chja24gbm3uoj" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-7.png.png" id="12_tqde5"]
-[ext_resource type="Texture2D" uid="uid://dt1qv4bomf31q" path="res://Assets/Island_2/Factory 6.png" id="14_7bm22"]
-[ext_resource type="Script" path="res://Scenes/MapFeatures/portal_back2.gd" id="20_urxxn"]
-[ext_resource type="Texture2D" uid="uid://ckdm6kh0yy2nc" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-4.png.png" id="22_b7m0x"]
-[ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="26_jg2u4"]
-[ext_resource type="Script" path="res://Scenes/MapFeatures/portal3.gd" id="27_pvog5"]
-[ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="28_py124"]
-[ext_resource type="Texture2D" uid="uid://c75nqnfkix0v4" path="res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png" id="29_ietuq"]
-[ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="30_50wse"]
-[ext_resource type="PackedScene" uid="uid://c5ve3jstlwg1" path="res://Scenes/Characters/NPC/npc_Ia.tscn" id="31_qlmhx"]
-[ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="32_2s5k7"]
-[ext_resource type="Script" path="res://Scripts/portals/portal_back.gd" id="33_a3862"]
-[ext_resource type="Texture2D" uid="uid://qt13efvmw72d" path="res://Assets/Island_2/2-removebg-preview-2.png" id="34_2jyx8"]
-[ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="35_mmee1"]
-[ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="36_itejp"]
+[ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_yqnic"]
+[ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_yxy4t"]
+[ext_resource type="Texture2D" uid="uid://bp2gk4odjasda" path="res://Assets/Island_2/roads2W.png" id="3_7pap4"]
+[ext_resource type="Texture2D" uid="uid://yvhqvd2elmna" path="res://Assets/Island_2/rpg city assets.png" id="4_47wn5"]
+[ext_resource type="Texture2D" uid="uid://b5krmx80cot0c" path="res://Assets/Island_2/rpg city assets turned.png" id="5_u087j"]
+[ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="6_544kr"]
+[ext_resource type="Texture2D" uid="uid://de3vky72a61ub" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png" id="7_pjega"]
+[ext_resource type="Texture2D" uid="uid://ckdm6kh0yy2nc" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-4.png.png" id="8_h3a6g"]
+[ext_resource type="Texture2D" uid="uid://dsny3oddb5bqg" path="res://Assets/Island_2/Building Vers 4.png" id="9_v2vty"]
+[ext_resource type="Texture2D" uid="uid://bwfemnb074k55" path="res://Assets/Island_2/1 fence Side 2.png" id="10_som8n"]
+[ext_resource type="Texture2D" uid="uid://chja24gbm3uoj" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-7.png.png" id="11_6jbek"]
+[ext_resource type="Texture2D" uid="uid://v6ax4totv7s0" path="res://Assets/Island_2/Building Vers 3.png" id="12_ys5wu"]
+[ext_resource type="Texture2D" uid="uid://b8knhi5u8v8v4" path="res://Assets/Island_2/Factory 2.png" id="13_lp5m4"]
+[ext_resource type="Texture2D" uid="uid://dgtplutnjcw1i" path="res://Assets/Island_2/Factory 5.png" id="14_pq10y"]
+[ext_resource type="Texture2D" uid="uid://dt1qv4bomf31q" path="res://Assets/Island_2/Factory 6.png" id="15_h2xu5"]
+[ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="16_m4hhe"]
+[ext_resource type="Texture2D" uid="uid://c75nqnfkix0v4" path="res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png" id="17_1tlq2"]
+[ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="18_k43ee"]
+[ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="19_p6jkd"]
+[ext_resource type="Script" path="res://Scripts/portals/portal_back.gd" id="20_f4bhk"]
+[ext_resource type="Texture2D" uid="uid://qt13efvmw72d" path="res://Assets/Island_2/2-removebg-preview-2.png" id="21_07pmq"]
+[ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="22_g1ebp"]
+[ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="23_q7e0b"]
+[ext_resource type="Script" path="res://Scenes/MapFeatures/portal_back2.gd" id="24_3llc5"]
+[ext_resource type="PackedScene" uid="uid://c5ve3jstlwg1" path="res://Scenes/Characters/NPC/npc_Ia.tscn" id="25_2ifvm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jqy55"]
-texture = ExtResource("1_hakqf")
+texture = ExtResource("1_yqnic")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -37,7 +35,7 @@ texture_region_size = Vector2i(32, 32)
 1:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6w1hm"]
-texture = ExtResource("2_rclli")
+texture = ExtResource("2_yxy4t")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -64,7 +62,7 @@ texture = ExtResource("2_rclli")
 3:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5iiox"]
-texture = ExtResource("3_ub604")
+texture = ExtResource("3_7pap4")
 margins = Vector2i(16, 16)
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -357,7 +355,7 @@ texture_region_size = Vector2i(32, 32)
 7:11/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6rqoq"]
-texture = ExtResource("4_u8f8x")
+texture = ExtResource("4_47wn5")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -564,7 +562,7 @@ texture = ExtResource("4_u8f8x")
 11:16/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_duryp"]
-texture = ExtResource("5_dawgt")
+texture = ExtResource("5_u087j")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -793,19 +791,19 @@ distance = -918.0
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("34_2jyx8")
+"texture": ExtResource("21_07pmq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_2jyx8")
+"texture": ExtResource("21_07pmq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_mmee1")
+"texture": ExtResource("22_g1ebp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_itejp")
+"texture": ExtResource("23_q7e0b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_mmee1")
+"texture": ExtResource("22_g1ebp")
 }],
 "loop": true,
 "name": &"default",
@@ -843,7 +841,7 @@ rotation = -1.5708
 shape = SubResource("WorldBoundaryShape2D_b5rub")
 disabled = true
 
-[node name="Player" parent="." instance=ExtResource("6_tc8lt")]
+[node name="Player" parent="." instance=ExtResource("6_544kr")]
 position = Vector2(-2, 33)
 
 [node name="Buildings" type="TileMapLayer" parent="."]
@@ -854,66 +852,66 @@ position = Vector2(-1853, -721)
 
 [node name="(2)1FenceSide1-2-5_png" type="Sprite2D" parent="Buildings"]
 position = Vector2(-1793, -700)
-texture = ExtResource("9_rac4u")
+texture = ExtResource("7_pjega")
 
 [node name="(2)1FenceSide1-2-4_png" type="Sprite2D" parent="Buildings"]
 position = Vector2(-856, -696)
-texture = ExtResource("22_b7m0x")
+texture = ExtResource("8_h3a6g")
 
 [node name="BuildingVers6" type="Sprite2D" parent="Buildings"]
 position = Vector2(-1389, -679)
-texture = ExtResource("7_lwn08")
+texture = ExtResource("9_v2vty")
 
 [node name="1FenceSide3" type="Sprite2D" parent="Buildings"]
 position = Vector2(-1842, -576)
-texture = ExtResource("11_yon4i")
+texture = ExtResource("10_som8n")
 
 [node name="1FenceSide2" type="Sprite2D" parent="Buildings"]
 position = Vector2(-1842, -428)
-texture = ExtResource("11_yon4i")
+texture = ExtResource("10_som8n")
 
 [node name="(2)1FenceSide1-2-7_png" type="Sprite2D" parent="Buildings"]
 position = Vector2(-1793, -255)
-texture = ExtResource("12_tqde5")
+texture = ExtResource("11_6jbek")
 
 [node name="BuildingVers3" type="Sprite2D" parent="Buildings"]
 position = Vector2(-1128, -679)
-texture = ExtResource("8_4b1vt")
+texture = ExtResource("12_ys5wu")
 
 [node name="BuildingVers4" type="Sprite2D" parent="Buildings"]
 self_modulate = Color(1, 1, 1, 0.145098)
 position = Vector2(-1386, -238)
-texture = ExtResource("7_lwn08")
+texture = ExtResource("9_v2vty")
 
 [node name="Factory9" type="Sprite2D" parent="Buildings"]
 self_modulate = Color(1, 1, 1, 0.14902)
 position = Vector2(-1792, 218)
-texture = ExtResource("9_k6tbp")
+texture = ExtResource("13_lp5m4")
 
 [node name="Factory8" type="Sprite2D" parent="Buildings"]
 self_modulate = Color(1, 1, 1, 0.14902)
 position = Vector2(-1792, 298)
-texture = ExtResource("9_k6tbp")
+texture = ExtResource("13_lp5m4")
 
 [node name="Factory5" type="Sprite2D" parent="Buildings"]
 self_modulate = Color(1, 1, 1, 0.14902)
 position = Vector2(-2023, 397)
-texture = ExtResource("9_k6tbp")
+texture = ExtResource("13_lp5m4")
 
 [node name="Factory4" type="Sprite2D" parent="Buildings"]
 self_modulate = Color(1, 1, 1, 0.14902)
 position = Vector2(-2023, 497)
-texture = ExtResource("9_k6tbp")
+texture = ExtResource("13_lp5m4")
 
 [node name="Factory7" type="Sprite2D" parent="Buildings"]
 self_modulate = Color(1, 1, 1, 0.14902)
 position = Vector2(-81, -151)
-texture = ExtResource("10_jwf35")
+texture = ExtResource("14_pq10y")
 
 [node name="Factory6" type="Sprite2D" parent="Buildings"]
 self_modulate = Color(1, 1, 1, 0.14902)
 position = Vector2(-1136, 299)
-texture = ExtResource("14_7bm22")
+texture = ExtResource("15_h2xu5")
 
 [node name="Sprite2D" type="Sprite2D" parent="Buildings"]
 position = Vector2(-1244.5, -556.606)
@@ -932,10 +930,10 @@ metadata/_edit_use_anchors_ = true
 handle_input_locally = false
 size = Vector2i(120, 120)
 render_target_update_mode = 0
-script = ExtResource("28_py124")
+script = ExtResource("16_m4hhe")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
-texture = ExtResource("29_ietuq")
+texture = ExtResource("17_1tlq2")
 
 [node name="Camera2D" type="Camera2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
 zoom = Vector2(0.5, 0.5)
@@ -943,7 +941,7 @@ zoom = Vector2(0.5, 0.5)
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer"]
 position = Vector2(60, 60)
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("30_50wse")
+texture = ExtResource("18_k43ee")
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
 offset_top = 304.0
@@ -955,9 +953,9 @@ top_level = true
 visibility_layer = 6
 position = Vector2(1389, 219)
 
-[node name="portal_back" parent="Collisions" instance=ExtResource("32_2s5k7")]
+[node name="portal_back" parent="Collisions" instance=ExtResource("19_p6jkd")]
 position = Vector2(24, 5)
-script = ExtResource("33_a3862")
+script = ExtResource("20_f4bhk")
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Collisions"]
 position = Vector2(-2560, -328)
@@ -1062,14 +1060,14 @@ sprite_frames = SubResource("SpriteFrames_8mv3j")
 autoplay = "default"
 frame_progress = 0.525143
 
-[node name="portal_back" parent="." instance=ExtResource("32_2s5k7")]
+[node name="portal_back" parent="." instance=ExtResource("19_p6jkd")]
 position = Vector2(-54, 189)
 rotation = 1.5708
-script = ExtResource("20_urxxn")
+script = ExtResource("24_3llc5")
 
-[node name="portal_back2" parent="." instance=ExtResource("32_2s5k7")]
+[node name="portal_back2" parent="." instance=ExtResource("19_p6jkd")]
 position = Vector2(664, -163)
-script = ExtResource("20_urxxn")
+script = ExtResource("24_3llc5")
 
 [node name="Marker2D" type="Marker2D" parent="." groups=["npc_Ian"]]
 position = Vector2(-71, -15)
@@ -1077,9 +1075,5 @@ position = Vector2(-71, -15)
 [node name="Marker2D2" type="Marker2D" parent="." groups=["npc_Ian"]]
 position = Vector2(-243, -15)
 
-[node name="npc_Ian" parent="." instance=ExtResource("31_qlmhx")]
+[node name="npc_Ian" parent="." instance=ExtResource("25_2ifvm")]
 position = Vector2(-147, -22)
-
-[node name="portal3" parent="." instance=ExtResource("26_jg2u4")]
-position = Vector2(156, -293)
-script = ExtResource("27_pvog5")

@@ -1,2 +1,11 @@
 res://Scenes/Islands/Island_2.tscn
 res://Scripts/Characters/NPC/wander.gd
+res://Scenes/Islands/Island_2_1.tscn
+res://Scenes/Main/MainMenu.tscn
+res://Scenes/Characters/NPC/npc.tscn
+res://Scenes/Characters/NPC/npc_Ia.tscn
+res://Scenes/Main/start_from_scratch.tscn
+res://Scenes/Characters/player.tscn
+res://Scenes/Islands/Island_2_1_Sky.tscn
+res://Scenes/MapFeatures/portal2.gd
+res://Scenes/MapFeatures/portal3.gd
