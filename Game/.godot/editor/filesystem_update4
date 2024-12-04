@@ -9,3 +9,8 @@ res://Scenes/Characters/player.tscn
 res://Scenes/Islands/Island_2_1_Sky.tscn
 res://Scenes/MapFeatures/portal2.gd
 res://Scenes/MapFeatures/portal3.gd
+res://Scenes/MapFeatures/portal_back.tscn
+res://Scenes/MapFeatures/portal_back3.gd
+res://Scripts/Characters/player.gd
+res://Scripts/Main/Main_Script.gd
+res://Scenes/Islands/island_2_1_sky.gd

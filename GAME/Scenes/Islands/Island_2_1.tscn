@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://bglturxgofueg"]
+[gd_scene load_steps=38 format=4 uid="uid://bglturxgofueg"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
 [ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_rclli"]
@@ -23,7 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="30_50wse"]
 [ext_resource type="PackedScene" uid="uid://c5ve3jstlwg1" path="res://Scenes/Characters/NPC/npc_Ia.tscn" id="31_qlmhx"]
 [ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="32_2s5k7"]
-[ext_resource type="Script" path="res://Scripts/portals/portal_back.gd" id="33_a3862"]
 [ext_resource type="Texture2D" uid="uid://qt13efvmw72d" path="res://Assets/Island_2/2-removebg-preview-2.png" id="34_2jyx8"]
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="35_mmee1"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="36_itejp"]
@@ -954,10 +953,6 @@ offset_bottom = 336.0
 top_level = true
 visibility_layer = 6
 position = Vector2(1389, 219)
-
-[node name="portal_back" parent="Collisions" instance=ExtResource("32_2s5k7")]
-position = Vector2(24, 5)
-script = ExtResource("33_a3862")
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Collisions"]
 position = Vector2(-2560, -328)
