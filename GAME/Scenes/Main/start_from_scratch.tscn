@@ -152,11 +152,11 @@ position = Vector2(-75, -186)
 [node name="Marker2D" type="Marker2D" parent="." groups=["NPC_Test"]]
 position = Vector2(-73, 26)
 
+[node name="Player" parent="." instance=ExtResource("3_7dml7")]
+
 [node name="npc" parent="." instance=ExtResource("5_yypua")]
 position = Vector2(-75, -75)
 NPCname = "Mariem"
-
-[node name="Player" parent="." instance=ExtResource("3_7dml7")]
 
 [node name="portal" parent="." instance=ExtResource("8_ey5kp")]
 position = Vector2(142, -49)
@@ -168,7 +168,7 @@ script = ExtResource("9_gi7r2")
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/pink_potion" to="." method="_on_pink_potion_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]
-[connection signal="spawn_tree_area" from="npc" to="." method="_on_npc_spawn_tree_area"]
 [connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]
+[connection signal="spawn_tree_area" from="npc" to="." method="_on_npc_spawn_tree_area"]
 [connection signal="body_exited" from="portal" to="portal" method="_on_body_exited"]
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]

@@ -10,7 +10,6 @@ signal choice
 
 var tree_spawned = false
 var done = false
-var is_chatting = false
 var player
 var player_in_chat_zone = false
 var stopped = false
@@ -32,9 +31,8 @@ func update_animations():
 				animated_sprite.play("Walk_Up")
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("INTERACT") and not done:
+	if event.is_action_pressed("INTERACT") and not done and player_in_chat_zone:
 		$dialogue.start()
-		is_chatting = true
 
 func _physics_process(_delta: float) -> void:
 	if not stopped:
@@ -64,6 +62,8 @@ func _on_dialogue_d_finished(willing) -> void:
 	if not tree_spawned and willing:
 		tree_spawned = true
 		spawn_tree_area.emit()
+	await get_tree().create_timer(0.000001).timeout
+	done = false
 
 func Where_to_look():
 	var relative_pos = Global.player_node.position - self.position

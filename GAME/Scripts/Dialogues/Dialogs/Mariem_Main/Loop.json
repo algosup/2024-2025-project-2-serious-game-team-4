@@ -1,0 +1,15 @@
+[
+	{"name": "Mariem", "text": "It works yipee", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Mariem", "text": "Welcome to this place!", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Mariem", "text": "As you can see, it's very barren and needs trees", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Mariem", "text": "(I know it doesn't)", "Interact" : 0, "step" : 0, "ending" : 0}, 
+	{"name": "Mariem", "text": "(this is just a tutorial)", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Mariem", "text": "(please roll with it)", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Mariem", "text": "Anyway can you come plant some trees please?", "Interact" : 1, "step" : 0, "Responses" : ["Yes I would love to plant some trees!", "Raph t'abuses mec jpp aled ouin"], "ending" : 0},
+	{"name": "Mariem", "text": "Great, I knew I could count on you", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Mariem", "text": "you're the best.", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Mariem", "text": "end", "Interact" : 0, "step" : 0, "ending" : 1},
+	{"name": "Mariem", "text": "ça m'a vraiment pris 5 minutes à implémenter gros t'abuses", "Interact" : 0, "step" : 1, "ending" : 0},
+	{"name": "Mariem", "text": "tête de neuil", "Interact" : 0, "step" : 1, "ending" : 0},
+	{"name": "Mariem", "text": "end", "Interact" : 0, "step" : 1, "ending" : 1}
+]
