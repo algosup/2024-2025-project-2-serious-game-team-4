@@ -853,7 +853,7 @@ position = Vector2(1860, 816)
 position = Vector2(-1853, -721)
 
 [node name="(2)1FenceSide1-2-5_png" type="Sprite2D" parent="Buildings"]
-position = Vector2(-1792, -696)
+position = Vector2(-1791, -701)
 texture = ExtResource("7_pjega")
 
 [node name="1Fence3" type="Sprite2D" parent="Buildings"]
@@ -865,7 +865,7 @@ position = Vector2(-1589, -721)
 texture = ExtResource("12_ku5q4")
 
 [node name="1FenceSide3" type="Sprite2D" parent="Buildings"]
-position = Vector2(-1841, -576)
+position = Vector2(-1841, -577)
 texture = ExtResource("10_som8n")
 
 [node name="1FenceSide2" type="Sprite2D" parent="Buildings"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://bglturxgofueg"]
+[gd_scene load_steps=39 format=4 uid="uid://bglturxgofueg"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
 [ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_rclli"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dgtplutnjcw1i" path="res://Assets/Island_2/Factory 5.png" id="10_jwf35"]
 [ext_resource type="Texture2D" uid="uid://bwfemnb074k55" path="res://Assets/Island_2/1 fence Side 2.png" id="11_yon4i"]
 [ext_resource type="Texture2D" uid="uid://chja24gbm3uoj" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-7.png.png" id="12_tqde5"]
+[ext_resource type="Texture2D" uid="uid://sqa62445pxim" path="res://Assets/Island_2/Tileset_Highschool.png" id="13_e17ek"]
 [ext_resource type="Texture2D" uid="uid://dt1qv4bomf31q" path="res://Assets/Island_2/Factory 6.png" id="14_7bm22"]
 [ext_resource type="Script" path="res://Scenes/MapFeatures/portal_back2.gd" id="20_urxxn"]
 [ext_resource type="Texture2D" uid="uid://ckdm6kh0yy2nc" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-4.png.png" id="22_b7m0x"]
@@ -811,7 +812,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Island2" type="Node2D"]
+[node name="Island3" type="Node2D"]
 position = Vector2(-1773, -196)
 
 [node name="floor" type="TileMapLayer" parent="."]
@@ -883,6 +884,10 @@ texture = ExtResource("8_4b1vt")
 self_modulate = Color(1, 1, 1, 0.145098)
 position = Vector2(-1386, -238)
 texture = ExtResource("7_lwn08")
+
+[node name="TilesetHighschool" type="Sprite2D" parent="Buildings"]
+position = Vector2(-1429, -1168)
+texture = ExtResource("13_e17ek")
 
 [node name="Factory9" type="Sprite2D" parent="Buildings"]
 self_modulate = Color(1, 1, 1, 0.14902)
