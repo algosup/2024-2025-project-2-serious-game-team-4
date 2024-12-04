@@ -22,3 +22,10 @@ res://Scenes/MapFeatures/portal3.gd
 res://Scenes/MapFeatures/portal2.gd
 res://Scripts/Characters/NPC/car_move.gd
 res://Scenes/MapFeatures/portal.tscn
+res://Scripts/Characters/NPC/npc.gd
+res://Scripts/Menus/settings.gd
+res://Scripts/UI/Minimap.gd
+res://Scripts/Characters/player.gd
+res://Scenes/Islands/BuildingTrans.gd
+res://Scenes/Islands/BehindBuidling2.gd
+res://Scenes/Islands/Behind_Building3.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://bm5tlc677n8yt"]
+[gd_scene load_steps=36 format=4 uid="uid://bm5tlc677n8yt"]
 
 [ext_resource type="Script" path="res://Scenes/Islands/island_2_1_sky.gd" id="1_6fev0"]
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_yqnic"]
@@ -17,13 +17,12 @@
 [ext_resource type="Texture2D" uid="uid://dt1qv4bomf31q" path="res://Assets/Island_2/Factory 6.png" id="15_h2xu5"]
 [ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="16_m4hhe"]
 [ext_resource type="Texture2D" uid="uid://c75nqnfkix0v4" path="res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png" id="17_1tlq2"]
-[ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="18_k43ee"]
+[ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="18_k43ee"]
 [ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="19_p6jkd"]
 [ext_resource type="Texture2D" uid="uid://qt13efvmw72d" path="res://Assets/Island_2/2-removebg-preview-2.png" id="21_07pmq"]
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="22_g1ebp"]
 [ext_resource type="Texture2D" uid="uid://sqa62445pxim" path="res://Assets/Island_2/Tileset_Highschool.png" id="23_olr2o"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="23_q7e0b"]
-[ext_resource type="Script" path="res://Scenes/MapFeatures/portal_back2.gd" id="24_3llc5"]
 [ext_resource type="Script" path="res://Scenes/MapFeatures/portal_back3.gd" id="24_ge00a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jqy55"]
@@ -828,11 +827,6 @@ scale = Vector2(0.11119, 0.0737224)
 sprite_frames = SubResource("SpriteFrames_8mv3j")
 autoplay = "default"
 frame_progress = 0.525143
-
-[node name="portal_back" parent="." instance=ExtResource("19_p6jkd")]
-position = Vector2(394, 786)
-rotation = 1.5708
-script = ExtResource("24_3llc5")
 
 [node name="portal_back2" parent="." instance=ExtResource("19_p6jkd")]
 position = Vector2(-1, -15)

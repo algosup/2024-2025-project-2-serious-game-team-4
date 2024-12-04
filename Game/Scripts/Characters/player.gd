@@ -8,6 +8,7 @@ extends CharacterBody2D
 @onready var Settingss = $Settings
 @onready var Keybinds = $Keybinds
 
+
 var speed = 150
 var last_move = ""
 var in_tree_spawn = false
