@@ -1,5 +1,6 @@
-res://Scenes/Islands/Island2_Buildings
 res://Assets/Island_2
+res://Scripts/portals
+res://Scenes/Islands/Island2_Buildings
 res://Assets/fire_column_medium
 res://Scripts/Characters/NPC
 res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH/SEPARATED
@@ -17,5 +18,4 @@ res://Assets/TopDown Vehicles v1/JEEP TOP DOWN/Yellow/SEPARATED
 res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED
 res://Scenes/Islands
 res://Scripts/Characters
-res://Scripts/portals
 C:/Users/EmilienCHINSY/Documents/Godot Projects/Exports/Web

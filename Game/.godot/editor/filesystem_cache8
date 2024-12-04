@@ -1,89 +1,89 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733308878
+::res://::1733311515
 export_presets.cfg::TextFile::-1::1733308348::0::1::::<><>::
-::res://Assets/::1733308402
-chatbox.png::CompressedTexture2D::6757282332037016617::1733308348::1733308402::1::::<><>::
-freakyMenu.ogg::AudioStreamOggVorbis::9036775073415920891::1733308348::1733308401::1::::<><>::
+::res://Assets/::1733319423
+chatbox.png::CompressedTexture2D::6757282332037016617::1733311515::1733319423::1::::<><>::
+freakyMenu.ogg::AudioStreamOggVorbis::9036775073415920891::1733311515::1733319422::1::::<><>::
 Ian Sprite.png::CompressedTexture2D::4965015144531736847::1732895826::1733152300::1::::<><>::
-icon.svg::CompressedTexture2D::2006911830274694032::1733308348::1733308402::1::::<><>::
+icon.svg::CompressedTexture2D::2006911830274694032::1733311515::1733319423::1::::<><>::
 InventoryBox.png::CompressedTexture2D::117360892567816855::1732895826::1733152300::1::::<><>::
-JULIAN (Final).png::CompressedTexture2D::144131126510943434::1733308348::1733308402::1::::<><>::
+JULIAN (Final).png::CompressedTexture2D::144131126510943434::1733311515::1733319423::1::::<><>::
 Julian Sprite.png::CompressedTexture2D::2248473173908665298::1733151850::1733152300::1::::<><>::
 Mariem Fixed (1).png::CompressedTexture2D::3254840483627067408::1733151850::1733152300::1::::<><>::
-Mariem Fixed.png::CompressedTexture2D::5610639360224259113::1733308348::1733308402::1::::<><>::
+Mariem Fixed.png::CompressedTexture2D::5610639360224259113::1733311515::1733319423::1::::<><>::
 MATHIS FIXED TEESHIRT.png::CompressedTexture2D::687222091431385486::1733151850::1733152300::1::::<><>::
-menu.png::CompressedTexture2D::2116308762309509620::1733308348::1733308401::0::::<><>::
-npc.png::CompressedTexture2D::3162700740392809302::1733308348::1733308402::1::::<><>::
-person.png::CompressedTexture2D::1765741991189200742::1733308348::1733308402::1::::<><>::
-Screenshot 2024-11-14 114117.png::CompressedTexture2D::6671941076158844752::1733308348::1733308402::1::::<><>::
-SLOTINV.png::CompressedTexture2D::5990067738073421528::1733308348::1733308402::1::::<><>::
-star_01.png::CompressedTexture2D::2432751583214306772::1733308348::1733308402::1::::<><>::
-tree.png::CompressedTexture2D::3312089302715824957::1733308348::1733308402::1::::<><>::
-::res://Assets/fire_column_medium/::1733308402
-fire_column_medium_1.png::CompressedTexture2D::5075096397492756678::1733308348::1733308402::1::::<><>::
-fire_column_medium_2.png::CompressedTexture2D::7303709666567506507::1733308348::1733308402::1::::<><>::
-fire_column_medium_3.png::CompressedTexture2D::2288127502281114176::1733308348::1733308402::1::::<><>::
-fire_column_medium_4.png::CompressedTexture2D::3039414405646992145::1733308348::1733308402::1::::<><>::
-fire_column_medium_5.png::CompressedTexture2D::1962745762159818845::1733308348::1733308402::1::::<><>::
-fire_column_medium_6.png::CompressedTexture2D::936204523962237056::1733308348::1733308402::1::::<><>::
-fire_column_medium_7.png::CompressedTexture2D::7879102846268345857::1733308348::1733308402::1::::<><>::
-fire_column_medium_8.png::CompressedTexture2D::3738554993817505888::1733308348::1733308402::1::::<><>::
-fire_column_medium_9.png::CompressedTexture2D::8567619760378413241::1733308348::1733308402::1::::<><>::
-fire_column_medium_10.png::CompressedTexture2D::6742557537336841323::1733308348::1733308402::1::::<><>::
-fire_column_medium_11.png::CompressedTexture2D::7058227006715204101::1733308348::1733308402::1::::<><>::
-fire_column_medium_12.png::CompressedTexture2D::3961859964801647669::1733308348::1733308402::1::::<><>::
-fire_column_medium_13.png::CompressedTexture2D::3597454408231459933::1733308348::1733308402::1::::<><>::
-fire_column_medium_14.png::CompressedTexture2D::8989144096629041888::1733308348::1733308402::1::::<><>::
-::res://Assets/Fonts/::1733308401
-ARCADECLASSIC.TTF::FontFile::3001316169520672227::1733308348::1733308401::1::::<><>::
-Schrödinger.ttf::FontFile::8206318542659207941::1733308348::1733308401::1::::<><>::
-::res://Assets/Icons/::1733308402
-icon1.png::CompressedTexture2D::5863379486785142453::1733308348::1733308402::1::::<><>::
-icon2.png::CompressedTexture2D::3644110517464335916::1733308348::1733308402::1::::<><>::
-icon3.png::CompressedTexture2D::1509167974359680486::1733308348::1733308402::1::::<><>::
-icon4.png::CompressedTexture2D::2615430443299930834::1733308348::1733308402::1::::<><>::
-icon5.png::CompressedTexture2D::2596590508636529617::1733308348::1733308402::1::::<><>::
-icon6.png::CompressedTexture2D::1118763792071401036::1733308348::1733308402::1::::<><>::
-icon7.png::CompressedTexture2D::229524326743611175::1733308348::1733308402::1::::<><>::
-icon8.png::CompressedTexture2D::7588000694443234170::1733308348::1733308402::1::::<><>::
-icon9.png::CompressedTexture2D::3921131244027417984::1733308348::1733308402::1::::<><>::
-icon10.png::CompressedTexture2D::8468308363391625593::1733308348::1733308402::1::::<><>::
-icon11.png::CompressedTexture2D::4123436036970337141::1733308348::1733308402::1::::<><>::
-icon12.png::CompressedTexture2D::187674587851283505::1733308348::1733308401::1::::<><>::
-icon13.png::CompressedTexture2D::5724518548394233583::1733308348::1733308401::1::::<><>::
-icon14.png::CompressedTexture2D::1381076939026079722::1733308348::1733308401::1::::<><>::
-icon15.png::CompressedTexture2D::7015565028183791472::1733308348::1733308401::1::::<><>::
-icon16.png::CompressedTexture2D::1590843058615309156::1733308348::1733308401::1::::<><>::
-icon17.png::CompressedTexture2D::6651319173367899767::1733308348::1733308401::1::::<><>::
-icon18.png::CompressedTexture2D::120490589143237814::1733308348::1733308401::1::::<><>::
-icon19.png::CompressedTexture2D::4703173313850450198::1733308348::1733308401::1::::<><>::
-icon20.png::CompressedTexture2D::8510451409049987126::1733308348::1733308401::1::::<><>::
-icon21.png::CompressedTexture2D::5781019453891633601::1733308348::1733308401::1::::<><>::
-icon22.png::CompressedTexture2D::1292885038999572891::1733308348::1733308401::1::::<><>::
-icon23.png::CompressedTexture2D::7415085410068860779::1733308348::1733308401::1::::<><>::
-icon24.png::CompressedTexture2D::5299979334256752067::1733308348::1733308401::1::::<><>::
-icon25.png::CompressedTexture2D::5137213206319695214::1733308348::1733308401::1::::<><>::
-icon26.png::CompressedTexture2D::6969814568946958750::1733308348::1733308401::1::::<><>::
-icon27.png::CompressedTexture2D::6060986319521925261::1733308348::1733308401::1::::<><>::
-icon28.png::CompressedTexture2D::8939107448380673750::1733308348::1733308401::1::::<><>::
-icon29.png::CompressedTexture2D::4411960725317320858::1733308348::1733308402::1::::<><>::
-icon30.png::CompressedTexture2D::4028470625624782909::1733308348::1733308402::1::::<><>::
-icon31.png::CompressedTexture2D::7413550151948679698::1733308348::1733308402::1::::<><>::
-icon32.png::CompressedTexture2D::3837516987920011880::1733308348::1733308402::1::::<><>::
-::res://Assets/Island_2/::1733308402
-1 fence Side 1.png::CompressedTexture2D::3802782175509688991::1733308348::1733308402::1::::<><>::
-1 fence Side 2.png::CompressedTexture2D::3941162115526194058::1733308348::1733308402::1::::<><>::
-1 fence Upward.png::CompressedTexture2D::2049927237679390882::1733308348::1733308402::1::::<><>::
-1 fence.png::CompressedTexture2D::7956635418789550782::1733308348::1733308402::1::::<><>::
+menu.png::CompressedTexture2D::2116308762309509620::1733311515::1733319422::0::::<><>::
+npc.png::CompressedTexture2D::3162700740392809302::1733311515::1733319423::1::::<><>::
+person.png::CompressedTexture2D::1765741991189200742::1733311515::1733319423::1::::<><>::
+Screenshot 2024-11-14 114117.png::CompressedTexture2D::6671941076158844752::1733311515::1733319423::1::::<><>::
+SLOTINV.png::CompressedTexture2D::5990067738073421528::1733311515::1733319423::1::::<><>::
+star_01.png::CompressedTexture2D::2432751583214306772::1733311515::1733319423::1::::<><>::
+tree.png::CompressedTexture2D::3312089302715824957::1733311515::1733319423::1::::<><>::
+::res://Assets/fire_column_medium/::1733319423
+fire_column_medium_1.png::CompressedTexture2D::5075096397492756678::1733311515::1733319423::1::::<><>::
+fire_column_medium_2.png::CompressedTexture2D::7303709666567506507::1733311515::1733319423::1::::<><>::
+fire_column_medium_3.png::CompressedTexture2D::2288127502281114176::1733311515::1733319423::1::::<><>::
+fire_column_medium_4.png::CompressedTexture2D::3039414405646992145::1733311515::1733319423::1::::<><>::
+fire_column_medium_5.png::CompressedTexture2D::1962745762159818845::1733311515::1733319423::1::::<><>::
+fire_column_medium_6.png::CompressedTexture2D::936204523962237056::1733311515::1733319423::1::::<><>::
+fire_column_medium_7.png::CompressedTexture2D::7879102846268345857::1733311515::1733319423::1::::<><>::
+fire_column_medium_8.png::CompressedTexture2D::3738554993817505888::1733311515::1733319423::1::::<><>::
+fire_column_medium_9.png::CompressedTexture2D::8567619760378413241::1733311515::1733319423::1::::<><>::
+fire_column_medium_10.png::CompressedTexture2D::6742557537336841323::1733311515::1733319423::1::::<><>::
+fire_column_medium_11.png::CompressedTexture2D::7058227006715204101::1733311515::1733319423::1::::<><>::
+fire_column_medium_12.png::CompressedTexture2D::3961859964801647669::1733311515::1733319423::1::::<><>::
+fire_column_medium_13.png::CompressedTexture2D::3597454408231459933::1733311515::1733319423::1::::<><>::
+fire_column_medium_14.png::CompressedTexture2D::8989144096629041888::1733311515::1733319423::1::::<><>::
+::res://Assets/Fonts/::1733319422
+ARCADECLASSIC.TTF::FontFile::3001316169520672227::1733311515::1733319422::1::::<><>::
+Schrödinger.ttf::FontFile::8206318542659207941::1733311515::1733319422::1::::<><>::
+::res://Assets/Icons/::1733319423
+icon1.png::CompressedTexture2D::5863379486785142453::1733311515::1733319423::1::::<><>::
+icon2.png::CompressedTexture2D::3644110517464335916::1733311515::1733319423::1::::<><>::
+icon3.png::CompressedTexture2D::1509167974359680486::1733311515::1733319423::1::::<><>::
+icon4.png::CompressedTexture2D::2615430443299930834::1733311515::1733319423::1::::<><>::
+icon5.png::CompressedTexture2D::2596590508636529617::1733311515::1733319423::1::::<><>::
+icon6.png::CompressedTexture2D::1118763792071401036::1733311515::1733319423::1::::<><>::
+icon7.png::CompressedTexture2D::229524326743611175::1733311515::1733319423::1::::<><>::
+icon8.png::CompressedTexture2D::7588000694443234170::1733311515::1733319423::1::::<><>::
+icon9.png::CompressedTexture2D::3921131244027417984::1733311515::1733319423::1::::<><>::
+icon10.png::CompressedTexture2D::8468308363391625593::1733311515::1733319423::1::::<><>::
+icon11.png::CompressedTexture2D::4123436036970337141::1733311515::1733319423::1::::<><>::
+icon12.png::CompressedTexture2D::187674587851283505::1733311515::1733319423::1::::<><>::
+icon13.png::CompressedTexture2D::5724518548394233583::1733311515::1733319423::1::::<><>::
+icon14.png::CompressedTexture2D::1381076939026079722::1733311515::1733319423::1::::<><>::
+icon15.png::CompressedTexture2D::7015565028183791472::1733311515::1733319423::1::::<><>::
+icon16.png::CompressedTexture2D::1590843058615309156::1733311515::1733319423::1::::<><>::
+icon17.png::CompressedTexture2D::6651319173367899767::1733311515::1733319423::1::::<><>::
+icon18.png::CompressedTexture2D::120490589143237814::1733311515::1733319423::1::::<><>::
+icon19.png::CompressedTexture2D::4703173313850450198::1733311515::1733319423::1::::<><>::
+icon20.png::CompressedTexture2D::8510451409049987126::1733311515::1733319423::1::::<><>::
+icon21.png::CompressedTexture2D::5781019453891633601::1733311515::1733319423::1::::<><>::
+icon22.png::CompressedTexture2D::1292885038999572891::1733311515::1733319423::1::::<><>::
+icon23.png::CompressedTexture2D::7415085410068860779::1733311515::1733319423::1::::<><>::
+icon24.png::CompressedTexture2D::5299979334256752067::1733311515::1733319423::1::::<><>::
+icon25.png::CompressedTexture2D::5137213206319695214::1733311515::1733319423::1::::<><>::
+icon26.png::CompressedTexture2D::6969814568946958750::1733311515::1733319423::1::::<><>::
+icon27.png::CompressedTexture2D::6060986319521925261::1733311515::1733319423::1::::<><>::
+icon28.png::CompressedTexture2D::8939107448380673750::1733311515::1733319423::1::::<><>::
+icon29.png::CompressedTexture2D::4411960725317320858::1733311515::1733319423::1::::<><>::
+icon30.png::CompressedTexture2D::4028470625624782909::1733311515::1733319423::1::::<><>::
+icon31.png::CompressedTexture2D::7413550151948679698::1733311515::1733319423::1::::<><>::
+icon32.png::CompressedTexture2D::3837516987920011880::1733311515::1733319423::1::::<><>::
+::res://Assets/Island_2/::1733319423
+1 fence Side 1.png::CompressedTexture2D::3802782175509688991::1733311515::1733319423::1::::<><>::
+1 fence Side 2.png::CompressedTexture2D::3941162115526194058::1733311515::1733319423::1::::<><>::
+1 fence Upward.png::CompressedTexture2D::2049927237679390882::1733311515::1733319423::1::::<><>::
+1 fence.png::CompressedTexture2D::7956635418789550782::1733311515::1733319423::1::::<><>::
 1-removebg-preview.png::CompressedTexture2D::6270734416475319689::1732895826::1733152300::1::::<><>::
 2-removebg-preview-2.png::CompressedTexture2D::1163873538365424233::1732895826::1733152300::1::::<><>::
-2.png::CompressedTexture2D::2929368836959379403::1733308348::1733308402::1::::<><>::
+2.png::CompressedTexture2D::2929368836959379403::1733311515::1733319423::1::::<><>::
 3-removebg-preview.png::CompressedTexture2D::3043711534496271562::1732895826::1733152300::1::::<><>::
 4kwt2.png::CompressedTexture2D::1095997669182721766::1732895826::1733152300::1::::<><>::
-(2) 1 fence Side 1-1.png::CompressedTexture2D::8189069482422848124::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2.png::CompressedTexture2D::1404673572857548349::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-3.png::CompressedTexture2D::1517970413493479394::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-4.png::CompressedTexture2D::6568023280198135017::1733308348::1733308402::1::::<><>::
+(2) 1 fence Side 1-1.png::CompressedTexture2D::8189069482422848124::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2.png::CompressedTexture2D::1404673572857548349::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-3.png::CompressedTexture2D::1517970413493479394::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-4.png::CompressedTexture2D::6568023280198135017::1733311515::1733319423::1::::<><>::
 autotile_road.png::CompressedTexture2D::4274389301441667431::1732895826::1733152300::1::::<><>::
 Building (1).png::CompressedTexture2D::2708145681394524540::1732895826::1733152300::1::::<><>::
 Building Vers 1.png::CompressedTexture2D::5750851542691354296::1732895826::1733152300::1::::<><>::
@@ -98,34 +98,34 @@ Factory 5.png::CompressedTexture2D::7620549769280163284::1732895826::1733152300:
 Factory 6.png::CompressedTexture2D::8547534400738059228::1732895826::1733152300::1::::<><>::
 Factory (Finish).png::CompressedTexture2D::673150903175328451::1732895826::1733152300::1::::<><>::
 roads2W.png::CompressedTexture2D::3495375242471618718::1732895826::1733152299::1::::<><>::
-roguelikeCity_magenta.png::CompressedTexture2D::2431385991051768728::1733308348::1733308402::1::::<><>::
-Rotated 1.png::CompressedTexture2D::5543594471499299735::1733308348::1733308401::1::::<><>::
-Rotated 2.png::CompressedTexture2D::3401284671686654181::1733308348::1733308402::1::::<><>::
-Rotated 3.png::CompressedTexture2D::5562251342181499544::1733308348::1733308401::1::::<><>::
-Rotated 4.png::CompressedTexture2D::1114566037292727947::1733308348::1733308401::1::::<><>::
+roguelikeCity_magenta.png::CompressedTexture2D::2431385991051768728::1733311515::1733319423::1::::<><>::
+Rotated 1.png::CompressedTexture2D::5543594471499299735::1733311515::1733319423::1::::<><>::
+Rotated 2.png::CompressedTexture2D::3401284671686654181::1733311515::1733319423::1::::<><>::
+Rotated 3.png::CompressedTexture2D::5562251342181499544::1733311515::1733319423::1::::<><>::
+Rotated 4.png::CompressedTexture2D::1114566037292727947::1733311515::1733319423::1::::<><>::
 rpg city assets turned.png::CompressedTexture2D::4513784648933289360::1732895826::1733152299::1::::<><>::
 rpg city assets.png::CompressedTexture2D::1728338880657190818::1732895826::1733152299::1::::<><>::
 Screenshot 2024-11-28 at 12.19.42.png::CompressedTexture2D::7081634281027026563::1732895826::1733152299::1::::<><>::
-SolarPanel.png::CompressedTexture2D::6990836775980917676::1733308348::1733308402::1::::<><>::
-Tileset_Highschool.png::CompressedTexture2D::1296486053448706864::1733308348::1733308402::1::::<><>::
-::res://Assets/Island_2/Corners/::1733308402
-(2) 1 fence Side 1-2-1.png.png::CompressedTexture2D::7350428557704833110::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2-2.png.png::CompressedTexture2D::6700823561764968761::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2-3.png.png::CompressedTexture2D::6275738606381426078::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2-4.png.png::CompressedTexture2D::5481707437769019592::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2-5.png.png::CompressedTexture2D::7499114228754401513::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2-6.png.png::CompressedTexture2D::1651698383670458814::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2-7.png.png::CompressedTexture2D::5282792421582975221::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2-8.png.png::CompressedTexture2D::2284894319171302396::1733308348::1733308402::1::::<><>::
-Bat2 (2) 1 fence Side 1-2-1.png::CompressedTexture2D::4875401857214308566::1733308348::1733308402::1::::<><>::
-Bat2 (2) 1 fence Side 1-2-2.png (1).png::CompressedTexture2D::7854144369791183911::1733308348::1733308402::1::::<><>::
-Bat2 (2) 1 fence Side 1-2-3.png (1).png::CompressedTexture2D::1659000272489766890::1733308348::1733308402::1::::<><>::
-Bat2 (2) 1 fence Side 1-2-4.png (1).png::CompressedTexture2D::2215496506845301112::1733308348::1733308402::1::::<><>::
-Bat2 (2) 1 fence Side 1-2-5.png (1).png::CompressedTexture2D::712232678231333426::1733308348::1733308402::1::::<><>::
-Bat2 (2) 1 fence Side 1-2-6.png (1).png::CompressedTexture2D::638319735042127169::1733308348::1733308402::1::::<><>::
-Bat2 (2) 1 fence Side 1-2-7.png (1).png::CompressedTexture2D::8563675078360081420::1733308348::1733308402::1::::<><>::
-Bat2 (2) 1 fence Side 1-2-8.png (1).png::CompressedTexture2D::8155493313282727274::1733308348::1733308402::1::::<><>::
-Fences.png::CompressedTexture2D::7101073172355217731::1733308348::1733308402::1::::<><>::
+SolarPanel.png::CompressedTexture2D::6990836775980917676::1733311515::1733319423::1::::<><>::
+Tileset_Highschool.png::CompressedTexture2D::1296486053448706864::1733311515::1733319423::1::::<><>::
+::res://Assets/Island_2/Corners/::1733319423
+(2) 1 fence Side 1-2-1.png.png::CompressedTexture2D::7350428557704833110::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2-2.png.png::CompressedTexture2D::6700823561764968761::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2-3.png.png::CompressedTexture2D::6275738606381426078::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2-4.png.png::CompressedTexture2D::5481707437769019592::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2-5.png.png::CompressedTexture2D::7499114228754401513::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2-6.png.png::CompressedTexture2D::1651698383670458814::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2-7.png.png::CompressedTexture2D::5282792421582975221::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2-8.png.png::CompressedTexture2D::2284894319171302396::1733311515::1733319423::1::::<><>::
+Bat2 (2) 1 fence Side 1-2-1.png::CompressedTexture2D::4875401857214308566::1733311515::1733319423::1::::<><>::
+Bat2 (2) 1 fence Side 1-2-2.png (1).png::CompressedTexture2D::7854144369791183911::1733311515::1733319423::1::::<><>::
+Bat2 (2) 1 fence Side 1-2-3.png (1).png::CompressedTexture2D::1659000272489766890::1733311515::1733319423::1::::<><>::
+Bat2 (2) 1 fence Side 1-2-4.png (1).png::CompressedTexture2D::2215496506845301112::1733311515::1733319423::1::::<><>::
+Bat2 (2) 1 fence Side 1-2-5.png (1).png::CompressedTexture2D::712232678231333426::1733311515::1733319423::1::::<><>::
+Bat2 (2) 1 fence Side 1-2-6.png (1).png::CompressedTexture2D::638319735042127169::1733311515::1733319423::1::::<><>::
+Bat2 (2) 1 fence Side 1-2-7.png (1).png::CompressedTexture2D::8563675078360081420::1733311515::1733319423::1::::<><>::
+Bat2 (2) 1 fence Side 1-2-8.png (1).png::CompressedTexture2D::8155493313282727274::1733311515::1733319423::1::::<><>::
+Fences.png::CompressedTexture2D::7101073172355217731::1733311515::1733319423::1::::<><>::
 ::res://Assets/Island_2/helicopter/::1733152299
 helicopter.png::CompressedTexture2D::706179235425020444::1732895826::1733152299::1::::<><>::
 ::res://Assets/Island_2/helicopter/broken_parts/::1733152299
@@ -141,41 +141,41 @@ helicopter_5.png::CompressedTexture2D::2359262726932946092::1732895826::17331522
 helicopter_6.png::CompressedTexture2D::2021150355091034274::1732895826::1733152299::1::::<><>::
 helicopter_7.png::CompressedTexture2D::7199175176454606231::1732895826::1733152299::1::::<><>::
 helicopter_8.png::CompressedTexture2D::7152501157663221307::1732895826::1733152299::1::::<><>::
-::res://Assets/Island_2/Sides/::1733308402
-1 fence Side 1.png::CompressedTexture2D::3111017052285809223::1733308348::1733308402::1::::<><>::
-1 fence Side 2.png::CompressedTexture2D::4099079359019124870::1733308348::1733308402::1::::<><>::
-1 fence Upward.png::CompressedTexture2D::1096913136760558097::1733308348::1733308402::1::::<><>::
-1 fence.png::CompressedTexture2D::5022971491706246134::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-1.png::CompressedTexture2D::7213460704809319100::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-2.png::CompressedTexture2D::7331700665195132576::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-3.png::CompressedTexture2D::8630012001914788127::1733308348::1733308402::1::::<><>::
-(2) 1 fence Side 1-4.png::CompressedTexture2D::6757349132403902830::1733308348::1733308402::1::::<><>::
-::res://Assets/TerraOffSprites/::1733308402
-TerraDownSet.png::CompressedTexture2D::6749023438614387173::1733308348::1733308402::1::::<><>::
-TerraLeftSet.png::CompressedTexture2D::6156906622950198::1733308348::1733308402::1::::<><>::
-TerraRightSet.png::CompressedTexture2D::5747367379746421166::1733308348::1733308402::1::::<><>::
-TerraUpSet.png::CompressedTexture2D::5806594825730370633::1733308348::1733308402::1::::<><>::
+::res://Assets/Island_2/Sides/::1733319423
+1 fence Side 1.png::CompressedTexture2D::3111017052285809223::1733311515::1733319423::1::::<><>::
+1 fence Side 2.png::CompressedTexture2D::4099079359019124870::1733311515::1733319423::1::::<><>::
+1 fence Upward.png::CompressedTexture2D::1096913136760558097::1733311515::1733319423::1::::<><>::
+1 fence.png::CompressedTexture2D::5022971491706246134::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-1.png::CompressedTexture2D::7213460704809319100::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-2.png::CompressedTexture2D::7331700665195132576::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-3.png::CompressedTexture2D::8630012001914788127::1733311515::1733319423::1::::<><>::
+(2) 1 fence Side 1-4.png::CompressedTexture2D::6757349132403902830::1733311515::1733319423::1::::<><>::
+::res://Assets/TerraOffSprites/::1733319423
+TerraDownSet.png::CompressedTexture2D::6749023438614387173::1733311515::1733319423::1::::<><>::
+TerraLeftSet.png::CompressedTexture2D::6156906622950198::1733311515::1733319423::1::::<><>::
+TerraRightSet.png::CompressedTexture2D::5747367379746421166::1733311515::1733319423::1::::<><>::
+TerraUpSet.png::CompressedTexture2D::5806594825730370633::1733311515::1733319423::1::::<><>::
 ::res://Assets/TerraOffSprites/__MACOSX/::1733151850
 ::res://Assets/TerraOffSprites/__MACOSX/TerraOffSprites/::1733151850
 ::res://Assets/TerraOffSprites/__MACOSX/TerraOffSprites/down/::1733151850
 ::res://Assets/TerraOffSprites/__MACOSX/TerraOffSprites/left/::1733151850
 ::res://Assets/TerraOffSprites/__MACOSX/TerraOffSprites/right/::1733151850
 ::res://Assets/TerraOffSprites/__MACOSX/TerraOffSprites/up/::1733151850
-::res://Assets/TerraOffSprites/down/::1733308402
-TerraDownFour.png::CompressedTexture2D::736258960248087726::1733308348::1733308402::1::::<><>::
-TerraDownOne.png::CompressedTexture2D::3097308985208246160::1733308348::1733308402::1::::<><>::
-TerraDownThree.png::CompressedTexture2D::1543588669150495177::1733308348::1733308402::1::::<><>::
-TerraDownTwo.png::CompressedTexture2D::526781832734108253::1733308348::1733308402::1::::<><>::
-::res://Assets/TerraOffSprites/left/::1733308402
-TerraLeftFour.png::CompressedTexture2D::7663033672243268238::1733308348::1733308402::1::::<><>::
-TerraLeftOne.png::CompressedTexture2D::924139614414920425::1733308348::1733308402::1::::<><>::
-TerraLeftThree.png::CompressedTexture2D::2578539108472274638::1733308348::1733308402::1::::<><>::
-TerraLeftTwo.png::CompressedTexture2D::6795490968704099968::1733308348::1733308402::1::::<><>::
-::res://Assets/TerraOffSprites/right/::1733308402
-TerraRightFour.png::CompressedTexture2D::4590413420040531326::1733308348::1733308402::1::::<><>::
-TerraRightOne.png::CompressedTexture2D::1561905575299539095::1733308348::1733308402::1::::<><>::
-TerraRightThree.png::CompressedTexture2D::5795126369563404495::1733308348::1733308402::1::::<><>::
-TerraRightTwo.png::CompressedTexture2D::3971395824741414994::1733308348::1733308402::1::::<><>::
+::res://Assets/TerraOffSprites/down/::1733319423
+TerraDownFour.png::CompressedTexture2D::736258960248087726::1733311515::1733319423::1::::<><>::
+TerraDownOne.png::CompressedTexture2D::3097308985208246160::1733311515::1733319423::1::::<><>::
+TerraDownThree.png::CompressedTexture2D::1543588669150495177::1733311515::1733319423::1::::<><>::
+TerraDownTwo.png::CompressedTexture2D::526781832734108253::1733311515::1733319423::1::::<><>::
+::res://Assets/TerraOffSprites/left/::1733319423
+TerraLeftFour.png::CompressedTexture2D::7663033672243268238::1733311515::1733319423::1::::<><>::
+TerraLeftOne.png::CompressedTexture2D::924139614414920425::1733311515::1733319423::1::::<><>::
+TerraLeftThree.png::CompressedTexture2D::2578539108472274638::1733311515::1733319423::1::::<><>::
+TerraLeftTwo.png::CompressedTexture2D::6795490968704099968::1733311515::1733319423::1::::<><>::
+::res://Assets/TerraOffSprites/right/::1733319423
+TerraRightFour.png::CompressedTexture2D::4590413420040531326::1733311515::1733319423::1::::<><>::
+TerraRightOne.png::CompressedTexture2D::1561905575299539095::1733311515::1733319423::1::::<><>::
+TerraRightThree.png::CompressedTexture2D::5795126369563404495::1733311515::1733319423::1::::<><>::
+TerraRightTwo.png::CompressedTexture2D::3971395824741414994::1733311515::1733319423::1::::<><>::
 ::res://Assets/TerraOffSprites/TerraOffSprites/::1733152300
 TerraDownSet.png::CompressedTexture2D::3360002038678857001::1733151850::1733152300::1::::<><>::
 TerraLeftSet.png::CompressedTexture2D::5688186128231717652::1733151850::1733152300::1::::<><>::
@@ -201,196 +201,196 @@ TerraUpFour.png::CompressedTexture2D::8389044976593934404::1733151850::173315230
 TerraUpOne.png::CompressedTexture2D::1045947707449486656::1733151850::1733152300::1::::<><>::
 TerraUpThree.png::CompressedTexture2D::8947590767613562879::1733151850::1733152300::1::::<><>::
 TerraUpTwo.png::CompressedTexture2D::8159179817870391744::1733151850::1733152300::1::::<><>::
-::res://Assets/TerraOffSprites/up/::1733308402
-TerraUpFour.png::CompressedTexture2D::8096156944959712976::1733308348::1733308402::1::::<><>::
-TerraUpOne.png::CompressedTexture2D::2261405175304955358::1733308348::1733308402::1::::<><>::
-TerraUpThree.png::CompressedTexture2D::707521657129865835::1733308348::1733308402::1::::<><>::
-TerraUpTwo.png::CompressedTexture2D::7680189769670781670::1733308348::1733308402::1::::<><>::
-::res://Assets/Tilesets/::1733308402
-Basic Grass Biom things 1.png::CompressedTexture2D::6713548196533637840::1733308348::1733308402::1::::<><>::
-Fences.png::CompressedTexture2D::6896173115279723264::1733308348::1733308402::1::::<><>::
-Grass.png::CompressedTexture2D::8545199333497192800::1733308348::1733308402::1::::<><>::
-Hills.png::CompressedTexture2D::7128068550770612074::1733308348::1733308402::1::::<><>::
-Paths.png::CompressedTexture2D::3470541463143633025::1733308348::1733308402::1::::<><>::
-Tilled Dirt.png::CompressedTexture2D::1163018923274205209::1733308348::1733308402::1::::<><>::
-Water.png::CompressedTexture2D::4548170469777594392::1733308348::1733308402::1::::<><>::
-Wooden House.png::CompressedTexture2D::835975093109000315::1733308348::1733308402::1::::<><>::
-::res://Assets/TopDown Vehicles v1/::1733308348
+::res://Assets/TerraOffSprites/up/::1733319423
+TerraUpFour.png::CompressedTexture2D::8096156944959712976::1733311515::1733319423::1::::<><>::
+TerraUpOne.png::CompressedTexture2D::2261405175304955358::1733311515::1733319423::1::::<><>::
+TerraUpThree.png::CompressedTexture2D::707521657129865835::1733311515::1733319423::1::::<><>::
+TerraUpTwo.png::CompressedTexture2D::7680189769670781670::1733311515::1733319423::1::::<><>::
+::res://Assets/Tilesets/::1733319423
+Basic Grass Biom things 1.png::CompressedTexture2D::6713548196533637840::1733311515::1733319423::1::::<><>::
+Fences.png::CompressedTexture2D::6896173115279723264::1733311515::1733319423::1::::<><>::
+Grass.png::CompressedTexture2D::8545199333497192800::1733311515::1733319423::1::::<><>::
+Hills.png::CompressedTexture2D::7128068550770612074::1733311515::1733319423::1::::<><>::
+Paths.png::CompressedTexture2D::3470541463143633025::1733311515::1733319423::1::::<><>::
+Tilled Dirt.png::CompressedTexture2D::1163018923274205209::1733311515::1733319423::1::::<><>::
+Water.png::CompressedTexture2D::4548170469777594392::1733311515::1733319423::1::::<><>::
+Wooden House.png::CompressedTexture2D::835975093109000315::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/::1733311515
 readme.txt::TextFile::-1::1732895828::0::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/::1733308348
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/::1733308402
-AMBULANCE_CLEAN_8D0000-sheet.png::CompressedTexture2D::4164843715104063874::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0000-sheet.png::CompressedTexture2D::6467312638165827326::1733308348::1733308402::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/::1733308402
-AMBULANCE_CLEAN_ALLD0000.png::CompressedTexture2D::5179843215324131178::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0001.png::CompressedTexture2D::5477451381572060052::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0002.png::CompressedTexture2D::8280097541779976875::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0003.png::CompressedTexture2D::6759586462532985635::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0004.png::CompressedTexture2D::5806278844598303442::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0005.png::CompressedTexture2D::2383414920318571859::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0006.png::CompressedTexture2D::2400366034840093314::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0007.png::CompressedTexture2D::4010517022906887785::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0008.png::CompressedTexture2D::1338022230971321684::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0009.png::CompressedTexture2D::8563212422608916808::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0010.png::CompressedTexture2D::6811538341496923611::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0011.png::CompressedTexture2D::6268405888817351656::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0012.png::CompressedTexture2D::1870506305970229415::1733308348::1733308402::1::::<><>::
-AMBULANCE_CLEAN_ALLD0013.png::CompressedTexture2D::8778176053928308182::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0014.png::CompressedTexture2D::3180366956997968603::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0015.png::CompressedTexture2D::2399009968619666642::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0016.png::CompressedTexture2D::6611990502661821818::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0017.png::CompressedTexture2D::2909899652378543404::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0018.png::CompressedTexture2D::5924513906658274367::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0019.png::CompressedTexture2D::3817313440321041787::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0020.png::CompressedTexture2D::8410616642461464549::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0021.png::CompressedTexture2D::3920226852715634204::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0022.png::CompressedTexture2D::1778971730845545767::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0023.png::CompressedTexture2D::2051603281323499358::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0024.png::CompressedTexture2D::5001566249085663648::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0025.png::CompressedTexture2D::8770889036341983909::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0026.png::CompressedTexture2D::2028210525399600899::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0027.png::CompressedTexture2D::3037548798511407290::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0028.png::CompressedTexture2D::923367817831712367::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0029.png::CompressedTexture2D::3252474159089553953::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0030.png::CompressedTexture2D::142766826896821367::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0031.png::CompressedTexture2D::7552852019559072403::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0032.png::CompressedTexture2D::7845310737086592668::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0033.png::CompressedTexture2D::5757235529925005542::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0034.png::CompressedTexture2D::3567760304202334974::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0035.png::CompressedTexture2D::8546548489500445768::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0036.png::CompressedTexture2D::1263987626939491105::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0037.png::CompressedTexture2D::9192847379033873467::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0038.png::CompressedTexture2D::3650930691281446983::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0039.png::CompressedTexture2D::7710378568113206918::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0040.png::CompressedTexture2D::1892889808702932839::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0041.png::CompressedTexture2D::3259402281571860910::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0042.png::CompressedTexture2D::1653993729265372436::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0043.png::CompressedTexture2D::6400788327761969151::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0044.png::CompressedTexture2D::738448918062623588::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0045.png::CompressedTexture2D::4139512016219724491::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0046.png::CompressedTexture2D::6144810209537844360::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_ALLD0047.png::CompressedTexture2D::5090472573352160286::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/::1733308348
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/EAST/::1733308401
-AMBULANCE_CLEAN_EAST_000-sheet.png::CompressedTexture2D::4211478199288778523::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/EAST/SEPARATED/::1733308401
-AMBULANCE_CLEAN_EAST_000.png::CompressedTexture2D::7567993260638050188::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_001.png::CompressedTexture2D::470789813595360108::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_002.png::CompressedTexture2D::4041319910514191932::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_003.png::CompressedTexture2D::4352148002079276517::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_004.png::CompressedTexture2D::703683449385287180::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_005.png::CompressedTexture2D::8316486065476026975::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_006.png::CompressedTexture2D::3609688798886405009::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_007.png::CompressedTexture2D::2492297700968825539::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_008.png::CompressedTexture2D::6046527825783186323::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_009.png::CompressedTexture2D::1259363010613392536::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_010.png::CompressedTexture2D::2491865028324458633::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_EAST_011.png::CompressedTexture2D::2382850835745184215::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTH/::1733308401
-AMBULANCE_CLEAN_NORTH_000-sheet.png::CompressedTexture2D::8815816552594371350::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTH/SEPARATED/::1733308401
-AMBULANCE_CLEAN_NORTH_000.png::CompressedTexture2D::7614803865314413576::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_001.png::CompressedTexture2D::2380734176658352978::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_002.png::CompressedTexture2D::5883435154119808454::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_003.png::CompressedTexture2D::6640881965709912176::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_004.png::CompressedTexture2D::2766057556623992291::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_005.png::CompressedTexture2D::3443187980660335023::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_006.png::CompressedTexture2D::5301672919100558362::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_007.png::CompressedTexture2D::1553961421438672473::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_008.png::CompressedTexture2D::5549810692254964248::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_009.png::CompressedTexture2D::2705244854395964002::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_010.png::CompressedTexture2D::6463054855145319767::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTH_011.png::CompressedTexture2D::1639317484835938957::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTHEAST/::1733308401
-AMBULANCE_CLEAN_NORTHEAST_000-sheet.png::CompressedTexture2D::3832998848778917846::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTHEAST/SEPARATED/::1733308401
-AMBULANCE_CLEAN_NORTHEAST_000.png::CompressedTexture2D::4960338404298127618::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_001.png::CompressedTexture2D::7441916769977977725::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_002.png::CompressedTexture2D::8749726528539755915::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_003.png::CompressedTexture2D::6179925211958333636::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_004.png::CompressedTexture2D::2861868565196301908::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_005.png::CompressedTexture2D::5487089695215290029::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_006.png::CompressedTexture2D::6543021932062961237::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_007.png::CompressedTexture2D::5186120392463315949::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_008.png::CompressedTexture2D::8255199953748352343::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_009.png::CompressedTexture2D::6869619328801081351::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_010.png::CompressedTexture2D::1427002045502233284::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHEAST_011.png::CompressedTexture2D::815321819653889048::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTHWEST/::1733308401
-AMBULANCE_CLEAN_NORTHWEST_000-sheet.png::CompressedTexture2D::675231806418439810::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTHWEST/SEPARATED/::1733308401
-AMBULANCE_CLEAN_NORTHWEST_000.png::CompressedTexture2D::2964897582062695115::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_001.png::CompressedTexture2D::5818595407681954676::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_002.png::CompressedTexture2D::241091646993716796::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_003.png::CompressedTexture2D::2460045005491662303::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_004.png::CompressedTexture2D::4041322500057557465::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_005.png::CompressedTexture2D::2237629545282925937::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_006.png::CompressedTexture2D::6616787987851945597::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_007.png::CompressedTexture2D::3461346293585606406::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_008.png::CompressedTexture2D::8671079247015160085::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_009.png::CompressedTexture2D::5501377708002646841::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_010.png::CompressedTexture2D::6707127349333920885::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_NORTHWEST_011.png::CompressedTexture2D::4832420925237491891::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTH/::1733308402
-AMBULANCE_CLEAN_SOUTH_000-sheet.png::CompressedTexture2D::2737650480769926857::1733308348::1733308402::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTH/SEPARATED/::1733308401
-AMBULANCE_CLEAN_SOUTH_000.png::CompressedTexture2D::6857871680850947641::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_001.png::CompressedTexture2D::3807479374198205024::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_002.png::CompressedTexture2D::4632093378890004696::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_003.png::CompressedTexture2D::6514890920449338288::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_004.png::CompressedTexture2D::4524971545638939598::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_005.png::CompressedTexture2D::1075386578846335834::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_006.png::CompressedTexture2D::1365677207014351269::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_007.png::CompressedTexture2D::3249169225348846888::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_008.png::CompressedTexture2D::4982618585421075372::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_009.png::CompressedTexture2D::2118454639744646973::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_010.png::CompressedTexture2D::3124797979609980414::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTH_011.png::CompressedTexture2D::1211802288736698982::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTHEAST/::1733308401
-AMBULANCE_CLEAN_SOUTHEAST_000-sheet.png::CompressedTexture2D::6077726284908161833::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTHEAST/SEPARATED/::1733308401
-AMBULANCE_CLEAN_SOUTHEAST_000.png::CompressedTexture2D::644099981372976906::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_001.png::CompressedTexture2D::9003330038698791492::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_002.png::CompressedTexture2D::6921101359965461800::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_003.png::CompressedTexture2D::5499972298717489085::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_004.png::CompressedTexture2D::3119759193825816626::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_005.png::CompressedTexture2D::2981413259862687529::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_006.png::CompressedTexture2D::7641449274677705340::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_007.png::CompressedTexture2D::49308264191943161::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_008.png::CompressedTexture2D::6550685299800426740::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_009.png::CompressedTexture2D::1995946166422841922::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_010.png::CompressedTexture2D::7774366015899652574::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHEAST_011.png::CompressedTexture2D::4475953950462361425::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTHWEST/::1733308401
-AMBULANCE_CLEAN_SOUTHWEST_000-sheet.png::CompressedTexture2D::6899972502841521906::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTHWEST/SEPARATED/::1733308401
-AMBULANCE_CLEAN_SOUTHWEST_000.png::CompressedTexture2D::3716276004409287366::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_001.png::CompressedTexture2D::3487005871869304458::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_002.png::CompressedTexture2D::7223562719136824225::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_003.png::CompressedTexture2D::4391893420487666063::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_004.png::CompressedTexture2D::3145207721896554292::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_005.png::CompressedTexture2D::7560932295330055618::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_006.png::CompressedTexture2D::3715575509793609567::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_007.png::CompressedTexture2D::7157532642524995219::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_008.png::CompressedTexture2D::4327969081069675830::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_009.png::CompressedTexture2D::3461251971820561983::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_010.png::CompressedTexture2D::1541467737811554564::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_SOUTHWEST_011.png::CompressedTexture2D::693577544869119790::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/WEST/::1733308401
-AMBULANCE_CLEAN_WEST_000-sheet.png::CompressedTexture2D::308297279589384267::1733308348::1733308401::1::::<><>::
-::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/WEST/SEPARATED/::1733308401
-AMBULANCE_CLEAN_WEST_000.png::CompressedTexture2D::4257792800051175036::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_001.png::CompressedTexture2D::1357262338102547953::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_002.png::CompressedTexture2D::1049142468321774106::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_003.png::CompressedTexture2D::8140587505658154516::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_004.png::CompressedTexture2D::6363628294206529666::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_005.png::CompressedTexture2D::4074255873752535369::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_006.png::CompressedTexture2D::5264065072445339948::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_007.png::CompressedTexture2D::4869183675980885841::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_008.png::CompressedTexture2D::8993451109269914568::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_009.png::CompressedTexture2D::146864770836369565::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_010.png::CompressedTexture2D::36815159523578477::1733308348::1733308401::1::::<><>::
-AMBULANCE_CLEAN_WEST_011.png::CompressedTexture2D::2228218137123910025::1733308348::1733308401::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/::1733311515
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/::1733319423
+AMBULANCE_CLEAN_8D0000-sheet.png::CompressedTexture2D::4164843715104063874::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0000-sheet.png::CompressedTexture2D::6467312638165827326::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/::1733319423
+AMBULANCE_CLEAN_ALLD0000.png::CompressedTexture2D::5179843215324131178::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0001.png::CompressedTexture2D::5477451381572060052::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0002.png::CompressedTexture2D::8280097541779976875::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0003.png::CompressedTexture2D::6759586462532985635::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0004.png::CompressedTexture2D::5806278844598303442::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0005.png::CompressedTexture2D::2383414920318571859::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0006.png::CompressedTexture2D::2400366034840093314::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0007.png::CompressedTexture2D::4010517022906887785::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0008.png::CompressedTexture2D::1338022230971321684::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0009.png::CompressedTexture2D::8563212422608916808::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0010.png::CompressedTexture2D::6811538341496923611::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0011.png::CompressedTexture2D::6268405888817351656::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0012.png::CompressedTexture2D::1870506305970229415::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_ALLD0013.png::CompressedTexture2D::8778176053928308182::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0014.png::CompressedTexture2D::3180366956997968603::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0015.png::CompressedTexture2D::2399009968619666642::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0016.png::CompressedTexture2D::6611990502661821818::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0017.png::CompressedTexture2D::2909899652378543404::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0018.png::CompressedTexture2D::5924513906658274367::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0019.png::CompressedTexture2D::3817313440321041787::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0020.png::CompressedTexture2D::8410616642461464549::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0021.png::CompressedTexture2D::3920226852715634204::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0022.png::CompressedTexture2D::1778971730845545767::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0023.png::CompressedTexture2D::2051603281323499358::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0024.png::CompressedTexture2D::5001566249085663648::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0025.png::CompressedTexture2D::8770889036341983909::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0026.png::CompressedTexture2D::2028210525399600899::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0027.png::CompressedTexture2D::3037548798511407290::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0028.png::CompressedTexture2D::923367817831712367::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0029.png::CompressedTexture2D::3252474159089553953::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0030.png::CompressedTexture2D::142766826896821367::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0031.png::CompressedTexture2D::7552852019559072403::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0032.png::CompressedTexture2D::7845310737086592668::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0033.png::CompressedTexture2D::5757235529925005542::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0034.png::CompressedTexture2D::3567760304202334974::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0035.png::CompressedTexture2D::8546548489500445768::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0036.png::CompressedTexture2D::1263987626939491105::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0037.png::CompressedTexture2D::9192847379033873467::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0038.png::CompressedTexture2D::3650930691281446983::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0039.png::CompressedTexture2D::7710378568113206918::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0040.png::CompressedTexture2D::1892889808702932839::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0041.png::CompressedTexture2D::3259402281571860910::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0042.png::CompressedTexture2D::1653993729265372436::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0043.png::CompressedTexture2D::6400788327761969151::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0044.png::CompressedTexture2D::738448918062623588::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0045.png::CompressedTexture2D::4139512016219724491::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0046.png::CompressedTexture2D::6144810209537844360::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_ALLD0047.png::CompressedTexture2D::5090472573352160286::1733311515::1733319422::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/::1733311515
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/EAST/::1733319422
+AMBULANCE_CLEAN_EAST_000-sheet.png::CompressedTexture2D::4211478199288778523::1733311515::1733319422::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/EAST/SEPARATED/::1733319422
+AMBULANCE_CLEAN_EAST_000.png::CompressedTexture2D::7567993260638050188::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_001.png::CompressedTexture2D::470789813595360108::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_002.png::CompressedTexture2D::4041319910514191932::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_003.png::CompressedTexture2D::4352148002079276517::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_004.png::CompressedTexture2D::703683449385287180::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_005.png::CompressedTexture2D::8316486065476026975::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_006.png::CompressedTexture2D::3609688798886405009::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_007.png::CompressedTexture2D::2492297700968825539::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_008.png::CompressedTexture2D::6046527825783186323::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_009.png::CompressedTexture2D::1259363010613392536::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_010.png::CompressedTexture2D::2491865028324458633::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_EAST_011.png::CompressedTexture2D::2382850835745184215::1733311515::1733319422::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTH/::1733319422
+AMBULANCE_CLEAN_NORTH_000-sheet.png::CompressedTexture2D::8815816552594371350::1733311515::1733319422::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTH/SEPARATED/::1733319422
+AMBULANCE_CLEAN_NORTH_000.png::CompressedTexture2D::7614803865314413576::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_001.png::CompressedTexture2D::2380734176658352978::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_002.png::CompressedTexture2D::5883435154119808454::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_003.png::CompressedTexture2D::6640881965709912176::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_004.png::CompressedTexture2D::2766057556623992291::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_005.png::CompressedTexture2D::3443187980660335023::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_006.png::CompressedTexture2D::5301672919100558362::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_007.png::CompressedTexture2D::1553961421438672473::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_008.png::CompressedTexture2D::5549810692254964248::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_009.png::CompressedTexture2D::2705244854395964002::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_010.png::CompressedTexture2D::6463054855145319767::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTH_011.png::CompressedTexture2D::1639317484835938957::1733311515::1733319422::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTHEAST/::1733319422
+AMBULANCE_CLEAN_NORTHEAST_000-sheet.png::CompressedTexture2D::3832998848778917846::1733311515::1733319422::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTHEAST/SEPARATED/::1733319423
+AMBULANCE_CLEAN_NORTHEAST_000.png::CompressedTexture2D::4960338404298127618::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_001.png::CompressedTexture2D::7441916769977977725::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_002.png::CompressedTexture2D::8749726528539755915::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_003.png::CompressedTexture2D::6179925211958333636::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_004.png::CompressedTexture2D::2861868565196301908::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_005.png::CompressedTexture2D::5487089695215290029::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_006.png::CompressedTexture2D::6543021932062961237::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_007.png::CompressedTexture2D::5186120392463315949::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_008.png::CompressedTexture2D::8255199953748352343::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_009.png::CompressedTexture2D::6869619328801081351::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_010.png::CompressedTexture2D::1427002045502233284::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHEAST_011.png::CompressedTexture2D::815321819653889048::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTHWEST/::1733319423
+AMBULANCE_CLEAN_NORTHWEST_000-sheet.png::CompressedTexture2D::675231806418439810::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/NORTHWEST/SEPARATED/::1733319423
+AMBULANCE_CLEAN_NORTHWEST_000.png::CompressedTexture2D::2964897582062695115::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_001.png::CompressedTexture2D::5818595407681954676::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_002.png::CompressedTexture2D::241091646993716796::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_003.png::CompressedTexture2D::2460045005491662303::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_004.png::CompressedTexture2D::4041322500057557465::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_005.png::CompressedTexture2D::2237629545282925937::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_006.png::CompressedTexture2D::6616787987851945597::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_007.png::CompressedTexture2D::3461346293585606406::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_008.png::CompressedTexture2D::8671079247015160085::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_009.png::CompressedTexture2D::5501377708002646841::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_010.png::CompressedTexture2D::6707127349333920885::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_NORTHWEST_011.png::CompressedTexture2D::4832420925237491891::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTH/::1733319423
+AMBULANCE_CLEAN_SOUTH_000-sheet.png::CompressedTexture2D::2737650480769926857::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTH/SEPARATED/::1733319423
+AMBULANCE_CLEAN_SOUTH_000.png::CompressedTexture2D::6857871680850947641::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_001.png::CompressedTexture2D::3807479374198205024::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_002.png::CompressedTexture2D::4632093378890004696::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_003.png::CompressedTexture2D::6514890920449338288::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_004.png::CompressedTexture2D::4524971545638939598::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_005.png::CompressedTexture2D::1075386578846335834::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_006.png::CompressedTexture2D::1365677207014351269::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_007.png::CompressedTexture2D::3249169225348846888::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_008.png::CompressedTexture2D::4982618585421075372::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_009.png::CompressedTexture2D::2118454639744646973::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_010.png::CompressedTexture2D::3124797979609980414::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTH_011.png::CompressedTexture2D::1211802288736698982::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTHEAST/::1733319423
+AMBULANCE_CLEAN_SOUTHEAST_000-sheet.png::CompressedTexture2D::6077726284908161833::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTHEAST/SEPARATED/::1733319423
+AMBULANCE_CLEAN_SOUTHEAST_000.png::CompressedTexture2D::644099981372976906::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_001.png::CompressedTexture2D::9003330038698791492::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_002.png::CompressedTexture2D::6921101359965461800::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_003.png::CompressedTexture2D::5499972298717489085::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_004.png::CompressedTexture2D::3119759193825816626::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_005.png::CompressedTexture2D::2981413259862687529::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_006.png::CompressedTexture2D::7641449274677705340::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_007.png::CompressedTexture2D::49308264191943161::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_008.png::CompressedTexture2D::6550685299800426740::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_009.png::CompressedTexture2D::1995946166422841922::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_010.png::CompressedTexture2D::7774366015899652574::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHEAST_011.png::CompressedTexture2D::4475953950462361425::1733311515::1733319422::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTHWEST/::1733319423
+AMBULANCE_CLEAN_SOUTHWEST_000-sheet.png::CompressedTexture2D::6899972502841521906::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/SOUTHWEST/SEPARATED/::1733319423
+AMBULANCE_CLEAN_SOUTHWEST_000.png::CompressedTexture2D::3716276004409287366::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_001.png::CompressedTexture2D::3487005871869304458::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_002.png::CompressedTexture2D::7223562719136824225::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_003.png::CompressedTexture2D::4391893420487666063::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_004.png::CompressedTexture2D::3145207721896554292::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_005.png::CompressedTexture2D::7560932295330055618::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_006.png::CompressedTexture2D::3715575509793609567::1733311515::1733319422::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_007.png::CompressedTexture2D::7157532642524995219::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_008.png::CompressedTexture2D::4327969081069675830::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_009.png::CompressedTexture2D::3461251971820561983::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_010.png::CompressedTexture2D::1541467737811554564::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_SOUTHWEST_011.png::CompressedTexture2D::693577544869119790::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/WEST/::1733319423
+AMBULANCE_CLEAN_WEST_000-sheet.png::CompressedTexture2D::308297279589384267::1733311515::1733319423::1::::<><>::
+::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/MOVE/WEST/SEPARATED/::1733319423
+AMBULANCE_CLEAN_WEST_000.png::CompressedTexture2D::4257792800051175036::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_001.png::CompressedTexture2D::1357262338102547953::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_002.png::CompressedTexture2D::1049142468321774106::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_003.png::CompressedTexture2D::8140587505658154516::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_004.png::CompressedTexture2D::6363628294206529666::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_005.png::CompressedTexture2D::4074255873752535369::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_006.png::CompressedTexture2D::5264065072445339948::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_007.png::CompressedTexture2D::4869183675980885841::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_008.png::CompressedTexture2D::8993451109269914568::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_009.png::CompressedTexture2D::146864770836369565::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_010.png::CompressedTexture2D::36815159523578477::1733311515::1733319423::1::::<><>::
+AMBULANCE_CLEAN_WEST_011.png::CompressedTexture2D::2228218137123910025::1733311515::1733319422::1::::<><>::
 ::res://Assets/TopDown Vehicles v1/CIVIC TOPDOWN/::1732895826
 ::res://Assets/TopDown Vehicles v1/CIVIC TOPDOWN/Black/::1733152300
 Black_CIVIC_CLEAN_8D_000-sheet.png::CompressedTexture2D::4649420178128874155::1732895826::1733152300::1::::<><>::
@@ -9199,90 +9199,91 @@ WAGON_Burntl_004.png::CompressedTexture2D::938418017505623392::1732895828::17331
 WAGON_Burntl_005.png::CompressedTexture2D::973120527769015778::1732895828::1733152295::1::::<><>::
 WAGON_Burntl_006.png::CompressedTexture2D::6607404039672331797::1732895828::1733152295::1::::<><>::
 WAGON_Burntl_007.png::CompressedTexture2D::660661755890900265::1732895828::1733152295::1::::<><>::
-::res://Scenes/::1733308348
-::res://Scenes/Characters/::1733308524
-player.tscn::PackedScene::5524558896042972865::1733308524::0::1::::<><>::res://Scripts/Characters/player.gd<>uid://kqwcvuky7iy5::::res://Assets/TerraOffSprites/down/TerraDownFour.png<>uid://cn3srniqu7uh7::::res://Scenes/UI/Inventory_Stuff/inventory_ui.tscn<>uid://nfwpd06btt0d::::res://Assets/TerraOffSprites/left/TerraLeftOne.png<>uid://bkemhx163eifg::::res://Assets/TerraOffSprites/down/TerraDownOne.png<>uid://bwt1krhe52kyc::::res://Assets/TerraOffSprites/right/TerraRightTwo.png<>uid://hrgaw6b8cluj::::res://Assets/TerraOffSprites/down/TerraDownTwo.png<>uid://7hpao30aru8e::::res://Assets/TerraOffSprites/up/TerraUpOne.png<>uid://dr4oxfh8ki4us::::res://Scenes/UI/Inventory_Stuff/hotbar.tscn<>uid://v8yxd6hdpa1n::::res://Assets/TerraOffSprites/down/TerraDownThree.png<>uid://dhgbbsavjf8fi::::res://Assets/TerraOffSprites/left/TerraLeftFour.png<>uid://c3210jnod3k3q::::res://Assets/TerraOffSprites/left/TerraLeftTwo.png<>uid://bc0cfryp7ad4i::::res://Assets/TerraOffSprites/left/TerraLeftThree.png<>uid://cotg5cvopdntn::::res://Assets/TerraOffSprites/right/TerraRightThree.png<>uid://b6nvo50ku5i2y::::res://Assets/TerraOffSprites/right/TerraRightFour.png<>uid://wiumei5y5jf0::::res://Assets/TerraOffSprites/right/TerraRightOne.png<>uid://dnl3r0pqlaavw::::res://Assets/TerraOffSprites/up/TerraUpFour.png<>uid://dholursxqbqb3::::res://Assets/TerraOffSprites/up/TerraUpTwo.png<>uid://kcy1p0gw3vvn::::res://Assets/TerraOffSprites/up/TerraUpThree.png<>uid://cig5wh0g3chs6::::res://Scenes/Menus/settings.tscn<>uid://d21wsknt8sb6h::::res://Scenes/Menus/keybinds.tscn
-::res://Scenes/Characters/NPC/::1733308524
+::res://Scenes/::1733311515
+::res://Scenes/Characters/::1733311515
+player.tscn::PackedScene::5524558896042972865::1733311515::0::1::::<><>::res://Scripts/Characters/player.gd<>uid://kqwcvuky7iy5::::res://Assets/TerraOffSprites/down/TerraDownFour.png<>uid://cn3srniqu7uh7::::res://Scenes/UI/Inventory_Stuff/inventory_ui.tscn<>uid://nfwpd06btt0d::::res://Assets/TerraOffSprites/left/TerraLeftOne.png<>uid://bkemhx163eifg::::res://Assets/TerraOffSprites/down/TerraDownOne.png<>uid://bwt1krhe52kyc::::res://Assets/TerraOffSprites/right/TerraRightTwo.png<>uid://hrgaw6b8cluj::::res://Assets/TerraOffSprites/down/TerraDownTwo.png<>uid://7hpao30aru8e::::res://Assets/TerraOffSprites/up/TerraUpOne.png<>uid://dr4oxfh8ki4us::::res://Scenes/UI/Inventory_Stuff/hotbar.tscn<>uid://v8yxd6hdpa1n::::res://Assets/TerraOffSprites/down/TerraDownThree.png<>uid://dhgbbsavjf8fi::::res://Assets/TerraOffSprites/left/TerraLeftFour.png<>uid://c3210jnod3k3q::::res://Assets/TerraOffSprites/left/TerraLeftTwo.png<>uid://bc0cfryp7ad4i::::res://Assets/TerraOffSprites/left/TerraLeftThree.png<>uid://cotg5cvopdntn::::res://Assets/TerraOffSprites/right/TerraRightThree.png<>uid://b6nvo50ku5i2y::::res://Assets/TerraOffSprites/right/TerraRightFour.png<>uid://wiumei5y5jf0::::res://Assets/TerraOffSprites/right/TerraRightOne.png<>uid://dnl3r0pqlaavw::::res://Assets/TerraOffSprites/up/TerraUpFour.png<>uid://dholursxqbqb3::::res://Assets/TerraOffSprites/up/TerraUpTwo.png<>uid://kcy1p0gw3vvn::::res://Assets/TerraOffSprites/up/TerraUpThree.png<>uid://cig5wh0g3chs6::::res://Scenes/Menus/settings.tscn<>uid://d21wsknt8sb6h::::res://Scenes/Menus/keybinds.tscn
+::res://Scenes/Characters/NPC/::1733311515
 Car_mov.tscn::PackedScene::8127969063619143870::1733160546::0::1::::<><>::res://Scripts/Characters/NPC/car_move.gd<>uid://bhyety83gcd73::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH/SEPARATED/Blue_LUXURY_CLEAN_SOUTH_000.png<>uid://er6jrcjy728y::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_000.png<>uid://cjabwy13oufuc::::res://Scenes/Characters/NPC/wander.tscn<>uid://c03s8sgf6hmy6::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/EAST/SEPARATED/Blue_LUXURY_CLEAN_EAST_000.png<>uid://b7wm80klqn46c::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/NORTH/SEPARATED/Blue_LUXURY_CLEAN_NORTH_000.png<>uid://bqkg8cabgtc38::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH/Blue_LUXURY_CLEAN_SOUTH_000-sheet.png<>uid://d03ecydwi4nki::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png<>uid://c3nxcwr7rqbvt::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_002.png<>uid://uot3g0kr3won::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_003.png<>uid://cq1tq077w0jp3::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/EAST/Blue_LUXURY_CLEAN_EAST_000-sheet.png<>uid://q8uat5flrcgx::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/NORTH/Blue_LUXURY_CLEAN_NORTH_000-sheet.png<>res://Scenes/Characters/NPC/movementCar.gd
 movementCar.gd::GDScript::-1::1733154757::0::1::::<>Node2D<>::
-npc.tscn::PackedScene::2044850337900955326::1733308524::0::1::::<><>::res://Scripts/Characters/NPC/npc.gd<>uid://cl63n7t2ajvdh::::res://Assets/Mariem Fixed.png<>uid://bmmw0n2auju8w::::res://Assets/Mariem Fixed (1).png<>uid://brt7mbbpey68h::::res://Scenes/Dialogues/dialogue.tscn<>uid://cjabwy13oufuc::::res://Scenes/Characters/NPC/wander.tscn
+npc.tscn::PackedScene::2044850337900955326::1733311515::0::1::::<><>::res://Scripts/Characters/NPC/npc.gd<>uid://cl63n7t2ajvdh::::res://Assets/Mariem Fixed.png<>uid://bmmw0n2auju8w::::res://Assets/Mariem Fixed (1).png<>uid://brt7mbbpey68h::::res://Scenes/Dialogues/dialogue.tscn<>uid://cjabwy13oufuc::::res://Scenes/Characters/NPC/wander.tscn
 npc_Ia.tscn::PackedScene::203592705322303174::1733308524::0::1::::<><>::res://Scripts/Characters/NPC/npc.gd<>uid://cc0dcrt1qxupj::::res://Assets/Ian Sprite.png<>uid://brt7mbbpey68h::::res://Scenes/Dialogues/dialogue.tscn<>uid://cjabwy13oufuc::::res://Scenes/Characters/NPC/wander.tscn
 npc_Ju.tscn::PackedScene::176987188733301342::1733308348::0::1::::<><>::res://Scripts/Characters/NPC/npc.gd<>uid://cl63n7t2ajvdh::::res://Assets/Mariem Fixed.png<>uid://brt7mbbpey68h::::res://Scenes/Dialogues/dialogue.tscn<>uid://cjabwy13oufuc::::res://Scenes/Characters/NPC/wander.tscn
-wander.tscn::PackedScene::5404642266604179134::1733308348::0::1::::<><>::res://Scripts/Characters/NPC/wander.gd
-::res://Scenes/Dialogues/::1733308356
+wander.tscn::PackedScene::5404642266604179134::1733311515::0::1::::<><>::res://Scripts/Characters/NPC/wander.gd
+::res://Scenes/Dialogues/::1733311515
 choice_dialog.tscn::PackedScene::-1::1733308356::0::1::::<><>::
-dialogue.tscn::PackedScene::3620818630918184453::1733308348::0::1::::<><>::res://Scripts/Dialogues/dialogue.gd<>uid://c3jjpnnf67x5b::::res://Assets/chatbox.png
-::res://Scenes/Islands/::1733310741
+dialogue.tscn::PackedScene::3620818630918184453::1733311515::0::1::::<><>::res://Scripts/Dialogues/dialogue.gd<>uid://c3jjpnnf67x5b::::res://Assets/chatbox.png
+::res://Scenes/Islands/::1733311515
 island_2.gd::GDScript::-1::1732895828::0::1::::<>Node2D<>::
-Island_2.tscn::PackedScene::7506147551699559680::1733310937::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://jucxx065s6up::::res://Assets/Island_2/Factory (Finish).png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>res://Scripts/portals/portal_back.gd<>uid://bp2gk4odjasda::::res://Assets/Island_2/roads2W.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>res://Scripts/UI/Minimap.gd<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://ck8mgq2x72mdj::::res://Assets/Island_2/Rotated 1.png<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://bav1tpjth4225::::res://Assets/Island_2/roguelikeCity_magenta.png<>uid://isddw15463qg::::res://Assets/Island_2/Factory 4.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://dlmivgbhtryag::::res://Assets/Island_2/1 fence.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://du7pbis24sval::::res://Assets/Island_2/Sides/(2) 1 fence Side 1-3.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://bugdjcp1ga3gd::::res://Assets/Island_2/1 fence Side 1.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png<>uid://bet307304r81m::::res://Assets/Island_2/Building (1).png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>uid://cdf32sul7ef65::::res://Assets/TopDown Vehicles v1/JEEP TOP DOWN/Yellow/SEPARATED/Yellow_JEEP_CLEAN_All_041.png<>uid://der4j84ry2wjm::::res://Assets/TopDown Vehicles v1/CIVIC TOPDOWN/Brown/SEPARATED/Brown_CIVIC_CLEAN_All_011.png<>uid://cwieudl41clqv::::res://Assets/Island_2/helicopter/separated_frames/helicopter_1.png<>uid://bqc2uq47o42di::::res://Assets/Island_2/helicopter/separated_frames/helicopter_2.png<>uid://chbfp2cjctwmg::::res://Assets/TopDown Vehicles v1/VAN TOP DOWN/White/SEPARATED/White_VAN_CLEAN_All_043.png<>uid://bh612ki6xs6dg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_3.png<>uid://748bo18lp40w::::res://Assets/Island_2/helicopter/separated_frames/helicopter_4.png<>uid://brv43pqrse8o7::::res://Scenes/Islands/Island2_Buildings/sprite_2d.tscn<>uid://8u3yhs7qgtfg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_5.png<>uid://32cb0awc2hy5::::res://Assets/Island_2/helicopter/separated_frames/helicopter_6.png<>uid://datlmma4cjtb8::::res://Assets/Island_2/helicopter/separated_frames/helicopter_7.png<>uid://c85ywclf51ohf::::res://Assets/Island_2/helicopter/separated_frames/helicopter_8.png<>uid://d03ecydwi4nki::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png<>uid://di4hxgflwpvit::::res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED/LIMO_CLEAN_ALLD0036.png<>uid://7unejjb61uy7::::res://Assets/fire_column_medium/fire_column_medium_3.png<>uid://bjkkyge5fofwr::::res://Assets/fire_column_medium/fire_column_medium_4.png<>uid://271evfchwqo8::::res://Assets/fire_column_medium/fire_column_medium_5.png<>uid://nlrffnshfgro::::res://Assets/fire_column_medium/fire_column_medium_6.png<>uid://dn2ip0gpa0fww::::res://Scenes/Characters/NPC/Car_mov.tscn<>uid://dkixw4w36f78h::::res://Assets/fire_column_medium/fire_column_medium_7.png<>uid://bti8pppgdm3r5::::res://Assets/fire_column_medium/fire_column_medium_8.png<>uid://duchpfielt05r::::res://Assets/fire_column_medium/fire_column_medium_9.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scenes/MapFeatures/portal2.gd<>uid://bhptvfgk0kryy::::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0017.png<>uid://dp7685jjjyrjf::::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0002.png<>uid://xj0feaaxo445::::res://Assets/TopDown Vehicles v1/Wreckage/Burnt/Pickup/PICKUP_Burnt_002.png<>uid://bfxuvt2kuwfi0::::res://Assets/TopDown Vehicles v1/Wreckage/Burnt/SUV/SUV_Burnt_005.png
+Island_2.tscn::PackedScene::7506147551699559680::1733311345::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://jucxx065s6up::::res://Assets/Island_2/Factory (Finish).png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>res://Scripts/portals/portal_back.gd<>uid://bp2gk4odjasda::::res://Assets/Island_2/roads2W.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>res://Scripts/UI/Minimap.gd<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://ck8mgq2x72mdj::::res://Assets/Island_2/Rotated 1.png<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://isddw15463qg::::res://Assets/Island_2/Factory 4.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://dlmivgbhtryag::::res://Assets/Island_2/1 fence.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://du7pbis24sval::::res://Assets/Island_2/Sides/(2) 1 fence Side 1-3.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://bugdjcp1ga3gd::::res://Assets/Island_2/1 fence Side 1.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png<>uid://bet307304r81m::::res://Assets/Island_2/Building (1).png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>uid://cdf32sul7ef65::::res://Assets/TopDown Vehicles v1/JEEP TOP DOWN/Yellow/SEPARATED/Yellow_JEEP_CLEAN_All_041.png<>uid://der4j84ry2wjm::::res://Assets/TopDown Vehicles v1/CIVIC TOPDOWN/Brown/SEPARATED/Brown_CIVIC_CLEAN_All_011.png<>uid://cwieudl41clqv::::res://Assets/Island_2/helicopter/separated_frames/helicopter_1.png<>uid://bqc2uq47o42di::::res://Assets/Island_2/helicopter/separated_frames/helicopter_2.png<>uid://chbfp2cjctwmg::::res://Assets/TopDown Vehicles v1/VAN TOP DOWN/White/SEPARATED/White_VAN_CLEAN_All_043.png<>uid://bh612ki6xs6dg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_3.png<>uid://748bo18lp40w::::res://Assets/Island_2/helicopter/separated_frames/helicopter_4.png<>uid://brv43pqrse8o7::::res://Scenes/Islands/Island2_Buildings/DoubleTower.tscn<>uid://8u3yhs7qgtfg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_5.png<>uid://32cb0awc2hy5::::res://Assets/Island_2/helicopter/separated_frames/helicopter_6.png<>uid://nkis0a2k8x0e::::res://Scenes/Islands/Island2_Buildings/FireStation.tscn<>uid://datlmma4cjtb8::::res://Assets/Island_2/helicopter/separated_frames/helicopter_7.png<>uid://c85ywclf51ohf::::res://Assets/Island_2/helicopter/separated_frames/helicopter_8.png<>uid://d03ecydwi4nki::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png<>uid://di4hxgflwpvit::::res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED/LIMO_CLEAN_ALLD0036.png<>uid://7unejjb61uy7::::res://Assets/fire_column_medium/fire_column_medium_3.png<>uid://bjkkyge5fofwr::::res://Assets/fire_column_medium/fire_column_medium_4.png<>uid://271evfchwqo8::::res://Assets/fire_column_medium/fire_column_medium_5.png<>uid://nlrffnshfgro::::res://Assets/fire_column_medium/fire_column_medium_6.png<>uid://dn2ip0gpa0fww::::res://Scenes/Characters/NPC/Car_mov.tscn<>uid://dkixw4w36f78h::::res://Assets/fire_column_medium/fire_column_medium_7.png<>uid://bti8pppgdm3r5::::res://Assets/fire_column_medium/fire_column_medium_8.png<>uid://duchpfielt05r::::res://Assets/fire_column_medium/fire_column_medium_9.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scenes/MapFeatures/portal2.gd<>uid://bhptvfgk0kryy::::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0017.png<>uid://dp7685jjjyrjf::::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0002.png<>uid://xj0feaaxo445::::res://Assets/TopDown Vehicles v1/Wreckage/Burnt/Pickup/PICKUP_Burnt_002.png<>uid://bfxuvt2kuwfi0::::res://Assets/TopDown Vehicles v1/Wreckage/Burnt/SUV/SUV_Burnt_005.png
 Island_2_1.tscn::PackedScene::2831452168275608678::1733309517::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://bp2gk4odjasda::::res://Assets/Island_2/roads2W.png<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://dsny3oddb5bqg::::res://Assets/Island_2/Building Vers 4.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://chja24gbm3uoj::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-7.png.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>res://Scenes/MapFeatures/portal_back2.gd<>uid://ckdm6kh0yy2nc::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-4.png.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scenes/MapFeatures/portal3.gd<>res://Scripts/UI/Minimap.gd<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://c5ve3jstlwg1::::res://Scenes/Characters/NPC/npc_Ia.tscn<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png
-island_2_1_sky.gd::GDScript::-1::1733308348::0::1::::<>Node2D<>::
+island_2_1_sky.gd::GDScript::-1::1733311515::0::1::::<>Node2D<>::
 Island_2_1_Sky.tscn::PackedScene::3291791560999683055::1733309671::0::1::::<><>::res://Scenes/Islands/island_2_1_sky.gd<>uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://bp2gk4odjasda::::res://Assets/Island_2/roads2W.png<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://bugdjcp1ga3gd::::res://Assets/Island_2/1 fence Side 1.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://dlmivgbhtryag::::res://Assets/Island_2/1 fence.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://c6uocb0ckhffw::::res://Assets/Island_2/SolarPanel.png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>res://Scripts/UI/Minimap.gd<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png<>res://Scenes/MapFeatures/portal_back2.gd<>res://Scenes/MapFeatures/portal_back3.gd
 Island_3.tscn::PackedScene::3782855754139250367::1733308348::0::1::::<><>::
 Island_4.tscn::PackedScene::3592230641963098564::1733308348::0::1::::<><>::
 Island_5.tscn::PackedScene::7311904147130726023::1733308348::0::1::::<><>::
 Island_6.tscn::PackedScene::6704442424878840212::1733308348::0::1::::<><>::
-::res://Scenes/Islands/Island2_Buildings/::1733310741
-FireStation.tscn::PackedScene::933617939392636474::1733310920::0::1::::<><>::uid://bav1tpjth4225::::res://Assets/Island_2/roguelikeCity_magenta.png
-sprite_2d.tscn::PackedScene::3624794566758246368::1733310866::0::1::::<><>::uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png
-::res://Scenes/Main/::1733308524
+::res://Scenes/Islands/Island2_Buildings/::1733311515
+DoubleTower.tscn::PackedScene::3624794566758246368::1733311515::0::1::::<><>::uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png
+FireStation.tscn::PackedScene::933617939392636474::1733311515::0::1::::<><>::uid://bav1tpjth4225::::res://Assets/Island_2/roguelikeCity_magenta.png
+LeftTower.tscn::PackedScene::3946013829512043623::1733319464::0::1::::<><>::uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png<>uid://bet307304r81m::::res://Assets/Island_2/Building (1).png
+::res://Scenes/Main/::1733311515
 MainMenu.tscn::PackedScene::8629556034029862101::1733308524::0::1::::<><>::res://Scripts/Main/main_menu.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png
-start_from_scratch.tscn::PackedScene::4960361777654279137::1733308524::0::1::::<><>::res://Scripts/Main/Main_Script.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>res://Scripts/UI/Minimap.gd<>uid://4esnetqov2pm::::res://Scenes/Characters/NPC/npc.tscn<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scripts/portals/portal.gd
-::res://Scenes/MapFeatures/::1733308525
-portal2.gd::GDScript::-1::1733308348::0::1::::<>Area2D<>::
-portal3.gd::GDScript::-1::1733308348::0::1::::<>Area2D<>::
-portal.tscn::PackedScene::8795923097765957602::1733308348::0::1::::<><>::
-portal_back2.gd::GDScript::-1::1733308348::0::1::::<>Area2D<>::
-portal_back3.gd::GDScript::-1::1733308348::0::1::::<>Area2D<>::
-portal_back.tscn::PackedScene::4405398819802061983::1733308525::0::1::::<><>::uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn
-::res://Scenes/Menus/::1733308348
-keybinds.tscn::PackedScene::9109403115266922729::1733308348::0::1::::<><>::res://Scripts/Menus/keybinds.gd
-settings.tscn::PackedScene::5348599586857400175::1733308348::0::1::::<><>::res://Scripts/Menus/settings.gd<>uid://d10qmoevsvn76::::res://Assets/freakyMenu.ogg
-::res://Scenes/UI/::1733308348
+start_from_scratch.tscn::PackedScene::4960361777654279137::1733311515::0::1::::<><>::res://Scripts/Main/Main_Script.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>res://Scripts/UI/Minimap.gd<>uid://4esnetqov2pm::::res://Scenes/Characters/NPC/npc.tscn<>uid://bawpce85nfff5::::res://Assets/star_01.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scripts/portals/portal.gd
+::res://Scenes/MapFeatures/::1733311515
+portal2.gd::GDScript::-1::1733311515::0::1::::<>Area2D<>::
+portal3.gd::GDScript::-1::1733311515::0::1::::<>Area2D<>::
+portal.tscn::PackedScene::8795923097765957602::1733311515::0::1::::<><>::
+portal_back2.gd::GDScript::-1::1733311515::0::1::::<>Area2D<>::
+portal_back3.gd::GDScript::-1::1733311515::0::1::::<>Area2D<>::
+portal_back.tscn::PackedScene::4405398819802061983::1733311515::0::1::::<><>::uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn
+::res://Scenes/Menus/::1733311515
+keybinds.tscn::PackedScene::9109403115266922729::1733311515::0::1::::<><>::res://Scripts/Menus/keybinds.gd
+settings.tscn::PackedScene::5348599586857400175::1733311515::0::1::::<><>::res://Scripts/Menus/settings.gd<>uid://d10qmoevsvn76::::res://Assets/freakyMenu.ogg
+::res://Scenes/UI/::1733311515
 Minimap.tscn::PackedScene::7599100304286141310::1733308348::0::1::::<><>::res://Scripts/UI/Minimap.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png<>uid://bawpce85nfff5::::res://Assets/star_01.png
-::res://Scenes/UI/Inventory_Stuff/::1733308348
-hotbar.tscn::PackedScene::8413230733895592942::1733308348::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/Inventory_Hotbar.gd
-inventory_item.tscn::PackedScene::2134815066993997264::1733308348::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/inventory_item.gd
-inventory_slot.tscn::PackedScene::6275134571658132928::1733308348::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/inventory_slot.gd<>uid://bw36f1dkp2ul::::res://Assets/InventoryBox.png
-inventory_ui.tscn::PackedScene::5744222872077438238::1733308348::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/inventory_ui.gd
-::res://Scripts/::1733308348
-::res://Scripts/Characters/::1733308348
-player.gd::GDScript::-1::1733308348::0::1::::<>CharacterBody2D<>::
-::res://Scripts/Characters/NPC/::1733309517
+::res://Scenes/UI/Inventory_Stuff/::1733311515
+hotbar.tscn::PackedScene::8413230733895592942::1733311515::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/Inventory_Hotbar.gd
+inventory_item.tscn::PackedScene::2134815066993997264::1733311515::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/inventory_item.gd
+inventory_slot.tscn::PackedScene::6275134571658132928::1733311515::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/inventory_slot.gd<>uid://bw36f1dkp2ul::::res://Assets/InventoryBox.png
+inventory_ui.tscn::PackedScene::5744222872077438238::1733311515::0::1::::<><>::res://Scripts/UI/Inventory_Stuff/inventory_ui.gd
+::res://Scripts/::1733311515
+::res://Scripts/Characters/::1733311515
+player.gd::GDScript::-1::1733311515::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Characters/NPC/::1733311515
 car_move.gd::GDScript::-1::1733152154::0::1::::<>CharacterBody2D<>::
-npc.gd::GDScript::-1::1733308356::0::1::::<>CharacterBody2D<>::
-wander.gd::GDScript::-1::1733309517::0::1::::<>Node2D<>::
-::res://Scripts/Dialogues/::1733308356
-Choices_Dialog.gd::GDScript::-1::1733308348::0::1::::<>PanelContainer<>::
-dialogue.gd::GDScript::-1::1733308356::0::1::::<>Control<>::
+npc.gd::GDScript::-1::1733311515::0::1::::<>CharacterBody2D<>::
+wander.gd::GDScript::-1::1733319464::0::1::::<>Node2D<>::
+::res://Scripts/Dialogues/::1733311515
+Choices_Dialog.gd::GDScript::-1::1733311515::0::1::::<>PanelContainer<>::
+dialogue.gd::GDScript::-1::1733311515::0::1::::<>Control<>::
 test_npc.json::JSON::-1::1733308348::0::1::::<><>::
-::res://Scripts/Dialogues/Dialogs/::1733308348
+::res://Scripts/Dialogues/Dialogs/::1733311515
 test_npc.json::JSON::-1::1733308348::0::1::::<><>::
 test_npc_response.json::JSON::-1::1733308348::0::1::::<><>::
-::res://Scripts/Dialogues/Dialogs/Ian_Island2/::1733308394
+::res://Scripts/Dialogues/Dialogs/Ian_Island2/::1733311530
 Dialogue.json::JSON::-1::1733308356::0::1::::<><>::
-::res://Scripts/Dialogues/Dialogs/Julian_Island2/::1733308348
+::res://Scripts/Dialogues/Dialogs/Julian_Island2/::1733311515
 Dialogue.json::JSON::-1::1733308348::0::1::::<><>::
 Response.json::JSON::-1::1733308348::0::1::::<><>::
-::res://Scripts/Dialogues/Dialogs/Mariem_Main/::1733308394
+::res://Scripts/Dialogues/Dialogs/Mariem_Main/::1733311531
 Dialogue.json::JSON::-1::1733308356::0::1::::<><>::
-::res://Scripts/Global_(autoload)/::1733308521
-Global.gd::GDScript::-1::1733308348::0::1::::<>Node<>::
-Player_data.gd::GDScript::-1::1733308521::0::1::::<>Node<>::
-::res://Scripts/Main/::1733308348
-Main.gd::GDScript::-1::1733308348::0::1::::<>RefCounted<>::
-main_menu.gd::GDScript::-1::1733308348::0::1::::MainMenu<>Control<>::
-Main_Script.gd::GDScript::-1::1733308348::0::1::::<>Node2D<>::
-::res://Scripts/Menus/::1733308348
-keybinds.gd::GDScript::-1::1733308348::0::1::::<>Control<>::
-settings.gd::GDScript::-1::1733308348::0::1::::Settings<>Control<>::
-::res://Scripts/portals/::1733308348
-portal.gd::GDScript::-1::1733308348::0::1::::<>Area2D<>::
-portal_back.gd::GDScript::-1::1733308348::0::1::::<>Area2D<>::
-::res://Scripts/UI/::1733308348
-Minimap.gd::GDScript::-1::1733308348::0::1::::<>SubViewport<>::
-::res://Scripts/UI/Inventory_Stuff/::1733308348
-Inventory_Hotbar.gd::GDScript::-1::1733308348::0::1::::<>Control<>::
-inventory_item.gd::GDScript::-1::1733308348::0::1::::<>Node2D<>::
-inventory_slot.gd::GDScript::-1::1733308348::0::1::::<>Control<>::
-inventory_ui.gd::GDScript::-1::1733308348::0::1::::<>Control<>::
+::res://Scripts/Global_(autoload)/::1733311515
+Global.gd::GDScript::-1::1733311515::0::1::::<>Node<>::
+Player_data.gd::GDScript::-1::1733311515::0::1::::<>Node<>::
+::res://Scripts/Main/::1733311515
+Main.gd::GDScript::-1::1733311515::0::1::::<>RefCounted<>::
+main_menu.gd::GDScript::-1::1733311515::0::1::::MainMenu<>Control<>::
+Main_Script.gd::GDScript::-1::1733311515::0::1::::<>Node2D<>::
+::res://Scripts/Menus/::1733311515
+keybinds.gd::GDScript::-1::1733311515::0::1::::<>Control<>::
+settings.gd::GDScript::-1::1733311515::0::1::::Settings<>Control<>::
+::res://Scripts/portals/::1733311515
+portal.gd::GDScript::-1::1733311515::0::1::::<>Area2D<>::
+portal_back.gd::GDScript::-1::1733311515::0::1::::<>Area2D<>::
+::res://Scripts/UI/::1733311515
+Minimap.gd::GDScript::-1::1733311515::0::1::::<>SubViewport<>::
+::res://Scripts/UI/Inventory_Stuff/::1733311515
+Inventory_Hotbar.gd::GDScript::-1::1733311515::0::1::::<>Control<>::
+inventory_item.gd::GDScript::-1::1733311515::0::1::::<>Node2D<>::
+inventory_slot.gd::GDScript::-1::1733311515::0::1::::<>Control<>::
+inventory_ui.gd::GDScript::-1::1733311515::0::1::::<>Control<>::

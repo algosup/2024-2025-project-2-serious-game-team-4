@@ -16,4 +16,5 @@ func _input(event):
 	if on_portal:
 		if event.is_action_pressed("INTERACT"):
 			portal_entered.emit()
-			get_tree().change_scene_to_file("res://Scenes/Islands/Island_2.tscn")
+			get_tree().change_scene_to_file.bind("res://Scenes/Islands/Island_2.tscn").call_deferred()
+			
