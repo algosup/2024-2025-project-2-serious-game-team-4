@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ccw3o0orfl6ev"]
+[gd_scene load_steps=9 format=3 uid="uid://ccw3o0orfl6ev"]
 
 [ext_resource type="Script" path="res://Scripts/Main/Main_Script.gd" id="1_cpqyx"]
 [ext_resource type="Texture2D" uid="uid://c2b65ok6lqyr5" path="res://Assets/Screenshot 2024-11-14 114117.png" id="2_6klk6"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://4esnetqov2pm" path="res://Scenes/Characters/NPC/npc.tscn" id="5_yypua"]
 [ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="6_kl7yv"]
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="8_ey5kp"]
-[ext_resource type="Script" path="res://Scripts/portals/portal.gd" id="9_gi7r2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tl5pc"]
 size = Vector2(655, 70)
@@ -95,8 +94,9 @@ position = Vector2(-75, -75)
 NPCname = "Mariem"
 
 [node name="portal" parent="." instance=ExtResource("8_ey5kp")]
-position = Vector2(142, -49)
-script = ExtResource("9_gi7r2")
+position = Vector2(141, -46)
+destination = "res://Scenes/Islands/Island_2.tscn"
+interact = true
 
 [connection signal="too_many_trees" from="." to="Player" method="_on_main_too_many_trees"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/pink_potion" to="." method="_on_pink_potion_button_pressed"]
@@ -104,5 +104,4 @@ script = ExtResource("9_gi7r2")
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]
 [connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]
 [connection signal="spawn_tree_area" from="npc" to="." method="_on_npc_spawn_tree_area"]
-[connection signal="body_exited" from="portal" to="portal" method="_on_body_exited"]
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]

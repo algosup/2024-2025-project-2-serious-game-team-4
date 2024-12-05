@@ -1,8 +1,7 @@
-[gd_scene load_steps=83 format=4 uid="uid://de7bfhp0dnals"]
+[gd_scene load_steps=75 format=4 uid="uid://de7bfhp0dnals"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_shgl3"]
 [ext_resource type="Texture2D" uid="uid://jucxx065s6up" path="res://Assets/Island_2/Factory (Finish).png" id="2_otqg4"]
-[ext_resource type="Script" path="res://Scripts/portals/portal_back.gd" id="3_7whsd"]
 [ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="4_8ytvg"]
 [ext_resource type="Texture2D" uid="uid://yvhqvd2elmna" path="res://Assets/Island_2/rpg city assets.png" id="4_436ke"]
 [ext_resource type="Texture2D" uid="uid://b5krmx80cot0c" path="res://Assets/Island_2/rpg city assets turned.png" id="5_15lxa"]
@@ -39,16 +38,8 @@
 [ext_resource type="PackedScene" uid="uid://b5we2i0eibguj" path="res://Scenes/Islands/Island2_Buildings/LeftTower.tscn" id="24_4m81k"]
 [ext_resource type="Texture2D" uid="uid://d03ecydwi4nki" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png" id="26_3x4ak"]
 [ext_resource type="Texture2D" uid="uid://di4hxgflwpvit" path="res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED/LIMO_CLEAN_ALLD0036.png" id="27_r4mbw"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_3.png" id="29_joetl"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_4.png" id="30_tsns4"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_5.png" id="31_t81vo"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_6.png" id="32_41gps"]
 [ext_resource type="PackedScene" uid="uid://dn2ip0gpa0fww" path="res://Scenes/Characters/NPC/Car_mov.tscn" id="33_dgbew"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_7.png" id="33_eo2je"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_8.png" id="34_6s13u"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_9.png" id="35_df4mg"]
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="38_6y3bp"]
-[ext_resource type="Script" path="res://Scenes/MapFeatures/portal2.gd" id="39_wx5tu"]
 [ext_resource type="Texture2D" uid="uid://bhptvfgk0kryy" path="res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0017.png" id="42_2lp3f"]
 [ext_resource type="Texture2D" uid="uid://dp7685jjjyrjf" path="res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0002.png" id="43_wrogl"]
 [ext_resource type="Texture2D" uid="uid://xj0feaaxo445" path="res://Assets/TopDown Vehicles v1/Wreckage/Burnt/Pickup/PICKUP_Burnt_002.png" id="44_wv76i"]
@@ -56,6 +47,7 @@
 [ext_resource type="Script" path="res://Scenes/Islands/BuildingTrans.gd" id="47_jykuq"]
 [ext_resource type="Script" path="res://Scenes/Islands/BehindBuidling2.gd" id="48_i6ixt"]
 [ext_resource type="Script" path="res://Scenes/Islands/Behind_Building3.gd" id="49_6o7xj"]
+[ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="49_of6ce"]
 [ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/UI/star_01.png" id="51_3ctmd"]
 [ext_resource type="Texture2D" uid="uid://p71dadhwwxcd" path="res://Assets/Screenshot 2024-12-04 at 23.01.35.png" id="51_qjwei"]
 
@@ -914,31 +906,31 @@ sources/5 = SubResource("TileSetAtlasSource_ufov6")
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("29_joetl")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_tsns4")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_t81vo")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_41gps")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_eo2je")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_6s13u")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_df4mg")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_6s13u")
+"texture": null
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_eo2je")
+"texture": null
 }],
 "loop": true,
 "name": &"default",
@@ -1199,22 +1191,18 @@ position = Vector2(402, -529)
 scale = Vector2(0.8, 0.8)
 
 [node name="(2)1FenceSide1-3" type="Sprite2D" parent="Buildings/BackBuildings"]
-scale = Vector2(1, 1)
 texture = ExtResource("8_jwpyp")
 
 [node name="(2)1FenceSide1-5" type="Sprite2D" parent="Buildings/BackBuildings"]
 position = Vector2(252.5, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("8_jwpyp")
 
 [node name="(2)1FenceSide1-6" type="Sprite2D" parent="Buildings/BackBuildings"]
 position = Vector2(505, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("8_jwpyp")
 
 [node name="(2)1FenceSide1-7" type="Sprite2D" parent="Buildings/BackBuildings"]
 position = Vector2(757.5, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("8_jwpyp")
 
 [node name="Sprite2D2" parent="Buildings" instance=ExtResource("20_na52l")]
@@ -1674,18 +1662,22 @@ position = Vector2(1867, 25)
 [node name="Marker2D4" type="Marker2D" parent="." groups=["car"]]
 position = Vector2(-2880, 25)
 
-[node name="portal3" parent="." instance=ExtResource("38_6y3bp")]
-position = Vector2(-7, -32)
-script = ExtResource("3_7whsd")
+[node name="portal_back2" parent="." instance=ExtResource("49_of6ce")]
+position = Vector2(-648, -411)
+destination = "res://Scenes/Islands/Island_2_1.tscn"
+main_name_destination = "Island2_1"
+new_pos = Vector2(700, -186)
 
 [node name="portal" parent="." instance=ExtResource("38_6y3bp")]
-position = Vector2(-1449, -91)
-rotation = 1.5708
-script = ExtResource("39_wx5tu")
+position = Vector2(-6, -34)
+destination = "res://Scenes/Main/start_from_scratch.tscn"
+interact = true
 
-[node name="portal2" parent="." instance=ExtResource("38_6y3bp")]
-position = Vector2(-627, -423)
-script = ExtResource("39_wx5tu")
+[node name="portal_back" parent="." instance=ExtResource("49_of6ce")]
+position = Vector2(-1418, -42)
+destination = "res://Scenes/Islands/Island_2_1.tscn"
+main_name_destination = "Island2_1"
+new_pos = Vector2(0, 13)
 
 [connection signal="body_entered" from="Buildings/Area2D" to="Buildings/Area2D" method="_on_area_2d_body_entered_behind_building"]
 [connection signal="body_exited" from="Buildings/Area2D" to="Buildings/Area2D" method="_on_area_2d_body_exited_behind_building"]
@@ -1693,5 +1685,6 @@ script = ExtResource("39_wx5tu")
 [connection signal="body_exited" from="Buildings/Area2D2" to="Buildings/Area2D2" method="_on_body_exited"]
 [connection signal="body_entered" from="Buildings/Area2D3" to="Buildings/Area2D3" method="_on_body_entered"]
 [connection signal="body_exited" from="Buildings/Area2D3" to="Buildings/Area2D3" method="_on_body_exited"]
-[connection signal="portal2" from="portal" to="Player" method="_on_portal_portal_2"]
-[connection signal="portal2" from="portal2" to="Player" method="_on_portal_2_portal_2"]
+[connection signal="portal_entered" from="portal_back2" to="Player" method="_on_portal_back_portal_entered"]
+[connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
+[connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]

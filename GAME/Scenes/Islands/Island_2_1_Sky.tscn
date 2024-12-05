@@ -23,7 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="22_g1ebp"]
 [ext_resource type="Texture2D" uid="uid://sqa62445pxim" path="res://Assets/Island_2/Tileset_Highschool.png" id="23_olr2o"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="23_q7e0b"]
-[ext_resource type="Script" path="res://Scenes/MapFeatures/portal_back3.gd" id="24_ge00a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jqy55"]
 texture = ExtResource("1_yqnic")
@@ -515,6 +514,28 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="GDScript" id="GDScript_8aiem"]
+script/source = "extends Area2D
+
+signal portal_entered
+
+var on_portal = false
+
+func _on_body_entered(body):
+	if body.is_in_group('Player'):
+		on_portal = true
+
+func _on_body_exited(body: Node2D) -> void:
+	if body.is_in_group('Player'):
+		on_portal = false
+
+func _input(event):
+	if on_portal:
+		if event.is_action_pressed(\"INTERACT\"):
+			portal_entered.emit()
+			get_tree().change_scene_to_file.bind(\"res://Scenes/Islands/Island_2_1.tscn\").call_deferred()
+"
+
 [node name="Island2" type="Node2D"]
 position = Vector2(5, 3)
 script = ExtResource("1_6fev0")
@@ -830,7 +851,7 @@ frame_progress = 0.525143
 
 [node name="portal_back2" parent="." instance=ExtResource("19_p6jkd")]
 position = Vector2(-1, -15)
-script = ExtResource("24_ge00a")
+script = SubResource("GDScript_8aiem")
 
 [connection signal="body_entered" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_entered"]
 [connection signal="body_exited" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_exited"]

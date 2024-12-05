@@ -1,3 +1,4 @@
+res://Scripts/portals
 res://Assets/Red_Coupe/SOUTHEAST
 res://Assets/Red_Coupe/NORTHEAST
 res://Assets/Red_Coupe/SOUTHWEST
@@ -12,7 +13,6 @@ res://Assets/NpcInteractions
 res://Assets/UI
 res://Assets/Emotes/mid
 res://Assets/Island_2
-res://Scripts/portals
 res://Scenes/Islands/Island2_Buildings
 res://Scripts/Characters/NPC
 res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH/SEPARATED
