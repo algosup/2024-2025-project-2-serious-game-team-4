@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cig5wh0g3chs6"]
 
 [ext_resource type="Script" path="res://Scripts/Menus/settings.gd" id="1_y8vtn"]
-[ext_resource type="AudioStream" uid="uid://d10qmoevsvn76" path="res://Assets/freakyMenu.ogg" id="2_auf2d"]
+[ext_resource type="AudioStream" path="res://Assets/freakyMenu.ogg" id="2_auf2d"]
 
 [sub_resource type="SystemFont" id="SystemFont_nkpu1"]
 font_names = PackedStringArray("Impact")

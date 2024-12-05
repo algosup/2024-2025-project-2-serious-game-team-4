@@ -4,11 +4,11 @@ extends Node
 #This is to know where the player is before they change zones
 var parent_path = "res://Scenes/Main/start_from_scratch.tscn"
 #Player position
-var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2.ZERO, "Island3" : Vector2.ZERO}
+var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2.ZERO, "Island2_1" : Vector2.ZERO}
 #Player rotation
-var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island3" : "Idle_Down"}
+var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island2_1" : "Idle_Down"}
 
-var player_speed : int = 150
+var player_speed : int = 250
 
 func set_position(pos: Vector2, place: String):
 	player_pos [place] = pos

@@ -501,7 +501,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Island3" type="Node2D"]
+[node name="Island2_1" type="Node2D"]
 position = Vector2(-1773, -196)
 
 [node name="floor" type="TileMapLayer" parent="."]

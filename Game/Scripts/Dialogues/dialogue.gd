@@ -29,6 +29,7 @@ func start():
 	next_script(dialogue)
 	
 func load_dialogue():
+	print("res://Scripts/Dialogues/Dialogs/"+get_parent().NPCname+"_"+get_tree().current_scene.name+"/Dialogue.json")
 	var file = FileAccess.open("res://Scripts/Dialogues/Dialogs/"+get_parent().NPCname+"_"+get_tree().current_scene.name+"/Dialogue.json", FileAccess.READ)
 	var content = JSON.parse_string(file.get_as_text())
 	return content
