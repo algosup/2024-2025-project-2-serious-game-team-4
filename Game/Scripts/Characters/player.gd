@@ -123,11 +123,15 @@ func save_player_data():
 	PlayerData.set_rotation(last_move, get_parent().name)
 	PlayerData.set_player_speed(speed)
 
-func _on_portal_portal_entered() -> void:
-	save_player_data()
+func save_specific_player_data(destination, main_name_destination, new_pos):
+	PlayerData.set_parent_path(destination)
+	PlayerData.set_position(new_pos, main_name_destination)
+	PlayerData.set_rotation(last_move, main_name_destination)
+	PlayerData.set_player_speed(speed)
 
-func _on_portal_back_portal_entered() -> void:
+func _on_portal_portal_entered(destination) -> void:
 	save_player_data()
+	get_tree().change_scene_to_file(destination)
 
 func _on_keybinds_pressed() -> void:
 	Keybinds.visible = true
@@ -140,3 +144,7 @@ func _on_back_to_game_pressed() -> void:
 func _on_back_pressed() -> void:
 	Keybinds.visible = false
 	Settingss.visible = true
+
+func _on_portal_back_portal_entered(destination: String, main_name_destination: String, new_pos: Vector2) -> void:
+	save_specific_player_data(destination, main_name_destination, new_pos)
+	get_tree().change_scene_to_file(destination)

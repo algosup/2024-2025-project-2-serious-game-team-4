@@ -1,6 +1,9 @@
 extends Node2D	
+<<<<<<< HEAD
 
 @onready var dev_tool = $CanvasLayer2
+=======
+>>>>>>> Emilien
 @onready var Progress_bar = $CanvasLayer/ProgressBar
 
 

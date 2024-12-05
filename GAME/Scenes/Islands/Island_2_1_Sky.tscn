@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=36 format=4 uid="uid://bm5tlc677n8yt"]
+=======
+[gd_scene load_steps=35 format=4 uid="uid://bm5tlc677n8yt"]
+>>>>>>> Emilien
 
 [ext_resource type="Script" path="res://Scenes/Islands/island_2_1_sky.gd" id="1_6fev0"]
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_yqnic"]
@@ -23,7 +27,10 @@
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="22_g1ebp"]
 [ext_resource type="Texture2D" uid="uid://sqa62445pxim" path="res://Assets/Island_2/Tileset_Highschool.png" id="23_olr2o"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="23_q7e0b"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://Scenes/MapFeatures/portal_back3.gd" id="24_ge00a"]
+=======
+>>>>>>> Emilien
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jqy55"]
 texture = ExtResource("1_yqnic")
@@ -515,7 +522,11 @@ animations = [{
 "speed": 5.0
 }]
 
+<<<<<<< HEAD
 [node name="Island2" type="Node2D"]
+=======
+[node name="Island2_1_Sky" type="Node2D"]
+>>>>>>> Emilien
 position = Vector2(5, 3)
 script = ExtResource("1_6fev0")
 
@@ -828,9 +839,18 @@ sprite_frames = SubResource("SpriteFrames_8mv3j")
 autoplay = "default"
 frame_progress = 0.525143
 
+<<<<<<< HEAD
 [node name="portal_back2" parent="." instance=ExtResource("19_p6jkd")]
 position = Vector2(-1, -15)
 script = ExtResource("24_ge00a")
+=======
+[node name="portal_back" parent="." instance=ExtResource("19_p6jkd")]
+position = Vector2(-1, -16)
+destination = "res://Scenes/Islands/Island_2_1.tscn"
+interact = true
+main_name_destination = "Island2_1"
+new_pos = Vector2(157, -216)
+>>>>>>> Emilien
 
 [connection signal="body_entered" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_entered"]
 [connection signal="body_exited" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_exited"]
