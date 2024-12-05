@@ -39,14 +39,14 @@
 [ext_resource type="PackedScene" uid="uid://b5we2i0eibguj" path="res://Scenes/Islands/Island2_Buildings/LeftTower.tscn" id="24_4m81k"]
 [ext_resource type="Texture2D" uid="uid://d03ecydwi4nki" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png" id="26_3x4ak"]
 [ext_resource type="Texture2D" uid="uid://di4hxgflwpvit" path="res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED/LIMO_CLEAN_ALLD0036.png" id="27_r4mbw"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_3.png" id="29_joetl"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_4.png" id="30_tsns4"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_5.png" id="31_t81vo"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_6.png" id="32_41gps"]
+[ext_resource type="Texture2D" uid="uid://7unejjb61uy7" path="res://Assets/FireAnimation/fire_column_medium_3.png" id="29_joetl"]
+[ext_resource type="Texture2D" uid="uid://bjkkyge5fofwr" path="res://Assets/FireAnimation/fire_column_medium_4.png" id="30_tsns4"]
+[ext_resource type="Texture2D" uid="uid://271evfchwqo8" path="res://Assets/FireAnimation/fire_column_medium_5.png" id="31_t81vo"]
+[ext_resource type="Texture2D" uid="uid://nlrffnshfgro" path="res://Assets/FireAnimation/fire_column_medium_6.png" id="32_41gps"]
 [ext_resource type="PackedScene" uid="uid://dn2ip0gpa0fww" path="res://Scenes/Characters/NPC/Car_mov.tscn" id="33_dgbew"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_7.png" id="33_eo2je"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_8.png" id="34_6s13u"]
-[ext_resource type="Texture2D" path="res://Assets/fire_column_medium/fire_column_medium_9.png" id="35_df4mg"]
+[ext_resource type="Texture2D" uid="uid://dkixw4w36f78h" path="res://Assets/FireAnimation/fire_column_medium_7.png" id="33_eo2je"]
+[ext_resource type="Texture2D" uid="uid://bti8pppgdm3r5" path="res://Assets/FireAnimation/fire_column_medium_8.png" id="34_6s13u"]
+[ext_resource type="Texture2D" uid="uid://duchpfielt05r" path="res://Assets/FireAnimation/fire_column_medium_9.png" id="35_df4mg"]
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="38_6y3bp"]
 [ext_resource type="Script" path="res://Scenes/MapFeatures/portal2.gd" id="39_wx5tu"]
 [ext_resource type="Texture2D" uid="uid://bhptvfgk0kryy" path="res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0017.png" id="42_2lp3f"]
@@ -56,7 +56,7 @@
 [ext_resource type="Script" path="res://Scenes/Islands/BuildingTrans.gd" id="47_jykuq"]
 [ext_resource type="Script" path="res://Scenes/Islands/BehindBuidling2.gd" id="48_i6ixt"]
 [ext_resource type="Script" path="res://Scenes/Islands/Behind_Building3.gd" id="49_6o7xj"]
-[ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/UI/star_01.png" id="51_3ctmd"]
+[ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="51_3ctmd"]
 [ext_resource type="Texture2D" uid="uid://p71dadhwwxcd" path="res://Assets/Screenshot 2024-12-04 at 23.01.35.png" id="51_qjwei"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2wi8h"]
@@ -1199,22 +1199,18 @@ position = Vector2(402, -529)
 scale = Vector2(0.8, 0.8)
 
 [node name="(2)1FenceSide1-3" type="Sprite2D" parent="Buildings/BackBuildings"]
-scale = Vector2(1, 1)
 texture = ExtResource("8_jwpyp")
 
 [node name="(2)1FenceSide1-5" type="Sprite2D" parent="Buildings/BackBuildings"]
 position = Vector2(252.5, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("8_jwpyp")
 
 [node name="(2)1FenceSide1-6" type="Sprite2D" parent="Buildings/BackBuildings"]
 position = Vector2(505, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("8_jwpyp")
 
 [node name="(2)1FenceSide1-7" type="Sprite2D" parent="Buildings/BackBuildings"]
 position = Vector2(757.5, 0)
-scale = Vector2(1, 1)
 texture = ExtResource("8_jwpyp")
 
 [node name="Sprite2D2" parent="Buildings" instance=ExtResource("20_na52l")]
