@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 [gd_scene load_steps=83 format=4 uid="uid://de7bfhp0dnals"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_shgl3"]
 [ext_resource type="Texture2D" uid="uid://jucxx065s6up" path="res://Assets/Island_2/Factory (Finish).png" id="2_otqg4"]
 [ext_resource type="Script" path="res://Scripts/portals/portal_back.gd" id="3_7whsd"]
+=======
+[gd_scene load_steps=82 format=4 uid="uid://de7bfhp0dnals"]
+
+[ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_shgl3"]
+[ext_resource type="Texture2D" uid="uid://jucxx065s6up" path="res://Assets/Island_2/Factory (Finish).png" id="2_otqg4"]
+>>>>>>> Emilien
 [ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="4_8ytvg"]
 [ext_resource type="Texture2D" uid="uid://yvhqvd2elmna" path="res://Assets/Island_2/rpg city assets.png" id="4_436ke"]
 [ext_resource type="Texture2D" uid="uid://b5krmx80cot0c" path="res://Assets/Island_2/rpg city assets turned.png" id="5_15lxa"]
@@ -48,7 +55,10 @@
 [ext_resource type="Texture2D" uid="uid://bti8pppgdm3r5" path="res://Assets/FireAnimation/fire_column_medium_8.png" id="34_6s13u"]
 [ext_resource type="Texture2D" uid="uid://duchpfielt05r" path="res://Assets/FireAnimation/fire_column_medium_9.png" id="35_df4mg"]
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="38_6y3bp"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://Scenes/MapFeatures/portal2.gd" id="39_wx5tu"]
+=======
+>>>>>>> Emilien
 [ext_resource type="Texture2D" uid="uid://bhptvfgk0kryy" path="res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0017.png" id="42_2lp3f"]
 [ext_resource type="Texture2D" uid="uid://dp7685jjjyrjf" path="res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0002.png" id="43_wrogl"]
 [ext_resource type="Texture2D" uid="uid://xj0feaaxo445" path="res://Assets/TopDown Vehicles v1/Wreckage/Burnt/Pickup/PICKUP_Burnt_002.png" id="44_wv76i"]
@@ -56,8 +66,14 @@
 [ext_resource type="Script" path="res://Scenes/Islands/BuildingTrans.gd" id="47_jykuq"]
 [ext_resource type="Script" path="res://Scenes/Islands/BehindBuidling2.gd" id="48_i6ixt"]
 [ext_resource type="Script" path="res://Scenes/Islands/Behind_Building3.gd" id="49_6o7xj"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="51_3ctmd"]
 [ext_resource type="Texture2D" uid="uid://p71dadhwwxcd" path="res://Assets/Screenshot 2024-12-04 at 23.01.35.png" id="51_qjwei"]
+=======
+[ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/UI/star_01.png" id="51_3ctmd"]
+[ext_resource type="Texture2D" uid="uid://p71dadhwwxcd" path="res://Assets/Screenshot 2024-12-04 at 23.01.35.png" id="51_qjwei"]
+[ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="57_gepad"]
+>>>>>>> Emilien
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2wi8h"]
 texture = ExtResource("1_shgl3")
@@ -1670,6 +1686,7 @@ position = Vector2(1867, 25)
 [node name="Marker2D4" type="Marker2D" parent="." groups=["car"]]
 position = Vector2(-2880, 25)
 
+<<<<<<< HEAD
 [node name="portal3" parent="." instance=ExtResource("38_6y3bp")]
 position = Vector2(-7, -32)
 script = ExtResource("3_7whsd")
@@ -1682,6 +1699,29 @@ script = ExtResource("39_wx5tu")
 [node name="portal2" parent="." instance=ExtResource("38_6y3bp")]
 position = Vector2(-627, -423)
 script = ExtResource("39_wx5tu")
+=======
+[node name="portal" parent="." instance=ExtResource("38_6y3bp")]
+position = Vector2(-6, -34)
+destination = "res://Scenes/Main/start_from_scratch.tscn"
+interact = true
+
+[node name="portal_back" parent="." instance=ExtResource("57_gepad")]
+position = Vector2(-648, -411)
+destination = "res://Scenes/Islands/Island_2_1.tscn"
+main_name_destination = "Island2_1"
+new_pos = Vector2(700, -186)
+
+[node name="portal_back2" parent="." instance=ExtResource("57_gepad")]
+position = Vector2(-1418, -42)
+destination = "res://Scenes/Islands/Island_2_1.tscn"
+main_name_destination = "Island2_1"
+new_pos = Vector2(0, 13)
+
+[node name="portal2" parent="." instance=ExtResource("38_6y3bp")]
+position = Vector2(-1248, -520)
+destination = "res://Scenes/Islands/Island_2_1_Sky.tscn"
+interact = true
+>>>>>>> Emilien
 
 [connection signal="body_entered" from="Buildings/Area2D" to="Buildings/Area2D" method="_on_area_2d_body_entered_behind_building"]
 [connection signal="body_exited" from="Buildings/Area2D" to="Buildings/Area2D" method="_on_area_2d_body_exited_behind_building"]
@@ -1689,5 +1729,11 @@ script = ExtResource("39_wx5tu")
 [connection signal="body_exited" from="Buildings/Area2D2" to="Buildings/Area2D2" method="_on_body_exited"]
 [connection signal="body_entered" from="Buildings/Area2D3" to="Buildings/Area2D3" method="_on_body_entered"]
 [connection signal="body_exited" from="Buildings/Area2D3" to="Buildings/Area2D3" method="_on_body_exited"]
+<<<<<<< HEAD
 [connection signal="portal2" from="portal" to="Player" method="_on_portal_portal_2"]
 [connection signal="portal2" from="portal2" to="Player" method="_on_portal_2_portal_2"]
+=======
+[connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
+[connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]
+[connection signal="portal_entered" from="portal_back2" to="Player" method="_on_portal_back_portal_entered"]
+>>>>>>> Emilien

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=32 format=4 uid="uid://bglturxgofueg"]
+=======
+[gd_scene load_steps=31 format=4 uid="uid://bglturxgofueg"]
+>>>>>>> Emilien
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
 [ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_rclli"]
@@ -15,9 +19,14 @@
 [ext_resource type="Texture2D" uid="uid://sqa62445pxim" path="res://Assets/Island_2/Tileset_Highschool.png" id="13_e17ek"]
 [ext_resource type="Texture2D" uid="uid://dt1qv4bomf31q" path="res://Assets/Island_2/Factory 6.png" id="14_7bm22"]
 [ext_resource type="Texture2D" uid="uid://ckdm6kh0yy2nc" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-4.png.png" id="22_b7m0x"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://Scripts/portals/portal_back.gd" id="23_qqixc"]
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="26_jg2u4"]
 [ext_resource type="Script" path="res://Scenes/MapFeatures/portal3.gd" id="27_pvog5"]
+=======
+[ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="25_25v1u"]
+[ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="26_jg2u4"]
+>>>>>>> Emilien
 [ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="28_py124"]
 [ext_resource type="Texture2D" uid="uid://c75nqnfkix0v4" path="res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png" id="29_ietuq"]
 [ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="30_50wse"]
@@ -512,7 +521,11 @@ tile_set = SubResource("TileSet_604wy")
 collision_enabled = false
 
 [node name="Player" parent="." instance=ExtResource("6_tc8lt")]
+<<<<<<< HEAD
 position = Vector2(-2, 33)
+=======
+position = Vector2(0, -8)
+>>>>>>> Emilien
 
 [node name="Buildings" type="TileMapLayer" parent="."]
 position = Vector2(1412, 219)
@@ -730,6 +743,7 @@ sprite_frames = SubResource("SpriteFrames_8mv3j")
 autoplay = "default"
 frame_progress = 0.525143
 
+<<<<<<< HEAD
 [node name="portal2" parent="." instance=ExtResource("26_jg2u4")]
 position = Vector2(684, -186)
 script = ExtResource("23_qqixc")
@@ -738,6 +752,8 @@ script = ExtResource("23_qqixc")
 position = Vector2(-9, 190)
 script = ExtResource("23_qqixc")
 
+=======
+>>>>>>> Emilien
 [node name="Marker2D" type="Marker2D" parent="." groups=["npc_Ian"]]
 position = Vector2(-71, -15)
 
@@ -747,6 +763,28 @@ position = Vector2(-243, -15)
 [node name="npc_Ian" parent="." instance=ExtResource("31_qlmhx")]
 position = Vector2(-147, -22)
 
+<<<<<<< HEAD
 [node name="portal3" parent="." instance=ExtResource("26_jg2u4")]
 position = Vector2(156, -293)
 script = ExtResource("27_pvog5")
+=======
+[node name="portal_back" parent="." instance=ExtResource("25_25v1u")]
+position = Vector2(727, -165)
+destination = "res://Scenes/Islands/Island_2.tscn"
+main_name_destination = "Island2"
+new_pos = Vector2(-600, -450)
+
+[node name="portal_back2" parent="." instance=ExtResource("25_25v1u")]
+position = Vector2(-4, 129)
+destination = "res://Scenes/Islands/Island_2.tscn"
+main_name_destination = "Island2"
+new_pos = Vector2(-1418, -25)
+
+[node name="portal" parent="." instance=ExtResource("26_jg2u4")]
+position = Vector2(159, -278)
+destination = "res://Scenes/Islands/Island_2_1_Sky.tscn"
+
+[connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]
+[connection signal="portal_entered" from="portal_back2" to="Player" method="_on_portal_back_portal_entered"]
+[connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
+>>>>>>> Emilien
