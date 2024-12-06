@@ -13,3 +13,5 @@ res://Scenes/Islands/Island_2.tscn
 res://Scenes/Islands/Island_2_1.tscn
 res://Scenes/Islands/Island_2_1_Sky.tscn
 res://Scenes/Islands/Water.gd
+res://Scenes/Islands/BuildingTransIDK.gd
+res://Scenes/Islands/BehindContainers1.gd

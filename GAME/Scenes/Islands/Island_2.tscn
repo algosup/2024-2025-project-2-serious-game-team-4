@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=4 uid="uid://de7bfhp0dnals"]
+[gd_scene load_steps=94 format=4 uid="uid://de7bfhp0dnals"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_shgl3"]
 [ext_resource type="Texture2D" uid="uid://jucxx065s6up" path="res://Assets/Island_2/Factory (Finish).png" id="2_otqg4"]
@@ -61,6 +61,8 @@
 [ext_resource type="Texture2D" uid="uid://gtef2c3sjyge" path="res://Assets/Island_2/Screenshot 2024-12-06 at 13.01.31-1.png.png" id="50_gptox"]
 [ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/UI/star_01.png" id="51_3ctmd"]
 [ext_resource type="Texture2D" uid="uid://p71dadhwwxcd" path="res://Assets/Screenshot 2024-12-04 at 23.01.35.png" id="51_qjwei"]
+[ext_resource type="Script" path="res://Scenes/Islands/BehindContainers1.gd" id="54_ctyor"]
+[ext_resource type="Script" path="res://Scenes/Islands/BuildingTransIDK.gd" id="54_k7638"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2wi8h"]
 texture = ExtResource("1_shgl3")
@@ -1359,6 +1361,12 @@ size = Vector2(215, 354.375)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ed1at"]
 size = Vector2(736.251, 120)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kb1ic"]
+size = Vector2(281.25, 140.625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smh1s"]
+size = Vector2(1180, 277.5)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bb4va"]
 radius = 22.0
 height = 92.0
@@ -1366,6 +1374,9 @@ height = 92.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y11ss"]
 radius = 19.0
 height = 46.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1j5v5"]
+size = Vector2(225, 149)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8mv3j"]
 animations = [{
@@ -1692,11 +1703,13 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("41_lsm11")
 
 [node name="(2)1FenceSide1-3" type="Sprite2D" parent="Buildings"]
+modulate = Color(0.77084, 0.770839, 0.770839, 1)
 position = Vector2(-333, 234)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("41_lsm11")
 
 [node name="(2)1FenceSide1-4" type="Sprite2D" parent="Buildings"]
+modulate = Color(0.77084, 0.770839, 0.770839, 1)
 position = Vector2(-333, 321)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("41_lsm11")
@@ -1722,6 +1735,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("42_e7671")
 
 [node name="Bat2(2)1FenceSide1-2-2_png(1)" type="Sprite2D" parent="Buildings"]
+modulate = Color(0.77084, 0.770839, 0.770839, 1)
 position = Vector2(-332, 409)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("43_ltyi8")
@@ -1795,22 +1809,6 @@ position = Vector2(-444, -142.5)
 scale = Vector2(0.923497, 1)
 texture = ExtResource("50_gptox")
 
-[node name="ContainerDownRed3" type="Sprite2D" parent="Buildings"]
-position = Vector2(436, 455)
-scale = Vector2(0.4, 0.4)
-
-[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/ContainerDownRed3"]
-modulate = Color(0.921569, 0.270588, 0, 1)
-position = Vector2(-542.5, -350)
-scale = Vector2(0.924837, 0.759563)
-texture = ExtResource("49_lexgg")
-
-[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/ContainerDownRed3"]
-modulate = Color(0.921569, 0.270588, 0, 1)
-position = Vector2(-444, -142.5)
-scale = Vector2(0.923497, 1)
-texture = ExtResource("50_gptox")
-
 [node name="ContainerDownRed2" type="Sprite2D" parent="Buildings"]
 position = Vector2(75, 574)
 scale = Vector2(0.4, 0.4)
@@ -1843,53 +1841,99 @@ position = Vector2(-444, -142.5)
 scale = Vector2(0.923497, 1)
 texture = ExtResource("50_gptox")
 
-[node name="ContainerDownGreen2" type="Sprite2D" parent="Buildings"]
-position = Vector2(492, 455)
+[node name="Container1" type="Sprite2D" parent="Buildings"]
+modulate = Color(0.77084, 0.770839, 0.770839, 1)
+position = Vector2(492, 568)
 scale = Vector2(0.4, 0.4)
 
-[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/ContainerDownGreen2"]
-modulate = Color(0.348554, 0.613387, 0.179764, 1)
+[node name="ContainerDownPink" type="Sprite2D" parent="Buildings/Container1"]
+modulate = Color(0.998902, 0.283636, 0.681018, 1)
+position = Vector2(-140, 0)
+scale = Vector2(1, 1)
+
+[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/Container1/ContainerDownPink"]
 position = Vector2(-542.5, -350)
 scale = Vector2(0.924837, 0.759563)
 texture = ExtResource("49_lexgg")
 
-[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/ContainerDownGreen2"]
-modulate = Color(0.34902, 0.611765, 0.180392, 1)
+[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/Container1/ContainerDownPink"]
 position = Vector2(-444, -142.5)
 scale = Vector2(0.923497, 1)
 texture = ExtResource("50_gptox")
 
-[node name="ContainerDownGreen3" type="Sprite2D" parent="Buildings"]
-position = Vector2(548, 455)
-scale = Vector2(0.4, 0.4)
+[node name="ContainerDownGreen2" type="Sprite2D" parent="Buildings/Container1"]
+modulate = Color(0.410135, 0.760658, 0.225832, 1)
+scale = Vector2(1, 1)
 
-[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/ContainerDownGreen3"]
-modulate = Color(0.348554, 0.613387, 0.179764, 1)
+[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/Container1/ContainerDownGreen2"]
 position = Vector2(-542.5, -350)
 scale = Vector2(0.924837, 0.759563)
 texture = ExtResource("49_lexgg")
 
-[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/ContainerDownGreen3"]
-modulate = Color(0.34902, 0.611765, 0.180392, 1)
+[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/Container1/ContainerDownGreen2"]
 position = Vector2(-444, -142.5)
 scale = Vector2(0.923497, 1)
 texture = ExtResource("50_gptox")
 
-[node name="ContainerDownGreen4" type="Sprite2D" parent="Buildings"]
-position = Vector2(436, 399)
-scale = Vector2(0.4, 0.4)
+[node name="ContainerDownGreen3" type="Sprite2D" parent="Buildings/Container1"]
+modulate = Color(0.458539, 0.686193, 1.15514e-06, 1)
+position = Vector2(140, 0)
+scale = Vector2(1, 1)
 
-[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/ContainerDownGreen4"]
-modulate = Color(0.348554, 0.613387, 0.179764, 1)
+[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/Container1/ContainerDownGreen3"]
 position = Vector2(-542.5, -350)
 scale = Vector2(0.924837, 0.759563)
 texture = ExtResource("49_lexgg")
 
-[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/ContainerDownGreen4"]
-modulate = Color(0.34902, 0.611765, 0.180392, 1)
+[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/Container1/ContainerDownGreen3"]
 position = Vector2(-444, -142.5)
 scale = Vector2(0.923497, 1)
 texture = ExtResource("50_gptox")
+
+[node name="ContainerDownGreen4" type="Sprite2D" parent="Buildings/Container1"]
+modulate = Color(0.30675, 0.659109, 9.62615e-07, 1)
+position = Vector2(-140, -140)
+scale = Vector2(1, 1)
+
+[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/Container1/ContainerDownGreen4"]
+position = Vector2(-542.5, -350)
+scale = Vector2(0.924837, 0.759563)
+texture = ExtResource("49_lexgg")
+
+[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/Container1/ContainerDownGreen4"]
+position = Vector2(-444, -142.5)
+scale = Vector2(0.923497, 1)
+texture = ExtResource("50_gptox")
+
+[node name="ContainerDown2Yellow2" type="Sprite2D" parent="Buildings/Container1"]
+modulate = Color(0.706644, 0.613354, 0, 1)
+position = Vector2(280, 0)
+scale = Vector2(1, 1)
+
+[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/Container1/ContainerDown2Yellow2"]
+position = Vector2(-542.5, -350)
+scale = Vector2(0.924837, 0.759563)
+texture = ExtResource("49_lexgg")
+
+[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/Container1/ContainerDown2Yellow2"]
+position = Vector2(-444, -142.5)
+scale = Vector2(0.923497, 1)
+texture = ExtResource("50_gptox")
+
+[node name="ContainerRed2" type="Sprite2D" parent="Buildings/Container1"]
+modulate = Color(0.944339, 0.481243, 1.15514e-06, 1)
+position = Vector2(1230, -1242.5)
+scale = Vector2(1.5, 1.5)
+
+[node name="Sprite2" type="Sprite2D" parent="Buildings/Container1/ContainerRed2"]
+position = Vector2(-1086.67, 509.167)
+scale = Vector2(0.765027, 0.535714)
+texture = ExtResource("47_msbd3")
+
+[node name="Sprite3" type="Sprite2D" parent="Buildings/Container1/ContainerRed2"]
+position = Vector2(-1086.67, 426.667)
+scale = Vector2(0.765027, 0.666667)
+texture = ExtResource("48_coe2d")
 
 [node name="ContainerDown2Yellow" type="Sprite2D" parent="Buildings"]
 position = Vector2(19, 411)
@@ -1906,38 +1950,6 @@ modulate = Color(0.733333, 0.741176, 0.34902, 1)
 position = Vector2(-444, -142.5)
 scale = Vector2(0.923497, 1)
 texture = ExtResource("50_gptox")
-
-[node name="ContainerDown2Yellow2" type="Sprite2D" parent="Buildings"]
-position = Vector2(604, 455)
-scale = Vector2(0.4, 0.4)
-
-[node name="Screenshot2024-12-06At13_01_31-" type="Sprite2D" parent="Buildings/ContainerDown2Yellow2"]
-modulate = Color(0.733333, 0.741176, 0.34902, 1)
-position = Vector2(-542.5, -350)
-scale = Vector2(0.924837, 0.759563)
-texture = ExtResource("49_lexgg")
-
-[node name="Screenshot2024-12-06At13_01_31-1_png" type="Sprite2D" parent="Buildings/ContainerDown2Yellow2"]
-modulate = Color(0.733333, 0.741176, 0.34902, 1)
-position = Vector2(-444, -142.5)
-scale = Vector2(0.923497, 1)
-texture = ExtResource("50_gptox")
-
-[node name="ContainerRed2" type="Sprite2D" parent="Buildings"]
-position = Vector2(984, -42)
-scale = Vector2(0.6, 0.6)
-
-[node name="Sprite2" type="Sprite2D" parent="Buildings/ContainerRed2"]
-modulate = Color(0.772353, 0.220135, 1.92523e-07, 1)
-position = Vector2(-1086.67, 509.167)
-scale = Vector2(0.765027, 0.535714)
-texture = ExtResource("47_msbd3")
-
-[node name="Sprite3" type="Sprite2D" parent="Buildings/ContainerRed2"]
-modulate = Color(0.92211, 0.269937, 0, 1)
-position = Vector2(-1086.67, 426.667)
-scale = Vector2(0.765027, 0.666667)
-texture = ExtResource("48_coe2d")
 
 [node name="Area2D" type="Area2D" parent="Buildings"]
 position = Vector2(640, -647)
@@ -1968,6 +1980,26 @@ script = ExtResource("49_6o7xj")
 position = Vector2(-978.124, 561.25)
 scale = Vector2(0.999999, 0.999999)
 shape = SubResource("RectangleShape2D_ed1at")
+
+[node name="Area2D4" type="Area2D" parent="Buildings"]
+position = Vector2(631, -282)
+scale = Vector2(0.8, 0.8)
+script = ExtResource("54_ctyor")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buildings/Area2D4"]
+position = Vector2(-409.375, 770.937)
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_kb1ic")
+
+[node name="Area2D5" type="Area2D" parent="Buildings"]
+position = Vector2(631, -395)
+scale = Vector2(0.8, 0.8)
+script = ExtResource("54_k7638")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buildings/Area2D5"]
+position = Vector2(-752.5, 491.25)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_smh1s")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
@@ -2017,6 +2049,10 @@ polygon = PackedVector2Array(1, -19, -408, -19, -409, -257, 167, -252, 165, -19,
 position = Vector2(-754, -99)
 polygon = PackedVector2Array(-120, 54, -251, 54, -251, -234, 172, -235, 170, -18, -119, -18)
 
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2(-167, 213)
+polygon = PackedVector2Array(-93, 328, -254, 327, -250, -101, 695, -103, 695, -49, -88, -46)
+
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions"]
 position = Vector2(3, -282)
 polygon = PackedVector2Array(-398, -54, -394, -571, -8, -572, -6.86911, -136.829, 173, -139, 175, -51)
@@ -2051,6 +2087,10 @@ shape = SubResource("CapsuleShape2D_y11ss")
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Collisions"]
 position = Vector2(311, -438)
 polygon = PackedVector2Array(-30, -186, -33, 117, 926, 119, 923, -41, 1102, -43, 1105, -465, -41, -471, -39, -346, 163, -342, 163, -365, 397, -362, 397, -337, 577, -344, 606, -331, 894, -332, 898, -75, 784, -75, 788, -183)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(326.5, 465.5)
+shape = SubResource("RectangleShape2D_1j5v5")
 
 [node name="Smoke animations" type="Node2D" parent="."]
 position = Vector2(-23, -18)
@@ -2300,6 +2340,10 @@ new_pos = Vector2(0, 13)
 [connection signal="body_exited" from="Buildings/Area2D2" to="Buildings/Area2D2" method="_on_body_exited"]
 [connection signal="body_entered" from="Buildings/Area2D3" to="Buildings/Area2D3" method="_on_body_entered"]
 [connection signal="body_exited" from="Buildings/Area2D3" to="Buildings/Area2D3" method="_on_body_exited"]
+[connection signal="body_entered" from="Buildings/Area2D4" to="Buildings/Area2D4" method="_on_body_entered"]
+[connection signal="body_exited" from="Buildings/Area2D4" to="Buildings/Area2D4" method="_on_body_exited"]
+[connection signal="body_entered" from="Buildings/Area2D5" to="Buildings/Area2D5" method="_on_body_entered"]
+[connection signal="body_exited" from="Buildings/Area2D5" to="Buildings/Area2D5" method="_on_body_exited"]
 [connection signal="portal_entered" from="portal_back2" to="Player" method="_on_portal_back_portal_entered"]
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
 [connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]
