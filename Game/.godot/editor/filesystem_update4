@@ -15,3 +15,5 @@ res://Scenes/Islands/Island_2_1_Sky.tscn
 res://Scenes/Islands/Water.gd
 res://Scenes/Islands/BuildingTransIDK.gd
 res://Scenes/Islands/BehindContainers1.gd
+res://Scenes/Islands/area_2d_6.gd
+res://Scenes/Islands/area_2d_7.gd

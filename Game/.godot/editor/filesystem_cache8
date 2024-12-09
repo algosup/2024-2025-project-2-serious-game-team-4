@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1733413235
 export_presets.cfg::TextFile::-1::1733412001::0::1::::<><>::
-::res://Assets/::1733488594
+::res://Assets/::1733701645
 icon.svg::CompressedTexture2D::2006911830274694032::1733412001::1733413245::1::::<><>::
 menu.png::CompressedTexture2D::2116308762309509620::1733413215::1733413241::0::::<><>::
 Screenshot 2024-11-14 114117.png::CompressedTexture2D::6671941076158844752::1733412001::1733413245::1::::<><>::
@@ -110,7 +110,7 @@ icon29.png::CompressedTexture2D::4411960725317320858::1733412001::1733413250::1:
 icon30.png::CompressedTexture2D::4028470625624782909::1733412001::1733413250::1::::<><>::
 icon31.png::CompressedTexture2D::7413550151948679698::1733412001::1733413250::1::::<><>::
 icon32.png::CompressedTexture2D::3837516987920011880::1733412001::1733413250::1::::<><>::
-::res://Assets/Island_2/::1733487771
+::res://Assets/Island_2/::1733700442
 1 fence Side 1.png::CompressedTexture2D::3802782175509688991::1733412001::1733413250::1::::<><>::
 1 fence Side 2.png::CompressedTexture2D::3941162115526194058::1733412001::1733413250::1::::<><>::
 1 fence Upward.png::CompressedTexture2D::2049927237679390882::1733412001::1733413250::1::::<><>::
@@ -125,6 +125,7 @@ icon32.png::CompressedTexture2D::3837516987920011880::1733412001::1733413250::1:
 (2) 1 fence Side 1-3.png::CompressedTexture2D::1517970413493479394::1733412001::1733413250::1::::<><>::
 (2) 1 fence Side 1-4.png::CompressedTexture2D::6568023280198135017::1733412001::1733413250::1::::<><>::
 autotile_road.png::CompressedTexture2D::4274389301441667431::1732895826::1733413250::1::::<><>::
+Building 3 Nofences.png::CompressedTexture2D::38867110691620929::1733700436::1733700442::1::::<><>::
 Building (1).png::CompressedTexture2D::2708145681394524540::1732895826::1733413250::1::::<><>::
 Building Vers 1.png::CompressedTexture2D::5750851542691354296::1732895826::1733413250::1::::<><>::
 Building Vers 2.png::CompressedTexture2D::5521792874002590729::1732895826::1733413250::1::::<><>::
@@ -385,7 +386,7 @@ Paths.png::CompressedTexture2D::3470541463143633025::1733412001::1733413249::1::
 Tilled Dirt.png::CompressedTexture2D::1163018923274205209::1733412001::1733413249::1::::<><>::
 Water.png::CompressedTexture2D::4548170469777594392::1733412001::1733413249::1::::<><>::
 Wooden House.png::CompressedTexture2D::835975093109000315::1733412001::1733413249::1::::<><>::
-::res://Assets/TopDown Vehicles v1/::1733412001
+::res://Assets/TopDown Vehicles v1/::1733701645
 readme.txt::TextFile::-1::1732895828::0::1::::<><>::
 ::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/::1733412001
 ::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/::1733413249
@@ -6101,6 +6102,180 @@ Yellow_LUXURY_CLEAN_All_044.png::CompressedTexture2D::6113063861520975505::17328
 Yellow_LUXURY_CLEAN_All_045.png::CompressedTexture2D::1081423476500627717::1732895827::1733413241::1::::<><>::
 Yellow_LUXURY_CLEAN_All_046.png::CompressedTexture2D::2726466482655492601::1732895827::1733413241::1::::<><>::
 Yellow_LUXURY_CLEAN_All_047.png::CompressedTexture2D::7842163263700895353::1732895827::1733413241::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/::1733701628
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/ALL DIRECTION/::1691490008
+POLICE_CLEAN_8D0000-sheet.png::CompressedTexture2D::2189282144720429196::1691488818::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0000-sheet.png::CompressedTexture2D::8594564307059461858::1691490002::1733701651::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/ALL DIRECTION/SEPARATED/::1691490080
+POLICE_CLEAN_ALLD0000.png::CompressedTexture2D::4144914082772907147::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0001.png::CompressedTexture2D::1420656140800847109::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0002.png::CompressedTexture2D::8639781610304017983::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0003.png::CompressedTexture2D::3399845314171310458::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0004.png::CompressedTexture2D::4595150970778774636::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0005.png::CompressedTexture2D::1340529367959509302::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0006.png::CompressedTexture2D::2304871611670329076::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0007.png::CompressedTexture2D::423541470390782066::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0008.png::CompressedTexture2D::2085443674120437423::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0009.png::CompressedTexture2D::2115286609401575222::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0010.png::CompressedTexture2D::2403729678043248897::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0011.png::CompressedTexture2D::6517800244317877131::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0012.png::CompressedTexture2D::5439441247208125555::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0013.png::CompressedTexture2D::5143107356299040585::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0014.png::CompressedTexture2D::9205115243700889332::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0015.png::CompressedTexture2D::1379088128812478380::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0016.png::CompressedTexture2D::6959796825992812777::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0017.png::CompressedTexture2D::9126055471400712507::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0018.png::CompressedTexture2D::3989004326259614296::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0019.png::CompressedTexture2D::5332790275504996715::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0020.png::CompressedTexture2D::8636907086106015405::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0021.png::CompressedTexture2D::3216239560799117715::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0022.png::CompressedTexture2D::4332652122188495255::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0023.png::CompressedTexture2D::1637584552194365244::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0024.png::CompressedTexture2D::2991626363047374040::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0025.png::CompressedTexture2D::3594495602400248184::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0026.png::CompressedTexture2D::737419133538147376::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0027.png::CompressedTexture2D::5024840291498889385::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0028.png::CompressedTexture2D::5359641280745444782::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0029.png::CompressedTexture2D::6830964605798729994::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0030.png::CompressedTexture2D::2958933418818695804::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0031.png::CompressedTexture2D::6412741016493412872::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0032.png::CompressedTexture2D::3671974565484651877::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0033.png::CompressedTexture2D::5158698356610764975::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0034.png::CompressedTexture2D::3279614797460782706::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0035.png::CompressedTexture2D::8468666016870712022::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0036.png::CompressedTexture2D::648335970799026977::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0037.png::CompressedTexture2D::5376207890546913107::1691489998::1733701650::1::::<><>::
+POLICE_CLEAN_ALLD0038.png::CompressedTexture2D::3304173862597267834::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0039.png::CompressedTexture2D::8456348723841538084::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0040.png::CompressedTexture2D::7348745236102426844::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0041.png::CompressedTexture2D::2730974912219906985::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0042.png::CompressedTexture2D::7532334809461369835::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0043.png::CompressedTexture2D::2649266525718532758::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0044.png::CompressedTexture2D::3381514376010499930::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0045.png::CompressedTexture2D::6771834931310802036::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0046.png::CompressedTexture2D::7622213514125143218::1691489998::1733701651::1::::<><>::
+POLICE_CLEAN_ALLD0047.png::CompressedTexture2D::5154706756797476149::1691489998::1733701651::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/::1691488604
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/EAST/::1691490238
+POLICE_CLEAN_EAST_000-sheet.png::CompressedTexture2D::7033482977882889831::1691490234::1733701651::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/EAST/SEPARATED/::1691490238
+POLICE_CLEAN_EAST_000.png::CompressedTexture2D::8743182204431762273::1691490232::1733701651::1::::<><>::
+POLICE_CLEAN_EAST_001.png::CompressedTexture2D::3259007090891308256::1691490232::1733701651::1::::<><>::
+POLICE_CLEAN_EAST_002.png::CompressedTexture2D::4957922706630718898::1691490232::1733701651::1::::<><>::
+POLICE_CLEAN_EAST_003.png::CompressedTexture2D::5762796133880021485::1691490232::1733701651::1::::<><>::
+POLICE_CLEAN_EAST_004.png::CompressedTexture2D::910720637886840601::1691490232::1733701651::1::::<><>::
+POLICE_CLEAN_EAST_005.png::CompressedTexture2D::7758378872211192003::1691490232::1733701651::1::::<><>::
+POLICE_CLEAN_EAST_006.png::CompressedTexture2D::4664717769680105206::1691490232::1733701651::1::::<><>::
+POLICE_CLEAN_EAST_007.png::CompressedTexture2D::302664794670418454::1691490232::1733701651::1::::<><>::
+POLICE_CLEAN_EAST_008.png::CompressedTexture2D::3996489961573024315::1691490232::1733701650::1::::<><>::
+POLICE_CLEAN_EAST_009.png::CompressedTexture2D::7169792305851438031::1691490232::1733701650::1::::<><>::
+POLICE_CLEAN_EAST_010.png::CompressedTexture2D::3564114081019953472::1691490232::1733701650::1::::<><>::
+POLICE_CLEAN_EAST_011.png::CompressedTexture2D::7114632901047351032::1691490232::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/NORTH/::1691490252
+POLICE_CLEAN_NORTH_000-sheet.png::CompressedTexture2D::7025347641705316473::1691490246::1733701651::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/NORTH/SEPARATED/::1691490252
+POLICE_CLEAN_NORTH_000.png::CompressedTexture2D::548140625979594167::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_001.png::CompressedTexture2D::7668066964734342437::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_002.png::CompressedTexture2D::4237958426301247998::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_003.png::CompressedTexture2D::8092659814420371099::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_004.png::CompressedTexture2D::2748261261401910110::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_005.png::CompressedTexture2D::7836944673797024106::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_006.png::CompressedTexture2D::2387652866110188833::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_007.png::CompressedTexture2D::1059090246151388644::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_008.png::CompressedTexture2D::673832975089638742::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_009.png::CompressedTexture2D::393173084494301824::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_010.png::CompressedTexture2D::3336107075779024984::1691490244::1733701651::1::::<><>::
+POLICE_CLEAN_NORTH_011.png::CompressedTexture2D::5373954091865948698::1691490244::1733701651::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/NORTHEAST/::1691490304
+POLICE_CLEAN_NORTHEAST_000-sheet.png::CompressedTexture2D::5937578659373579163::1691490288::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/NORTHEAST/SEPARATED/::1691490304
+POLICE_CLEAN_NORTHEAST_000.png::CompressedTexture2D::2347097448007400825::1691490284::1733701651::1::::<><>::
+POLICE_CLEAN_NORTHEAST_001.png::CompressedTexture2D::3872471379009680107::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_002.png::CompressedTexture2D::7239066274709514347::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_003.png::CompressedTexture2D::4719203230794059400::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_004.png::CompressedTexture2D::39103665167544605::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_005.png::CompressedTexture2D::8794480642334829308::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_006.png::CompressedTexture2D::370955247181215899::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_007.png::CompressedTexture2D::1644298089657737030::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_008.png::CompressedTexture2D::3738287084995585093::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_009.png::CompressedTexture2D::7627007770932663754::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_010.png::CompressedTexture2D::1439055933212728505::1691490284::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHEAST_011.png::CompressedTexture2D::8762682682105254727::1691490284::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/NORTHWEST/::1691490316
+POLICE_CLEAN_NORTHWEST_000-sheet.png::CompressedTexture2D::2347605616025646770::1691490312::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/NORTHWEST/SEPARATED/::1691490316
+POLICE_CLEAN_NORTHWEST_000.png::CompressedTexture2D::2924194586123647761::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_001.png::CompressedTexture2D::6952588883073227301::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_002.png::CompressedTexture2D::2556081655566579442::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_003.png::CompressedTexture2D::2379889728401214897::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_004.png::CompressedTexture2D::3668220106623552903::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_005.png::CompressedTexture2D::5030633345839116138::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_006.png::CompressedTexture2D::4706641524131736123::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_007.png::CompressedTexture2D::8687596036047465390::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_008.png::CompressedTexture2D::7793189408899625006::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_009.png::CompressedTexture2D::2838326293301923792::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_010.png::CompressedTexture2D::8470694739733531261::1691490310::1733701650::1::::<><>::
+POLICE_CLEAN_NORTHWEST_011.png::CompressedTexture2D::2796367021370288110::1691490310::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/SOUTH/::1691490328
+POLICE_CLEAN_SOUTH_000-sheet.png::CompressedTexture2D::2660482016586599247::1691490326::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/SOUTH/SEPARATED/::1691490328
+POLICE_CLEAN_SOUTH_000.png::CompressedTexture2D::5385511396663351249::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_001.png::CompressedTexture2D::8020318417922393738::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_002.png::CompressedTexture2D::7326908423104549458::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_003.png::CompressedTexture2D::8407084167395320352::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_004.png::CompressedTexture2D::5129792573824217811::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_005.png::CompressedTexture2D::741545116010240487::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_006.png::CompressedTexture2D::1509379911674110038::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_007.png::CompressedTexture2D::1825196661833177901::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_008.png::CompressedTexture2D::5339216513909965199::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_009.png::CompressedTexture2D::789801389448347890::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_010.png::CompressedTexture2D::2067459218640013831::1691490324::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTH_011.png::CompressedTexture2D::5789096058896332084::1691490324::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/SOUTHEAST/::1691490338
+POLICE_CLEAN_SOUTHEAST_000-sheet.png::CompressedTexture2D::3452849698806441456::1691490336::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/SOUTHEAST/SEPARATED/::1691490338
+POLICE_CLEAN_SOUTHEAST_000.png::CompressedTexture2D::4316722371641978700::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_001.png::CompressedTexture2D::3428936839296417542::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_002.png::CompressedTexture2D::4840687170712816401::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_003.png::CompressedTexture2D::7335198881236000479::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_004.png::CompressedTexture2D::2933771727321464905::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_005.png::CompressedTexture2D::1173288961809155705::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_006.png::CompressedTexture2D::3379636299032019535::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_007.png::CompressedTexture2D::4991004134622928613::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_008.png::CompressedTexture2D::8213970071634010995::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_009.png::CompressedTexture2D::8927150953496830523::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_010.png::CompressedTexture2D::3874673090758811657::1691490334::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHEAST_011.png::CompressedTexture2D::9020430306472312723::1691490334::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/SOUTHWEST/::1691490350
+POLICE_CLEAN_SOUTHWEST_000-sheet.png::CompressedTexture2D::1972994789593048112::1691490346::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/SOUTHWEST/SEPARATED/::1691490350
+POLICE_CLEAN_SOUTHWEST_000.png::CompressedTexture2D::4047371490069928806::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_001.png::CompressedTexture2D::2293600303892513419::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_002.png::CompressedTexture2D::1219529379460958063::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_003.png::CompressedTexture2D::6454941484250357719::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_004.png::CompressedTexture2D::7208093594701613771::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_005.png::CompressedTexture2D::6589766509879644291::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_006.png::CompressedTexture2D::2028491919581104741::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_007.png::CompressedTexture2D::6872276603323588520::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_008.png::CompressedTexture2D::2879459630611634278::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_009.png::CompressedTexture2D::2320038090243746258::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_010.png::CompressedTexture2D::2737264787526586140::1691490344::1733701650::1::::<><>::
+POLICE_CLEAN_SOUTHWEST_011.png::CompressedTexture2D::5447545641388819373::1691490344::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/WEST/::1691490364
+POLICE_CLEAN_WEST_000-sheet.png::CompressedTexture2D::7468612601571501720::1691490358::1733701650::1::::<><>::
+::res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/MOVE/WEST/SEPARATED/::1691490364
+POLICE_CLEAN_WEST_000.png::CompressedTexture2D::5613405695759580733::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_001.png::CompressedTexture2D::369113579910952480::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_002.png::CompressedTexture2D::8843238297346625495::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_003.png::CompressedTexture2D::2957604089073732639::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_004.png::CompressedTexture2D::4648799897760507848::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_005.png::CompressedTexture2D::5695052494538973986::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_006.png::CompressedTexture2D::3281687613985948284::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_007.png::CompressedTexture2D::4954723628119489440::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_008.png::CompressedTexture2D::2094324356871691880::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_009.png::CompressedTexture2D::3444859615177321150::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_010.png::CompressedTexture2D::5349166889076710571::1691490358::1733701650::1::::<><>::
+POLICE_CLEAN_WEST_011.png::CompressedTexture2D::1159616280029700909::1691490358::1733701650::1::::<><>::
 ::res://Assets/TopDown Vehicles v1/VAN TOP DOWN/::1732895827
 ::res://Assets/TopDown Vehicles v1/VAN TOP DOWN/Black/::1733413241
 Black_VAN_CLEAN_8D_000-sheet.png::CompressedTexture2D::5344103365900040474::1732895827::1733413241::1::::<><>::
@@ -9385,30 +9560,34 @@ wander.tscn::PackedScene::5404642266604179134::1733412001::0::1::::<><>::res://S
 ::res://Scenes/Dialogues/::1733412001
 choice_dialog.tscn::PackedScene::924633772841210052::1733412001::0::1::::<><>::res://Scripts/Dialogues/Choices_Dialog.gd
 dialogue.tscn::PackedScene::3620818630918184453::1733412001::0::1::::<><>::res://Scripts/Dialogues/dialogue.gd<>uid://c3jjpnnf67x5b::::res://Assets/chatbox.png<>res://Scripts/Dialogues/Choices_Dialog.gd
-::res://Scenes/Islands/::1733485057
+::res://Scenes/Islands/::1733701214
 BehindBuidling2.gd::GDScript::-1::1733412001::0::1::::<>Area2D<>::
 Behind_Building3.gd::GDScript::-1::1733412001::0::1::::<>Area2D<>::
 BuildingTrans.gd::GDScript::-1::1733412001::0::1::::<>Area2D<>::
 island_2.gd::GDScript::-1::1733410373::0::1::::<>Node2D<>::
-Island_2.tscn::PackedScene::7506147551699559680::1733485057::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://jucxx065s6up::::res://Assets/Island_2/Factory (Finish).png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>res://Scripts/UI/Minimap.gd<>uid://ck8mgq2x72mdj::::res://Assets/Island_2/Rotated 1.png<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://isddw15463qg::::res://Assets/Island_2/Factory 4.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://dlmivgbhtryag::::res://Assets/Island_2/1 fence.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://du7pbis24sval::::res://Assets/Island_2/Sides/(2) 1 fence Side 1-3.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://bugdjcp1ga3gd::::res://Assets/Island_2/1 fence Side 1.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>uid://cdf32sul7ef65::::res://Assets/TopDown Vehicles v1/JEEP TOP DOWN/Yellow/SEPARATED/Yellow_JEEP_CLEAN_All_041.png<>uid://der4j84ry2wjm::::res://Assets/TopDown Vehicles v1/CIVIC TOPDOWN/Brown/SEPARATED/Brown_CIVIC_CLEAN_All_011.png<>uid://cwieudl41clqv::::res://Assets/Island_2/helicopter/separated_frames/helicopter_1.png<>uid://bqc2uq47o42di::::res://Assets/Island_2/helicopter/separated_frames/helicopter_2.png<>uid://chbfp2cjctwmg::::res://Assets/TopDown Vehicles v1/VAN TOP DOWN/White/SEPARATED/White_VAN_CLEAN_All_043.png<>uid://bh612ki6xs6dg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_3.png<>uid://748bo18lp40w::::res://Assets/Island_2/helicopter/separated_frames/helicopter_4.png<>uid://bwhqjhtkd8h16::::res://Scenes/Islands/Island2_Buildings/BackTower.tscn<>uid://brv43pqrse8o7::::res://Scenes/Islands/Island2_Buildings/DoubleTower.tscn<>uid://8u3yhs7qgtfg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_5.png<>uid://32cb0awc2hy5::::res://Assets/Island_2/helicopter/separated_frames/helicopter_6.png<>uid://nkis0a2k8x0e::::res://Scenes/Islands/Island2_Buildings/FireStation.tscn<>uid://datlmma4cjtb8::::res://Assets/Island_2/helicopter/separated_frames/helicopter_7.png<>uid://c85ywclf51ohf::::res://Assets/Island_2/helicopter/separated_frames/helicopter_8.png<>uid://b5we2i0eibguj::::res://Scenes/Islands/Island2_Buildings/LeftTower.tscn<>uid://d03ecydwi4nki::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png<>uid://di4hxgflwpvit::::res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED/LIMO_CLEAN_ALLD0036.png<>uid://dn2ip0gpa0fww::::res://Scenes/Characters/NPC/Car_mov.tscn<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>uid://kfamrt30ani5::::res://Assets/Island_2/Corners/Bat2 (2) 1 fence Side 1-2-5.png (1).png<>uid://dow31pkb4hx45::::res://Assets/Island_2/(2) 1 fence Side 1-1.png<>uid://bhptvfgk0kryy::::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0017.png<>uid://uao1en5ni5un::::res://Assets/Island_2/(2) 1 fence Side 1-2.png<>uid://dj5uu0p45vfmt::::res://Assets/Island_2/Corners/Bat2 (2) 1 fence Side 1-2-2.png (1).png<>uid://dp7685jjjyrjf::::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0002.png<>uid://jdhbd5imrnu4::::res://Assets/Island_2/Corners/Bat2 (2) 1 fence Side 1-2-6.png (1).png<>uid://xj0feaaxo445::::res://Assets/TopDown Vehicles v1/Wreckage/Burnt/Pickup/PICKUP_Burnt_002.png<>uid://bfxuvt2kuwfi0::::res://Assets/TopDown Vehicles v1/Wreckage/Burnt/SUV/SUV_Burnt_005.png<>res://Scenes/Islands/BuildingTrans.gd<>res://Scenes/Islands/BehindBuidling2.gd<>res://Scenes/Islands/Behind_Building3.gd<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>uid://bawpce85nfff5::::res://Assets/UI/star_01.png<>uid://p71dadhwwxcd::::res://Assets/Screenshot 2024-12-04 at 23.01.35.png
-Island_2_1.tscn::PackedScene::2831452168275608678::1733484648::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://dsny3oddb5bqg::::res://Assets/Island_2/Building Vers 4.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://chja24gbm3uoj::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-7.png.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>uid://ckdm6kh0yy2nc::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-4.png.png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scripts/UI/Minimap.gd<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://di3qrypgoqeov::::res://Assets/star_01.png<>uid://c5ve3jstlwg1::::res://Scenes/Characters/NPC/npc_Ia.tscn<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png
+Island_2.tscn::PackedScene::7506147551699559680::1733701214::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://jucxx065s6up::::res://Assets/Island_2/Factory (Finish).png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>res://Scripts/UI/Minimap.gd<>uid://buut21ufis8xx::::res://Assets/Water+.png<>res://Scenes/Islands/Water.gd<>uid://ck8mgq2x72mdj::::res://Assets/Island_2/Rotated 1.png<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://isddw15463qg::::res://Assets/Island_2/Factory 4.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://dlmivgbhtryag::::res://Assets/Island_2/1 fence.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://du7pbis24sval::::res://Assets/Island_2/Sides/(2) 1 fence Side 1-3.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://bugdjcp1ga3gd::::res://Assets/Island_2/1 fence Side 1.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>uid://cdf32sul7ef65::::res://Assets/TopDown Vehicles v1/JEEP TOP DOWN/Yellow/SEPARATED/Yellow_JEEP_CLEAN_All_041.png<>uid://der4j84ry2wjm::::res://Assets/TopDown Vehicles v1/CIVIC TOPDOWN/Brown/SEPARATED/Brown_CIVIC_CLEAN_All_011.png<>uid://cwieudl41clqv::::res://Assets/Island_2/helicopter/separated_frames/helicopter_1.png<>uid://bqc2uq47o42di::::res://Assets/Island_2/helicopter/separated_frames/helicopter_2.png<>uid://chbfp2cjctwmg::::res://Assets/TopDown Vehicles v1/VAN TOP DOWN/White/SEPARATED/White_VAN_CLEAN_All_043.png<>uid://bh612ki6xs6dg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_3.png<>uid://748bo18lp40w::::res://Assets/Island_2/helicopter/separated_frames/helicopter_4.png<>uid://bwhqjhtkd8h16::::res://Scenes/Islands/Island2_Buildings/BackTower.tscn<>uid://brv43pqrse8o7::::res://Scenes/Islands/Island2_Buildings/DoubleTower.tscn<>uid://8u3yhs7qgtfg::::res://Assets/Island_2/helicopter/separated_frames/helicopter_5.png<>uid://32cb0awc2hy5::::res://Assets/Island_2/helicopter/separated_frames/helicopter_6.png<>uid://nkis0a2k8x0e::::res://Scenes/Islands/Island2_Buildings/FireStation.tscn<>uid://datlmma4cjtb8::::res://Assets/Island_2/helicopter/separated_frames/helicopter_7.png<>uid://c85ywclf51ohf::::res://Assets/Island_2/helicopter/separated_frames/helicopter_8.png<>uid://b5we2i0eibguj::::res://Scenes/Islands/Island2_Buildings/LeftTower.tscn<>uid://d03ecydwi4nki::::res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png<>uid://di4hxgflwpvit::::res://Assets/TopDown Vehicles v1/LIMO TOPDOWN/Black/SEPARATED/LIMO_CLEAN_ALLD0036.png<>uid://dn2ip0gpa0fww::::res://Scenes/Characters/NPC/Car_mov.tscn<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>uid://kfamrt30ani5::::res://Assets/Island_2/Corners/Bat2 (2) 1 fence Side 1-2-5.png (1).png<>uid://dow31pkb4hx45::::res://Assets/Island_2/(2) 1 fence Side 1-1.png<>uid://bhptvfgk0kryy::::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0017.png<>uid://uao1en5ni5un::::res://Assets/Island_2/(2) 1 fence Side 1-2.png<>uid://dj5uu0p45vfmt::::res://Assets/Island_2/Corners/Bat2 (2) 1 fence Side 1-2-2.png (1).png<>uid://dp7685jjjyrjf::::res://Assets/TopDown Vehicles v1/AMBULANCE TOPDOWN/ALL DIRECTION/SEPARATED/AMBULANCE_CLEAN_ALLD0002.png<>uid://jdhbd5imrnu4::::res://Assets/Island_2/Corners/Bat2 (2) 1 fence Side 1-2-6.png (1).png<>uid://xj0feaaxo445::::res://Assets/TopDown Vehicles v1/Wreckage/Burnt/Pickup/PICKUP_Burnt_002.png<>uid://bfxuvt2kuwfi0::::res://Assets/TopDown Vehicles v1/Wreckage/Burnt/SUV/SUV_Burnt_005.png<>res://Scenes/Islands/BuildingTrans.gd<>uid://cynay1l3undqe::::res://Assets/Island_2/sprite_0.png<>uid://s3eu18kuypd::::res://Assets/Island_2/Building 3 Nofences.png<>uid://dkeclkw11h4yh::::res://Assets/Island_2/sprite_1.png<>res://Scenes/Islands/BehindBuidling2.gd<>res://Scenes/Islands/Behind_Building3.gd<>uid://bmb37a8nm0vo8::::res://Assets/Island_2/Screenshot 2024-12-06 at 13.01.31-.png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>uid://gtef2c3sjyge::::res://Assets/Island_2/Screenshot 2024-12-06 at 13.01.31-1.png.png<>uid://bawpce85nfff5::::res://Assets/UI/star_01.png<>uid://p71dadhwwxcd::::res://Assets/Screenshot 2024-12-04 at 23.01.35.png<>res://Scenes/Islands/BehindContainers1.gd<>res://Scenes/Islands/BuildingTransIDK.gd<>res://Scenes/Islands/area_2d_6.gd
+Island_2_1.tscn::PackedScene::2831452168275608678::1733700376::0::1::::<><>::uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://dsny3oddb5bqg::::res://Assets/Island_2/Building Vers 4.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://chja24gbm3uoj::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-7.png.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>uid://ckdm6kh0yy2nc::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-4.png.png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scripts/UI/Minimap.gd<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://di3qrypgoqeov::::res://Assets/star_01.png<>uid://c5ve3jstlwg1::::res://Scenes/Characters/NPC/npc_Ia.tscn<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png
 island_2_1_sky.gd::GDScript::-1::1733413215::0::1::::<>Node2D<>::
-Island_2_1_Sky.tscn::PackedScene::3291791560999683055::1733414786::0::1::::<><>::res://Scenes/Islands/island_2_1_sky.gd<>uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://bugdjcp1ga3gd::::res://Assets/Island_2/1 fence Side 1.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://dlmivgbhtryag::::res://Assets/Island_2/1 fence.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://c6uocb0ckhffw::::res://Assets/Island_2/SolarPanel.png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>res://Scripts/UI/Minimap.gd<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://di3qrypgoqeov::::res://Assets/star_01.png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png
+Island_2_1_Sky.tscn::PackedScene::3291791560999683055::1733700377::0::1::::<><>::res://Scenes/Islands/island_2_1_sky.gd<>uid://pu56liaqikpa::::res://Assets/Island_2/4kwt2.png<>uid://b15stj2du1od0::::res://Assets/Island_2/autotile_road.png<>uid://yvhqvd2elmna::::res://Assets/Island_2/rpg city assets.png<>uid://b5krmx80cot0c::::res://Assets/Island_2/rpg city assets turned.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>uid://de3vky72a61ub::::res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png<>uid://bugdjcp1ga3gd::::res://Assets/Island_2/1 fence Side 1.png<>uid://bwfemnb074k55::::res://Assets/Island_2/1 fence Side 2.png<>uid://dlmivgbhtryag::::res://Assets/Island_2/1 fence.png<>uid://v6ax4totv7s0::::res://Assets/Island_2/Building Vers 3.png<>uid://b8knhi5u8v8v4::::res://Assets/Island_2/Factory 2.png<>uid://dgtplutnjcw1i::::res://Assets/Island_2/Factory 5.png<>uid://c6uocb0ckhffw::::res://Assets/Island_2/SolarPanel.png<>uid://dt1qv4bomf31q::::res://Assets/Island_2/Factory 6.png<>res://Scripts/UI/Minimap.gd<>uid://c75nqnfkix0v4::::res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png<>uid://di3qrypgoqeov::::res://Assets/star_01.png<>uid://b31ajl2wumgol::::res://Scenes/MapFeatures/portal_back.tscn<>uid://qt13efvmw72d::::res://Assets/Island_2/2-removebg-preview-2.png<>uid://bjmnqp3gtx6xy::::res://Assets/Island_2/3-removebg-preview.png<>uid://sqa62445pxim::::res://Assets/Island_2/Tileset_Highschool.png<>uid://cvlucydqxddjd::::res://Assets/Island_2/1-removebg-preview.png
 Island_3.tscn::PackedScene::3782855754139250367::1733413215::0::1::::<><>::
 Island_4.tscn::PackedScene::3592230641963098564::1733413215::0::1::::<><>::
 Island_5.tscn::PackedScene::7311904147130726023::1733413215::0::1::::<><>::
 Island_6.tscn::PackedScene::6704442424878840212::1733413215::0::1::::<><>::
+BuildingTransIDK.gd::GDScript::-1::1733494224::0::1::::<>Area2D<>::
+BehindContainers1.gd::GDScript::-1::1733494686::0::1::::<>Area2D<>::
+area_2d_6.gd::GDScript::-1::1733699829::0::1::::<>Area2D<>::
+Water.gd::GDScript::-1::1733700376::0::1::::<>TileMapLayer<>::
 ::res://Scenes/Islands/Island2_Buildings/::1733412001
 BackTower.tscn::PackedScene::3946013829512043623::1733412001::0::1::::<><>::uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png<>uid://bet307304r81m::::res://Assets/Island_2/Building (1).png
 DoubleTower.tscn::PackedScene::3624794566758246368::1733412001::0::1::::<><>::uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png
 FireStation.tscn::PackedScene::933617939392636474::1733412001::0::1::::<><>::uid://bav1tpjth4225::::res://Assets/Island_2/roguelikeCity_magenta.png
 LeftTower.tscn::PackedScene::4537793846829276561::1733412001::0::1::::<><>::uid://bkodg33u3f74k::::res://Assets/Island_2/Building.png<>uid://bet307304r81m::::res://Assets/Island_2/Building (1).png
-::res://Scenes/Main/::1733414786
-MainMenu.tscn::PackedScene::8629556034029862101::1733414785::0::1::::<><>::res://Scripts/Main/main_menu.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png
-start_from_scratch.tscn::PackedScene::4960361777654279137::1733414786::0::1::::<><>::res://Scripts/Main/Main_Script.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>res://Scripts/UI/Minimap.gd<>uid://4esnetqov2pm::::res://Scenes/Characters/NPC/npc.tscn<>uid://di3qrypgoqeov::::res://Assets/star_01.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn
-::res://Scenes/MapFeatures/::1733414786
-portal.tscn::PackedScene::8795923097765957602::1733414786::0::1::::<><>::res://Scripts/portals/portal.gd
-portal_back.tscn::PackedScene::4405398819802061983::1733414786::0::1::::<><>::uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scripts/portals/portal_back.gd
+::res://Scenes/Main/::1733700377
+MainMenu.tscn::PackedScene::8629556034029862101::1733700376::0::1::::<><>::res://Scripts/Main/main_menu.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png
+start_from_scratch.tscn::PackedScene::4960361777654279137::1733700377::0::1::::<><>::res://Scripts/Main/Main_Script.gd<>uid://c2b65ok6lqyr5::::res://Assets/Screenshot 2024-11-14 114117.png<>uid://ckyexbu8v7e3j::::res://Scenes/Characters/player.tscn<>res://Scripts/UI/Minimap.gd<>uid://4esnetqov2pm::::res://Scenes/Characters/NPC/npc.tscn<>uid://di3qrypgoqeov::::res://Assets/star_01.png<>uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn
+::res://Scenes/MapFeatures/::1733700377
+portal.tscn::PackedScene::8795923097765957602::1733700377::0::1::::<><>::res://Scripts/portals/portal.gd
+portal_back.tscn::PackedScene::4405398819802061983::1733700377::0::1::::<><>::uid://dxk2tk8iffno1::::res://Scenes/MapFeatures/portal.tscn<>res://Scripts/portals/portal_back.gd
 ::res://Scenes/Menus/::1733412001
 keybinds.tscn::PackedScene::9109403115266922729::1733412001::0::1::::<><>::res://Scripts/Menus/keybinds.gd
 settings.tscn::PackedScene::5348599586857400175::1733412001::0::1::::<><>::res://Scripts/Menus/settings.gd<>res://Assets/freakyMenu.ogg

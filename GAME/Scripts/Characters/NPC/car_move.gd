@@ -16,7 +16,7 @@ func update_animations():
 
 func _physics_process(_delta: float) -> void:
 	if not stopped:
-		velocity = wander_direction.direction2 * 500
+		velocity = wander_direction.direction2 * 2000
 		move_and_slide()
 		update_animations()
 
