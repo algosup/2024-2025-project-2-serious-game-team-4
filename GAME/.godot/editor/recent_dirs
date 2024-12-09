@@ -1,6 +1,11 @@
+res://Assets/TopDown Boat/speedboat
+res://Assets/TopDown Boat/steamboat
+res://Assets/TopDown Boat/sailboat
+res://Assets/Island_2
+res://Assets/FireAnimation
+res://Assets/Island_2/Airport
 res://Scenes/Islands
 res://Assets
-res://Assets/Island_2
 res://Scripts/portals
 res://Assets/Red_Coupe/SOUTHEAST
 res://Assets/Red_Coupe/NORTHEAST
@@ -15,9 +20,4 @@ res://Assets/NpcInteractions
 res://Assets/UI
 res://Assets/Emotes/mid
 res://Scenes/Islands/Island2_Buildings
-res://Scripts/Characters/NPC
-res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH/SEPARATED
-res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED
-res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/EAST/SEPARATED
-res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/NORTH/SEPARATED
 C:/Users/EmilienCHINSY/Documents/Godot Projects/Exports/Web
