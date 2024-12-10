@@ -17,3 +17,7 @@ res://Scenes/Islands/BuildingTransIDK.gd
 res://Scenes/Islands/BehindContainers1.gd
 res://Scenes/Islands/area_2d_6.gd
 res://Scenes/Islands/area_2d_7.gd
+res://Scenes/Islands/Island2_Buildings/BackTower.tscn
+res://Scenes/Islands/Island2_Buildings/DoubleTower.tscn
+res://Scenes/Islands/Island2_Buildings/FireStation.tscn
+res://Scenes/Islands/Island2_Buildings/LeftTower.tscn
