@@ -1,9 +1,10 @@
-[gd_scene load_steps=29 format=3 uid="uid://4esnetqov2pm"]
+[gd_scene load_steps=35 format=3 uid="uid://4esnetqov2pm"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/NPC/npc.gd" id="1_jiu1v"]
-[ext_resource type="Texture2D" uid="uid://cl63n7t2ajvdh" path="res://Assets/Mariem Fixed.png" id="2_b2fk5"]
-[ext_resource type="Texture2D" uid="uid://bmmw0n2auju8w" path="res://Assets/Mariem Fixed (1).png" id="2_drq6p"]
+[ext_resource type="Texture2D" uid="uid://cl63n7t2ajvdh" path="res://Assets/CharactersSprites/Mariem Fixed.png" id="2_b2fk5"]
+[ext_resource type="Texture2D" uid="uid://bmmw0n2auju8w" path="res://Assets/CharactersSprites/Mariem Fixed (1).png" id="2_drq6p"]
 [ext_resource type="PackedScene" uid="uid://brt7mbbpey68h" path="res://Scenes/Dialogues/dialogue.tscn" id="3_rxceu"]
+[ext_resource type="Texture2D" uid="uid://mrfgvbk3pgwq" path="res://Assets/NpcInteractions/exclamation mark.png" id="4_fob7p"]
 [ext_resource type="PackedScene" uid="uid://cjabwy13oufuc" path="res://Scenes/Characters/NPC/wander.tscn" id="4_lgqlr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ig7p"]
@@ -189,6 +190,42 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6dk4"]
+atlas = ExtResource("4_fob7p")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6p185"]
+atlas = ExtResource("4_fob7p")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkolj"]
+atlas = ExtResource("4_fob7p")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ack2"]
+atlas = ExtResource("4_fob7p")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0kjl0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6dk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6p185")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vkolj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ack2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_ewwto"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dx4b5"]
@@ -201,6 +238,11 @@ wander_direction = NodePath("Wander")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_iqy8j")
 animation = &"Walk_Up"
+
+[node name="exclam" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
+position = Vector2(0, -40)
+sprite_frames = SubResource("SpriteFrames_0kjl0")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ewwto")

@@ -2,10 +2,11 @@ extends CharacterBody2D
 
 @export var NPCname : String
 @export var wander_direction : Node2D
+@export var spawner : bool
+@export var where : Array
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var dialogue = $dialogue
-
-signal spawn_tree_area
+@onready var exclamation_point = $AnimatedSprite2D/exclam
 signal choice
 
 var tree_spawned = false
@@ -49,6 +50,7 @@ func _on_chat_detection_area_body_entered(body: Node2D) -> void:
 		player_in_chat_zone = true
 		stopped = true
 		dialogue.visible = true
+		body.Interact_UI.visible = true
 
 func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
@@ -56,12 +58,16 @@ func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 		done = false
 		stopped = false
 		dialogue.visible = false
+		body.Interact_UI.visible = false
 
-func _on_dialogue_d_finished(willing) -> void:
+func _on_dialogue_d_finished(index) -> void:
+	exclamation_point.visible = false
 	done = true
-	if not tree_spawned and willing:
-		tree_spawned = true
-		spawn_tree_area.emit()
+	if spawner:
+		SpawnAreas.set_spawn_area(where[index])
+		Global.add_item({"quantity": 99, "type": "Consumable", "name": "seed", "effect": "Plant_a_tree", "texture": preload("res://Assets/Icons/icon21.png")}, false)
+		if not tree_spawned:
+			tree_spawned = true
 	await get_tree().create_timer(0.000001).timeout
 	done = false
 

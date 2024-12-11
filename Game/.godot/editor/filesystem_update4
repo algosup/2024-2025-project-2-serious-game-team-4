@@ -1,15 +1,14 @@
 res://Scenes/Main/MainMenu.tscn
 res://Scripts/Characters/NPC/wander.gd
 res://Scripts/Characters/NPC/car_move.gd
-res://Scenes/Main/start_from_scratch.tscn
 res://Scenes/Islands/Island_2_1.tscn
-res://Scenes/MapFeatures/portal.tscn
-res://Scenes/Islands/Island2_Buildings/FireStation.tscn
-res://Scenes/Islands/Island2_Buildings/DoubleTower.tscn
-res://Scenes/Islands/Island2_Buildings/BackTower.tscn
-res://Scenes/Characters/player.tscn
 res://Scenes/Islands/Island_2_1_Sky.tscn
+res://Scenes/Main/start_from_scratch.tscn
+res://Scenes/Islands/Island_2.tscn
+res://Scenes/Characters/player.tscn
+res://Scenes/Characters/NPC/npc.tscn
 res://Scenes/Characters/NPC/npc_Ia.tscn
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 res://Scenes/Islands/Island_2.tscn
@@ -28,3 +27,9 @@ res://Scripts/Dialogues/dialogue.gd
 res://Scripts/Global_(autoload)/Player_data.gd
 res://Scripts/Characters/player.gd
 >>>>>>> parent of f0e3e0c50 (Update to GAME)
+=======
+res://Scripts/Characters/player.gd
+res://Scripts/Characters/NPC/npc.gd
+res://Scenes/MapFeatures/portal.tscn
+res://Scripts/portals/portal.gd
+>>>>>>> DevOfficialEmilien

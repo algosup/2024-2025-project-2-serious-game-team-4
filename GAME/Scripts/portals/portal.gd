@@ -2,16 +2,22 @@ extends Area2D
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 signal portal_entered
 =======
+=======
+>>>>>>> DevOfficialEmilien
 @export var destination : String
 @export var interact : bool
 
 signal portal_entered(destination)
+<<<<<<< HEAD
 >>>>>>> Emilien
 =======
 signal portal_entered
 >>>>>>> parent of 6439eb55f (Portals !)
+=======
+>>>>>>> DevOfficialEmilien
 
 var on_portal = false
 
@@ -20,20 +26,28 @@ func _on_body_entered(body):
 		on_portal = true
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		if not interact:
 			portal_entered.emit(destination)
 >>>>>>> Emilien
 =======
 >>>>>>> parent of 6439eb55f (Portals !)
+=======
+		body.Interact_UI.visible = true
+		if not interact:
+			portal_entered.emit(destination)
+>>>>>>> DevOfficialEmilien
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group('Player'):
 		on_portal = false
+		body.Interact_UI.visible = false
 
 func _input(event):
 	if on_portal:
 		if event.is_action_pressed("INTERACT"):
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			portal_entered.emit()
@@ -41,6 +55,9 @@ func _input(event):
 =======
 			portal_entered.emit(destination)
 >>>>>>> Emilien
+=======
+			portal_entered.emit(destination)
+>>>>>>> DevOfficialEmilien
 			
 =======
 			portal_entered.emit()
