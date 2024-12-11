@@ -1,0 +1,353 @@
+[gd_scene load_steps=3 format=3 uid="uid://d21wsknt8sb6h"]
+
+[ext_resource type="Script" path="res://Scripts/Menus/keybinds.gd" id="1_reen4"]
+
+[sub_resource type="SystemFont" id="SystemFont_mceo7"]
+font_names = PackedStringArray("Impact")
+font_weight = 700
+font_stretch = 125
+subpixel_positioning = 0
+
+[node name="Keybinds" type="Control"]
+layout_mode = 3
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_reen4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -160.0
+offset_right = 160.0
+offset_bottom = 458.0
+alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 60
+text = "Key Bindings"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(320, 480)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+alignment = 1
+
+[node name="HBox_UP" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Up_Key" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_UP"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Up_Key"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_UP"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_DOWN" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Down_Key" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_DOWN"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Down_Key"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_DOWN"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_LEFT" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Left_Key" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_LEFT"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Left_Key"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_LEFT"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_RIGHT" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Right_Key" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_RIGHT"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Right_Key"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_RIGHT"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_PICKUP" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Pick_Up" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_PICKUP"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Pick_Up
+"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_PICKUP"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_INVENTORY" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Inventory" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_INVENTORY"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Inventory
+"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_INVENTORY"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_SETTINGS" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Settings" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_SETTINGS"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Settings"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_SETTINGS"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_HOTBAR1" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hotbar_1" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Hotbar_1"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_HOTBAR2" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hotbar_2" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Hotbar_2
+"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_HOTBAR3" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hotbar_3" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Hotbar_3"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_HOTBAR4" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hotbar_4" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR4"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Hotbar_4"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_HOTBAR5" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hotbar_5" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR5"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Hotbar_5"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_HOTBAR6" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hotbar_6" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR6"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Hotbar_6"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR6"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_HOTBAR7" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hotbar_7" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR7"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Hotbar_7"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR7"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_SHOWDEVTOOL" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="show_dev_tool" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_SHOWDEVTOOL"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "show dev tool"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_SHOWDEVTOOL"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBox_INTERACT" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Interact" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_INTERACT"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_mceo7")
+theme_override_font_sizes/font_size = 30
+text = "Interact
+"
+
+[node name="Button" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBox_INTERACT"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VScrollBar" type="VScrollBar" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 570.0
+offset_right = 160.0
+offset_bottom = 601.0
+grow_horizontal = 2
+text = "Back"
+
+[node name="Back to Game" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 615.0
+offset_right = 160.0
+offset_bottom = 646.0
+grow_horizontal = 2
+text = "Back to Game"
+
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_UP/Button" to="." method="_on_move_up_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_DOWN/Button" to="." method="_on_move_down_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_LEFT/Button" to="." method="_on_move_left_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_RIGHT/Button" to="." method="_on_move_right_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_PICKUP/Button" to="." method="_on_pickup_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_INVENTORY/Button" to="." method="_on_Inventory_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_SETTINGS/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR1/Button" to="." method="_on_hotbar_1_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR2/Button" to="." method="_on_hotbar_2_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR3/Button" to="." method="_on_hotbar_3_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR4/Button" to="." method="_on_hotbar_4_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR5/Button" to="." method="_on_hotbar_5_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR6/Button" to="." method="_on_hotbar_6_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_HOTBAR7/Button" to="." method="_on_hotbar_7_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_SHOWDEVTOOL/Button" to="." method="_on_show_dev_tool_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/HBox_INTERACT/Button" to="." method="_on_interact_button_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Back to Game" to="." method="_on_back_to_game_pressed"]
