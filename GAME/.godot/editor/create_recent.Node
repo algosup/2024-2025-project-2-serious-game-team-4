@@ -1,8 +1,8 @@
-Sprite2D
-AnimatedSprite2D
-TileMapLayer
 CollisionShape2D
 CollisionPolygon2D
+TileMapLayer
+Sprite2D
+AnimatedSprite2D
 Area2D
 TileMap
 Node2D
