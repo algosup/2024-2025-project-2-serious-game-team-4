@@ -1,11 +1,13 @@
-[gd_scene load_steps=31 format=4 uid="uid://bglturxgofueg"]
+[gd_scene load_steps=34 format=4 uid="uid://bglturxgofueg"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
 [ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_rclli"]
 [ext_resource type="Texture2D" uid="uid://yvhqvd2elmna" path="res://Assets/Island_2/rpg city assets.png" id="4_u8f8x"]
 [ext_resource type="Texture2D" uid="uid://b5krmx80cot0c" path="res://Assets/Island_2/rpg city assets turned.png" id="5_dawgt"]
+[ext_resource type="Texture2D" uid="uid://bvqhxqwqumh73" path="res://Assets/TopDown Vehicles v1/VAN TOP DOWN/Red/SEPARATED/Red_VAN_CLEAN_All_001.png" id="6_2240w"]
 [ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="6_tc8lt"]
 [ext_resource type="Texture2D" uid="uid://dsny3oddb5bqg" path="res://Assets/Island_2/Building Vers 4.png" id="7_lwn08"]
+[ext_resource type="Texture2D" uid="uid://cjq52j3skjrd8" path="res://Assets/TopDown Vehicles v1/POLICE TOPDOWN/ALL DIRECTION/SEPARATED/POLICE_CLEAN_ALLD0012.png" id="7_ow8y5"]
 [ext_resource type="Texture2D" uid="uid://v6ax4totv7s0" path="res://Assets/Island_2/Building Vers 3.png" id="8_4b1vt"]
 [ext_resource type="Texture2D" uid="uid://b8knhi5u8v8v4" path="res://Assets/Island_2/Factory 2.png" id="9_k6tbp"]
 [ext_resource type="Texture2D" uid="uid://de3vky72a61ub" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-5.png.png" id="9_rac4u"]
@@ -477,6 +479,9 @@ sources/2 = SubResource("TileSetAtlasSource_6w1hm")
 sources/4 = SubResource("TileSetAtlasSource_6rqoq")
 sources/5 = SubResource("TileSetAtlasSource_duryp")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kxofm"]
+size = Vector2(155, 83)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_8mv3j"]
 animations = [{
 "frames": [{
@@ -515,6 +520,14 @@ position = Vector2(-2, 33)
 
 [node name="Buildings" type="TileMapLayer" parent="."]
 position = Vector2(1412, 219)
+
+[node name="RedVanCleanAll001" type="Sprite2D" parent="Buildings"]
+position = Vector2(-726, -530)
+texture = ExtResource("6_2240w")
+
+[node name="RedVanCleanAll002" type="Sprite2D" parent="Buildings"]
+position = Vector2(-636, -542)
+texture = ExtResource("7_ow8y5")
 
 [node name="BuildingVers7" type="Sprite2D" parent="Buildings"]
 position = Vector2(-1853, -721)
@@ -635,6 +648,10 @@ polygon = PackedVector2Array(-569, -51, -341, -48, -339, -249, 228, -252, 225, 1
 position = Vector2(-2692, -778)
 scale = Vector2(0.995018, 1)
 polygon = PackedVector2Array(-509.539, 548, -1035.16, 545, -1041.19, -253, 228, -252, 225, 122, -224.117, 119, -225.122, 75, -288.437, 74, -289.442, 29, -324.617, 29, -325.622, 75, -381.903, 75, -383.913, 123, -772.85, 114, -772.85, 398, -507.529, 405)
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(-2390.5, -703)
+shape = SubResource("RectangleShape2D_kxofm")
 
 [node name="Smoke animations" type="Node2D" parent="."]
 position = Vector2(1389, 219)
