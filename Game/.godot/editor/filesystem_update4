@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 res://Scenes/Main/MainMenu.tscn
 res://Scripts/Characters/NPC/wander.gd
 res://Scripts/Characters/NPC/car_move.gd
 res://Scripts/Main/Main_Script.gd
+=======
+res://Scenes/Islands/Island2_2.tscn
+res://Scripts/Characters/NPC/wander.gd
+>>>>>>> Deployment
