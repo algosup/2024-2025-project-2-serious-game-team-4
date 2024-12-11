@@ -4809,3 +4809,5 @@ tile_set = SubResource("TileSet_h56q7")
 [node name="portal" parent="." instance=ExtResource("7_fkukv")]
 position = Vector2(37, -64)
 destination = "res://Scenes/Islands/Island_2.tscn"
+
+[connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
