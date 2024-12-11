@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Node2D
 AnimatedSprite2D
 AudioStreamPlayer2D
@@ -8,16 +7,6 @@ CollisionShape2D
 CollisionPolygon2D
 Area2D
 TileMap
-=======
-CollisionShape2D
-CollisionPolygon2D
-TileMapLayer
-Sprite2D
-AnimatedSprite2D
-Area2D
-TileMap
-Node2D
->>>>>>> DevOfficial
 PhysicalBone2D
 StaticBody2D
 Marker2D
