@@ -50,6 +50,7 @@ func _on_chat_detection_area_body_entered(body: Node2D) -> void:
 		player_in_chat_zone = true
 		stopped = true
 		dialogue.visible = true
+		body.Interact_UI.visible = true
 
 func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
@@ -57,6 +58,7 @@ func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 		done = false
 		stopped = false
 		dialogue.visible = false
+		body.Interact_UI.visible = false
 
 func _on_dialogue_d_finished(index) -> void:
 	exclamation_point.visible = false

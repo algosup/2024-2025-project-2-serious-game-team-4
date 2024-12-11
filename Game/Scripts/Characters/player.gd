@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var Inventory_UI = $Inventory_UI
 @onready var Interact_Pick_Up_UI = $Interact_Pick_Up_UI
+@onready var Interact_UI = $Interact_UI
 @onready var hotbar_UI = $Inventory_Hotbar
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var No_More_Trees = $No_More_Trees
@@ -17,6 +18,7 @@ var called = false
 signal tree_spawn
 
 @onready var Pickup_Label = $Interact_Pick_Up_UI/ColorRect/Label
+@onready var Interact_Label = $Interact_UI/ColorRect/Label
 
 func _ready():
 	speed = PlayerData.get_player_speed()
@@ -25,6 +27,7 @@ func _ready():
 	animated_sprite.play(last_move)
 	Global.set_player_reference(self)
 	Pickup_Label.text="Press %s to pickup" % [InputMap.action_get_events("PICKUP")[0].as_text()]
+	Interact_Label.text="Press %s to Interact" % [InputMap.action_get_events("INTERACT")[0].as_text()]
 
 func get_input():
 	var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
