@@ -10,9 +10,9 @@ extends CharacterBody2D
 signal choice
 
 var Asia_items =[
-	{"quantity" : 99, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant_a_Bambou", "texture": preload("res://Assets/Icons/icon21.png")},
-	{"quantity" : 99, "type": "Consumable", "name": "Mangrove_seed", "effect": "Plant_a_Mangrove ", "texture": preload("res://Assets/Icons/icon21.png")},
-	{"quantity" : 99, "type": "Consumable", "name": "Solar_Panels", "effect": "Place down a Solar Panel", "texture": preload("res://Assets/Island_2/SolarPanelicon.png")}
+	{"quantity" : 99, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant_a_Bambou", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
+	{"quantity" : 99, "type": "Consumable", "name": "Mangrove_seed", "effect": "Plant_a_Mangrove ", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
+	{"quantity" : 99, "type": "Consumable", "name": "Solar_Panels", "effect": "Place down a Solar Panel", "texture": preload("res://Assets/Island_2/SolarPanelicon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"}
 ]
 
 var tree_spawned = false
@@ -41,7 +41,7 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("INTERACT") and not done and player_in_chat_zone:
 		$dialogue.start()
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if not stopped:
 		velocity = wander_direction.direction * 50
 		move_and_slide()

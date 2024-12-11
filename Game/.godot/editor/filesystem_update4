@@ -12,3 +12,5 @@ res://Scripts/Characters/player.gd
 res://Scripts/Global_(autoload)/Global.gd
 res://Scripts/Characters/NPC/npc.gd
 res://Scenes/Islands/Water.gd
+res://Scripts/UI/Inventory_Stuff/inventory_slot.gd
+res://Scenes/Main/start_from_scratch.tscn

@@ -86,7 +86,7 @@ func apply_item_effect(item):
 			print("test")
 		"Plant_a_Bambou":
 			if in_tree_spawn:
-				tree_spawn.emit("bambou")
+				tree_spawn.emit("Bambou")
 		"Place down a Solar Panel":
 			if in_tree_spawn:
 				tree_spawn.emit("Solar_Panel")
@@ -158,7 +158,3 @@ func _on_back_to_game_pressed() -> void:
 func _on_back_pressed() -> void:
 	Keybinds.visible = false
 	Settingss.visible = true
-
-
-func _on_tee_planting_area_body_exited(body: Node2D) -> void:
-	pass # Replace with function body.
