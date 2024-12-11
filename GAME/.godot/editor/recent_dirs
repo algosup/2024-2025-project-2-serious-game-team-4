@@ -1,9 +1,23 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 res://Assets/UI
 res://Assets/FireAnimation
 res://Scripts/portals
 >>>>>>> Emilien
+=======
+res://Assets/NpcInteractions
+res://Scripts/Global_(autoload)
+res://Assets
+res://Assets/TopDown Boat/speedboat
+res://Assets/TopDown Boat/steamboat
+res://Assets/TopDown Boat/sailboat
+res://Assets/Island_2
+res://Assets/FireAnimation
+res://Assets/Island_2/Airport
+res://Scenes/Islands
+res://Scripts/portals
+>>>>>>> DevOfficialEmilien
 res://Assets/Red_Coupe/SOUTHEAST
 res://Assets/Red_Coupe/NORTHEAST
 res://Assets/Red_Coupe/SOUTHWEST
@@ -13,6 +27,7 @@ res://Assets/Red_Coupe/EAST
 res://Assets/Red_Coupe/WEST
 res://Assets/Red_Coupe/SOUTH
 res://Assets/Red_Coupe
+<<<<<<< HEAD
 res://Assets
 res://Assets/NpcInteractions
 <<<<<<< HEAD
@@ -34,4 +49,8 @@ res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/NORTH/SEPARATED
 res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH
 =======
 >>>>>>> Emilien
+=======
+res://Assets/UI
+res://Assets/Emotes/mid
+>>>>>>> DevOfficialEmilien
 C:/Users/EmilienCHINSY/Documents/Godot Projects/Exports/Web

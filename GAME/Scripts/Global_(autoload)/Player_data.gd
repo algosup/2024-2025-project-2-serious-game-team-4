@@ -5,6 +5,7 @@ extends Node
 var parent_path = "res://Scenes/Main/start_from_scratch.tscn"
 #Player position
 <<<<<<< HEAD
+<<<<<<< HEAD
 var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2.ZERO, "Island2_1" : Vector2.ZERO}
 #Player rotation
 var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island2_1" : "Idle_Down"}
@@ -19,7 +20,12 @@ var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2.ZERO, "Island2_1" :
 var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island2_1" : "Idle_Down", "Island2_1_Sky" : "Idle_Down"}
 >>>>>>> Stashed changes
 >>>>>>> Emilien
+=======
+>>>>>>> DevOfficialEmilien
 
+var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2.ZERO, "Island2_1" : Vector2.ZERO, "Island2_1_Sky" : Vector2(3,-30)}
+#Player rotation
+var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island2_1" : "Idle_Down", "Island2_1_Sky" : "Idle_Down"}
 var player_speed : int = 250
 
 func set_position(pos: Vector2, place: String):
@@ -35,7 +41,7 @@ func set_player_speed(speed):
 	player_speed = speed
 
 func get_position(place):
-	return player_pos [place]
+	return player_pos[place]
 
 func get_rotation(place):
 	return player_rot [place]

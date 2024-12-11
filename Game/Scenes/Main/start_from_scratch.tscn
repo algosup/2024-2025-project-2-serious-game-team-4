@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:Game/Scenes/Main/start_from_scratch.tscn
 [gd_scene load_steps=10 format=3 uid="uid://ccw3o0orfl6ev"]
 =======
@@ -7,6 +8,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://ccw3o0orfl6ev"]
 >>>>>>> Stashed changes:Game/Scenes/Main/start_from_scratch.tscn
 >>>>>>> Emilien:GAME/Scenes/Main/start_from_scratch.tscn
+=======
+[gd_scene load_steps=9 format=3 uid="uid://ccw3o0orfl6ev"]
+>>>>>>> DevOfficialEmilien
 
 [ext_resource type="Script" path="res://Scripts/Main/Main_Script.gd" id="1_cpqyx"]
 [ext_resource type="Texture2D" uid="uid://c2b65ok6lqyr5" path="res://Assets/Screenshot 2024-11-14 114117.png" id="2_6klk6"]
@@ -102,7 +106,11 @@ position = Vector2(-75, -75)
 NPCname = "Mariem"
 
 [node name="portal" parent="." instance=ExtResource("8_ey5kp")]
+<<<<<<< HEAD
 position = Vector2(146, -51)
+=======
+position = Vector2(141, -46)
+>>>>>>> DevOfficialEmilien
 destination = "res://Scenes/Islands/Island_2.tscn"
 interact = true
 
@@ -111,5 +119,8 @@ interact = true
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]
 [connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]
+<<<<<<< HEAD
 [connection signal="spawn_tree_area" from="npc" to="." method="_on_npc_spawn_tree_area"]
+=======
+>>>>>>> DevOfficialEmilien
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]

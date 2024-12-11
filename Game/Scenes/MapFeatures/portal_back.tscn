@@ -1,9 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=2 format=3 uid="uid://b31ajl2wumgol"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://b31ajl2wumgol"]
+>>>>>>> DevOfficialEmilien
 
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="1_egvpk"]
+[ext_resource type="Script" path="res://Scripts/portals/portal_back.gd" id="2_myjyq"]
 
 [node name="portal_back" instance=ExtResource("1_egvpk")]
+<<<<<<< HEAD
 =======
 [gd_scene load_steps=3 format=3 uid="uid://b31ajl2wumgol"]
 
@@ -15,6 +21,11 @@ script = ExtResource("2_vd5le")
 main_name_destination = ""
 new_pos = Vector2(0, 0)
 >>>>>>> Emilien
+=======
+script = ExtResource("2_myjyq")
+main_name_destination = ""
+new_pos = Vector2(0, 0)
+>>>>>>> DevOfficialEmilien
 
 [node name="CollisionShape2D" parent="." index="0"]
 position = Vector2(0, -48)
