@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Node2D
 AnimatedSprite2D
 AudioStreamPlayer2D
@@ -9,6 +10,8 @@ CollisionPolygon2D
 Area2D
 TileMap
 =======
+=======
+>>>>>>> DevOfficialEmilien
 CollisionShape2D
 CollisionPolygon2D
 TileMapLayer
@@ -17,7 +20,10 @@ AnimatedSprite2D
 Area2D
 TileMap
 Node2D
+<<<<<<< HEAD
 >>>>>>> DevOfficial
+=======
+>>>>>>> DevOfficialEmilien
 PhysicalBone2D
 StaticBody2D
 Marker2D

@@ -1,10 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+res://Scripts/Planting
+>>>>>>> DevOfficialEmilien
 res://Assets/NpcInteractions
 res://Scripts/Global_(autoload)
 res://Assets
 res://Assets/TopDown Boat/speedboat
 res://Assets/TopDown Boat/steamboat
 res://Assets/TopDown Boat/sailboat
+<<<<<<< HEAD
 res://Assets/Island_2
 res://Assets/FireAnimation
 res://Assets/Island_2/Airport
@@ -14,11 +19,16 @@ res://Assets/Island_2
 res://Assets/TopDown Boat/speedboat
 res://Assets/TopDown Boat/steamboat
 res://Assets/TopDown Boat/sailboat
+=======
+>>>>>>> DevOfficialEmilien
 res://Assets/FireAnimation
 res://Assets/Island_2/Airport
 res://Scenes/Islands
 res://Assets
+<<<<<<< HEAD
 >>>>>>> DevOfficial
+=======
+>>>>>>> DevOfficialEmilien
 res://Scripts/portals
 res://Assets/Red_Coupe/SOUTHEAST
 res://Assets/Red_Coupe/NORTHEAST
@@ -30,6 +40,7 @@ res://Assets/Red_Coupe/WEST
 res://Assets/Red_Coupe/SOUTH
 res://Assets/Red_Coupe
 <<<<<<< HEAD
+<<<<<<< HEAD
 res://Assets/UI
 res://Assets/Emotes/mid
 =======
@@ -38,4 +49,8 @@ res://Assets/UI
 res://Assets/Emotes/mid
 res://Scenes/Islands/Island2_Buildings
 >>>>>>> DevOfficial
+=======
+res://Assets/NpcInteractions
+res://Assets/UI
+>>>>>>> DevOfficialEmilien
 C:/Users/EmilienCHINSY/Documents/Godot Projects/Exports/Web
