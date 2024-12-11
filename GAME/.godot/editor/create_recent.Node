@@ -1,9 +1,9 @@
-CollisionShape2D
-Sprite2D
-Node2D
 Area2D
 CollisionPolygon2D
 TileMapLayer
+CollisionShape2D
+Sprite2D
+Node2D
 AnimatedSprite2D
 TileMap
 PhysicalBone2D
