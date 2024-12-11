@@ -3,7 +3,6 @@ extends Node2D
 @onready var dev_tool = $CanvasLayer2
 @onready var Progress_bar = $CanvasLayer/ProgressBar
 
-
 var visible_trees=1
 var solar_panel_spawn = 0
 var area
@@ -19,17 +18,6 @@ func _ready():
 	num_already_spawned = SpawnAreas.get_amount_of_spawns("Island2_1_Sky")
 	print(num_already_spawned)
 	show_trees()
-
-func _on_player_tree_spawn() -> void:
-	if solar_panel_spawn:
-		if visible_trees < 10:
-			Progress_bar.value += 10
-			visible_trees += 1
-			var tree = area.get_child(visible_trees)
-			tree.visible = true
-			SpawnAreas.add_amount_of_spawns("Island2_1_Sky")
-		else:
-			too_many_trees.emit()
 
 func show_trees() -> void:
 	var j = 0
