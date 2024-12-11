@@ -41,33 +41,3 @@ func spawn_items(data, position):
 	item_instance.initiate_item(data["type"], data["name"], data["effect"], data["texture"])
 	item_instance.global_position=position
 	items.add_child(item_instance)
-
-func _input(event: InputEvent) -> void:
-		if event.is_action_pressed("SHOWDEVTOOL"):
-			dev_tool.visible = !dev_tool.visible
-
-func _on_pink_potion_button_pressed() -> void:
-	var player = get_node("Player")
-	spawn_items(Global.spawnable_items[0], player.position)
-
-func _on_blue_potion_pressed() -> void:
-	var player = get_node("Player")
-	spawn_items(Global.spawnable_items[1], player.position)
-
-func _on_shroom_pressed() -> void:
-	var player = get_node("Player")
-	spawn_items(Global.spawnable_items[2], player.position)
-
-func _on_player_tree_spawn(index) -> void:
-	if visible_trees < 10:
-		Progress_bar.value += 10
-		visible_trees += 1
-		var area = get_child(4)
-		var tree = area.get_child(visible_trees)
-		tree.visible = true
-	else:
-		too_many_trees.emit()
-
-func _on_npc_spawn_tree_area() -> void:
-	tree_area_visible = true
-	Global.add_item({"quantity": 99, "type": "Consumable", "name": "seed", "effect": "Plant_a_tree", "texture": preload("res://Assets/Icons/icon21.png")}, false)

@@ -1,18 +1,4 @@
-res://Scenes/Islands/Island_2.tscn
+res://Scenes/Main/MainMenu.tscn
 res://Scripts/Characters/NPC/wander.gd
 res://Scripts/Characters/NPC/car_move.gd
-res://Scenes/Main/MainMenu.tscn
-res://Scenes/Islands/Island_2_1.tscn
-res://Scenes/Islands/Island_2_1_Sky.tscn
-res://Scenes/Characters/NPC/npc_Ian.tscn
-<<<<<<< HEAD
-res://Scenes/Characters/player.tscn
-res://Scripts/Global_(autoload)/Spawn_Areas.gd
-res://Scripts/Characters/player.gd
-res://Scripts/Global_(autoload)/Global.gd
-res://Scripts/Characters/NPC/npc.gd
-res://Scenes/Islands/Water.gd
-res://Scripts/UI/Inventory_Stuff/inventory_slot.gd
-res://Scenes/Main/start_from_scratch.tscn
-=======
->>>>>>> IanProd
+res://Scripts/Main/Main_Script.gd
