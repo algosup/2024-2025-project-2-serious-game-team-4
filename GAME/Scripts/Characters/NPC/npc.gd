@@ -9,6 +9,12 @@ extends CharacterBody2D
 @onready var exclamation_point = $AnimatedSprite2D/exclam
 signal choice
 
+var Asia_items =[
+	{"quantity" : 99, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant_a_Bambou", "texture": preload("res://Assets/Icons/icon21.png")},
+	{"quantity" : 99, "type": "Consumable", "name": "Mangrove_seed", "effect": "Plant_a_Mangrove ", "texture": preload("res://Assets/Icons/icon21.png")},
+	{"quantity" : 99, "type": "Consumable", "name": "Solar_Panels", "effect": "Place down a Solar Panel", "texture": preload("res://Assets/Island_2/SolarPanelicon.png")}
+]
+
 var tree_spawned = false
 var done = false
 var player
@@ -65,7 +71,7 @@ func _on_dialogue_d_finished(index) -> void:
 	done = true
 	if spawner:
 		SpawnAreas.set_spawn_area(where[index])
-		Global.add_item({"quantity": 99, "type": "Consumable", "name": "seed", "effect": "Plant_a_tree", "texture": preload("res://Assets/Icons/icon21.png")}, false)
+		Global.add_item(Asia_items[index], true)
 		if not tree_spawned:
 			tree_spawned = true
 	await get_tree().create_timer(0.000001).timeout

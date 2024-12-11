@@ -15,7 +15,7 @@ var last_move = ""
 var in_tree_spawn = false
 var called = false
 
-signal tree_spawn
+signal tree_spawn(type)
 
 @onready var Pickup_Label = $Interact_Pick_Up_UI/ColorRect/Label
 @onready var Interact_Label = $Interact_UI/ColorRect/Label
@@ -42,7 +42,6 @@ func _physics_process(_delta: float) -> void:
 
 func play_footsteps(input_direction):
 	if not footsteps.playing and input_direction:
-		footsteps.pitch_scale = randi_range(.8, 1.2)
 		footsteps.play()
 
 func update_animations():
@@ -85,10 +84,12 @@ func apply_item_effect(item):
 			print("Controls inverted, good luck")
 		"Test":
 			print("test")
-		"Plant_a_tree":
+		"Plant_a_Bambou":
 			if in_tree_spawn:
-				tree_spawn.emit()
-				print("tree")
+				tree_spawn.emit("bambou")
+		"Place down a Solar Panel":
+			if in_tree_spawn:
+				tree_spawn.emit("Solar_Panel")
 
 #Hotbar shortcut keys
 func use_hotbar_item(slot_index):
@@ -157,3 +158,7 @@ func _on_back_to_game_pressed() -> void:
 func _on_back_pressed() -> void:
 	Keybinds.visible = false
 	Settingss.visible = true
+
+
+func _on_tee_planting_area_body_exited(body: Node2D) -> void:
+	pass # Replace with function body.

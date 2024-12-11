@@ -9,7 +9,7 @@ var loops = 0
 func _ready() -> void:
 	pass
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if loops == 3:
 		loops = 0
 	else:

@@ -14,7 +14,9 @@ var spawnable_items = [
 
 #This will be the items that are available only for specific areas
 var Asia_items =[
-	{"type": "Consumable", "name": "seed", "effect": "Plant_a_tree ", "texture": preload("res://Assets/Icons/icon21.png")}
+	{"type": "Consumable", "name": "Bambou_seed", "effect": "Plant_a_Bambou", "texture": preload("res://Assets/Icons/icon21.png")},
+	{"type": "Consumable", "name": "Mangrove_seed", "effect": "Plant_a_Mangrove ", "texture": preload("res://Assets/Icons/icon21.png")},
+	{"type": "Consumable", "name": "Solar_Panels", "effect": "Place down a Solar Panel ", "texture": preload("res://Assets/Island_2/SolarPanelicon.png")}
 ]
 
 #Hotbar inventory
@@ -29,16 +31,12 @@ signal inventory_updated
 var player_node: Node = null
 @onready var inventory_slot_scene = preload("res://Scenes/UI/Inventory_Stuff/inventory_slot.tscn")
 
-
-
 func _ready():
 	#Initializes the number of slots in the inventory, changing the value will change the number of slots
 	inventory.resize(27)
 	hotbar_inventory.resize(hotbar_size)
 
-
 func add_item(item, to_hotbar = false):
-	print(item)
 	var added_to_hotbar = false
 	#add to hotbar
 	if to_hotbar:

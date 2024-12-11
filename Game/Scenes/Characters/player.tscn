@@ -983,16 +983,16 @@ script = ExtResource("1_2s006")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-3.75, 9.05567)
+position = Vector2(-2, -25)
 scale = Vector2(0.0938865, 0.0938865)
 sprite_frames = SubResource("SpriteFrames_jjixu")
-animation = &"Walk_Down_Left_Car"
+animation = &"Walk_Down"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.1, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-4, 7)
+position = Vector2(-4, -25)
 shape = SubResource("RectangleShape2D_fybfh")
 
 [node name="Interact_Pick_Up_UI" type="CanvasLayer" parent="."]
