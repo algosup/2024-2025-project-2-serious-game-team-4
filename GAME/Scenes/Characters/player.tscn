@@ -1,4 +1,4 @@
-[gd_scene load_steps=153 format=3 uid="uid://ckyexbu8v7e3j"]
+[gd_scene load_steps=154 format=3 uid="uid://ckyexbu8v7e3j"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/player.gd" id="1_2s006"]
 [ext_resource type="Texture2D" uid="uid://qhgrt0te4js1" path="res://Assets/Red_Coupe/Red_COUPE_CLEAN_All_000-sheet.png" id="3_3jkrq"]
@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://c6n452iib7e04" path="res://Assets/Red_Coupe/NORTH/Red_COUPE_CLEAN_NORTH_000-sheet.png" id="24_cai37"]
 [ext_resource type="Texture2D" uid="uid://bwl0lopevnflq" path="res://Assets/Red_Coupe/NORTHWEST/Red_COUPE_CLEAN_NORTHWEST_000-sheet.png" id="25_7ws8r"]
 [ext_resource type="Texture2D" uid="uid://dugw37tyxr1pc" path="res://Assets/Red_Coupe/NORTHEAST/Red_COUPE_CLEAN_NORTHEAST_000-sheet.png" id="26_sos6p"]
+[ext_resource type="AudioStream" uid="uid://bc4ruwwqohd8f" path="res://Assets/Audios/footsteps.mp3" id="31_suq8p"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pr3ip"]
 
@@ -1025,6 +1026,37 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 20
 text = "Press \"Space\" to pick up"
 
+[node name="Interact_UI" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Interact_UI"]
+self_modulate = Color(0.192157, 0.376471, 0.321569, 1)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Interact_UI/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Press \"Space\" to Interact"
+
 [node name="Inventory_UI" type="CanvasLayer" parent="."]
 visible = false
 
@@ -1149,6 +1181,10 @@ offset_bottom = 646.0
 text = "Back to game"
 
 [node name="Keybinds_UI" type="CanvasLayer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("31_suq8p")
+volume_db = -5.0
 
 [connection signal="pressed" from="Settings/Keybinds" to="." method="_on_keybinds_pressed"]
 [connection signal="pressed" from="Settings/Back_to_game" to="." method="_on_back_to_game_pressed"]

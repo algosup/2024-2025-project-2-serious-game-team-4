@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://bm5tlc677n8yt"]
+[gd_scene load_steps=37 format=4 uid="uid://bm5tlc677n8yt"]
 
 [ext_resource type="Script" path="res://Scenes/Islands/island_2_1_sky.gd" id="1_6fev0"]
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_yqnic"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://dgtplutnjcw1i" path="res://Assets/Island_2/Factory 5.png" id="14_pq10y"]
 [ext_resource type="Texture2D" uid="uid://c6uocb0ckhffw" path="res://Assets/Island_2/SolarPanel.png" id="15_3qfud"]
 [ext_resource type="Texture2D" uid="uid://dt1qv4bomf31q" path="res://Assets/Island_2/Factory 6.png" id="15_h2xu5"]
+[ext_resource type="Script" path="res://Scripts/Planting/Planting_areas.gd" id="15_xw7c2"]
 [ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="16_m4hhe"]
 [ext_resource type="Texture2D" uid="uid://c75nqnfkix0v4" path="res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png" id="17_1tlq2"]
 [ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="18_k43ee"]
@@ -488,8 +489,8 @@ distance = -1029.0
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_b5rub"]
 distance = -918.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsh1f"]
-size = Vector2(228, 97)
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_d3khv"]
+points = PackedVector2Array(-381, -520, 250, -520, 250, -560, 415, -560, 415, -510, 810, -510, 810, -370, 415, -370, 415, -420, 255, -420, 255, -370, -140, -370, -140, -75, 127, -75, 127, 75, -381, 75)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8mv3j"]
 animations = [{
@@ -536,7 +537,7 @@ func _input(event):
 			get_tree().change_scene_to_file.bind(\"res://Scenes/Islands/Island_2_1.tscn\").call_deferred()
 "
 
-[node name="Island2" type="Node2D"]
+[node name="Island2_1_Sky" type="Node2D"]
 position = Vector2(5, 3)
 script = ExtResource("1_6fev0")
 
@@ -640,76 +641,420 @@ texture = ExtResource("15_h2xu5")
 position = Vector2(-1244.5, -556.606)
 scale = Vector2(0.326923, 0.326923)
 
-[node name="Tree_planting_area" type="Area2D" parent="."]
+[node name="Solar_panel_planting_area" type="Area2D" parent="." node_paths=PackedStringArray("sprites_parent", "player")]
 position = Vector2(287, 460)
+script = ExtResource("15_xw7c2")
+sprites_parent = NodePath("Node2D")
+player = NodePath("../Player")
 
-[node name="ColorRect" type="ColorRect" parent="Tree_planting_area"]
+[node name="ColorRect" type="ColorRect" parent="Solar_panel_planting_area"]
 offset_left = -123.0
 offset_top = -95.0
 offset_right = 106.0
 offset_bottom = 7.0
 color = Color(1, 1, 1, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree_planting_area"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Solar_panel_planting_area"]
 position = Vector2(-7, -43)
-shape = SubResource("RectangleShape2D_jsh1f")
+shape = SubResource("ConvexPolygonShape2D_d3khv")
 
-[node name="Tree_1" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Node2D" type="Node2D" parent="Solar_panel_planting_area"]
+
+[node name="Tree_1" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
-position = Vector2(-83, -81)
+position = Vector2(-82, -91)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_2" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_2" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
 position = Vector2(-82, -45)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_3" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_3" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
-position = Vector2(-81, -13)
+position = Vector2(-81, 1.90735e-06)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_4" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_4" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
-position = Vector2(-5.00001, -81)
+position = Vector2(-3, -91)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_5" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_5" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
-position = Vector2(-5.00001, -47)
+position = Vector2(-5, -47)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_6" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_6" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
-position = Vector2(-3.00001, -14)
+position = Vector2(-2, 1)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_7" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_7" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
-position = Vector2(72, -81)
+position = Vector2(73, -91)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_8" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_8" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
 position = Vector2(73, -48)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_9" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_9" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
 visible = false
-position = Vector2(74, -14)
+position = Vector2(74, 1)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Player" parent="." instance=ExtResource("6_544kr")]
-position = Vector2(87, 191)
+[node name="Tree_10" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-346.75, -90.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_11" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-346.75, -44.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_12" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-345.75, 0.500002)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_13" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-267.75, -90.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_14" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-269.75, -46.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_15" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-266.75, 1.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_16" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-191.75, -90.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_17" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-191.75, -47.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_18" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-190.75, 1.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_19" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-343.75, -243.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_20" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-343.75, -197.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_21" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-342.75, -152.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_22" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-264.75, -243.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_23" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-266.75, -199.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_24" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-263.75, -151.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_25" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-188.75, -243.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_26" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-188.75, -200.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_27" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-187.75, -151.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_28" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-346.75, -383.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_29" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-346.75, -337.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_30" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-345.75, -292.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_31" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-267.75, -383.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_32" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-269.75, -339.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_33" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-266.75, -291.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_34" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-191.75, -383.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_35" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-191.75, -340.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_36" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-190.75, -291.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_37" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-94.75, -533.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_38" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-94.75, -487.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_39" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-93.75, -442.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_40" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-15.75, -533.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_41" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-17.75, -489.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_42" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(-14.75, -441.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_43" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(60.25, -533.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_44" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(60.25, -490.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_45" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(61.25, -441.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_46" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(600.25, -526.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_47" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(600.25, -480.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_48" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(601.25, -435.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_49" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(679.25, -526.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_50" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(677.25, -482.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_51" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(680.25, -434.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_52" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(755.25, -526.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_53" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(755.25, -483.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_54" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(756.25, -434.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_55" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(285.25, -586.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_56" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(285.25, -540.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_58" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(364.25, -586.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_59" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(362.25, -542.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_57" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(132.25, -533.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_60" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(132.25, -487.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_61" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(211.25, -533.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_62" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(209.25, -489.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_63" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(450.25, -531.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_64" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(450.25, -485.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_65" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(529.25, -531.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
+
+[node name="Tree_66" type="Sprite2D" parent="Solar_panel_planting_area/Node2D"]
+visible = false
+position = Vector2(527.25, -487.5)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("15_3qfud")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
@@ -853,6 +1198,9 @@ frame_progress = 0.525143
 position = Vector2(-1, -15)
 script = SubResource("GDScript_8aiem")
 
-[connection signal="body_entered" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_entered"]
-[connection signal="body_exited" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_exited"]
-[connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]
+[node name="Player" parent="." instance=ExtResource("6_544kr")]
+position = Vector2(204, 384)
+
+[connection signal="body_entered" from="Solar_panel_planting_area" to="Player" method="_on_tree_planting_area_body_entered"]
+[connection signal="body_exited" from="Solar_panel_planting_area" to="Player" method="_on_tree_planting_area_body_exited"]
+[connection signal="tree_spawn" from="Player" to="Solar_panel_planting_area" method="_on_player_tree_spawn"]

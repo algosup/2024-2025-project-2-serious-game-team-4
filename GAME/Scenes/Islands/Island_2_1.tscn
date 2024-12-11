@@ -20,7 +20,7 @@
 [ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="28_py124"]
 [ext_resource type="Texture2D" uid="uid://c75nqnfkix0v4" path="res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png" id="29_ietuq"]
 [ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="30_50wse"]
-[ext_resource type="PackedScene" uid="uid://c5ve3jstlwg1" path="res://Scenes/Characters/NPC/npc_Ian.tscn" id="31_qlmhx"]
+[ext_resource type="PackedScene" uid="uid://c5ve3jstlwg1" path="res://Scenes/Characters/NPC/npc_Ia.tscn" id="31_qlmhx"]
 [ext_resource type="Texture2D" uid="uid://qt13efvmw72d" path="res://Assets/Island_2/2-removebg-preview-2.png" id="34_2jyx8"]
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="35_mmee1"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="36_itejp"]
@@ -730,13 +730,15 @@ autoplay = "default"
 frame_progress = 0.525143
 
 [node name="Marker2D" type="Marker2D" parent="." groups=["npc_Ian"]]
-position = Vector2(-247, -215)
+position = Vector2(-71, -15)
 
 [node name="Marker2D2" type="Marker2D" parent="." groups=["npc_Ian"]]
-position = Vector2(-247, -15)
+position = Vector2(-243, -15)
 
 [node name="npc_Ian" parent="." instance=ExtResource("31_qlmhx")]
-position = Vector2(-247, -121)
+position = Vector2(-147, -22)
+spawner = true
+where = ["Island2_Bamboo", "Island2_Mangrove", "Island2_1_Sky"]
 
 [node name="portal" parent="." instance=ExtResource("26_jg2u4")]
 position = Vector2(154, -269)
@@ -747,13 +749,15 @@ interact = true
 position = Vector2(727, -165)
 destination = "res://Scenes/Islands/Island_2.tscn"
 main_name_destination = "Island2"
-new_pos = Vector2(-550, -525)
+new_pos = Vector2(-590, -436)
 
 [node name="portal_back2" parent="." instance=ExtResource("24_nvh2f")]
 position = Vector2(-4, 179)
 destination = "res://Scenes/Islands/Island_2.tscn"
 main_name_destination = "Island2"
 new_pos = Vector2(-1418, -25)
+
+[node name="portal_back3" parent="." instance=ExtResource("24_nvh2f")]
 
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
 [connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]
