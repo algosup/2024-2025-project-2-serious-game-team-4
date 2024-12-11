@@ -5,7 +5,3 @@ res://Scenes/Main/start_from_scratch.tscn
 res://Scenes/Characters/player.tscn
 res://Scenes/Characters/NPC/npc.tscn
 res://Scenes/MapFeatures/portal.tscn
-<<<<<<< HEAD
-=======
-res://Scripts/portals/portal.gd
->>>>>>> parent of a741c715a (Merge)
