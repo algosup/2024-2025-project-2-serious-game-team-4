@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 res://Scenes/Main/MainMenu.tscn
 res://Scripts/Characters/NPC/wander.gd
 res://Scripts/Characters/NPC/car_move.gd
 res://Scenes/Islands/Island_2_1_Sky.tscn
 res://Scenes/Characters/NPC/npc_Ian.tscn
+=======
+res://Scenes/Islands/Island_2.tscn
+>>>>>>> DevOfficial
