@@ -8,9 +8,9 @@ var dialogue = []
 var current_dialogue_id = 0
 var d_active = false
 var can_go_next = true
-var willing = true
 var dialogue_index = 0
 var lock = false
+var Index = 0
 
 @onready var choicesDialog = $"NinePatchRect/Choices Dialog"
 @onready var container = $NinePatchRect
@@ -54,7 +54,7 @@ func next_script(current):
 		dialogue_index = current[current_dialogue_id]["next_step"]
 		d_active = false
 		container.visible = false
-		d_finished.emit(willing)
+		d_finished.emit(Index)
 		return
 	while current[current_dialogue_id]["step"] != dialogue_index:
 		current_dialogue_id += 1
@@ -68,16 +68,13 @@ func next_script(current):
 
 
 func _on_choices_dialog_selected(index: Variant) -> void:
+	Index = index
 	if not lock:
 		dialogue_index = index
 	else:
 		dialogue_index = 0
 	can_go_next = true
 	next_script(dialogue)
-	if index == 0:
-		willing = true
-	else:
-		willing = false
 
 func dialogue_choices(current) -> void:
 	can_go_next = false

@@ -103,5 +103,4 @@ interact = true
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/blue_potion" to="." method="_on_blue_potion_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Control/VBoxContainer/shroom" to="." method="_on_shroom_pressed"]
 [connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]
-[connection signal="spawn_tree_area" from="npc" to="." method="_on_npc_spawn_tree_area"]
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]

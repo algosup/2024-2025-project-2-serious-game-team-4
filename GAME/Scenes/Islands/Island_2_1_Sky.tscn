@@ -536,7 +536,7 @@ func _input(event):
 			get_tree().change_scene_to_file.bind(\"res://Scenes/Islands/Island_2_1.tscn\").call_deferred()
 "
 
-[node name="Island2" type="Node2D"]
+[node name="Island2_1_Sky" type="Node2D"]
 position = Vector2(5, 3)
 script = ExtResource("1_6fev0")
 
@@ -640,76 +640,74 @@ texture = ExtResource("15_h2xu5")
 position = Vector2(-1244.5, -556.606)
 scale = Vector2(0.326923, 0.326923)
 
-[node name="Tree_planting_area" type="Area2D" parent="."]
+[node name="Solar_panel_planting_area" type="Area2D" parent="."]
+visible = false
 position = Vector2(287, 460)
 
-[node name="ColorRect" type="ColorRect" parent="Tree_planting_area"]
+[node name="ColorRect" type="ColorRect" parent="Solar_panel_planting_area"]
 offset_left = -123.0
 offset_top = -95.0
 offset_right = 106.0
 offset_bottom = 7.0
 color = Color(1, 1, 1, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree_planting_area"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Solar_panel_planting_area"]
 position = Vector2(-7, -43)
 shape = SubResource("RectangleShape2D_jsh1f")
 
-[node name="Tree_1" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_1" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(-83, -81)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_2" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_2" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(-82, -45)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_3" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_3" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(-81, -13)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_4" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_4" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(-5.00001, -81)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_5" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_5" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(-5.00001, -47)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_6" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_6" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(-3.00001, -14)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_7" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_7" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(72, -81)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_8" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_8" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(73, -48)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
 
-[node name="Tree_9" type="Sprite2D" parent="Tree_planting_area"]
+[node name="Tree_9" type="Sprite2D" parent="Solar_panel_planting_area"]
 visible = false
 position = Vector2(74, -14)
 scale = Vector2(0.43, 0.43)
 texture = ExtResource("15_3qfud")
-
-[node name="Player" parent="." instance=ExtResource("6_544kr")]
-position = Vector2(87, 191)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
@@ -853,6 +851,9 @@ frame_progress = 0.525143
 position = Vector2(-1, -15)
 script = SubResource("GDScript_8aiem")
 
-[connection signal="body_entered" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_entered"]
-[connection signal="body_exited" from="Tree_planting_area" to="Player" method="_on_tree_planting_area_body_exited"]
+[node name="Player" parent="." instance=ExtResource("6_544kr")]
+position = Vector2(87, 191)
+
+[connection signal="body_entered" from="Solar_panel_planting_area" to="Player" method="_on_tree_planting_area_body_entered"]
+[connection signal="body_exited" from="Solar_panel_planting_area" to="Player" method="_on_tree_planting_area_body_exited"]
 [connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]

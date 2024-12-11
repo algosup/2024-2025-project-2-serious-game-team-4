@@ -7,7 +7,7 @@ extends CharacterBody2D
 @onready var No_More_Trees = $No_More_Trees
 @onready var Settingss = $Settings
 @onready var Keybinds = $Keybinds
-
+@onready var footsteps = $AudioStreamPlayer2D
 
 var speed = 150
 var last_move = ""
@@ -28,6 +28,7 @@ func _ready():
 
 func get_input():
 	var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
+	play_footsteps(input_direction)
 	velocity=input_direction * speed
 		
 #basic left, right, up, down movement for the player
@@ -35,6 +36,11 @@ func _physics_process(_delta: float) -> void:
 	get_input()
 	move_and_slide()
 	update_animations()
+
+func play_footsteps(input_direction):
+	if not footsteps.playing and input_direction:
+		footsteps.pitch_scale = randi_range(.8, 1.2)
+		footsteps.play()
 
 func update_animations():
 	if velocity == Vector2.ZERO:

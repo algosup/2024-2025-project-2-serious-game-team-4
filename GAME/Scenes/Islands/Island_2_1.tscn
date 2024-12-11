@@ -737,6 +737,8 @@ position = Vector2(-243, -15)
 
 [node name="npc_Ian" parent="." instance=ExtResource("31_qlmhx")]
 position = Vector2(-147, -22)
+spawner = true
+where = ["Island2_Bamboo", "Island2_Mangrove", "Island2_1_Sky"]
 
 [node name="portal" parent="." instance=ExtResource("26_jg2u4")]
 position = Vector2(154, -269)
@@ -754,6 +756,8 @@ position = Vector2(-4, 179)
 destination = "res://Scenes/Islands/Island_2.tscn"
 main_name_destination = "Island2"
 new_pos = Vector2(-1418, -25)
+
+[node name="portal_back3" parent="." instance=ExtResource("24_nvh2f")]
 
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
 [connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]
