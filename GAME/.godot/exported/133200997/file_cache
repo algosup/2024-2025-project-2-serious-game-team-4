@@ -1,0 +1,12 @@
+res://Scenes/Characters/NPC/npc.tscn::35b8b1802213f8ca086ed79ce0f50b2a::1732539683::res://.godot/exported/133200997/export-3f37ddd2e5bb18c8e39ec60ccf4fd6fd-npc.scn
+res://Scenes/Characters/NPC/wander.tscn::a9fc0e21badbd7134f2c1fc39243f3f1::1732528784::res://.godot/exported/133200997/export-de78d5db9d28018e325818222c56d9f1-wander.scn
+res://Scenes/Characters/player.tscn::b4a5185cfc5fea3bb7b75b68f7dc5fdc::1732539683::res://.godot/exported/133200997/export-d28e950225c5bc77fe53613fae19d570-player.scn
+res://Scenes/Dialogues/dialogue.tscn::78abd516b7c92105d850a459d28aa608::1732539683::res://.godot/exported/133200997/export-c7431d95ba925138eabbdcd736dc2603-dialogue.scn
+res://Scenes/Main/start_from_scratch.tscn::b3c7916ab9fabc8f10d58d5ad0327ff4::1732540159::res://.godot/exported/133200997/export-8eed64eee7a6e4cd9e262ad9d6fd7cdb-start_from_scratch.scn
+res://Scenes/Menus/keybinds.tscn::c02de5d7b7a5a50a9c568a1f0c0aba49::1732539683::res://.godot/exported/133200997/export-04adde65b3de2b7877c27dc7fb3ddbe9-keybinds.scn
+res://Scenes/Menus/settings.tscn::5e2c531fd8e84ff022e90e3c7149d047::1732203576::res://.godot/exported/133200997/export-0c71de7d40554f1fb1a2facf56cf6957-settings.scn
+res://Scenes/UI/Inventory_Stuff/hotbar.tscn::99ca8be5827a532a068bdb2225acf3bb::1732539683::res://.godot/exported/133200997/export-a061df8bd52d4ad48229c5412cdc096d-hotbar.scn
+res://Scenes/UI/Inventory_Stuff/inventory_item.tscn::2955d513bad410b712364ad8e0ccb017::1732539683::res://.godot/exported/133200997/export-18644dac8ed3cacee3fd5b3606881f20-inventory_item.scn
+res://Scenes/UI/Inventory_Stuff/inventory_slot.tscn::162eed15d70c43f52e3f7b4a7c454271::1732539683::res://.godot/exported/133200997/export-b0289d085fd0ae52534b027210cb3a30-inventory_slot.scn
+res://Scenes/UI/Inventory_Stuff/inventory_ui.tscn::c13015daa0168ecd79fad1f4051abad8::1732539929::res://.godot/exported/133200997/export-363c10887702e048596aa1eb02c77398-inventory_ui.scn
+res://Scenes/UI/Minimap.tscn::ffb462669b670184265575feb46eff35::1731659306::res://.godot/exported/133200997/export-f35ba10930f2a8e6cbbd3d2677ff0549-Minimap.scn

@@ -1,0 +1,216 @@
+[gd_scene load_steps=27 format=3 uid="uid://cry7n3hxaidi"]
+
+[ext_resource type="Script" path="res://Scripts/Characters/NPC/npc.gd" id="1_u66dy"]
+[ext_resource type="Texture2D" uid="uid://cl63n7t2ajvdh" path="res://Assets/Mariem Fixed.png" id="2_i6c5y"]
+[ext_resource type="PackedScene" uid="uid://brt7mbbpey68h" path="res://Scenes/Dialogues/dialogue.tscn" id="3_t03od"]
+[ext_resource type="PackedScene" uid="uid://cjabwy13oufuc" path="res://Scenes/Characters/NPC/wander.tscn" id="4_pyb25"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w3big"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwqre"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp4sy"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kckqw"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eu1h2"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ee3xo"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_es8mn"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgln7"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4rwk"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqd8l"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trucp"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeals"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l12b1"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tj1cv"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_880yj"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(192, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avyhd"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mmvxl"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6g7a"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ni51w"]
+atlas = ExtResource("2_i6c5y")
+region = Rect2(192, 192, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iqy8j"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Look_Down",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3big")
+}],
+"loop": true,
+"name": &"Look_Left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwqre")
+}],
+"loop": true,
+"name": &"Look_Right",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp4sy")
+}],
+"loop": true,
+"name": &"Look_Up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kckqw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eu1h2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ee3xo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_es8mn")
+}],
+"loop": true,
+"name": &"Walk_Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgln7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4rwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqd8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trucp")
+}],
+"loop": true,
+"name": &"Walk_Left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeals")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l12b1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tj1cv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_880yj")
+}],
+"loop": true,
+"name": &"Walk_Right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avyhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mmvxl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6g7a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ni51w")
+}],
+"loop": true,
+"name": &"Walk_Up",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ewwto"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dx4b5"]
+radius = 37.0
+
+[node name="npc" type="CharacterBody2D" node_paths=PackedStringArray("wander_direction")]
+script = ExtResource("1_u66dy")
+wander_direction = NodePath("Wander")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_iqy8j")
+animation = &"Look_Left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ewwto")
+
+[node name="Chat_detection_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chat_detection_area"]
+shape = SubResource("CircleShape2D_dx4b5")
+
+[node name="dialogue" parent="." instance=ExtResource("3_t03od")]
+offset_left = -50.0
+offset_top = -69.0
+offset_right = -50.0
+offset_bottom = -69.0
+
+[node name="Wander" parent="." instance=ExtResource("4_pyb25")]
+group_name = "NPC_Test"
+
+[connection signal="body_entered" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
+[connection signal="body_exited" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]
+[connection signal="d_finished" from="dialogue" to="." method="_on_dialogue_d_finished"]

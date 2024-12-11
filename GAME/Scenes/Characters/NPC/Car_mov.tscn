@@ -1,0 +1,231 @@
+[gd_scene load_steps=37 format=3 uid="uid://dn2ip0gpa0fww"]
+
+[ext_resource type="Script" path="res://Scripts/Characters/NPC/car_move.gd" id="1_hmr6p"]
+[ext_resource type="Texture2D" uid="uid://bhyety83gcd73" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH/SEPARATED/Blue_LUXURY_CLEAN_SOUTH_000.png" id="2_rtfx0"]
+[ext_resource type="Texture2D" uid="uid://er6jrcjy728y" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_000.png" id="3_ryoc5"]
+[ext_resource type="PackedScene" uid="uid://cjabwy13oufuc" path="res://Scenes/Characters/NPC/wander.tscn" id="4_83sl3"]
+[ext_resource type="Texture2D" uid="uid://c03s8sgf6hmy6" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/EAST/SEPARATED/Blue_LUXURY_CLEAN_EAST_000.png" id="4_u2dcd"]
+[ext_resource type="Texture2D" uid="uid://b7wm80klqn46c" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/NORTH/SEPARATED/Blue_LUXURY_CLEAN_NORTH_000.png" id="5_rtrun"]
+[ext_resource type="Texture2D" uid="uid://bqkg8cabgtc38" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH/Blue_LUXURY_CLEAN_SOUTH_000-sheet.png" id="6_8ei0j"]
+[ext_resource type="Texture2D" uid="uid://d03ecydwi4nki" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_001.png" id="7_tj3my"]
+[ext_resource type="Texture2D" uid="uid://c3nxcwr7rqbvt" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_002.png" id="8_mb6mt"]
+[ext_resource type="Texture2D" uid="uid://uot3g0kr3won" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/WEST/SEPARATED/Blue_LUXURY_CLEAN_WEST_003.png" id="9_mn7p8"]
+[ext_resource type="Texture2D" uid="uid://cq1tq077w0jp3" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/EAST/Blue_LUXURY_CLEAN_EAST_000-sheet.png" id="10_jei4c"]
+[ext_resource type="Texture2D" uid="uid://q8uat5flrcgx" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/NORTH/Blue_LUXURY_CLEAN_NORTH_000-sheet.png" id="11_1rrpv"]
+[ext_resource type="Script" path="res://Scenes/Characters/NPC/movementCar.gd" id="13_nu7vv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4j8gr"]
+radius = 16.0
+height = 56.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulr6g"]
+atlas = ExtResource("2_rtfx0")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68pr0"]
+atlas = ExtResource("3_ryoc5")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_spfs7"]
+atlas = ExtResource("4_u2dcd")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxrq7"]
+atlas = ExtResource("5_rtrun")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3f3tx"]
+atlas = ExtResource("6_8ei0j")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w7ksx"]
+atlas = ExtResource("6_8ei0j")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eg3sl"]
+atlas = ExtResource("6_8ei0j")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mpra"]
+atlas = ExtResource("6_8ei0j")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwfw4"]
+atlas = ExtResource("3_ryoc5")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_torli"]
+atlas = ExtResource("7_tj3my")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4smn"]
+atlas = ExtResource("8_mb6mt")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okkd6"]
+atlas = ExtResource("9_mn7p8")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ximsd"]
+atlas = ExtResource("10_jei4c")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u80d3"]
+atlas = ExtResource("10_jei4c")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnisy"]
+atlas = ExtResource("10_jei4c")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nad6"]
+atlas = ExtResource("10_jei4c")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6cl4k"]
+atlas = ExtResource("11_1rrpv")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5v21f"]
+atlas = ExtResource("11_1rrpv")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qgf1c"]
+atlas = ExtResource("11_1rrpv")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tmv5"]
+atlas = ExtResource("11_1rrpv")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iqy8j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulr6g")
+}],
+"loop": true,
+"name": &"Look_Down",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68pr0")
+}],
+"loop": true,
+"name": &"Look_Left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_spfs7")
+}],
+"loop": true,
+"name": &"Look_Right",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxrq7")
+}],
+"loop": true,
+"name": &"Look_Up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3f3tx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w7ksx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eg3sl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mpra")
+}],
+"loop": true,
+"name": &"Walk_Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwfw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_torli")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4smn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okkd6")
+}],
+"loop": true,
+"name": &"Walk_Left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ximsd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u80d3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gnisy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nad6")
+}],
+"loop": true,
+"name": &"Walk_Right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6cl4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5v21f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qgf1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tmv5")
+}],
+"loop": true,
+"name": &"Walk_Up",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8norq"]
+radius = 18.0
+height = 84.0
+
+[node name="car_move" type="CharacterBody2D" node_paths=PackedStringArray("wander_direction")]
+script = ExtResource("1_hmr6p")
+wander_direction = NodePath("Wander")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_4j8gr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_iqy8j")
+animation = &"Walk_Left"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 3)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_8norq")
+
+[node name="Wander" parent="." instance=ExtResource("4_83sl3")]
+script = ExtResource("13_nu7vv")
+group_name = "car"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered_car"]
