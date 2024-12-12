@@ -1,11 +1,11 @@
-CollisionShape2D
-CollisionPolygon2D
-StaticBody2D
-Area2D
+AnimatedSprite2D
 TileMapLayer
+CollisionPolygon2D
+Area2D
+CollisionShape2D
+StaticBody2D
 Sprite2D
 Node2D
-AnimatedSprite2D
 TileMap
 PhysicalBone2D
 Marker2D

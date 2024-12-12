@@ -3,3 +3,5 @@ res://Scripts/Characters/NPC/wander.gd
 res://Scenes/Islands/Island2_2.tscn
 res://Scenes/Islands/Island_2.tscn
 res://Scripts/Characters/NPC/car_move.gd
+res://node_2d.tscn
+res://Scripts/Global_(autoload)/Player_data.gd
