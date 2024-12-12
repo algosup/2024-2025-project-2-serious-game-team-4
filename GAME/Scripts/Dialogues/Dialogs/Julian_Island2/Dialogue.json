@@ -1,9 +1,0 @@
-[
-	{"name": "Ian", "text": "Hello my friend", "Interact" : 0},
-	{"name": "Ian", "text": "You are here in China", "Interact" : 0},
-	{"name": "Ian", "text": "Do you like it here?", "Interact" : 1, "Dialog_num" : 0},
-	{"name": "Ian", "text": "You do?", "Interact" : 0, "Response" : 0},
-	{"name": "Ian", "text": "You really are an idiot aren't you,", "Interact" : 0, "Response" : 0},
-	{"name": "Ian", "text": "This place is obviously hot garbage", "Interact" : 0, "Response" : 0},
-	{"name": "Ian", "text": "We need to get read of all these coal plants", "Interact" : 0, "Response" : 0}
-]
