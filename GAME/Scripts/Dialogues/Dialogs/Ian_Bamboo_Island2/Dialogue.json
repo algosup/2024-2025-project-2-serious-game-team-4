@@ -1,0 +1,19 @@
+[
+	{"name": "Ian", "text": "Hi", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Ian", "text": "I love Bamboo", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Ian", "text": "It's my favorite plant", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Ian", "text": "It grows big, fast and it can be very useful to absord CO2 in the atmosphere", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Ian", "text": "Did you know that blablablablablablabla", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Ian", "text": "Do you want me to give you more details?", "Interact" : 1, "Responses" : ["Yes of course!", "No? why would I care?"], "step" : 0, "ending" : 0, "Worthless" : 0},
+	{"name": "Ian", "text": "Ok, here you go", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Ian", "text": "Have a nice day and long live bamboos!", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 0, "ending" : 1, "next_step" : 9},
+	{"name": "Ian", "text": "Oh...", "Interact" : 0, "step" : 1, "ending" : 0},
+	{"name": "Ian", "text": "That's not very nice...", "Interact" : 0, "step" : 1, "ending" : 0},
+	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 1, "ending" : 1, "next_step" : 8},
+	{"name": "Ian", "text": "You don't like Bamboos so I don't like you.", "Interact" : 0, "step" : 8, "ending" : 0},
+	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 8, "ending" : 1, "next_step" : 8},
+	{"name": "Ian", "text": "Long Live Bamboos!", "Interact" : 0, "step" : 9, "ending" : 0},
+	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 9, "ending" : 1, "next_step" : 9}
+
+]

@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 res://Assets/Island_2
 res://Assets
 res://
+=======
+res://Scripts/Global_(autoload)
+res://Scripts/Characters/NPC
+res://Scenes/Characters/NPC
+res://Assets/NpcInteractions
+res://Assets/CharactersSprites
+>>>>>>> EmilienProd
 <<<<<<< HEAD
 C:/Users/EmilienCHINSY/Documents/exports
 res://Scripts/Planting
@@ -15,11 +23,14 @@ res://Assets/Island_2/Airport
 res://Scenes/Islands
 res://Scripts/portals
 res://Assets/Red_Coupe/SOUTHEAST
+<<<<<<< HEAD
 res://Assets/Red_Coupe/NORTHEAST
 res://Assets/Red_Coupe/SOUTHWEST
 res://Assets/Red_Coupe/NORTHWEST
 res://Assets/Red_Coupe/NORTH
 res://Assets/Red_Coupe/EAST
+=======
+>>>>>>> EmilienProd
 <<<<<<< HEAD
 =======
 C:/Users/EmilienCHINSY/Documents/Godot Projects/Exports/Web
