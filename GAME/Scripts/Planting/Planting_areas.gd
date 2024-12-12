@@ -7,9 +7,15 @@ extends Area2D
 @export var list : String
 @export var Type : String
 @export var power : int
+@export var idiot_proof : int
 
 signal new_info
 
+var Asia_items =[
+	{"quantity" : 1, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant a Bambou", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
+	{"quantity" : 1, "type": "Consumable", "name": "Wind_Turbines", "effect": "Place a Wind Turbine", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
+	{"quantity" : 1, "type": "Consumable", "name": "Solar_Panels", "effect": "Place a Solar Panel", "texture": preload("res://Assets/Island_2/SolarPanelicon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"}
+]
 var closest = null
 var closest_distance : float = 10000000000.0
 var num_planted = 0
@@ -35,6 +41,7 @@ func _on_player_tree_spawn(type) -> void:
 							closest_distance = distance
 							closest = child
 		if closest != null:
+			print(closest)
 			SpawnAreas.set_items_placed(closest.name, list)
 			closest.visible = true
 			num_planted += 1
@@ -43,4 +50,8 @@ func _on_player_tree_spawn(type) -> void:
 			if num_planted % 4 == 0:
 				ProgressBars.set_progress_bar_progress("Asia", -power)
 				new_info.emit()
+		else:
+			print("here I am")
+			Global.add_item(Asia_items[idiot_proof], true)
 		closest_distance = 10000000000.0
+		closest = null

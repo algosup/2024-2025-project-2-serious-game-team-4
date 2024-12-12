@@ -770,8 +770,6 @@ destination = "res://Scenes/Islands/Island_2.tscn"
 main_name_destination = "Island2"
 new_pos = Vector2(-1418, -25)
 
-[node name="portal_back3" parent="." instance=ExtResource("24_nvh2f")]
-
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_7x7su")
 
@@ -786,7 +784,7 @@ position = Vector2(2.0504e-05, -3.33786e-06)
 rotation = 0.00483088
 NPCname = "Ian"
 spawner = true
-where = ["Bambou_Island2", "Mangrove_Island2", "Solar_Panels_Island2_1_Sky"]
+where = ["Bambou_Island2", "Wind_Turbine_Island2", "Solar_Panels_Island2_1_Sky"]
 move_speed = 97.0
 maxi = 200.0
 

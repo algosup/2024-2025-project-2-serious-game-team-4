@@ -97,6 +97,9 @@ func apply_item_effect(item):
 		"Plant a Bambou":
 			if in_tree_spawn:
 				tree_spawn.emit("Bambou")
+		"Place a Wind Turbine":
+			if in_tree_spawn:
+				tree_spawn.emit("Wind_Turbine")
 		"Place a Solar Panel":
 			if in_tree_spawn:
 				tree_spawn.emit("Solar_Panel")

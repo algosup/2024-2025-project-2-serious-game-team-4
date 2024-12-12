@@ -648,6 +648,7 @@ player = NodePath("../Player")
 list = "Solar_Panels_Island2_1_Sky"
 Type = "Solar_Panel"
 power = 3
+idiot_proof = 2
 
 [node name="ColorRect" type="ColorRect" parent="Solar_panel_planting_area"]
 offset_left = -123.0

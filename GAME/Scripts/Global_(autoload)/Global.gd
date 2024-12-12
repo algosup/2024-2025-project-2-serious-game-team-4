@@ -15,8 +15,8 @@ var spawnable_items = [
 #This will be the items that are available only for specific areas
 var Asia_items =[
 	{"type": "Consumable", "name": "Bambou_seed", "effect": "Plant_a_Bambou", "texture": preload("res://Assets/Icons/icon21.png")},
-	{"type": "Consumable", "name": "Mangrove_seed", "effect": "Plant_a_Mangrove ", "texture": preload("res://Assets/Icons/icon21.png")},
-	{"type": "Consumable", "name": "Solar_Panels", "effect": "Place down a Solar Panel ", "texture": preload("res://Assets/Island_2/SolarPanelicon.png")}
+	{"type": "Consumable", "name": "Wind_Turbine", "effect": "Place a Wind Turbine ", "texture": preload("res://Assets/Icons/icon21.png")},
+	{"type": "Consumable", "name": "Solar_Panels", "effect": "Place a Solar Panel ", "texture": preload("res://Assets/Island_2/SolarPanelicon.png")}
 ]
 
 #Hotbar inventory
@@ -98,6 +98,11 @@ func drop_item(item_data, drop_position):
 	
 
 func add_hotbar_item(item):
+	for i in range(hotbar_inventory.size()):
+		#this will check if an instance of the same item already exists to stack them.
+		if hotbar_inventory[i] != null and hotbar_inventory[i]["type"] == item["type"] and hotbar_inventory[i]["effect"] == item["effect"]:
+			hotbar_inventory[i]["quantity"] += item["quantity"]
+			return true
 	#this function will check the hotbar slots to know where to place the item,
 	for i in range(hotbar_size):
 		#this will check if a spot is empty, in that case, it will fill the spot.
