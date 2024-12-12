@@ -1,7 +1,8 @@
+CanvasLayer
+SubViewport
 ColorRect
 Label
 ProgressBar
-CanvasLayer
 Sprite2D
 CollisionShape2D
 Area2D
@@ -11,4 +12,3 @@ TextureRect
 PathFollow2D
 Path2D
 AnimationPlayer
-AnimatedSprite2D
