@@ -1,11 +1,13 @@
 extends Node
 
-var Spawn_Areas = {"Solar_Panels_Island2_1_Sky" : false, "Bambou_Island2" : false, "Mangrove_Island2" : false}
+var Spawn_Areas = {"Solar_Panels_Island2_1_Sky" : false, "Bambou_Island2" : false, "Wind_Turbine_Island2" : false}
 var Solar_Panels_Island2_1_Sky = []
 var Bambou_Island2 = []
+var Wind_Turbine_Island2 = []
 var lists = {
 	"Solar_Panels_Island2_1_Sky" : Solar_Panels_Island2_1_Sky,
-	"Bambou_Island2" : Bambou_Island2
+	"Bambou_Island2" : Bambou_Island2,
+	"Wind_Turbine_Island2" : Wind_Turbine_Island2
 }
 
 

@@ -42,6 +42,7 @@ func _on_player_tree_spawn(type) -> void:
 						if distance < closest_distance:
 							closest_distance = distance
 							closest = child
+		print(closest)
 		if closest != null:
 			SpawnAreas.set_items_placed(closest.name, list)
 			closest.visible = true
