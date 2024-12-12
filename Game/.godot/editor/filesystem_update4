@@ -1,8 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 res://Scenes/Main/MainMenu.tscn
 =======
+=======
+>>>>>>> IanProd
 res://Scenes/Islands/Island_2.tscn
+res://Scripts/Characters/NPC/wander.gd
 res://Scripts/Characters/NPC/car_move.gd
+<<<<<<< HEAD
 res://Scripts/Characters/NPC/wander.gd
 res://Scripts/Characters/NPC/npc_new.gd
 res://Scripts/Characters/player.gd
@@ -17,3 +22,7 @@ res://Scenes/Characters/NPC/npc_Ian.tscn
 res://Scenes/Characters/NPC/NPC_New_Movement.tscn
 res://Scripts/Global_(autoload)/Player_data.gd
 >>>>>>> EmilienProd
+=======
+res://Scripts/Global_(autoload)/Player_data.gd
+res://Scenes/Main/MainMenu.tscn
+>>>>>>> IanProd
