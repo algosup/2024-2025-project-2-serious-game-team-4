@@ -4807,7 +4807,9 @@ tile_map_data = PackedByteArray("AAAL/8X/AAAPAAoAAHAL/8b/AAANAAkAAAAL/8f/AAANAAk
 tile_set = SubResource("TileSet_h56q7")
 
 [node name="portal" parent="." instance=ExtResource("7_fkukv")]
-position = Vector2(37, -64)
+position = Vector2(-58, -33)
+rotation = 1.5708
+scale = Vector2(3, 3)
 destination = "res://Scenes/Islands/Island_2.tscn"
 
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]

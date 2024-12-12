@@ -3,6 +3,3 @@ res://Scripts/Characters/NPC/wander.gd
 res://Scenes/Islands/Island2_2.tscn
 res://Scenes/Islands/Island_2.tscn
 res://Scripts/Characters/NPC/car_move.gd
-res://Scenes/Islands/Water.gd
-res://Scripts/portals/portal_back.gd
-res://Scripts/Characters/player.gd
