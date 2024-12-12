@@ -178,3 +178,6 @@ func _on_npc_show_info(path_to_info: Variant) -> void:
 	var info_card = load(path_to_info)
 	Info_ui.get_child(0).texture = info_card
 	Info_ui.visible = true
+
+func _on_portal_same_area_entered(destination: Vector2) -> void:
+	self.position = destination

@@ -1,3 +1,6 @@
+res://Scenes/Islands
+res://Scripts/portals
+res://Scenes/MapFeatures
 res://Assets
 C:/Users/EmilienCHINSY/Documents/exports
 res://Assets/CharactersSprites
@@ -14,7 +17,5 @@ res://Assets/TopDown Boat/steamboat
 res://Assets/TopDown Boat/sailboat
 res://Assets/FireAnimation
 res://Assets/Island_2/Airport
-res://Scenes/Islands
-res://Scripts/portals
 res://Assets/Red_Coupe/SOUTHEAST
 C:/Users/EmilienCHINSY/Documents/Godot Projects/Exports/Web

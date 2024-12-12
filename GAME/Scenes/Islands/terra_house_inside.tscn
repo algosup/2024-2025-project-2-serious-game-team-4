@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuhg52xun4lgi"]
+
+[ext_resource type="Texture2D" uid="uid://p71dadhwwxcd" path="res://Assets/Screenshot 2024-12-04 at 23.01.35.png" id="1_tk5dm"]
+[ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="2_jo0e1"]
+
+[node name="Terra_House_Inside" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(262, 224)
+scale = Vector2(3.15312, 4.00538)
+texture = ExtResource("1_tk5dm")
+
+[node name="Player" parent="." instance=ExtResource("2_jo0e1")]
+position = Vector2(-3.05176e-05, -1.52588e-05)

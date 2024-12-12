@@ -5,9 +5,9 @@ extends Node
 var parent_path = "res://Scenes/Main/start_from_scratch.tscn"
 #Player position
 
-var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2.ZERO, "Island2_1" : Vector2.ZERO, "Island2_1_Sky" : Vector2(3,-30), "Island2_2" : Vector2.ZERO}
+var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2(49814,-396), "Island2_1" : Vector2.ZERO, "Island2_1_Sky" : Vector2(3,-30), "Island2_2" : Vector2.ZERO, "Terra_House_Inside" : Vector2.ZERO}
 #Player rotation
-var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island2_1" : "Idle_Down", "Island2_1_Sky" : "Idle_Down", "Island2_2" : "Idle_Down"}
+var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island2_1" : "Idle_Down", "Island2_1_Sky" : "Idle_Down", "Island2_2" : "Idle_Down", "Terra_House_Inside" : "Idle_Down"}
 var player_speed : int = 250
 
 func set_position(pos: Vector2, place: String):
