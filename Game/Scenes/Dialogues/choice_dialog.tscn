@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://nf5t3ebxc2qy"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogues/Choices_Dialog.gd" id="1_jnyae"]
+
+[sub_resource type="GDScript" id="GDScript_vyhbi"]
+script/source = "extends Node
+
+signal choice(choice)
+signal response(response)
+@onready var choicesDialog = $\"Choices Dialog\"
+@onready var dialog_text = $dialogue
+
+func _on_choices_dialog_selected(index: Variant) -> void:
+	if index == 0:
+		response.emit(\"test\")
+	else:
+		response.emit(\"samarch\")
+
+func _on_dialogue_choices(dialog_num) -> void:
+	choicesDialog.choices = [\"I want to plant trees!\", \"Raph c'était pas si dur!\"]
+	self.visible = true
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cxonu"]
+
+[node name="Top" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_vyhbi")
+
+[node name="Choices Dialog" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 98.0
+offset_bottom = 47.0
+script = ExtResource("1_jnyae")
+
+[node name="MarginContainer" type="MarginContainer" parent="Choices Dialog"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Choices" type="VBoxContainer" parent="Choices Dialog/MarginContainer"]
+layout_mode = 2
+
+[node name="Choice Button" type="Button" parent="Choices Dialog/MarginContainer/Choices"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+theme_override_styles/hover = SubResource("StyleBoxFlat_cxonu")
+text = "test"
+
+[connection signal="SELECTED" from="Choices Dialog" to="." method="_on_choices_dialog_selected"]
