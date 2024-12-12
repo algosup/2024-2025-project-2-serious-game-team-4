@@ -5,11 +5,14 @@ extends CharacterBody2D
 @export var where : Array
 @export var move_speed : float
 @export var maxi : float
+@export var path_to_info : String
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var dialogue = $dialogue
 @onready var exclamation_point = $AnimatedSprite2D/exclam
 @onready var path = $".."
-signal choice
+signal show_info(path_to_info)
+
+signal talking(done)
 
 var Asia_items =[
 	{"quantity" : 99, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant_a_Bambou", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
@@ -45,6 +48,7 @@ func update_animations():
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("INTERACT") and not done and player_in_chat_zone:
 		$dialogue.start()
+		talking.emit(done)
 
 func _physics_process(delta: float) -> void:
 	if path.progress < move_speed/10 or path.progress > maxi:
@@ -83,6 +87,9 @@ func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 func _on_dialogue_d_finished(index) -> void:
 	exclamation_point.visible = false
 	done = true
+	talking.emit(done)
+	if path_to_info != "" and index==0:
+		show_info.emit(path_to_info)
 	if spawner:
 		SpawnAreas.set_spawn_area(where[index])
 		if not dialogue.sent_item:

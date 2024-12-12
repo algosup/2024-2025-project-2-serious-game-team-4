@@ -23,6 +23,7 @@ func set_player_speed(speed):
 	player_speed = speed
 
 func get_position(place):
+	print(place)
 	return player_pos[place]
 
 func get_rotation(place):
