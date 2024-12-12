@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://c1xvq50cudd5x"]
+[gd_scene load_steps=21 format=4 uid="uid://c1xvq50cudd5x"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_job4h"]
 [ext_resource type="Texture2D" uid="uid://buut21ufis8xx" path="res://Assets/Water+.png" id="2_e6iwq"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bav1tpjth4225" path="res://Assets/Island_2/roguelikeCity_magenta.png" id="5_kiuks"]
 [ext_resource type="PackedScene" uid="uid://ckyexbu8v7e3j" path="res://Scenes/Characters/player.tscn" id="6_ipfbx"]
 [ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="8_2nnyk"]
+[ext_resource type="Script" path="res://Scripts/Progress_Bars/Progress_Bar_Asia.gd" id="8_ao1ft"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5bkxl"]
 texture = ExtResource("1_job4h")
@@ -4812,5 +4813,29 @@ destination = "res://Scenes/Islands/Island_2.tscn"
 interact = true
 main_name_destination = "Island2"
 new_pos = Vector2(-3715, -661)
+
+[node name="Progress_Bar" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Progress_Bar"]
+offset_left = 388.0
+offset_top = -12.0
+offset_right = 517.0
+offset_bottom = 30.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Progress_Bar"]
+offset_left = 390.0
+offset_top = 4.0
+offset_right = 515.0
+offset_bottom = 29.0
+text = "Pollution in Asia"
+
+[node name="ProgressBar" type="ProgressBar" parent="Progress_Bar"]
+offset_left = 298.0
+offset_top = 31.0
+offset_right = 596.0
+offset_bottom = 63.0
+script = ExtResource("8_ao1ft")
+continent = "Asia"
 
 [connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]

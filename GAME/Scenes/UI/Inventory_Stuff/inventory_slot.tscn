@@ -61,7 +61,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_ki2d1")
 visible = false
 layout_mode = 0
 offset_top = -135.0
-offset_right = 240.0
+offset_right = 254.0
 offset_bottom = -5.0
 color = Color(0.596078, 0.933333, 0.8, 1)
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://bm5tlc677n8yt"]
+[gd_scene load_steps=37 format=4 uid="uid://bm5tlc677n8yt"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_yqnic"]
 [ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_yxy4t"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="22_g1ebp"]
 [ext_resource type="Texture2D" uid="uid://sqa62445pxim" path="res://Assets/Island_2/Tileset_Highschool.png" id="23_olr2o"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="23_q7e0b"]
+[ext_resource type="Script" path="res://Scripts/Progress_Bars/Progress_Bar_Asia.gd" id="24_0ba5r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jqy55"]
 texture = ExtResource("1_yqnic")
@@ -646,6 +647,7 @@ sprites_parent = NodePath("Node2D")
 player = NodePath("../Player")
 list = "Solar_Panels_Island2_1_Sky"
 Type = "Solar_Panel"
+power = 3
 
 [node name="ColorRect" type="ColorRect" parent="Solar_panel_planting_area"]
 offset_left = -123.0
@@ -1373,6 +1375,32 @@ script = SubResource("GDScript_8aiem")
 [node name="Player" parent="." instance=ExtResource("6_544kr")]
 position = Vector2(204, 384)
 
+[node name="Progress_Bar" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Progress_Bar"]
+offset_left = 388.0
+offset_top = -12.0
+offset_right = 517.0
+offset_bottom = 30.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Progress_Bar"]
+offset_left = 390.0
+offset_top = 4.0
+offset_right = 515.0
+offset_bottom = 29.0
+text = "Pollution in Asia"
+
+[node name="ProgressBar" type="ProgressBar" parent="Progress_Bar"]
+offset_left = 298.0
+offset_top = 31.0
+offset_right = 596.0
+offset_bottom = 63.0
+script = ExtResource("24_0ba5r")
+continent = "Asia"
+
 [connection signal="body_entered" from="Solar_panel_planting_area" to="Player" method="_on_tree_planting_area_body_entered"]
 [connection signal="body_exited" from="Solar_panel_planting_area" to="Player" method="_on_tree_planting_area_body_exited"]
+[connection signal="new_info" from="Solar_panel_planting_area" to="Player" method="_on_progress_bar_new_info"]
+[connection signal="new_info" from="Solar_panel_planting_area" to="Progress_Bar/ProgressBar" method="_on_bambou_spawn_area_new_info"]
 [connection signal="tree_spawn" from="Player" to="Solar_panel_planting_area" method="_on_player_tree_spawn"]

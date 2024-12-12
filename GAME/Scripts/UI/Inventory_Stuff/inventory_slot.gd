@@ -92,6 +92,7 @@ func _on_item_button_gui_input(event: InputEvent) -> void:
 			#this will check if there is an item in the panel, if yes, it will show the usage panel
 			if item != null:
 				Usage_Panel.visible = !Usage_Panel.visible
+				Details_Panel.visible = !Details_Panel.visible
 		#This will show that a panel is being clicked on, the color will change to show that and the signal that it is being dragged is emitted
 		if event.button_index == MOUSE_BUTTON_RIGHT:
 			if event.is_pressed():

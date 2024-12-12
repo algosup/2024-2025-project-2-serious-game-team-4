@@ -22,6 +22,7 @@ Global="*res://Scripts/Global_(autoload)/Global.gd"
 PlayerData="*res://Scripts/Global_(autoload)/Player_data.gd"
 SpawnAreas="*res://Scripts/Global_(autoload)/Spawn_Areas.gd"
 NpcDialog="*res://Scripts/Global_(autoload)/NPC_Dialog.gd"
+ProgressBars="*res://Scripts/Global_(autoload)/Progress_Bars.gd"
 
 [display]
 

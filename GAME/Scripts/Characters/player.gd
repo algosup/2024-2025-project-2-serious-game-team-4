@@ -10,6 +10,7 @@ extends CharacterBody2D
 @onready var Keybinds = $Keybinds
 @onready var footsteps = $AudioStreamPlayer2D
 @onready var Info_ui = $Info_UI
+@onready var Progress_bar = $Progress_bar/ProgressBar
 
 var speed = 150
 var last_move = ""
@@ -93,10 +94,10 @@ func apply_item_effect(item):
 			print("Controls inverted, good luck")
 		"Test":
 			print("test")
-		"Plant_a_Bambou":
+		"Plant a Bambou":
 			if in_tree_spawn:
 				tree_spawn.emit("Bambou")
-		"Place down a Solar Panel":
+		"Place a Solar Panel":
 			if in_tree_spawn:
 				tree_spawn.emit("Solar_Panel")
 
@@ -181,3 +182,6 @@ func _on_npc_show_info(path_to_info: Variant) -> void:
 
 func _on_portal_same_area_entered(destination: Vector2) -> void:
 	self.position = destination
+
+func _on_progress_bar_new_info() -> void:
+	Progress_bar.value=ProgressBars.get_progress_bar_progress("Player")

@@ -6,19 +6,21 @@ extends Area2D
 @export var activation_radius : float = 40.0
 @export var list : String
 @export var Type : String
-@export var all : int
+@export var power : int
+
+signal new_info
 
 var closest = null
 var closest_distance : float = 10000000000.0
-var num_visible = 0
+var num_planted = 0
 
 func _ready() -> void:
 	if SpawnAreas.get_spawn_area(list):
 		var spawned = SpawnAreas.get_items_placed(list)
 		for children in sprites_parent.get_children():
 			if children.name in spawned:
+				num_planted += 1
 				children.visible = true
-				num_visible += 1
 
 func _on_player_tree_spawn(type) -> void:
 	if SpawnAreas.get_spawn_area(list) and type == Type:
@@ -35,7 +37,10 @@ func _on_player_tree_spawn(type) -> void:
 		if closest != null:
 			SpawnAreas.set_items_placed(closest.name, list)
 			closest.visible = true
-			num_visible += 1
+			num_planted += 1
+			if num_planted % 8 == 0:
+				ProgressBars.set_progress_bar_progress("Player", power)
+			if num_planted % 4 == 0:
+				ProgressBars.set_progress_bar_progress("Asia", -power)
+				new_info.emit()
 		closest_distance = 10000000000.0
-	if num_visible >= 99:
-		print("lolxd", num_visible)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=155 format=3 uid="uid://ckyexbu8v7e3j"]
+[gd_scene load_steps=156 format=3 uid="uid://ckyexbu8v7e3j"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/player.gd" id="1_2s006"]
 [ext_resource type="Texture2D" uid="uid://qhgrt0te4js1" path="res://Assets/Red_Coupe/Red_COUPE_CLEAN_All_000-sheet.png" id="3_3jkrq"]
@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://dugw37tyxr1pc" path="res://Assets/Red_Coupe/NORTHEAST/Red_COUPE_CLEAN_NORTHEAST_000-sheet.png" id="26_sos6p"]
 [ext_resource type="Texture2D" uid="uid://bjru5fv2m5671" path="res://Assets/testttt.png" id="28_d7s4g"]
 [ext_resource type="AudioStream" uid="uid://bc4ruwwqohd8f" path="res://Assets/Audios/footsteps.mp3" id="31_suq8p"]
+[ext_resource type="Script" path="res://Scripts/Progress_Bars/Progress_Bar_Asia.gd" id="32_b7mv2"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pr3ip"]
 
@@ -1192,16 +1193,16 @@ offset_right = 1120.0
 offset_bottom = 646.0
 text = "Back to game"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Progress_bar" type="CanvasLayer" parent="."]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="Progress_bar"]
 offset_left = 1751.0
 offset_top = -3.0
 offset_right = 1880.0
 offset_bottom = 22.0
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="Label" type="Label" parent="Progress_bar"]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -1212,7 +1213,7 @@ offset_bottom = 22.0
 grow_horizontal = 0
 text = "Player Progress"
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+[node name="ProgressBar" type="ProgressBar" parent="Progress_bar"]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -1221,6 +1222,8 @@ offset_top = 22.0
 offset_right = 1.0
 offset_bottom = 49.0
 grow_horizontal = 0
+script = ExtResource("32_b7mv2")
+continent = "Player"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("31_suq8p")
