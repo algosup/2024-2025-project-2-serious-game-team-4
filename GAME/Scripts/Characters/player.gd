@@ -36,7 +36,6 @@ func _ready():
 func get_input():
 	var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
 	velocity=input_direction * speed
-	print(velocity)
 		
 #basic left, right, up, down movement for the player
 func _physics_process(_delta: float) -> void:
