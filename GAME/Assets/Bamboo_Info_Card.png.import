@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:GAME/Assets/Island_2/Settings.png.import
-uid="uid://cfvna4a24lf55"
-path="res://.godot/imported/Settings.png-248ddfa0ce772f3d85bd2216d602ae93.ctex"
-========
-uid="uid://byqt50ikqpuaq"
+uid="uid://chvw4nfd7jwdy"
 path="res://.godot/imported/Bamboo_Info_Card.png-75e5ced06212d160d46744114570aa4c.ctex"
->>>>>>>> EmilienProd:GAME/Assets/Bamboo_Info_Card.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:GAME/Assets/Island_2/Settings.png.import
-source_file="res://Assets/Island_2/Settings.png"
-dest_files=["res://.godot/imported/Settings.png-248ddfa0ce772f3d85bd2216d602ae93.ctex"]
-========
 source_file="res://Assets/Bamboo_Info_Card.png"
 dest_files=["res://.godot/imported/Bamboo_Info_Card.png-75e5ced06212d160d46744114570aa4c.ctex"]
->>>>>>>> EmilienProd:GAME/Assets/Bamboo_Info_Card.png.import
 
 [params]
 
