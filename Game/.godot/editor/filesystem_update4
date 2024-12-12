@@ -1,10 +1,9 @@
-res://Scenes/Islands/Island_2.tscn
+res://Scenes/Main/MainMenu.tscn
+res://Scripts/Characters/player.gd
 res://Scripts/Characters/NPC/car_move.gd
 res://Scripts/Characters/NPC/wander.gd
-res://Scripts/Characters/NPC/npc_new.gd
-res://Scripts/Characters/player.gd
-res://Scenes/Main/MainMenu.tscn
 res://Scenes/Islands/Island2_2.tscn
+res://Scenes/Islands/Island_2.tscn
 res://Scenes/Characters/player.tscn
 res://Scenes/Main/start_from_scratch.tscn
 res://Scenes/Characters/NPC/npc.tscn
@@ -12,4 +11,4 @@ res://Scenes/Islands/Island_2_1_Sky.tscn
 res://Scenes/Islands/Island_2_1.tscn
 res://Scenes/Characters/NPC/npc_Ian.tscn
 res://Scenes/Characters/NPC/NPC_New_Movement.tscn
-res://Scripts/Global_(autoload)/Player_data.gd
+res://Scenes/Characters/NPC/NPC_Mariem.tscn
