@@ -1,0 +1,132 @@
+[gd_scene load_steps=5 format=3 uid="uid://cig5wh0g3chs6"]
+
+[ext_resource type="Script" path="res://Scripts/Menus/settings.gd" id="1_y8vtn"]
+[ext_resource type="AudioStream" path="res://Assets/freakyMenu.ogg" id="2_auf2d"]
+
+[sub_resource type="SystemFont" id="SystemFont_nkpu1"]
+font_names = PackedStringArray("Impact")
+font_weight = 700
+font_stretch = 125
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_rxiuc"]
+font_names = PackedStringArray("Impact")
+font_weight = 700
+font_stretch = 125
+subpixel_positioning = 0
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y8vtn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -564.0
+offset_right = 564.0
+offset_bottom = 624.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_nkpu1")
+theme_override_font_sizes/font_size = 60
+text = "Settings
+"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Seperator" type="Control" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Master_Volume" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_rxiuc")
+theme_override_font_sizes/font_size = 30
+text = "Master Volume"
+
+[node name="Master_volume" type="HSlider" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Music_Volume" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_rxiuc")
+theme_override_font_sizes/font_size = 30
+text = "Music Volume"
+
+[node name="Music_volume" type="HSlider" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="SFX_Volume" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_rxiuc")
+theme_override_font_sizes/font_size = 30
+text = "SFX Volume"
+
+[node name="SFX_volume" type="HSlider" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Mute" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_rxiuc")
+theme_override_font_sizes/font_size = 30
+text = "Mute
+"
+
+[node name="mute" type="CheckBox" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_auf2d")
+volume_db = -80.0
+
+[node name="Keybinds" type="Button" parent="."]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 520.0
+offset_right = 1055.0
+offset_bottom = 551.0
+text = "Keybinds"
+
+[node name="Back to Game" type="Button" parent="."]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 570.0
+offset_right = 1055.0
+offset_bottom = 601.0
+text = "Back to Game"
+
+[connection signal="value_changed" from="VBoxContainer/VBoxContainer/Master_volume" to="." method="_on_master_volume_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/VBoxContainer/Music_volume" to="." method="_on_music_volume_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/VBoxContainer/SFX_volume" to="." method="_on_sfx_volume_value_changed"]
+[connection signal="toggled" from="VBoxContainer/VBoxContainer/mute" to="." method="_on_check_box_toggled"]
+[connection signal="pressed" from="Keybinds" to="." method="_on_keybinds_pressed"]
+[connection signal="pressed" from="Back to Game" to="." method="_on_back_to_game_pressed"]
