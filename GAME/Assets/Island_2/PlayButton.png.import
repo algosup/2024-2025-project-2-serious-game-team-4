@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbjwvrj57t0or"
-path="res://.godot/imported/f-2.png-a2efc85ab1e6378825ef5ba39324a76b.ctex"
+uid="uid://dteqe4015bw63"
+path="res://.godot/imported/PlayButton.png-86a1be0fe5f86bf9ff22b2a5fc6a1578.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Island_2/f-2.png"
-dest_files=["res://.godot/imported/f-2.png-a2efc85ab1e6378825ef5ba39324a76b.ctex"]
+source_file="res://Assets/Island_2/PlayButton.png"
+dest_files=["res://.godot/imported/PlayButton.png-86a1be0fe5f86bf9ff22b2a5fc6a1578.ctex"]
 
 [params]
 

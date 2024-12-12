@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3r1jsbja66sk"
-valid=false
+path="res://.godot/imported/Terra's house.png-f044fe5f0519bdc7cfb029be5ca8b956.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://Assets/Terra's house.png"
+dest_files=["res://.godot/imported/Terra's house.png-f044fe5f0519bdc7cfb029be5ca8b956.ctex"]
 
 [params]
 

@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1pvn47wai2w5"
-valid=false
+path="res://.godot/imported/bike.png-ebf9301dd294504f1713446569a45de8.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://Assets/Island_2/bike.png"
+dest_files=["res://.godot/imported/bike.png-ebf9301dd294504f1713446569a45de8.ctex"]
 
 [params]
 
