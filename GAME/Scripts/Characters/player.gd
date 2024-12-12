@@ -9,13 +9,11 @@ extends CharacterBody2D
 @onready var Settingss = $Settings
 @onready var Keybinds = $Keybinds
 @onready var footsteps = $AudioStreamPlayer2D
-@onready var Info_ui = $Info_UI
 
 var speed = 150
 var last_move = ""
 var in_tree_spawn = false
 var called = false
-var temp_speed = 0
 
 signal tree_spawn(type)
 
@@ -24,7 +22,6 @@ signal tree_spawn(type)
 
 func _ready():
 	speed = PlayerData.get_player_speed()
-	temp_speed = speed
 	self.position=PlayerData.get_position(get_parent().name)
 	last_move=PlayerData.get_rotation(get_parent().name)
 	animated_sprite.play(last_move)
@@ -72,8 +69,6 @@ func _input(event):
 		hotbar_UI.visible = !hotbar_UI.visible
 	if event.is_action_pressed("SETTINGS"):
 		Settingss.visible = !Settingss.visible
-	if event.is_action_pressed("INFO_CARD"):
-		Info_ui.hide()
 		
 
 func apply_item_effect(item):
@@ -163,14 +158,3 @@ func _on_back_to_game_pressed() -> void:
 func _on_back_pressed() -> void:
 	Keybinds.visible = false
 	Settingss.visible = true
-
-func _on_npc_talking(done: Variant) -> void:
-	if not done:
-		speed = 0
-	else:
-		speed = temp_speed
-
-func _on_npc_show_info(path_to_info: Variant) -> void:
-	var info_card = load(path_to_info)
-	Info_ui.get_child(0).texture = info_card
-	Info_ui.visible = true

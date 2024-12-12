@@ -70,7 +70,7 @@ interact = true
 curve = SubResource("Curve2D_ugbdy")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(-99.516, -217.7)
+position = Vector2(-99.5161, -217.7)
 rotation = 0.0117642
 progress = 25.5018
 rotates = false
