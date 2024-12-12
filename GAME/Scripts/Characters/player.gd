@@ -5,7 +5,7 @@ extends CharacterBody2D
 @onready var Interact_UI = $Interact_UI
 @onready var hotbar_UI = $Inventory_Hotbar
 @onready var animated_sprite = $AnimatedSprite2D
-@onready var No_More_Trees = $No_More_Trees
+@onready var Left_To_Plant = $Left_to_Plant
 @onready var Settingss = $Settings
 @onready var Keybinds = $Keybinds
 @onready var footsteps = $AudioStreamPlayer2D
@@ -131,15 +131,7 @@ func _on_tree_planting_area_body_entered(_body: Node2D) -> void:
 
 func _on_tree_planting_area_body_exited(_body: Node2D) -> void:
 	in_tree_spawn = false
-
-func _on_main_too_many_trees() -> void:
-	if not called:
-		No_More_Trees.visible = true
-		called = true
-		await get_tree().create_timer(2).timeout
-		No_More_Trees.visible = false
-		called = false
-
+	
 func save_player_data():
 	PlayerData.set_parent_path(get_parent().get_scene_file_path())
 	PlayerData.set_position(self.position, get_parent().name)
@@ -186,5 +178,13 @@ func _on_npc_show_info(path_to_info: Variant) -> void:
 func _on_portal_same_area_entered(destination: Vector2) -> void:
 	self.position = destination
 
-func _on_progress_bar_new_info() -> void:
+func _on_progress_bar_new_info(item, amount) -> void:
 	Progress_bar.value=ProgressBars.get_progress_bar_progress("Player")
+	if Left_To_Plant.visible == true:
+		Left_To_Plant.visible = false
+	Left_To_Plant.get_child(1).text = "Good job, we still need %s %ss!" % [amount, item]
+	Left_To_Plant.visible = true
+	if amount == 0:
+		Left_To_Plant.get_child(1).text = "Congratulations!"
+		await get_tree().create_timer(10).timeout
+		Left_To_Plant.visible = false

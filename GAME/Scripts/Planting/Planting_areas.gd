@@ -9,7 +9,7 @@ extends Area2D
 @export var power : int
 @export var idiot_proof : int
 
-signal new_info
+signal new_info(Type, num_left)
 
 var Asia_items =[
 	{"quantity" : 1, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant a Bambou", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
@@ -19,11 +19,13 @@ var Asia_items =[
 var closest = null
 var closest_distance : float = 10000000000.0
 var num_planted = 0
+var num_children = 0
 
 func _ready() -> void:
 	if SpawnAreas.get_spawn_area(list):
 		var spawned = SpawnAreas.get_items_placed(list)
 		for children in sprites_parent.get_children():
+			num_children += 1
 			if children.name in spawned:
 				num_planted += 1
 				children.visible = true
@@ -41,7 +43,6 @@ func _on_player_tree_spawn(type) -> void:
 							closest_distance = distance
 							closest = child
 		if closest != null:
-			print(closest)
 			SpawnAreas.set_items_placed(closest.name, list)
 			closest.visible = true
 			num_planted += 1
@@ -49,9 +50,8 @@ func _on_player_tree_spawn(type) -> void:
 				ProgressBars.set_progress_bar_progress("Player", power)
 			if num_planted % 4 == 0:
 				ProgressBars.set_progress_bar_progress("Asia", -power)
-				new_info.emit()
+			new_info.emit(Type, num_children-num_planted)
 		else:
-			print("here I am")
 			Global.add_item(Asia_items[idiot_proof], true)
 		closest_distance = 10000000000.0
 		closest = null

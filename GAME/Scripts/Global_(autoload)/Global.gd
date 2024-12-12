@@ -95,7 +95,6 @@ func drop_item(item_data, drop_position):
 	drop_position = adjust_drop_position(drop_position)
 	item_instance.global_position=drop_position
 	get_tree().current_scene.add_child(item_instance)
-	
 
 func add_hotbar_item(item):
 	for i in range(hotbar_inventory.size()):
