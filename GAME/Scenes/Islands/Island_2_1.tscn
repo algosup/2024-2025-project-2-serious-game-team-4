@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://bglturxgofueg"]
+[gd_scene load_steps=34 format=4 uid="uid://bglturxgofueg"]
 
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
 [ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_rclli"]
@@ -19,10 +19,10 @@
 [ext_resource type="Texture2D" uid="uid://ckdm6kh0yy2nc" path="res://Assets/Island_2/Corners/(2) 1 fence Side 1-2-4.png.png" id="22_b7m0x"]
 [ext_resource type="PackedScene" uid="uid://b31ajl2wumgol" path="res://Scenes/MapFeatures/portal_back.tscn" id="24_nvh2f"]
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="26_jg2u4"]
-[ext_resource type="PackedScene" uid="uid://qkbd34j547n4" path="res://Scenes/Characters/NPC/NPC_New_Movement.tscn" id="26_tvytf"]
 [ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="28_py124"]
 [ext_resource type="Texture2D" uid="uid://c75nqnfkix0v4" path="res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png" id="29_ietuq"]
 [ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="30_50wse"]
+[ext_resource type="PackedScene" uid="uid://c5ve3jstlwg1" path="res://Scenes/Characters/NPC/npc_Ian.tscn" id="31_qlmhx"]
 [ext_resource type="Texture2D" uid="uid://qt13efvmw72d" path="res://Assets/Island_2/2-removebg-preview-2.png" id="34_2jyx8"]
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="35_mmee1"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="36_itejp"]
@@ -505,12 +505,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Curve2D" id="Curve2D_7x7su"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -263, -7, 0, 0, 0, 0, -56, -8)
-}
-point_count = 2
-
 [node name="Island2_1" type="Node2D"]
 position = Vector2(-1773, -196)
 
@@ -752,6 +746,17 @@ sprite_frames = SubResource("SpriteFrames_8mv3j")
 autoplay = "default"
 frame_progress = 0.525143
 
+[node name="Marker2D" type="Marker2D" parent="." groups=["npc_Ian"]]
+position = Vector2(-71, -15)
+
+[node name="Marker2D2" type="Marker2D" parent="." groups=["npc_Ian"]]
+position = Vector2(-243, -15)
+
+[node name="npc_Ian" parent="." instance=ExtResource("31_qlmhx")]
+position = Vector2(-147, -22)
+spawner = true
+where = ["Bambou_Island2", "Mangrove_Island2", "Solar_Panels_Island2_1_Sky"]
+
 [node name="portal" parent="." instance=ExtResource("26_jg2u4")]
 position = Vector2(154, -269)
 destination = "res://Scenes/Islands/Island_2_1_Sky.tscn"
@@ -770,24 +775,6 @@ main_name_destination = "Island2"
 new_pos = Vector2(-1418, -25)
 
 [node name="portal_back3" parent="." instance=ExtResource("24_nvh2f")]
-
-[node name="Path2D" type="Path2D" parent="."]
-curve = SubResource("Curve2D_7x7su")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(-159.5, -7.5)
-rotation = -0.00483088
-progress = 103.501
-rotates = false
-
-[node name="Npc" parent="Path2D/PathFollow2D" instance=ExtResource("26_tvytf")]
-position = Vector2(2.0504e-05, -3.33786e-06)
-rotation = 0.00483088
-NPCname = "Ian"
-spawner = true
-where = ["Bambou_Island2", "Mangrove_Island2", "Solar_Panels_Island2_1_Sky"]
-move_speed = 97.0
-maxi = 200.0
 
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
 [connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]

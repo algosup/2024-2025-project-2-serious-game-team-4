@@ -3,6 +3,7 @@ extends Node2D
 @onready var items = $Items
 @onready var Item_Spawn_Area = $ItemSpawnArea
 @onready var Collision_Shape = $ItemSpawnArea/CollisionShape2D
+@onready var dev_tool = $CanvasLayer2
 @onready var Progress_bar = $CanvasLayer/ProgressBar
 
 

@@ -11,7 +11,6 @@ var can_go_next = true
 var dialogue_index = 0
 var lock = false
 var Index = 0
-var sent_item = false
 
 @onready var choicesDialog = $"NinePatchRect/Choices Dialog"
 @onready var container = $NinePatchRect
@@ -20,8 +19,6 @@ var sent_item = false
 
 func _ready() -> void:
 	container.visible = false
-	current_dialogue_id = NpcDialog.get_Dialogue_ID(get_parent().NPCname+"_"+get_tree().current_scene.name)-1
-	dialogue_index = NpcDialog.get_Index(get_parent().NPCname+"_"+get_tree().current_scene.name)
 
 func start():
 	if d_active:
@@ -67,7 +64,6 @@ func next_script(current):
 		if current[current_dialogue_id]["Worthless"] == 1:
 			lock = true
 		dialogue_choices(current)
-	NpcDialog.set_info(get_parent().NPCname+"_"+get_tree().current_scene.name, dialogue_index, current_dialogue_id)
 
 
 

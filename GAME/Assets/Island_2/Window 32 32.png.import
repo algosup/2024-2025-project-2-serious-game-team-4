@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbdmuhpgqwjx6"
-valid=false
+uid="uid://dp72275tnlefj"
+path="res://.godot/imported/Window 32 32.png-b9731da86f364316053be89928f1fc84.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://Assets/Island_2/Window 32 32.png"
+dest_files=["res://.godot/imported/Window 32 32.png-b9731da86f364316053be89928f1fc84.ctex"]
 
 [params]
 
