@@ -18,5 +18,8 @@ res://Scripts/Dialogues/dialogue.gd
 res://Scripts/Main/Main_Script.gd
 res://Scripts/Global_(autoload)/NPC_Dialog.gd
 res://Scripts/Global_(autoload)/Player_data.gd
+<<<<<<< HEAD
+>>>>>>> parent of 0606026cc (Info_Cards!)
+=======
 >>>>>>> parent of 0606026cc (Info_Cards!)
 res://Scripts/Characters/player.gd
