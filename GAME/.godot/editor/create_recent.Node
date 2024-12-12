@@ -1,3 +1,5 @@
+ColorRect
+Label
 ProgressBar
 CanvasLayer
 Sprite2D
@@ -10,6 +12,3 @@ PathFollow2D
 Path2D
 AnimationPlayer
 AnimatedSprite2D
-CharacterBody2D
-CollisionPolygon2D
-StaticBody2D

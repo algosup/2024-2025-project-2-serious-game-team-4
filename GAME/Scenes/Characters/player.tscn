@@ -1194,10 +1194,33 @@ text = "Back to game"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = 1751.0
+offset_top = -3.0
+offset_right = 1880.0
+offset_bottom = 22.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -164.0
+offset_top = -4.0
+offset_right = -44.0
+offset_bottom = 22.0
+grow_horizontal = 0
+text = "Player Progress"
+
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
-offset_left = 1701.0
-offset_right = 1920.0
-offset_bottom = 27.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -218.0
+offset_top = 22.0
+offset_right = 1.0
+offset_bottom = 49.0
+grow_horizontal = 0
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("31_suq8p")
