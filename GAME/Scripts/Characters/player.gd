@@ -9,11 +9,13 @@ extends CharacterBody2D
 @onready var Settingss = $Settings
 @onready var Keybinds = $Keybinds
 @onready var footsteps = $AudioStreamPlayer2D
+@onready var Info_ui = $Info_UI
 
 var speed = 150
 var last_move = ""
 var in_tree_spawn = false
 var called = false
+var temp_speed = 0
 
 signal tree_spawn(type)
 
@@ -21,7 +23,9 @@ signal tree_spawn(type)
 @onready var Interact_Label = $Interact_UI/ColorRect/Label
 
 func _ready():
+	footsteps.pitch_scale = 2.0
 	speed = PlayerData.get_player_speed()
+	temp_speed = speed
 	self.position=PlayerData.get_position(get_parent().name)
 	last_move=PlayerData.get_rotation(get_parent().name)
 	animated_sprite.play(last_move)
@@ -31,7 +35,6 @@ func _ready():
 
 func get_input():
 	var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
-	play_footsteps(input_direction)
 	velocity=input_direction * speed
 		
 #basic left, right, up, down movement for the player
@@ -40,28 +43,32 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 	update_animations()
 
-func play_footsteps(input_direction):
-	if not footsteps.playing and input_direction:
+func play_footsteps():
+	if not footsteps.playing:
 		footsteps.play()
 
 func update_animations():
 	if velocity == Vector2.ZERO:
 		animated_sprite.play(last_move)
 	else:
-		if abs(velocity.x) > abs(velocity.y):
-			if velocity.x > 0:
-				animated_sprite.play("Walk_Right")
-				last_move = "Idle_Right"
+		if not self.is_on_wall() and not self.is_on_ceiling() and not self.is_on_floor():
+			play_footsteps()
+			if abs(velocity.x) > abs(velocity.y):
+				if velocity.x > 0:
+					animated_sprite.play("Walk_Right")
+					last_move = "Idle_Right"
+				else:
+					animated_sprite.play("Walk_Left")
+					last_move = "Idle_Left"
 			else:
-				animated_sprite.play("Walk_Left")
-				last_move = "Idle_Left"
+				if velocity.y > 0:
+					animated_sprite.play("Walk_Down")
+					last_move = "Idle_Down"
+				else:
+					animated_sprite.play("Walk_Up")
+					last_move = "Idle_Up"
 		else:
-			if velocity.y > 0:
-				animated_sprite.play("Walk_Down")
-				last_move = "Idle_Down"
-			else:
-				animated_sprite.play("Walk_Up")
-				last_move = "Idle_Up"
+			animated_sprite.play(last_move)
 
 func _input(event):
 	if event.is_action_pressed("INVENTORY"):
@@ -69,6 +76,8 @@ func _input(event):
 		hotbar_UI.visible = !hotbar_UI.visible
 	if event.is_action_pressed("SETTINGS"):
 		Settingss.visible = !Settingss.visible
+	if event.is_action_pressed("INFO_CARD"):
+		Info_ui.hide()
 		
 
 func apply_item_effect(item):
@@ -158,3 +167,14 @@ func _on_back_to_game_pressed() -> void:
 func _on_back_pressed() -> void:
 	Keybinds.visible = false
 	Settingss.visible = true
+
+func _on_npc_talking(done: Variant) -> void:
+	if not done:
+		speed = 0
+	else:
+		speed = temp_speed
+
+func _on_npc_show_info(path_to_info: Variant) -> void:
+	var info_card = load(path_to_info)
+	Info_ui.get_child(0).texture = info_card
+	Info_ui.visible = true

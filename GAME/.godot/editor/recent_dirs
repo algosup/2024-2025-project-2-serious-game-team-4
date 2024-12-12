@@ -1,11 +1,13 @@
-res://Assets/Island_2
-res://Assets
-res://
-<<<<<<< HEAD
 C:/Users/EmilienCHINSY/Documents/exports
+res://Assets
+res://Assets/CharactersSprites
+res://Scripts/Global_(autoload)
+res://Scripts/Characters/NPC
+res://Scenes/Characters/NPC
+res://Assets/NpcInteractions
 res://Scripts/Planting
-=======
->>>>>>> Deployment
+res://
+res://Assets/Island_2
 res://Scripts/Planting
 res://Assets/TopDown Boat/speedboat
 res://Assets/TopDown Boat/steamboat
@@ -15,12 +17,4 @@ res://Assets/Island_2/Airport
 res://Scenes/Islands
 res://Scripts/portals
 res://Assets/Red_Coupe/SOUTHEAST
-res://Assets/Red_Coupe/NORTHEAST
-res://Assets/Red_Coupe/SOUTHWEST
-res://Assets/Red_Coupe/NORTHWEST
-res://Assets/Red_Coupe/NORTH
-res://Assets/Red_Coupe/EAST
-<<<<<<< HEAD
-=======
 C:/Users/EmilienCHINSY/Documents/Godot Projects/Exports/Web
->>>>>>> Deployment

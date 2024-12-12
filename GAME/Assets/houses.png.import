@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4jlyabrn42h1"
-path="res://.godot/imported/houses.png-e4306d9d3c5d6e297e28e056b8a70752.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://dwvs5lu6l5fql"
+valid=false
 
 [deps]
 
 source_file="res://Assets/houses.png"
-dest_files=["res://.godot/imported/houses.png-e4306d9d3c5d6e297e28e056b8a70752.ctex"]
 
 [params]
 

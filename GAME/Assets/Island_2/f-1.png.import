@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2q3ykf64xq65"
-path="res://.godot/imported/f-1.png-bc2e6b799ad65cfc91905fbe9bd5bc51.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://u1pkhrgesjx7"
+valid=false
 
 [deps]
 
 source_file="res://Assets/Island_2/f-1.png"
-dest_files=["res://.godot/imported/f-1.png-bc2e6b799ad65cfc91905fbe9bd5bc51.ctex"]
 
 [params]
 
