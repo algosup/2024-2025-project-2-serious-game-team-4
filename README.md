@@ -3,7 +3,7 @@
 ## Project Overview
 This project is a serious game developed by Team 4. Our game addresses climate change challenges through an interactive journey where the player will travel over the world to help continents with their climate problems. 
 The goal of the game is to raise awareness about climate issues and inspire players to think about solutions in a challenging and engaging way.
-
+You can access our game via [itch.io](https://emilienc.itch.io/test-1) !
 ## Gameplay and Key Features
 - **Custom UI:** The game features an original and functional user interface that enhances your gameplay experience.
 - **Customs Sprites:** The game includes meticulously designed, pixel-by-pixel sprites to create a unique and immersive experience.
