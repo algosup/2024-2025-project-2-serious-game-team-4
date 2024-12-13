@@ -1,9 +1,7 @@
-<<<<<<< Updated upstream
+Sprite2D
 PathFollow2D
 Path2D
-=======
 TileMapLayer
->>>>>>> Stashed changes
 AnimatedSprite2D
 Button
 CollisionShape2D
@@ -13,11 +11,4 @@ SubViewport
 ColorRect
 Label
 ProgressBar
-Sprite2D
 Area2D
-TextureRect
-<<<<<<< Updated upstream
-=======
-PathFollow2D
-Path2D
->>>>>>> Stashed changes
