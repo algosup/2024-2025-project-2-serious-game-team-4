@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cig5wh0g3chs6"]
 
+[ext_resource type="Script" path="res://Scripts/Menus/settings_controller.gd" id="1_6jfca"]
 [ext_resource type="Script" path="res://Scripts/Menus/settings.gd" id="1_y8vtn"]
-[ext_resource type="AudioStream" path="res://Assets/freakyMenu.ogg" id="2_auf2d"]
 
 [sub_resource type="SystemFont" id="SystemFont_nkpu1"]
 font_names = PackedStringArray("Impact")
@@ -22,6 +22,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_6jfca")
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 script = ExtResource("1_y8vtn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -66,6 +72,8 @@ text = "Master Volume"
 
 [node name="Master_volume" type="HSlider" parent="VBoxContainer/VBoxContainer"]
 layout_mode = 2
+max_value = 1.0
+step = 0.05
 
 [node name="Music_Volume" type="Label" parent="VBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -78,6 +86,8 @@ text = "Music Volume"
 
 [node name="Music_volume" type="HSlider" parent="VBoxContainer/VBoxContainer"]
 layout_mode = 2
+max_value = 1.0
+step = 0.05
 
 [node name="SFX_Volume" type="Label" parent="VBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -90,23 +100,12 @@ text = "SFX Volume"
 
 [node name="SFX_volume" type="HSlider" parent="VBoxContainer/VBoxContainer"]
 layout_mode = 2
+max_value = 1.0
+step = 0.05
 
-[node name="Mute" type="Label" parent="VBoxContainer/VBoxContainer"]
+[node name="Apply" type="Button" parent="VBoxContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0.556863, 0.556863, 0.556863, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = SubResource("SystemFont_rxiuc")
-theme_override_font_sizes/font_size = 30
-text = "Mute
-"
-
-[node name="mute" type="CheckBox" parent="VBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_auf2d")
-volume_db = -80.0
+text = "Apply"
 
 [node name="Keybinds" type="Button" parent="."]
 layout_mode = 0
@@ -124,9 +123,9 @@ offset_right = 1055.0
 offset_bottom = 601.0
 text = "Back to Game"
 
-[connection signal="value_changed" from="VBoxContainer/VBoxContainer/Master_volume" to="." method="_on_master_volume_value_changed"]
-[connection signal="value_changed" from="VBoxContainer/VBoxContainer/Music_volume" to="." method="_on_music_volume_value_changed"]
-[connection signal="value_changed" from="VBoxContainer/VBoxContainer/SFX_volume" to="." method="_on_sfx_volume_value_changed"]
-[connection signal="toggled" from="VBoxContainer/VBoxContainer/mute" to="." method="_on_check_box_toggled"]
+[connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/Master_volume" to="." method="_on_master_volume_mouse_exited"]
+[connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/Music_volume" to="." method="_on_music_volume_mouse_exited"]
+[connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/SFX_volume" to="." method="_on_sfx_volume_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Apply" to="." method="_on_apply_pressed"]
 [connection signal="pressed" from="Keybinds" to="." method="_on_keybinds_pressed"]
 [connection signal="pressed" from="Back to Game" to="." method="_on_back_to_game_pressed"]
