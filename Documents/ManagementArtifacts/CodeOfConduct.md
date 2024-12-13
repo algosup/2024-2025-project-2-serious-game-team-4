@@ -12,7 +12,7 @@
 
 ## Introduction
 
-This document is intended to provide guidelines for the behavior of all members of Team3. It is important that all members of the team adhere to these guidelines in order to maintain a positive and productive working environment.
+This document is intended to provide guidelines for the behavior of all members of Team 4. It is important that all members of the team adhere to these guidelines in order to maintain a positive and productive working environment.
 
 ## Required Behavior
 
