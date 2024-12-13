@@ -1239,6 +1239,7 @@ volume_db = -5.0
 [node name="Tuto" type="CanvasLayer" parent="."]
 
 [node name="Tuto1" type="ColorRect" parent="Tuto"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1301,6 +1302,7 @@ scale = Vector2(2.85285, 2.848)
 texture = ExtResource("42_vwghh")
 
 [node name="Skip" type="Button" parent="Tuto"]
+visible = false
 offset_left = 1791.0
 offset_top = 1.0
 offset_right = 1919.0
