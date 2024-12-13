@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var spawner : bool
 @export var where : Array
 @export var move_speed : float
-@export var maxi : float
+@export var maxii : float
 @export var path_to_info : String
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var dialogue = $dialogue
@@ -55,7 +55,7 @@ func _input(event: InputEvent) -> void:
 		talking.emit(done)
 
 func _physics_process(delta: float) -> void:
-	if path.progress < move_speed/10 or path.progress > maxi:
+	if path.progress < move_speed/10 or path.progress > maxii:
 		forward = !forward
 	if forward:
 		path.progress += move_speed * delta

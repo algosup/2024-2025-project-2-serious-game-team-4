@@ -5,5 +5,5 @@ extends ProgressBar
 func _ready() -> void:
 	self.value=ProgressBars.get_progress_bar_progress(continent)
 
-func _on_bambou_spawn_area_new_info(Type, num_left) -> void:
+func _on_bambou_spawn_area_new_info(_Type, _num_left) -> void:
 	self.value=ProgressBars.get_progress_bar_progress(continent)
