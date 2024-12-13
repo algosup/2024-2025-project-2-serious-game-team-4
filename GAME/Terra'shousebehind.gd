@@ -8,7 +8,7 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group('Player'):
-		Building.modulate = Color(0,0,0, 0.7)
+		Building.modulate = Color(1, 1, 1, 0.635)
 		pass
 
 func _on_body_exited(body: Node2D) -> void:
