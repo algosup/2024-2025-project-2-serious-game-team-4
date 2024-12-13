@@ -1,5 +1,5 @@
 # Weekly Report - Week 2
-## Week 3 Objectives
+## Week 2 Objectives
 - Finding project idea
 - Start working on the Functional Specification Document
 - Define all the features of the project

@@ -1,5 +1,5 @@
 # Weekly Report - Week 3
-## Week 4 Objectives
+## Week 3 Objectives
 - Working on the Technical specification
 - Working on Sprites
 - Working on the music
