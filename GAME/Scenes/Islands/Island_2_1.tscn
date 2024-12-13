@@ -786,6 +786,7 @@ NPCname = "Ian"
 spawner = true
 where = ["Bambou_Island2", "Wind_Turbine_Island2", "Solar_Panels_Island2_1_Sky"]
 move_speed = 97.0
+maxii = 200.0
 
 [node name="Progress_Bar" type="CanvasLayer" parent="."]
 

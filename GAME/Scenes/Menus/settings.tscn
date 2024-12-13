@@ -103,7 +103,7 @@ layout_mode = 2
 max_value = 1.0
 step = 0.05
 
-[node name="Apply" type="Button" parent="VBoxContainer/VBoxContainer"]
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "Apply"
 
@@ -123,9 +123,10 @@ offset_right = 1055.0
 offset_bottom = 601.0
 text = "Back to Game"
 
+[connection signal="updated" from="Control" to="." method="_on_control_updated"]
 [connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/Master_volume" to="." method="_on_master_volume_mouse_exited"]
 [connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/Music_volume" to="." method="_on_music_volume_mouse_exited"]
 [connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/SFX_volume" to="." method="_on_sfx_volume_mouse_exited"]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer/Apply" to="." method="_on_apply_pressed"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Keybinds" to="." method="_on_keybinds_pressed"]
 [connection signal="pressed" from="Back to Game" to="." method="_on_back_to_game_pressed"]
