@@ -1144,20 +1144,18 @@ text = "You still need to plant XX Wind Turbines!"
 [node name="Progress_bar" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Progress_bar"]
-offset_left = 90.0
-offset_top = 361.0
-offset_right = 219.0
-offset_bottom = 387.0
-color = Color(0, 0, 0, 1)
+offset_right = 129.0
+offset_bottom = 24.0
+color = Color(0, 0, 0, 0.545098)
 
 [node name="Label" type="Label" parent="Progress_bar"]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -1825.0
-offset_top = 360.0
-offset_right = -1705.0
-offset_bottom = 386.0
+offset_left = -1916.0
+offset_top = 361.0
+offset_right = -1796.0
+offset_bottom = 387.0
 grow_horizontal = 0
 text = "Player Progress"
 
