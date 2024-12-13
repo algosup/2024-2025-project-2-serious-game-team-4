@@ -10,7 +10,7 @@ In parallel, The Program manager and Technical writter have made significant pro
 The music is done, our Q.A finished it.
 ## Week 6 Issues and Remarques
 Team's satisfaction during this week: 
- <img src="C:\Users\JulianREINE\Downloads\WeeklyReports\Images\Week6TeamSatisfaction.png" width="500"/>
+ <img src="C:\Users\JulianREINE\Documents\GitHub\2024-2025-project-2-serious-game-team-4\Documents\WeeklyReports\Images\Week6TeamSatisfaction.png" width="500"/>
 
 ### Issues
  No real issues have been reported during this week. The team is working correctly compensating the Software engineer's loss.

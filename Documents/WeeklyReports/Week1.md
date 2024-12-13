@@ -8,7 +8,7 @@
 -  basis code that will be used in game. - soundtrack and audio effect for the game are now completed
 ## Week 1 Issues and Remarques
 Team's satisfaction during this week: 
-<img src="C:\Users\JulianREINE\Downloads\WeeklyReports\Images\Week1TeamSatisfaction.png" width="500"/>
+<img src="C:\Users\JulianREINE\Documents\GitHub\2024-2025-project-2-serious-game-team-4\Documents\WeeklyReports\Images\Week1TeamSatisfaction.png" width="500"/>
 
 Not enought concret achivements have been made.
 ### Issues

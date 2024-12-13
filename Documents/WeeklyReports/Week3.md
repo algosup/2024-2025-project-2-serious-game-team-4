@@ -9,7 +9,7 @@
 - Technical is in a good way
 ## Week 3 Issues and Remarques
 Team's satisfaction during this week: 
- <img src="C:\Users\JulianREINE\Downloads\WeeklyReports\Images\Week3TeamSatisfaction.png" width="500"/>
+ <img src="C:\Users\JulianREINE\Documents\GitHub\2024-2025-project-2-serious-game-team-4\Documents\WeeklyReports\Images\Week3TeamSatisfaction.png" width="500"/>
 
 
 ### Issues

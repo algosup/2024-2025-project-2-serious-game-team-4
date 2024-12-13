@@ -9,7 +9,7 @@
 - started working on africa
 ## Week 5 Issues and Remarques
 Team's satisfaction during this week: 
- <img src="C:\Users\JulianREINE\Downloads\WeeklyReports\Images\Week5TeamSatisfaction.png" width="500"/>
+ <img src="C:\Users\JulianREINE\Documents\GitHub\2024-2025-project-2-serious-game-team-4\Documents\WeeklyReports\Images\Week5TeamSatisfaction.png" width="500"/>
 
 ### Issues
 Due to the lack of presence of the software engineer, our Technical Writer (who did most of the code with the Program manager) doesn't have his document ready (user manual). We started doing it.
