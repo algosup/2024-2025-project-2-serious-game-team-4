@@ -1,7 +1,7 @@
 extends Node
 
-var NPC_Index = {"Ian_Island2_1" : 0, "Mariem_Main" : 0, "Ian_Bamboo_Island2" : 0, "Ian_Solar_Panels_Island2" : 0}
-var NPC_Dialogue_ID = {"Ian_Island2_1" : 0, "Mariem_Main" : 0, "Ian_Bamboo_Island2" : 0, "Ian_Solar_Panels_Island2" : 0}
+var NPC_Index = {"Ian_Island2_1" : 0, "Mariem_Main" : 0, "Ian_Bamboo_Island2" : 0, "Ian_Solar_Panels_Island2" : 0, "Meryem_Wind_Turbines_Island2" : 0}
+var NPC_Dialogue_ID = {"Ian_Island2_1" : 0, "Mariem_Main" : 0, "Ian_Bamboo_Island2" : 0, "Ian_Solar_Panels_Island2" : 0, "Meryem_Wind_Turbines_Island2" : 0}
 
 func set_info(NPC, Index, Dialogue_ID):
 	NPC_Index[NPC]=Index
