@@ -1,5 +1,5 @@
 [
-	{"name": "Julian", "text": "This is place is hell", "Interact" : 0, "step" : 0, "ending" : 0},
+	{"name": "Julian", "text": "This place is hell", "Interact" : 0, "step" : 0, "ending" : 0},
 	{"name": "Julian", "text": "I had to move here because of work and I can't breath because of the pollution in the air.", "Interact" : 0, "step" : 0, "ending" : 0},
 	{"name": "Julian", "text": "end", "Interact" : 0, "step" : 0, "ending" : 1, "next_step" : 0}
 ]

@@ -1097,22 +1097,6 @@ text = "Inventory"
 [node name="Inventory_UI" parent="Inventory_UI/ColorRect" instance=ExtResource("3_oh5w0")]
 layout_mode = 1
 
-[node name="Info_UI" type="CanvasLayer" parent="."]
-visible = false
-
-[node name="ColorRect" type="ColorRect" parent="Info_UI"]
-offset_right = 1919.0
-offset_bottom = 1079.0
-color = Color(0, 0, 0, 0.556863)
-
-[node name="InfoCard" type="TextureRect" parent="Info_UI"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("28_d7s4g")
-
 [node name="Inventory_Hotbar" type="CanvasLayer" parent="."]
 
 [node name="Inventory_Hotbar2" parent="Inventory_Hotbar" instance=ExtResource("6_3i3iy")]
@@ -1240,6 +1224,22 @@ continent = "Player"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("31_suq8p")
 volume_db = -5.0
+
+[node name="Info_UI" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Info_UI"]
+offset_right = 1919.0
+offset_bottom = 1079.0
+color = Color(0, 0, 0, 0.556863)
+
+[node name="InfoCard" type="TextureRect" parent="Info_UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("28_d7s4g")
 
 [node name="Tuto" type="CanvasLayer" parent="."]
 

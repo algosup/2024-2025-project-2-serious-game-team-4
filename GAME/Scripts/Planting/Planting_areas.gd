@@ -34,7 +34,7 @@ func _on_player_tree_spawn(type) -> void:
 	if SpawnAreas.get_spawn_area(list) and type == Type:
 		for child in sprites_parent.get_children():
 			# Ensure the child is a Sprite or has the necessary properties
-			if child is Sprite2D:
+			if child is AnimatedSprite2D:
 				if child.visible == false:
 					var distance = child.global_position.distance_to(player.global_position)
 					# Check if the player's position matches the sprite's position
@@ -42,7 +42,6 @@ func _on_player_tree_spawn(type) -> void:
 						if distance < closest_distance:
 							closest_distance = distance
 							closest = child
-		print(closest)
 		if closest != null:
 			SpawnAreas.set_items_placed(closest.name, list)
 			closest.visible = true

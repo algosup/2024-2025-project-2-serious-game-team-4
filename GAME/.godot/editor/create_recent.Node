@@ -1,9 +1,9 @@
+CollisionShape2D
+Area2D
 Sprite2D
 Camera2D
 SubViewportContainer
 SubViewport
-CollisionShape2D
-Area2D
 ColorRect
 AudioStreamPlayer2D
 Button

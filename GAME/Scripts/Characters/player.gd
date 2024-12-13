@@ -22,6 +22,7 @@ var tuto = false
 var tuto_visible = 0
 
 signal tree_spawn(type)
+signal tuto_done(is_done)
 
 @onready var Pickup_Label = $Interact_Pick_Up_UI/ColorRect/Label
 @onready var Interact_Label = $Interact_UI/ColorRect/Label
@@ -37,12 +38,15 @@ func _ready():
 	Pickup_Label.text="Press %s to pickup" % [InputMap.action_get_events("PICKUP")[0].as_text()]
 	Interact_Label.text="Press %s to Interact" % [InputMap.action_get_events("INTERACT")[0].as_text()]
 	if not PlayerData.get_tuto():
+		$Progress_bar.visible = false
+		hotbar_UI.visible = false
 		tuto_visible = 0
 		tuto_UI.visible = true
 		$Tuto/Skip.visible = true
 		tuto_UI.get_child(tuto_visible).visible = true
 		tuto = true
 		speed = 0
+		tuto_done.emit(false)
 
 func get_input():
 	var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
@@ -93,6 +97,9 @@ func _input(event):
 				PlayerData.set_tuto()
 				tuto_UI.visible = false
 				$Tuto/Skip.visible = false
+				$Progress_bar.visible = true
+				hotbar_UI.visible = true
+				tuto_done.emit(true)
 			else:
 				tuto_visible += 1
 				tuto_UI.get_child(tuto_visible).visible = true
@@ -144,11 +151,15 @@ func _unhandled_input(event: InputEvent) -> void:
 				use_hotbar_item(i)
 				break
 
-func _on_tree_planting_area_body_entered(_body: Node2D) -> void:
-	in_tree_spawn = true
+func _on_tree_planting_area_body_entered(body: Node2D) -> void:
+	if body.is_in_group('Player'):
+		print("inside")
+		in_tree_spawn = true
 
-func _on_tree_planting_area_body_exited(_body: Node2D) -> void:
-	in_tree_spawn = false
+func _on_tree_planting_area_body_exited(body: Node2D) -> void:
+	if body.is_in_group('Player'):
+		print("outside")
+		in_tree_spawn = false
 	
 func save_player_data():
 	PlayerData.set_parent_path(get_parent().get_scene_file_path())
@@ -190,7 +201,7 @@ func _on_npc_talking(done: Variant) -> void:
 
 func _on_npc_show_info(path_to_info: Variant) -> void:
 	var info_card = load(path_to_info)
-	Info_ui.get_child(0).texture = info_card
+	Info_ui.get_child(1).texture = info_card
 	Info_ui.visible = true
 
 func _on_portal_same_area_entered(destination: Vector2) -> void:
@@ -213,6 +224,9 @@ func _on_skip_button_pressed() -> void:
 	speed = temp_speed
 	PlayerData.set_tuto()
 	tuto_UI.visible = false
+	$Progress_bar.visible = true
+	hotbar_UI.visible = true
+	tuto_done.emit(true)
 
 func _on_open_sesame() -> void:
 	Settingss.visible = !Settingss.visible
