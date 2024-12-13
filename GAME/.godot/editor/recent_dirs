@@ -1,3 +1,4 @@
+res://Assets/CharactersSprites
 res://Assets/WindTurbines
 res://Assets
 res://Assets/Island_2
@@ -8,7 +9,6 @@ res://Scripts/Global_(autoload)
 res://Scenes/Islands
 res://Scripts/portals
 res://Scenes/MapFeatures
-res://Assets/CharactersSprites
 res://Scripts/Characters/NPC
 res://Scenes/Characters/NPC
 res://Assets/NpcInteractions
