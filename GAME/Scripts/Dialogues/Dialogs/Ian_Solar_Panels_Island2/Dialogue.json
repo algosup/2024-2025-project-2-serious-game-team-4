@@ -13,7 +13,7 @@
 	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 1, "ending" : 1, "next_step" : 8},
 	{"name": "Ian", "text": "I sure wish we used Solar Panels", "Interact" : 0, "step" : 8, "ending" : 0},
 	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 8, "ending" : 1, "next_step" : 8},
-	{"name": "Ian", "text": "Yee", "Interact" : 0, "step" : 9, "ending" : 0},
+	{"name": "Ian", "text": "It would be nice if we had more", "Interact" : 0, "step" : 9, "ending" : 0},
 	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 9, "ending" : 1, "next_step" : 9}
 
 ]
