@@ -17,6 +17,10 @@ run/max_fps=60
 boot_splash/image="res://Assets/BootSplashImg.png"
 config/icon="res://Assets/icon.svg"
 
+[audio]
+
+buses/image=""
+
 [autoload]
 
 Global="*res://Scripts/Global_(autoload)/Global.gd"
