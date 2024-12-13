@@ -1,0 +1,14 @@
+Sprite2D
+ColorRect
+CollisionShape2D
+Area2D
+Camera2D
+SubViewportContainer
+SubViewport
+AudioStreamPlayer2D
+Button
+PathFollow2D
+Path2D
+TileMapLayer
+AnimatedSprite2D
+Marker2D

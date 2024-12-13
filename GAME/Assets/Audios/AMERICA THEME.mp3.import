@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://100gdndj31hl"
+path="res://.godot/imported/AMERICA THEME.mp3-44ee35c9155d8231304164f4d1f96205.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audios/AMERICA THEME.mp3"
+dest_files=["res://.godot/imported/AMERICA THEME.mp3-44ee35c9155d8231304164f4d1f96205.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

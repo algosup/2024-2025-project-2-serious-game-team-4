@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgjcco72xp76y"]
+
+[ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="1_bl8pc"]
+[ext_resource type="Texture2D" uid="uid://c2b65ok6lqyr5" path="res://Assets/Screenshot 2024-11-14 114117.png" id="2_bqbhb"]
+[ext_resource type="Texture2D" uid="uid://bawpce85nfff5" path="res://Assets/star_01.png" id="3_lr7su"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_left = 1031.0
+offset_top = 527.0
+offset_right = 1151.0
+offset_bottom = 647.0
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(120, 120)
+render_target_update_mode = 4
+script = ExtResource("1_bl8pc")
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+texture = ExtResource("2_bqbhb")
+
+[node name="Camera2D" type="Camera2D" parent="SubViewportContainer/SubViewport"]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer"]
+position = Vector2(60, 60)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_lr7su")
