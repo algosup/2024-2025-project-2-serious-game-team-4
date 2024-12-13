@@ -5,17 +5,18 @@ extends Control
 #Drag n Drop
 var dragged_slot = null
 
-
+#connects the signal cleanly
 func _ready():
 	Global.inventory_updated.connect(_on_inventory_updated)
 	_on_inventory_updated()
-	
 
+#When the inventory is updated, this function is called, it empties the inventory and refills it with what is inside the Global Singleton
 func _on_inventory_updated():
 	clear_grid_container()
 	#add slots for each position
 	for item in Global.inventory:
 		var slot = Global.inventory_slot_scene.instantiate()
+		#connects the signals for drag and drop
 		slot.drag_start.connect(_on_drag_start)
 		slot.drag_stop.connect(_on_drag_end)
 		grid_container.add_child(slot)
@@ -35,6 +36,7 @@ func clear_grid_container():
 func _on_drag_start(slot_control: Control):
 	dragged_slot = slot_control
 
+#Release drag slot reference
 func _on_drag_end():
 	var target_slot = get_slot_under_mouse()
 	if target_slot and dragged_slot != target_slot:
@@ -50,6 +52,7 @@ func get_slot_under_mouse() -> Control:
 			return slot
 	return null
 
+#Gets the slot on which items are being dragged or dropped
 func get_slot_index(slot: Control) -> int:
 	for i in range(grid_container.get_child_count()):
 		if grid_container.get_child(i) == slot:
@@ -58,6 +61,7 @@ func get_slot_index(slot: Control) -> int:
 	# No slot found
 	return -1
 
+#Removes the item from the dragged slot and places it in the drop slot if possible
 func drop_slot(slot1: Control, slot2: Control):
 	var slot1_index = get_slot_index(slot1)
 	var slot2_index = get_slot_index(slot2)

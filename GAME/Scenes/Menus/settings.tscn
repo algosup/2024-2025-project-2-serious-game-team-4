@@ -123,7 +123,6 @@ offset_right = 1055.0
 offset_bottom = 601.0
 text = "Back to Game"
 
-[connection signal="updated" from="Control" to="." method="_on_control_updated"]
 [connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/Master_volume" to="." method="_on_master_volume_mouse_exited"]
 [connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/Music_volume" to="." method="_on_music_volume_mouse_exited"]
 [connection signal="mouse_exited" from="VBoxContainer/VBoxContainer/SFX_volume" to="." method="_on_sfx_volume_mouse_exited"]

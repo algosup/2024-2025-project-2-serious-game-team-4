@@ -1,10 +1,10 @@
+ColorRect
 CollisionShape2D
 Area2D
 Sprite2D
 Camera2D
 SubViewportContainer
 SubViewport
-ColorRect
 AudioStreamPlayer2D
 Button
 PathFollow2D

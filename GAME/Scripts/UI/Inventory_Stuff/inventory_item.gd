@@ -60,6 +60,7 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 		player_in_pickup_range = false
 		body.Interact_Pick_Up_UI.hide()
 
+#Sets the item data for better communication
 func set_item_data(data):
 	item_type = data["type"]
 	item_name = data["name"]

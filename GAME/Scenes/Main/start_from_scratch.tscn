@@ -79,7 +79,6 @@ rotates = false
 rotation = -0.0117642
 NPCname = "Mariem"
 move_speed = 40.0
-maxi = 80.0
 
 [connection signal="too_many_trees" from="." to="Player" method="_on_main_too_many_trees"]
 [connection signal="tree_spawn" from="Player" to="." method="_on_player_tree_spawn"]

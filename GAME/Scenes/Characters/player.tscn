@@ -1135,60 +1135,6 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 20
 text = "You still need to plant XX Wind Turbines!"
 
-[node name="Settings" type="CanvasLayer" parent="."]
-visible = false
-
-[node name="ColorRect" type="ColorRect" parent="Settings"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.35, 0.945833, 1, 0.454902)
-
-[node name="Settings" parent="Settings" instance=ExtResource("20_e1rfp")]
-
-[node name="Keybinds" type="Button" parent="Settings"]
-offset_left = 870.0
-offset_top = 520.0
-offset_right = 1055.0
-offset_bottom = 551.0
-text = "Keybinds"
-
-[node name="Back_to_game" type="Button" parent="Settings"]
-offset_left = 870.0
-offset_top = 570.0
-offset_right = 1055.0
-offset_bottom = 601.0
-text = "Back to game"
-
-[node name="Keybinds" type="CanvasLayer" parent="."]
-visible = false
-
-[node name="ColorRect" type="ColorRect" parent="Keybinds"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.438774, 0.989916, 0.422897, 0.454902)
-
-[node name="Keybinds" parent="Keybinds" instance=ExtResource("21_p83mi")]
-
-[node name="Back" type="Button" parent="Keybinds"]
-offset_left = 800.0
-offset_top = 570.0
-offset_right = 1120.0
-offset_bottom = 601.0
-text = "Back"
-
-[node name="Back_to_game" type="Button" parent="Keybinds"]
-offset_left = 800.0
-offset_top = 615.0
-offset_right = 1120.0
-offset_bottom = 646.0
-text = "Back to game"
-
 [node name="Progress_bar" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Progress_bar"]
@@ -1315,8 +1261,62 @@ offset_bottom = 78.0
 theme_override_font_sizes/font_size = 50
 text = "Skip"
 
+[node name="Settings" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Settings"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.301961, 0.301961, 0.301961, 1)
+
+[node name="Settings" parent="Settings" instance=ExtResource("20_e1rfp")]
+
+[node name="Keybinds" type="Button" parent="Settings"]
+offset_left = 870.0
+offset_top = 520.0
+offset_right = 1055.0
+offset_bottom = 551.0
+text = "Keybinds"
+
+[node name="Back_to_game" type="Button" parent="Settings"]
+offset_left = 870.0
+offset_top = 570.0
+offset_right = 1055.0
+offset_bottom = 601.0
+text = "Back to game"
+
+[node name="Keybinds" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Keybinds"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.301961, 0.301961, 0.301961, 1)
+
+[node name="Keybinds" parent="Keybinds" instance=ExtResource("21_p83mi")]
+
+[node name="Back" type="Button" parent="Keybinds"]
+offset_left = 800.0
+offset_top = 570.0
+offset_right = 1120.0
+offset_bottom = 601.0
+text = "Back"
+
+[node name="Back_to_game" type="Button" parent="Keybinds"]
+offset_left = 800.0
+offset_top = 615.0
+offset_right = 1120.0
+offset_bottom = 646.0
+text = "Back to game"
+
+[connection signal="pressed" from="Tuto/Skip" to="." method="_on_skip_button_pressed"]
 [connection signal="pressed" from="Settings/Keybinds" to="." method="_on_keybinds_pressed"]
 [connection signal="pressed" from="Settings/Back_to_game" to="." method="_on_back_to_game_pressed"]
 [connection signal="pressed" from="Keybinds/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Keybinds/Back_to_game" to="." method="_on_back_to_game_pressed"]
-[connection signal="pressed" from="Tuto/Skip" to="." method="_on_skip_button_pressed"]

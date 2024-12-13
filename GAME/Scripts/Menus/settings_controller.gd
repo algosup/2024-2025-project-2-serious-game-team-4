@@ -1,5 +1,6 @@
 extends Control
 
+#When the apply button is pressed, sets the volume to their new values
 func _on_button_pressed() -> void:
 	AudioServer.set_bus_volume_db(0, linear_to_db($VBoxContainer/VBoxContainer/Master_volume.value))
 	AudioServer.set_bus_volume_db(1, linear_to_db($VBoxContainer/VBoxContainer/Music_volume.value))

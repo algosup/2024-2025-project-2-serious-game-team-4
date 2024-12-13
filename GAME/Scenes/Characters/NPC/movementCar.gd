@@ -14,14 +14,17 @@ func _ready() -> void:
 	_get_positions()
 	_get_next_position()
 
+#This moves the car towards the marker 2D
 func _physics_process(_delta: float) -> void:
 	if global_position.distance_to(current_position2.position) < 10:
 		_get_next_position()
 
+#This gets the cars position
 func _get_positions():
 	temp_positions = positions.duplicate()
 	temp_positions.shuffle()
 
+#This gets the position towards the Marker 2D in the group and stores them in an array
 func _get_next_position():
 	if temp_positions.is_empty():
 		_get_positions()

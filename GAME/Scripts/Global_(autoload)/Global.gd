@@ -1,9 +1,10 @@
 extends Node
 
 
-#This script exist to store information in between scenes as godot does not do that by default
+#This script exists to store information in between scenes as godot does not do that by default
 #It is called a singleton
-#I would like to rename it Global_Inventory but it would break everything on the github so I will wait a bit for that
+#This one is focused on the inventory.
+
 #Inventory Items:
 var inventory = []
 var spawnable_items = [
@@ -36,6 +37,7 @@ func _ready():
 	inventory.resize(27)
 	hotbar_inventory.resize(hotbar_size)
 
+#adds an item to the inventory
 func add_item(item, to_hotbar = false):
 	var added_to_hotbar = false
 	#add to hotbar
@@ -60,6 +62,7 @@ func add_item(item, to_hotbar = false):
 		print("no_space")
 		return false
 
+#Remove an item from the inventory, checks if an item in the inventory has the same as the one that needs to be removed, if so, remove it.
 func remove_item(item_type, item_effect):
 	for i in range (inventory.size()):
 		if inventory[i] != null and inventory[i]["type"] == item_type and inventory[i]["effect"] == item_effect:
@@ -70,10 +73,12 @@ func remove_item(item_type, item_effect):
 			return true
 	return false
 
+#Increases the number of slots displayed and number of items that can be saves
 func increase_inventory_size(extra_slots):
 	inventory.resize(inventory.size() + extra_slots)
 	inventory_updated.emit()
 
+#so the singleton knows what the player is
 func set_player_reference(player):
 	player_node=player
 
@@ -96,6 +101,7 @@ func drop_item(item_data, drop_position):
 	item_instance.global_position=drop_position
 	get_tree().current_scene.add_child(item_instance)
 
+#adds the item to the hotbar, it will still exist in the inventory.
 func add_hotbar_item(item):
 	for i in range(hotbar_inventory.size()):
 		#this will check if an instance of the same item already exists to stack them.
@@ -112,6 +118,7 @@ func add_hotbar_item(item):
 	print("no_space")
 	return false
 
+#removes the item from the hotbar, works the same as the remove_item function
 func remove_hotbar_item(item_type, item_effect):
 	for i in range (hotbar_size):
 		if hotbar_inventory[i] != null and hotbar_inventory[i]["type"] == item_type and hotbar_inventory[i]["effect"] == item_effect:
@@ -122,6 +129,7 @@ func remove_hotbar_item(item_type, item_effect):
 			return true
 	return false
 
+#Removes the instance of the item in the hotbar so it only exists in the inventory
 func unassign_hotbar_item(item_type, item_effect):
 	for i in range (hotbar_size):
 		if hotbar_inventory[i] != null and hotbar_inventory[i]["type"] == item_type and hotbar_inventory[i]["effect"] == item_effect:
@@ -134,6 +142,7 @@ func unassign_hotbar_item(item_type, item_effect):
 func is_item_assigned_to_hotbar(item_to_check):
 	return item_to_check in hotbar_inventory
 
+#Function called when an item is drag and dropped on another item, it swaps their two positions
 func swap_inventory_items(index1, index2):
 	if index1 < 0 or index1 > inventory.size() or index2 < 0 or index2 > inventory.size():
 		return false
@@ -144,6 +153,7 @@ func swap_inventory_items(index1, index2):
 	inventory_updated.emit()
 	return true
 
+#Same as the function above but for the hotbar, not the inventory
 func swap_hotbar_items(index1, index2):
 	if index1 < 0 or index1 > hotbar_inventory.size() or index2 < 0 or index2 > hotbar_inventory.size():
 		return false

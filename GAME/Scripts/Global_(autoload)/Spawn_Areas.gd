@@ -1,5 +1,9 @@
 extends Node
 
+#This script exist to store information in between scenes as godot does not do that by default
+#It is called a singleton
+#This one is focused on the SpawnAreas, if they are available and what is spawned in them.
+
 var Spawn_Areas = {"Solar_Panels_Island2_1_Sky" : false, "Bambou_Island2" : false, "Wind_Turbine_Island2" : false}
 var Solar_Panels_Island2_1_Sky = []
 var Bambou_Island2 = []

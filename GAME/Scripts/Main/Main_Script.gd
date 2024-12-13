@@ -5,6 +5,7 @@ extends Node2D
 @onready var Collision_Shape = $ItemSpawnArea/CollisionShape2D
 @onready var Progress_bar = $CanvasLayer/ProgressBar
 
+#This code and this whole area are a test area for stuf that is mostly unused. such as using items that are on the floor
 
 var visible_trees=1
 var tree_area_visible = false
@@ -15,7 +16,7 @@ func _ready():
 	spawn_random_items(10)
 		
 
-#Gets random position within the collision shape
+#Gets random position within the collision shape for the items we want to spawn
 func get_random_position():
 	var area_rect = Collision_Shape.shape.get_rect()
 	var x = randi_range(0, area_rect.position.x)

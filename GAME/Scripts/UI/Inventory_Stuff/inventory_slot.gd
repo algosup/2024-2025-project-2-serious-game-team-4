@@ -23,6 +23,7 @@ var is_assigned = false
 func set_slot_index(new_index):
 	slot_index=new_index
 
+#the next two functions track if the mouse is hovering over the slot, if yes, show the details panel so the player knows what the item is.
 func _on_item_button_mouse_entered() -> void:
 	if item != null:
 		Usage_Panel.visible = false
@@ -31,10 +32,12 @@ func _on_item_button_mouse_entered() -> void:
 func _on_item_button_mouse_exited() -> void: 
 	Details_Panel.visible = false
 
+#Makes the slot empty by removing the texture and quantity
 func set_empty():
 	icon.texture=null
 	Quantity_label.text = ""
 
+#Tells the slot what item it is holding.
 func set_item(new_item):
 	item=new_item
 	icon.texture=item["texture"]
@@ -47,6 +50,8 @@ func set_item(new_item):
 		Item_Effect.text=""
 	update_assignment_status()
 
+#The next three functions happen when the buttons on the usage panel are pressed,
+#Drops the item on the floor and empties the slot
 func _on_drop_button_pressed() -> void:
 	if item != null:
 		print(item)
@@ -58,6 +63,18 @@ func _on_drop_button_pressed() -> void:
 		Global.remove_hotbar_item(item["type"], item["effect"])
 		Usage_Panel.visible=false
 
+#Assigns the item to the hotbar
+func _on_assign_button_pressed() -> void:
+	if item != null:
+		if is_assigned:
+			Global.unassign_hotbar_item(item["type"], item["effect"])
+			is_assigned = false
+		else: 
+			Global.add_item(item, true)
+			is_assigned = true
+		update_assignment_status()
+
+#removes one of the item and calls it's effect.
 func _on_use_button_pressed() -> void:
 	Usage_Panel.visible = false
 	if item != null and item["effect"] != "":
@@ -75,17 +92,9 @@ func update_assignment_status():
 	else:
 		Assign_Button.text="Assign (hotbar)"
 
-func _on_assign_button_pressed() -> void:
-	if item != null:
-		if is_assigned:
-			Global.unassign_hotbar_item(item["type"], item["effect"])
-			is_assigned = false
-		else: 
-			Global.add_item(item, true)
-			is_assigned = true
-		update_assignment_status()
 
-#ItemButtons pressed events.
+
+#so that the right click can be held for the drag, it also works to check the left click.
 func _on_item_button_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():

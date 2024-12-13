@@ -5,10 +5,9 @@ extends TileMapLayer
 @onready var Water3 = $Water3
 
 var loops = 0
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
 
+
+#This code is to cycle through the water animations
 func _process(_delta: float) -> void:
 	if loops == 3:
 		loops = 0

@@ -11,33 +11,43 @@ var player_speed : int = 250
 #this is so that the game knows if the player did the tutorial or not
 var tuto = false
 
+#set's the players position in a specific scene
 func set_position(pos: Vector2, place: String):
 	player_pos [place] = pos
 
+#set's the players rotation in a specific scene
 func set_rotation(rot : String, place: String):
 	player_rot [place] = rot
 
+#set a parent path if it needs to be remembered
 func set_parent_path(path):
 	parent_path = path
 
+#set's the players speed
 func set_player_speed(speed):
 	player_speed = speed
 
+#set's the tutorial's state, so that it doesn't happen twice
 func set_tuto():
 	tuto = true
 
+#return the players position in a specific scene
 func get_position(place):
 	print(place)
 	return player_pos[place]
-
+	
+#return the players rotation in a specific scene
 func get_rotation(place):
 	return player_rot [place]
 
+#return the parent path if needed
 func get_parent_path():
 	return parent_path
-
+	
+#return the parent path if needed
 func get_player_speed():
 	return player_speed
 
+#return the tutorial 
 func get_tuto():
 	return tuto
