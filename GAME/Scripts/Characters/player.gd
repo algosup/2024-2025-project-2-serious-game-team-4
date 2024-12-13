@@ -39,6 +39,7 @@ func _ready():
 	if not PlayerData.get_tuto():
 		tuto_visible = 0
 		tuto_UI.visible = true
+		$Tuto/Skip.visible = true
 		tuto_UI.get_child(tuto_visible).visible = true
 		tuto = true
 		speed = 0
