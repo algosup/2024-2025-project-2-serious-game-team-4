@@ -11,12 +11,15 @@ extends CharacterBody2D
 @onready var footsteps = $AudioStreamPlayer2D
 @onready var Info_ui = $Info_UI
 @onready var Progress_bar = $Progress_bar/ProgressBar
+@onready var tuto_UI = $Tuto/Tuto1
 
 var speed = 150
 var last_move = ""
 var in_tree_spawn = false
 var called = false
 var temp_speed = 0
+var tuto = false
+var tuto_visible = 0
 
 signal tree_spawn(type)
 
@@ -33,6 +36,12 @@ func _ready():
 	Global.set_player_reference(self)
 	Pickup_Label.text="Press %s to pickup" % [InputMap.action_get_events("PICKUP")[0].as_text()]
 	Interact_Label.text="Press %s to Interact" % [InputMap.action_get_events("INTERACT")[0].as_text()]
+	if not PlayerData.get_tuto():
+		tuto_visible = 0
+		tuto_UI.visible = true
+		tuto_UI.get_child(tuto_visible).visible = true
+		tuto = true
+		speed = 0
 
 func get_input():
 	var input_direction = Input.get_vector("LEFT","RIGHT","UP","DOWN")
@@ -52,24 +61,21 @@ func update_animations():
 	if velocity == Vector2.ZERO:
 		animated_sprite.play(last_move)
 	else:
-		if not self.is_on_wall() and not self.is_on_ceiling() and not self.is_on_floor():
-			play_footsteps()
-			if abs(velocity.x) > abs(velocity.y):
-				if velocity.x > 0:
-					animated_sprite.play("Walk_Right")
-					last_move = "Idle_Right"
-				else:
-					animated_sprite.play("Walk_Left")
-					last_move = "Idle_Left"
+		play_footsteps()
+		if abs(velocity.x) > abs(velocity.y):
+			if velocity.x > 0:
+				animated_sprite.play("Walk_Right")
+				last_move = "Idle_Right"
 			else:
-				if velocity.y > 0:
-					animated_sprite.play("Walk_Down")
-					last_move = "Idle_Down"
-				else:
-					animated_sprite.play("Walk_Up")
-					last_move = "Idle_Up"
+				animated_sprite.play("Walk_Left")
+				last_move = "Idle_Left"
 		else:
-			animated_sprite.play(last_move)
+			if velocity.y > 0:
+				animated_sprite.play("Walk_Down")
+				last_move = "Idle_Down"
+			else:
+				animated_sprite.play("Walk_Up")
+				last_move = "Idle_Up"
 
 func _input(event):
 	if event.is_action_pressed("INVENTORY"):
@@ -79,6 +85,16 @@ func _input(event):
 		Settingss.visible = !Settingss.visible
 	if event.is_action_pressed("INFO_CARD"):
 		Info_ui.hide()
+		if tuto == true:
+			tuto_UI.get_child(tuto_visible).visible = false
+			if tuto_visible == 8:
+				speed = temp_speed
+				PlayerData.set_tuto()
+				tuto_UI.visible = false
+			else:
+				tuto_visible += 1
+				tuto_UI.get_child(tuto_visible).visible = true
+			
 		
 
 func apply_item_effect(item):
@@ -188,3 +204,10 @@ func _on_progress_bar_new_info(item, amount) -> void:
 		Left_To_Plant.get_child(1).text = "Congratulations!"
 		await get_tree().create_timer(10).timeout
 		Left_To_Plant.visible = false
+
+func _on_skip_button_pressed() -> void:
+	$Tuto/Skip.visible = false
+	tuto_UI.get_child(tuto_visible).visible = false
+	speed = temp_speed
+	PlayerData.set_tuto()
+	tuto_UI.visible = false

@@ -1,3 +1,5 @@
+Button
+CollisionShape2D
 Marker2D
 CanvasLayer
 SubViewport
@@ -5,9 +7,7 @@ ColorRect
 Label
 ProgressBar
 Sprite2D
-CollisionShape2D
 Area2D
-Button
 TextureRect
 PathFollow2D
 Path2D

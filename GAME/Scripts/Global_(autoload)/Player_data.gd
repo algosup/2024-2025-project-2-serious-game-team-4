@@ -4,11 +4,12 @@ extends Node
 #This is to know where the player is before they change zones
 var parent_path = "res://Scenes/Main/start_from_scratch.tscn"
 #Player position
-
 var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2(49814,-396), "Island2_1" : Vector2.ZERO, "Island2_1_Sky" : Vector2(3,-30), "Island2_2" : Vector2.ZERO, "Terra_House_Inside" : Vector2.ZERO}
 #Player rotation
 var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island2_1" : "Idle_Down", "Island2_1_Sky" : "Idle_Down", "Island2_2" : "Idle_Down", "Terra_House_Inside" : "Idle_Down"}
 var player_speed : int = 250
+#this is so that the game knows if the player did the tutorial or not
+var tuto = false
 
 func set_position(pos: Vector2, place: String):
 	player_pos [place] = pos
@@ -22,6 +23,9 @@ func set_parent_path(path):
 func set_player_speed(speed):
 	player_speed = speed
 
+func set_tuto():
+	tuto = true
+
 func get_position(place):
 	print(place)
 	return player_pos[place]
@@ -34,3 +38,6 @@ func get_parent_path():
 
 func get_player_speed():
 	return player_speed
+
+func get_tuto():
+	return tuto

@@ -1,4 +1,4 @@
-[gd_scene load_steps=156 format=3 uid="uid://ckyexbu8v7e3j"]
+[gd_scene load_steps=165 format=3 uid="uid://ckyexbu8v7e3j"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/player.gd" id="1_2s006"]
 [ext_resource type="Texture2D" uid="uid://qhgrt0te4js1" path="res://Assets/Red_Coupe/Red_COUPE_CLEAN_All_000-sheet.png" id="3_3jkrq"]
@@ -33,6 +33,15 @@
 [ext_resource type="Texture2D" uid="uid://bjru5fv2m5671" path="res://Assets/testttt.png" id="28_d7s4g"]
 [ext_resource type="AudioStream" uid="uid://bc4ruwwqohd8f" path="res://Assets/Audios/footsteps.mp3" id="31_suq8p"]
 [ext_resource type="Script" path="res://Scripts/Progress_Bars/Progress_Bar_Asia.gd" id="32_b7mv2"]
+[ext_resource type="Texture2D" uid="uid://gx6ch5nxeoue" path="res://Assets/Tutorial/1.png" id="34_b6nt5"]
+[ext_resource type="Texture2D" uid="uid://dbfryfbdt1hqw" path="res://Assets/Tutorial/2.png" id="35_gavjt"]
+[ext_resource type="Texture2D" uid="uid://yhxfq4aktt5b" path="res://Assets/Tutorial/3.png" id="36_q5cfs"]
+[ext_resource type="Texture2D" uid="uid://dv6d41swg2dx3" path="res://Assets/Tutorial/4.png" id="37_645k4"]
+[ext_resource type="Texture2D" uid="uid://yfrkxev2f0fj" path="res://Assets/Tutorial/5.png" id="38_mf7f4"]
+[ext_resource type="Texture2D" uid="uid://vryko3fwv54l" path="res://Assets/Tutorial/6.png" id="39_03u2c"]
+[ext_resource type="Texture2D" uid="uid://b744d5wu4cafm" path="res://Assets/Tutorial/7.png" id="40_bx384"]
+[ext_resource type="Texture2D" uid="uid://dqkemvh3mv52u" path="res://Assets/Tutorial/8.png" id="41_5yn8g"]
+[ext_resource type="Texture2D" uid="uid://7xqtwnehuuuu" path="res://Assets/Tutorial/9.png" id="42_vwghh"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pr3ip"]
 
@@ -1227,7 +1236,80 @@ continent = "Player"
 stream = ExtResource("31_suq8p")
 volume_db = -5.0
 
+[node name="Tuto" type="CanvasLayer" parent="."]
+
+[node name="Tuto1" type="ColorRect" parent="Tuto"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.054902, 0.054902, 0.054902, 0.752941)
+
+[node name="Tuto1" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(959.5, 540.75)
+scale = Vector2(2.88138, 2.876)
+texture = ExtResource("34_b6nt5")
+
+[node name="Tuto2" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(966, 540)
+scale = Vector2(2.86186, 2.86933)
+texture = ExtResource("35_gavjt")
+
+[node name="Tuto3" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(964, 539.5)
+scale = Vector2(2.85586, 2.856)
+texture = ExtResource("36_q5cfs")
+
+[node name="Tuto4" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(965.5, 540.5)
+scale = Vector2(2.86036, 2.856)
+texture = ExtResource("37_645k4")
+
+[node name="Tuto5" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(964.5, 536)
+scale = Vector2(2.85736, 2.84267)
+texture = ExtResource("38_mf7f4")
+
+[node name="Tuto6" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(964.5, 540)
+scale = Vector2(2.85736, 2.82667)
+texture = ExtResource("39_03u2c")
+
+[node name="Tuto7" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(963.5, 541)
+scale = Vector2(2.85435, 2.848)
+texture = ExtResource("40_bx384")
+
+[node name="Tuto8" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(966, 545)
+scale = Vector2(2.86186, 2.816)
+texture = ExtResource("41_5yn8g")
+
+[node name="Tuto9" type="Sprite2D" parent="Tuto/Tuto1"]
+visible = false
+position = Vector2(963, 539)
+scale = Vector2(2.85285, 2.848)
+texture = ExtResource("42_vwghh")
+
+[node name="Skip" type="Button" parent="Tuto"]
+offset_left = 1791.0
+offset_top = 1.0
+offset_right = 1919.0
+offset_bottom = 78.0
+theme_override_font_sizes/font_size = 50
+text = "Skip"
+
 [connection signal="pressed" from="Settings/Keybinds" to="." method="_on_keybinds_pressed"]
 [connection signal="pressed" from="Settings/Back_to_game" to="." method="_on_back_to_game_pressed"]
 [connection signal="pressed" from="Keybinds/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Keybinds/Back_to_game" to="." method="_on_back_to_game_pressed"]
+[connection signal="pressed" from="Tuto/Skip" to="." method="_on_skip_button_pressed"]
