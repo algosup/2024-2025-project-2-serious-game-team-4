@@ -1,8 +1,8 @@
-# Management Artifacts Team 3
+# Management Artifacts Team 4
 
 ## What is the Management Artifacts document?
 
-The Management Artifacts document is a collection of essential documents that outline the management processes, procedures, and guidelines for Team 3. These artifacts provide a framework for managing the project effectively, ensuring clear communication, accountability, and alignment among team members.
+The Management Artifacts document is a collection of essential documents that outline the management processes, procedures, and guidelines for Team 4. These artifacts provide a framework for managing the project effectively, ensuring clear communication, accountability, and alignment among team members.
 
 ## Project Charter
 
