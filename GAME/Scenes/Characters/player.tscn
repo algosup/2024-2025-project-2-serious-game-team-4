@@ -1096,6 +1096,12 @@ text = "Inventory"
 
 [node name="Inventory_UI" parent="Inventory_UI/ColorRect" instance=ExtResource("3_oh5w0")]
 layout_mode = 1
+anchors_preset = 4
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 30.0
+offset_right = 30.0
+grow_horizontal = 1
 
 [node name="Inventory_Hotbar" type="CanvasLayer" parent="."]
 
@@ -1138,20 +1144,20 @@ text = "You still need to plant XX Wind Turbines!"
 [node name="Progress_bar" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Progress_bar"]
-offset_left = 1751.0
-offset_top = -3.0
-offset_right = 1880.0
-offset_bottom = 22.0
+offset_left = 90.0
+offset_top = 361.0
+offset_right = 219.0
+offset_bottom = 387.0
 color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="Progress_bar"]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -164.0
-offset_top = -4.0
-offset_right = -44.0
-offset_bottom = 22.0
+offset_left = -1825.0
+offset_top = 360.0
+offset_right = -1705.0
+offset_bottom = 386.0
 grow_horizontal = 0
 text = "Player Progress"
 
@@ -1159,10 +1165,10 @@ text = "Player Progress"
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -218.0
-offset_top = 22.0
-offset_right = 1.0
-offset_bottom = 49.0
+offset_left = -1920.0
+offset_top = 387.0
+offset_right = -1622.0
+offset_bottom = 419.0
 grow_horizontal = 0
 script = ExtResource("32_b7mv2")
 continent = "Player"
@@ -1270,7 +1276,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.301961, 0.301961, 0.301961, 1)
+color = Color(0.302, 0.302, 0.302, 0.7)
 
 [node name="Settings" parent="Settings" instance=ExtResource("20_e1rfp")]
 
@@ -1297,7 +1303,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.301961, 0.301961, 0.301961, 1)
+color = Color(0.302, 0.302, 0.302, 0.7)
 
 [node name="Keybinds" parent="Keybinds" instance=ExtResource("21_p83mi")]
 

@@ -96,7 +96,10 @@ func _input(event):
 	if event.is_action_pressed("INVENTORY"):
 		Inventory_UI.visible = !Inventory_UI.visible
 		hotbar_UI.visible = !hotbar_UI.visible
+		$Progress_bar.visible = !Inventory_UI.visible
+		tuto_done.emit($Progress_bar.visible)
 	if event.is_action_pressed("SETTINGS"):
+		print("hehe")
 		Settingss.visible = !Settingss.visible
 	if event.is_action_pressed("INFO_CARD"):
 		#The info card gets shown by the NPC so it should only hide it
