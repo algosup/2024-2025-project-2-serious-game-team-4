@@ -10,8 +10,8 @@
 
 ## Team
 
-| Picture                                             | Name                   | Role                |
-| --------------------------------------------------- | ---------------------- | ------------------- |
+| Name                   | Role                |
+| --------------------------------------------------- | ---------------------- | 
 | Julian REINE           | Project Manager     |
 | Ian Laurent            | Program Manager     |
 | Mariem Zaiane          | Technical Leader    |
@@ -53,7 +53,7 @@ This project consist into making a serious game about climate change. The learni
 
 ### Project Objectives
 
-This project aims to developp a Frogger game that will:
+This project aims to developp a Serious game that will:
 
 - Allow the player to move a character on the screen in four directions.
 - Display a map on the screen .
@@ -62,7 +62,7 @@ This project aims to developp a Frogger game that will:
 
 | Name    | Role        | Represented By | Contact                    | Expectation                                             |
 | ------- | ----------- | -------------- | -------------------------- | ------------------------------------------------------- |
-| ALGOSUP | Third-Party | Franck JEANNIN | franck.jeannin@algosup.com | The third-party expect us to developp the Frogger game. |
+| ALGOSUP | Third-Party | Franck JEANNIN | franck.jeannin@algosup.com | The third-party expect us to developp the Serious Game. |
 
 ## Milestones
 
