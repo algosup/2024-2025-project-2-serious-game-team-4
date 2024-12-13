@@ -1,6 +1,6 @@
 [
 	{"name": "Meryem", "text": "Hey Terra! Good morning!", "Interact" : 0, "step" : 0, "ending" : 0},
-	{"name": "Meryem", "text": "Are you ready to try and save the World", "Interact" : 1, "Responses" : ["Of course, let's do it!", "No... I want to go back to bed."], "step" : 0, "ending" : 0, "Worthless" : 1},
+	{"name": "Meryem", "text": "Are you ready to try and save the World", "Interact" : 1, "Responses" : ["Of course, let's do it!", "No... I want to go back to bed."], "step" : 0, "ending" : 0, "Worthless" : 0},
 	{"name": "Meryem", "text": "Great! Today we are going to Asia!", "Interact" : 0, "step" : 0, "ending" : 0},
 	{"name": "Meryem", "text": "You should try and find Ian, he will tell you what you can do.", "Interact" : 0, "step" : 0, "ending" : 0},
 	{"name": "Meryem", "text": "Don't forget to talk to the locals first, the might know either where he is or what you should do.", "Interact" : 0, "step" : 0, "ending" : 0},
@@ -9,7 +9,7 @@
 	{"name": "Meryem", "text": "Well, you don't really have a choice do you.", "Interact" : 0, "step" : 1, "ending" : 0},	
 	{"name": "Meryem", "text": "So today we are going to Asia.", "Interact" : 0, "step" : 1, "ending" : 0},
 	{"name": "Meryem", "text": "You should try and find Ian, he will tell you what you can do.", "Interact" : 0, "step" : 1, "ending" : 0},
-	{"name": "Meryem", "text": "Don't forget to talk to the locals first, the might know either where he is or what you should do.", "Interact" : 0, "step" : 1, "ending" : 0},
+	{"name": "Meryem", "text": "Don't forget to talk to the locals first, they might know either where he is or what you should do.", "Interact" : 0, "step" : 1, "ending" : 0},
 	{"name": "Meryem", "text": "Go on then, and remember, I am always watching you", "Interact" : 0, "step" : 1, "ending" : 0},
 	{"name": "Meryem", "text": "end", "Interact" : 0, "step" : 1, "ending" : 1, "next_step" : 8},
 	{"name": "Meryem", "text": "Go on then", "Interact" : 0, "step" : 8, "ending" : 0},

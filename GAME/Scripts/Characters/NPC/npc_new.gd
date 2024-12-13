@@ -20,6 +20,7 @@ var Asia_items =[
 	{"quantity" : 71, "type": "Consumable", "name": "Solar_Panels", "effect": "Place a Solar Panel", "texture": preload("res://Assets/Island_2/SolarPanelicon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"}
 ]
 
+var move_speed_temp
 var tree_spawned = false
 var done = false
 var player
@@ -29,6 +30,9 @@ var where_to_look = "Look_Down"
 var forward = true
 
 var last_position = Vector2.ZERO
+
+func _ready() -> void:
+	move_speed_temp=move_speed
 
 func update_animations():
 	if velocity == Vector2.ZERO:
@@ -77,7 +81,7 @@ func _on_chat_detection_area_body_entered(body: Node2D) -> void:
 
 func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		move_speed = 40
+		move_speed = move_speed_temp
 		player_in_chat_zone = false
 		done = false
 		stopped = false
