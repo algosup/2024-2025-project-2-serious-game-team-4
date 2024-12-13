@@ -1,6 +1,8 @@
-[gd_scene load_steps=37 format=4 uid="uid://bm5tlc677n8yt"]
+[gd_scene load_steps=39 format=4 uid="uid://bm5tlc677n8yt"]
 
+[ext_resource type="AudioStream" uid="uid://cxv7r6a2g2ngk" path="res://Assets/Audios/ASIA THEME.mp3" id="1_laa4k"]
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_yqnic"]
+[ext_resource type="Script" path="res://Scripts/Music/get_music.gd" id="2_oclqg"]
 [ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_yxy4t"]
 [ext_resource type="Texture2D" uid="uid://yvhqvd2elmna" path="res://Assets/Island_2/rpg city assets.png" id="4_47wn5"]
 [ext_resource type="Texture2D" uid="uid://b5krmx80cot0c" path="res://Assets/Island_2/rpg city assets turned.png" id="5_u087j"]
@@ -539,6 +541,13 @@ func _input(event):
 
 [node name="Island2_1_Sky" type="Node2D"]
 position = Vector2(5, 3)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_laa4k")
+autoplay = true
+parameters/looping = true
+script = ExtResource("2_oclqg")
+music_name = "Asia_Theme"
 
 [node name="floor" type="TileMapLayer" parent="."]
 modulate = Color(0.839216, 0.701961, 0.509804, 1)

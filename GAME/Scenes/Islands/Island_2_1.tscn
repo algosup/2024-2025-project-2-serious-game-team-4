@@ -1,7 +1,10 @@
-[gd_scene load_steps=36 format=4 uid="uid://bglturxgofueg"]
+[gd_scene load_steps=39 format=4 uid="uid://bglturxgofueg"]
 
+[ext_resource type="AudioStream" uid="uid://cxv7r6a2g2ngk" path="res://Assets/Audios/ASIA THEME.mp3" id="1_fu2fn"]
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
+[ext_resource type="Script" path="res://Scripts/Music/get_music.gd" id="2_a76j8"]
 [ext_resource type="Texture2D" uid="uid://b15stj2du1od0" path="res://Assets/Island_2/autotile_road.png" id="2_rclli"]
+[ext_resource type="AudioStream" uid="uid://bswwbmsfbiq5n" path="res://Assets/Audios/automotive-factory-general-atmosphere-2-23970.mp3" id="3_78vki"]
 [ext_resource type="Texture2D" uid="uid://yvhqvd2elmna" path="res://Assets/Island_2/rpg city assets.png" id="4_u8f8x"]
 [ext_resource type="Texture2D" uid="uid://b5krmx80cot0c" path="res://Assets/Island_2/rpg city assets turned.png" id="5_dawgt"]
 [ext_resource type="Texture2D" uid="uid://bvqhxqwqumh73" path="res://Assets/TopDown Vehicles v1/VAN TOP DOWN/Red/SEPARATED/Red_VAN_CLEAN_All_001.png" id="6_2240w"]
@@ -514,6 +517,22 @@ point_count = 2
 
 [node name="Island2_1" type="Node2D"]
 position = Vector2(-1773, -196)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_fu2fn")
+autoplay = true
+parameters/looping = true
+script = ExtResource("2_a76j8")
+music_name = "Asia_Theme"
+
+[node name="Factory" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(313, 1)
+stream = ExtResource("3_78vki")
+volume_db = 12.0
+autoplay = true
+max_distance = 600.0
+bus = &"SFX"
+parameters/looping = true
 
 [node name="floor" type="TileMapLayer" parent="."]
 modulate = Color(0.839216, 0.701961, 0.509804, 1)

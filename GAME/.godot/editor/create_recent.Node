@@ -1,3 +1,4 @@
+AudioStreamPlayer2D
 Button
 Sprite2D
 PathFollow2D
@@ -11,4 +12,3 @@ SubViewport
 ColorRect
 Label
 ProgressBar
-Area2D

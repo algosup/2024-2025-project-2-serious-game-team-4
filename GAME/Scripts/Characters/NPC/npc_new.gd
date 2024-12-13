@@ -98,6 +98,7 @@ func _on_dialogue_d_finished(index) -> void:
 		SpawnAreas.set_spawn_area(where[index])
 		if not dialogue.sent_item:
 			Global.add_item(Asia_items[index], true)
+			Global.add_item(Asia_items[index], false)
 			dialogue.sent_item = true
 		if not tree_spawned:
 			tree_spawned = true

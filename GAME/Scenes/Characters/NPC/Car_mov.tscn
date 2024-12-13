@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://dn2ip0gpa0fww"]
+[gd_scene load_steps=38 format=3 uid="uid://dn2ip0gpa0fww"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/NPC/car_move.gd" id="1_hmr6p"]
 [ext_resource type="Texture2D" uid="uid://bhyety83gcd73" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/SOUTH/SEPARATED/Blue_LUXURY_CLEAN_SOUTH_000.png" id="2_rtfx0"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cq1tq077w0jp3" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/EAST/Blue_LUXURY_CLEAN_EAST_000-sheet.png" id="10_jei4c"]
 [ext_resource type="Texture2D" uid="uid://q8uat5flrcgx" path="res://Assets/TopDown Vehicles v1/LUXURY TOPDOWN/Blue/MOVE/NORTH/Blue_LUXURY_CLEAN_NORTH_000-sheet.png" id="11_1rrpv"]
 [ext_resource type="Script" path="res://Scenes/Characters/NPC/movementCar.gd" id="13_nu7vv"]
+[ext_resource type="AudioStream" uid="uid://df1s4s5nkbhve" path="res://Assets/Audios/car-sound-effect-126709.mp3" id="14_r0bfl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4j8gr"]
 radius = 16.0
@@ -227,5 +228,13 @@ shape = SubResource("CapsuleShape2D_8norq")
 [node name="Wander" parent="." instance=ExtResource("4_83sl3")]
 script = ExtResource("13_nu7vv")
 group_name = "car"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_r0bfl")
+volume_db = 16.838
+autoplay = true
+max_distance = 300.0
+bus = &"SFX"
+parameters/looping = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered_car"]
