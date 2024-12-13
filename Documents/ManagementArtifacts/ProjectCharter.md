@@ -41,6 +41,7 @@
 - [Milestones](#milestones)
 - [Constraints](#constraints)
 - [Risks](#risks)
+- [Responsibilities](#responsibilities)
 - [Conclusion](#conclusion)
 
 
@@ -99,6 +100,11 @@ Here are the risks of the project:
 | **Project Scope Risks** | Feature Creep               | Medium         | Medium     | Adding more features (levels, effects) could lead to an increased workload and delays.           | Stick to the predefined scope and evaluate feature requests based on feasibility and time limits.  |
 | **External Risks**      | Third-Party Dependencies    | Low            | Medium     | Stakeholder (ALGOSUP) might request changes that add complexity or increase the workload.        | Maintain clear communication and document any scope changes with agreement from the team.          |
 
+## Responsibilities
+
+You can find the responsibilities of each team member in the [RACI Matrix](https://docs.google.com/spreadsheets/d/1WdguNW13Cd3dIDy1cbHOYZz35i5JUMSqLAT7v9A44EA/edit?usp=sharing).
+
 ## Conclusion
 
 This projects aim to deliver a serious game able to make peoples learn about climate change. The game will be controlled by the keys on the Keyboard. The project has a tight deadline of 12/13/2024, and the team will work together to overcome the risks and constraints to deliver a high-quality product. The team is excited to work on this project and looks forward to presenting the final product on 12/19/2024.
+
