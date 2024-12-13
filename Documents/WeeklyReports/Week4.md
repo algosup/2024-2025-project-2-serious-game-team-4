@@ -9,7 +9,8 @@
 - The Asia continent is almost done
 ## Week 4 Issues and Remarques
 Team's satisfaction during this week: 
- <img src="C:\Users\JulianREINE\Documents\GitHub\2024-2025-project-2-serious-game-team-4\Documents\WeeklyReports\Images\Week4TeamSatisfaction.png" width="500"/>
+ <p>
+<img src="Images/Week4TeamSatisfaction.png" width="500">
 
 ### Issues
 - The software engineer wasn't here for most of the week. The team is working too hard on the code instead of focusing on the documents they have to do. We need to find a solution as soon as possible.

@@ -9,8 +9,8 @@
 - Technical is in a good way
 ## Week 3 Issues and Remarques
 Team's satisfaction during this week: 
- <img src="C:\Users\JulianREINE\Documents\GitHub\2024-2025-project-2-serious-game-team-4\Documents\WeeklyReports\Images\Week3TeamSatisfaction.png" width="500"/>
-
+ <p>
+<img src="Images/Week3TeamSatisfaction.png" width="500">
 
 ### Issues
 Our Program manager and Technical Writer are working as hard as the software engineer. I will see if it's possible for them to also be graded based on the code's work. 
