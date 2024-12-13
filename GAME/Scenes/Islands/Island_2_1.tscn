@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://bglturxgofueg"]
+[gd_scene load_steps=36 format=4 uid="uid://bglturxgofueg"]
 
 [ext_resource type="AudioStream" uid="uid://cxv7r6a2g2ngk" path="res://Assets/Audios/ASIA THEME.mp3" id="1_fu2fn"]
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
@@ -24,9 +24,6 @@
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="26_jg2u4"]
 [ext_resource type="PackedScene" uid="uid://qkbd34j547n4" path="res://Scenes/Characters/NPC/NPC_New_Movement.tscn" id="26_tvytf"]
 [ext_resource type="Script" path="res://Scripts/Progress_Bars/Progress_Bar_Asia.gd" id="27_vkl3m"]
-[ext_resource type="Script" path="res://Scripts/UI/Minimap.gd" id="28_py124"]
-[ext_resource type="Texture2D" uid="uid://c75nqnfkix0v4" path="res://Assets/Island_2/Screenshot 2024-11-28 at 12.19.42.png" id="29_ietuq"]
-[ext_resource type="Texture2D" uid="uid://di3qrypgoqeov" path="res://Assets/star_01.png" id="30_50wse"]
 [ext_resource type="Texture2D" uid="uid://qt13efvmw72d" path="res://Assets/Island_2/2-removebg-preview-2.png" id="34_2jyx8"]
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="35_mmee1"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="36_itejp"]
@@ -629,37 +626,6 @@ texture = ExtResource("14_7bm22")
 position = Vector2(-1244.5, -556.606)
 scale = Vector2(0.326923, 0.326923)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
-
-[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
-offset_right = 120.0
-offset_bottom = 120.0
-scale = Vector2(2.5, 2.5)
-metadata/_edit_use_anchors_ = true
-
-[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
-handle_input_locally = false
-size = Vector2i(120, 120)
-render_target_update_mode = 0
-script = ExtResource("28_py124")
-
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
-texture = ExtResource("29_ietuq")
-
-[node name="Camera2D" type="Camera2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
-zoom = Vector2(0.5, 0.5)
-
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/SubViewportContainer"]
-position = Vector2(60, 60)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("30_50wse")
-
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
-offset_top = 304.0
-offset_right = 120.0
-offset_bottom = 336.0
-
 [node name="Collisions" type="StaticBody2D" parent="."]
 top_level = true
 visibility_layer = 6
@@ -810,23 +776,22 @@ maxii = 200.0
 [node name="Progress_Bar" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Progress_Bar"]
-offset_left = 388.0
+offset_left = 98.0
 offset_top = -12.0
-offset_right = 517.0
+offset_right = 227.0
 offset_bottom = 30.0
 color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="Progress_Bar"]
-offset_left = 390.0
+offset_left = 98.0
 offset_top = 4.0
-offset_right = 515.0
+offset_right = 223.0
 offset_bottom = 29.0
 text = "Pollution in Asia"
 
 [node name="ProgressBar" type="ProgressBar" parent="Progress_Bar"]
-offset_left = 298.0
 offset_top = 31.0
-offset_right = 596.0
+offset_right = 298.0
 offset_bottom = 63.0
 script = ExtResource("27_vkl3m")
 continent = "Asia"

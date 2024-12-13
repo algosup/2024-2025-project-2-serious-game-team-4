@@ -10,13 +10,14 @@ extends CharacterBody2D
 @onready var dialogue = $dialogue
 @onready var exclamation_point = $AnimatedSprite2D/exclam
 @onready var path = $".."
+@onready var color_rect = $ColorRect
 signal show_info(path_to_info)
 
 signal talking(done)
 
 var Asia_items =[
 	{"quantity" : 99, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant a Bambou", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
-	{"quantity" : 99, "type": "Consumable", "name": "Wind_Turbines", "effect": "Place a Wind Turbine", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
+	{"quantity" : 16, "type": "Consumable", "name": "Wind_Turbines", "effect": "Place a Wind Turbine", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
 	{"quantity" : 71, "type": "Consumable", "name": "Solar_Panels", "effect": "Place a Solar Panel", "texture": preload("res://Assets/Island_2/SolarPanelicon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"}
 ]
 
@@ -94,6 +95,7 @@ func _on_dialogue_d_finished(index) -> void:
 	talking.emit(done)
 	if path_to_info != "" and index==0:
 		show_info.emit(path_to_info)
+		color_rect.visible = true
 	if spawner:
 		SpawnAreas.set_spawn_area(where[index])
 		if not dialogue.sent_item:

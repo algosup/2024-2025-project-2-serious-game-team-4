@@ -92,6 +92,7 @@ func _input(event):
 				speed = temp_speed
 				PlayerData.set_tuto()
 				tuto_UI.visible = false
+				$Tuto/Skip.visible = false
 			else:
 				tuto_visible += 1
 				tuto_UI.get_child(tuto_visible).visible = true
@@ -212,3 +213,6 @@ func _on_skip_button_pressed() -> void:
 	speed = temp_speed
 	PlayerData.set_tuto()
 	tuto_UI.visible = false
+
+func _on_open_sesame() -> void:
+	Settingss.visible = !Settingss.visible

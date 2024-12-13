@@ -1100,6 +1100,11 @@ layout_mode = 1
 [node name="Info_UI" type="CanvasLayer" parent="."]
 visible = false
 
+[node name="ColorRect" type="ColorRect" parent="Info_UI"]
+offset_right = 1919.0
+offset_bottom = 1079.0
+color = Color(0, 0, 0, 0.556863)
+
 [node name="InfoCard" type="TextureRect" parent="Info_UI"]
 anchors_preset = 15
 anchor_right = 1.0

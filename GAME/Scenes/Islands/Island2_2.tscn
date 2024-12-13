@@ -4826,23 +4826,22 @@ new_pos = Vector2(-3715, -661)
 [node name="Progress_Bar" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Progress_Bar"]
-offset_left = 388.0
+offset_left = 98.0
 offset_top = -12.0
-offset_right = 517.0
+offset_right = 227.0
 offset_bottom = 30.0
 color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="Progress_Bar"]
-offset_left = 390.0
+offset_left = 98.0
 offset_top = 4.0
-offset_right = 515.0
+offset_right = 223.0
 offset_bottom = 29.0
 text = "Pollution in Asia"
 
 [node name="ProgressBar" type="ProgressBar" parent="Progress_Bar"]
-offset_left = 298.0
 offset_top = 31.0
-offset_right = 596.0
+offset_right = 298.0
 offset_bottom = 63.0
 script = ExtResource("8_ao1ft")
 continent = "Asia"
