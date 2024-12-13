@@ -2,7 +2,7 @@ extends Node
 
 # This is a singleton to store the players position
 #This is to know where the player is before they change zones
-var parent_path = "res://Scenes/Main/start_from_scratch.tscn"
+var parent_path = "res://Scenes/Islands/Island_2.tscn"
 #Player position
 var player_pos = {"Main" : Vector2.ZERO, "Island2" : Vector2(49814,-396), "Island2_1" : Vector2.ZERO, "Island2_1_Sky" : Vector2(3,-30), "Island2_2" : Vector2.ZERO, "Terra_House_Inside" : Vector2.ZERO}
 #Player rotation
