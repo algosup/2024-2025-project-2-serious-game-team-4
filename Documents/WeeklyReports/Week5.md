@@ -11,6 +11,7 @@
 Team's satisfaction during this week: 
  <p>
 <img src="Images/Week5TeamSatisfaction.png" width="500">
+
 ### Issues
 Due to the lack of presence of the software engineer, our Technical Writer (who did most of the code with the Program manager) doesn't have his document ready (user manual). We started doing it.
 ### Remarques
