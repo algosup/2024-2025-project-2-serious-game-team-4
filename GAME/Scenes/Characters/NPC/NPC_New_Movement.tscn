@@ -258,3 +258,4 @@ offset_bottom = -69.0
 [connection signal="body_entered" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="Chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]
 [connection signal="d_finished" from="dialogue" to="." method="_on_dialogue_d_finished"]
+[connection signal="to_give" from="dialogue" to="." method="_on_dialogue_to_give"]

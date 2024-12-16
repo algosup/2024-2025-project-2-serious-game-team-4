@@ -1,6 +1,7 @@
 extends Control
 
 signal d_finished
+signal to_give(give)
 
 @export_file("*.json") var d_file
 
@@ -59,6 +60,9 @@ func next_script(current):
 		container.visible = false
 		d_finished.emit(Index)
 		return
+	if current[current_dialogue_id]["give"] != 100:
+		print(current[current_dialogue_id]["give"])
+		to_give.emit(current[current_dialogue_id]["give"])
 	while current[current_dialogue_id]["step"] != dialogue_index:
 		current_dialogue_id += 1
 	container_name.text = current[current_dialogue_id]['name']

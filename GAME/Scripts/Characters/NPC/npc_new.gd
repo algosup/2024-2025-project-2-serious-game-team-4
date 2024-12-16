@@ -86,14 +86,6 @@ func _on_dialogue_d_finished(index) -> void:
 	talking.emit(done)
 	if path_to_info != "" and index==0:
 		show_info.emit(path_to_info)
-	if spawner:
-		SpawnAreas.set_spawn_area(where[index])
-		if not dialogue.sent_item:
-			Global.add_item(Asia_items[index], true)
-			Global.add_item(Asia_items[index], false)
-			dialogue.sent_item = true
-		if not tree_spawned:
-			tree_spawned = true
 	await get_tree().create_timer(0.000001).timeout
 	done = false
 
@@ -119,3 +111,12 @@ func Where_to_look():
 
 func _on_player_dialog_not_start(dialog_stop: Variant) -> void:
 	dialog_stopper = dialog_stop
+
+func _on_dialogue_to_give(give: Variant) -> void:
+	print("seen", give)
+	if spawner:
+		SpawnAreas.set_spawn_area(where[give])
+		Global.add_item(Asia_items[give], true)
+		Global.add_item(Asia_items[give], false)
+		if not tree_spawned:
+			tree_spawned = true
