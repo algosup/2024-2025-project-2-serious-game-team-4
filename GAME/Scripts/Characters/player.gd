@@ -20,9 +20,12 @@ var called = false
 var temp_speed = 0
 var tuto = false
 var tuto_visible = 0
+var dialog_stop = false
+var is_moving = false
 
 signal tree_spawn(type)
 signal tuto_done(is_done)
+signal dialog_not_start(dialog_stop)
 
 @onready var Pickup_Label = $Interact_Pick_Up_UI/ColorRect/Label
 @onready var Interact_Label = $Interact_UI/ColorRect/Label
@@ -99,13 +102,17 @@ func _input(event):
 		$Progress_bar.visible = !Inventory_UI.visible
 		tuto_done.emit($Progress_bar.visible)
 	if event.is_action_pressed("SETTINGS"):
-		print("hehe")
 		Settingss.visible = !Settingss.visible
 	if event.is_action_pressed("INFO_CARD"):
 		#The info card gets shown by the NPC so it should only hide it
-		Info_ui.hide()
+		if Info_ui.visible:
+			Info_ui.hide()
+			$Progress_bar.visible = !Inventory_UI.visible
+			tuto_done.emit($Progress_bar.visible)
+			dialog_stop = false
+			dialog_not_start.emit(dialog_stop)
 		#The tutorials are manipulated by the same key as the info card.
-		if tuto == true:
+		elif tuto == true:
 			tuto_UI.get_child(tuto_visible).visible = false
 			#That means all the tutorials were shown
 			if tuto_visible == 8:
@@ -229,6 +236,10 @@ func _on_npc_talking(done: Variant) -> void:
 #The info cards are always stuck to the player, so when an NPC wants to show it, this function is called, it sets the right texture as set in an export var on the npc
 #and shows it.
 func _on_npc_show_info(path_to_info: Variant) -> void:
+	dialog_stop = true
+	dialog_not_start.emit(dialog_stop)
+	$Progress_bar.visible = !$Progress_bar.visible
+	tuto_done.emit($Progress_bar.visible)
 	var info_card = load(path_to_info)
 	Info_ui.get_child(1).texture = info_card
 	Info_ui.visible = true
