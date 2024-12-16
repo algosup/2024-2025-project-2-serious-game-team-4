@@ -16,8 +16,8 @@ signal talking(done)
 
 #The items the NPC's can give to the player in theory
 var Asia_items =[
-	{"quantity" : 99, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant a Bambou", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
-	{"quantity" : 16, "type": "Consumable", "name": "Wind_Turbines", "effect": "Place a Wind Turbine", "texture": preload("res://Assets/Icons/icon21.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
+	{"quantity" : 99, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant a Bambou", "texture": preload("res://Assets/Icons/BambooIcon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
+	{"quantity" : 16, "type": "Consumable", "name": "Wind_Turbines", "effect": "Place a Wind Turbine", "texture": preload("res://Assets/Icons/WindmillIcon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"},
 	{"quantity" : 71, "type": "Consumable", "name": "Solar_Panels", "effect": "Place a Solar Panel", "texture": preload("res://Assets/Island_2/SolarPanelicon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"}
 ]
 
@@ -29,6 +29,7 @@ var player_in_chat_zone = false
 var stopped = false
 var where_to_look = "Look_Down"
 var forward = true
+var dialog_stopper = false
 
 var last_position = Vector2.ZERO
 
@@ -38,7 +39,7 @@ func _ready() -> void:
 
 #Starts the dialogue with the player by calling the dialogue scene linked to the npc scene
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("INTERACT") and not done and player_in_chat_zone:
+	if event.is_action_pressed("INTERACT") and not done and player_in_chat_zone and not dialog_stopper:
 		$dialogue.start()
 		talking.emit(done)
 
@@ -115,3 +116,6 @@ func Where_to_look():
 		where_to_look = x_side
 	else:
 		where_to_look = y_side
+
+func _on_player_dialog_not_start(dialog_stop: Variant) -> void:
+	dialog_stopper = dialog_stop
