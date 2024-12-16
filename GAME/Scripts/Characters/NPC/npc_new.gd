@@ -11,7 +11,7 @@ extends CharacterBody2D
 @onready var exclamation_point = $AnimatedSprite2D/exclam
 @onready var path = $".."
 signal show_info(path_to_info)
-
+signal show_arrow(state)
 signal talking(done)
 
 #The items the NPC's can give to the player in theory
@@ -86,6 +86,8 @@ func _on_dialogue_d_finished(index) -> void:
 	talking.emit(done)
 	if path_to_info != "" and index==0:
 		show_info.emit(path_to_info)
+	if NPCname == "Meryem_Tutorial":
+		show_arrow.emit(true)
 	await get_tree().create_timer(0.000001).timeout
 	done = false
 

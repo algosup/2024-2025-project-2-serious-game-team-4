@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://bglturxgofueg"]
+[gd_scene load_steps=37 format=4 uid="uid://bglturxgofueg"]
 
 [ext_resource type="AudioStream" uid="uid://cxv7r6a2g2ngk" path="res://Assets/Audios/ASIA THEME.mp3" id="1_fu2fn"]
 [ext_resource type="Texture2D" uid="uid://pu56liaqikpa" path="res://Assets/Island_2/4kwt2.png" id="1_hakqf"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://dxk2tk8iffno1" path="res://Scenes/MapFeatures/portal.tscn" id="26_jg2u4"]
 [ext_resource type="PackedScene" uid="uid://qkbd34j547n4" path="res://Scenes/Characters/NPC/NPC_New_Movement.tscn" id="26_tvytf"]
 [ext_resource type="Script" path="res://Scripts/Progress_Bars/Progress_Bar_Asia.gd" id="27_vkl3m"]
+[ext_resource type="Texture2D" uid="uid://b7tqe0v4bd2p6" path="res://Assets/Sign.png" id="28_wo37b"]
 [ext_resource type="Texture2D" uid="uid://qt13efvmw72d" path="res://Assets/Island_2/2-removebg-preview-2.png" id="34_2jyx8"]
 [ext_resource type="Texture2D" uid="uid://bjmnqp3gtx6xy" path="res://Assets/Island_2/3-removebg-preview.png" id="35_mmee1"]
 [ext_resource type="Texture2D" uid="uid://cvlucydqxddjd" path="res://Assets/Island_2/1-removebg-preview.png" id="36_itejp"]
@@ -795,6 +796,21 @@ offset_right = 298.0
 offset_bottom = 63.0
 script = ExtResource("27_vkl3m")
 continent = "Asia"
+
+[node name="Sign_Wind_Turbines" type="Sprite2D" parent="."]
+position = Vector2(117, -309)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("28_wo37b")
+
+[node name="Label" type="Label" parent="Sign_Wind_Turbines"]
+offset_left = -94.9998
+offset_top = -75.0
+offset_right = 233.0
+offset_bottom = 57.0
+theme_override_font_sizes/font_size = 25
+text = "Up here we want
+   Solar panels
+"
 
 [connection signal="portal_entered" from="portal" to="Player" method="_on_portal_portal_entered"]
 [connection signal="portal_entered" from="portal_back" to="Player" method="_on_portal_back_portal_entered"]

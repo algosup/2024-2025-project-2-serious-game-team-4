@@ -12,6 +12,7 @@ extends CharacterBody2D
 @onready var Info_ui = $Info_UI
 @onready var Progress_bar = $Progress_bar/ProgressBar
 @onready var tuto_UI = $Tuto/Tuto1
+@onready var Arrow = $Arrow
 
 var speed = 150
 var last_move = ""
@@ -269,4 +270,10 @@ func _on_skip_button_pressed() -> void:
 
 #This is called by the settings thing on the island where the player spawns. it does the same as pressing the settings hotkey.
 func _on_open_sesame() -> void:
-	Settingss.visible = !Settingss.visible
+	if Keybinds.visible:
+		Keybinds.hide()
+	else:
+		Settingss.visible = !Settingss.visible
+
+func _on_show_arrow(state) -> void:
+	Arrow.visible = state

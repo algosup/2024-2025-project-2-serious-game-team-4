@@ -1,4 +1,4 @@
-[gd_scene load_steps=165 format=3 uid="uid://ckyexbu8v7e3j"]
+[gd_scene load_steps=167 format=3 uid="uid://ckyexbu8v7e3j"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/player.gd" id="1_2s006"]
 [ext_resource type="Texture2D" uid="uid://qhgrt0te4js1" path="res://Assets/Red_Coupe/Red_COUPE_CLEAN_All_000-sheet.png" id="3_3jkrq"]
@@ -42,6 +42,8 @@
 [ext_resource type="Texture2D" uid="uid://b744d5wu4cafm" path="res://Assets/Tutorial/7.png" id="40_bx384"]
 [ext_resource type="Texture2D" uid="uid://dqkemvh3mv52u" path="res://Assets/Tutorial/8.png" id="41_5yn8g"]
 [ext_resource type="Texture2D" uid="uid://7xqtwnehuuuu" path="res://Assets/Tutorial/9.png" id="42_vwghh"]
+[ext_resource type="Texture2D" uid="uid://bc7t25eixhkle" path="res://Assets/arrow_show.png" id="43_48bfu"]
+[ext_resource type="Script" path="res://Scripts/UI/arrow.gd" id="44_qmrt0"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_pr3ip"]
 
@@ -1143,11 +1145,6 @@ text = "You still need to plant XX Wind Turbines!"
 
 [node name="Progress_bar" type="CanvasLayer" parent="."]
 
-[node name="ColorRect" type="ColorRect" parent="Progress_bar"]
-offset_right = 129.0
-offset_bottom = 24.0
-color = Color(0, 0, 0, 0.545098)
-
 [node name="Label" type="Label" parent="Progress_bar"]
 anchors_preset = 1
 anchor_left = 1.0
@@ -1318,6 +1315,13 @@ offset_top = 615.0
 offset_right = 1120.0
 offset_bottom = 646.0
 text = "Back to game"
+
+[node name="Arrow" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-3, -62)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("43_48bfu")
+script = ExtResource("44_qmrt0")
 
 [connection signal="pressed" from="Tuto/Skip" to="." method="_on_skip_button_pressed"]
 [connection signal="pressed" from="Settings/Keybinds" to="." method="_on_keybinds_pressed"]

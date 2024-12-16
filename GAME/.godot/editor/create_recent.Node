@@ -1,8 +1,11 @@
-TileMapLayer
+Label
 Sprite2D
-ColorRect
 CollisionShape2D
 Area2D
+Marker2D
+AspectRatioContainer
+TileMapLayer
+ColorRect
 Camera2D
 SubViewportContainer
 SubViewport
@@ -10,5 +13,3 @@ AudioStreamPlayer2D
 Button
 PathFollow2D
 Path2D
-AnimatedSprite2D
-Marker2D
