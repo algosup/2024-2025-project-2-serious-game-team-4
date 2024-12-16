@@ -1,0 +1,9 @@
+All files Png 1024x1024
+
+If you use unity, use sprite editor to seperate properly the sprites 
+
+if you need to tile maybe you will have to do some adjustements but no worry i'm sure you can do it :)
+
+If you think my work is usefull, you can donate me a little thing in itch, that would help me to make more FREE assets 
+
+https://styloo.itch.io/

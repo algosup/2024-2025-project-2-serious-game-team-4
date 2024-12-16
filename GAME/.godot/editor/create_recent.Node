@@ -1,3 +1,4 @@
+TileMapLayer
 Sprite2D
 ColorRect
 CollisionShape2D
@@ -9,6 +10,5 @@ AudioStreamPlayer2D
 Button
 PathFollow2D
 Path2D
-TileMapLayer
 AnimatedSprite2D
 Marker2D
