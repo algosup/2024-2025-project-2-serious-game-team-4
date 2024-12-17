@@ -654,6 +654,7 @@ position = Vector2(287, 460)
 script = ExtResource("15_xw7c2")
 sprites_parent = NodePath("Node2D")
 player = NodePath("../Player")
+activation_radius = 70.0
 list = "Solar_Panels_Island2_1_Sky"
 Type = "Solar_Panel"
 power = 3

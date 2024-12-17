@@ -22,8 +22,9 @@ var sent_item = false
 #Hides the dialog box since the npc is uninterracted and grabs the indexes from the NpcDialog Singleton so that the npc remembers if it was talked to before even if the player changes scene
 func _ready() -> void:
 	container.visible = false
-	current_dialogue_id = NpcDialog.get_Dialogue_ID(get_parent().NPCname+"_"+get_tree().current_scene.name)-1
+	current_dialogue_id = NpcDialog.get_Dialogue_ID(get_parent().NPCname+"_"+get_tree().current_scene.name)
 	dialogue_index = NpcDialog.get_Index(get_parent().NPCname+"_"+get_tree().current_scene.name)
+	print(dialogue_index, current_dialogue_id)
 
 #Start the dialogue
 func start():
@@ -56,6 +57,7 @@ func next_script(current):
 	if current[current_dialogue_id]["ending"] == 1:
 		dialogue_index = current[current_dialogue_id]["next_step"]
 		current_dialogue_id = -1
+		print(dialogue_index, current_dialogue_id)
 		NpcDialog.set_info(get_parent().NPCname+"_"+get_tree().current_scene.name, dialogue_index, current_dialogue_id)
 		d_active = false
 		container.visible = false
