@@ -98,5 +98,4 @@
 	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 1, "ending" : 1, "next_step" : 8, "give" : 100},
 	{"name": "Ian", "text": "Good luck, TERRA! Every step you take brings us closer to a healthier planet. Let’s get started!", "Interact" : 0, "step" : 99, "ending" : 0, "give" : 100},
 	{"name": "Ian", "text": "end", "Interact" : 0, "step" : 99, "ending" : 1, "next_step" : 99, "give" : 100}
-
 ]
