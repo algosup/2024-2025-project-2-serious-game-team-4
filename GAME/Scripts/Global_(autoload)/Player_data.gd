@@ -10,6 +10,8 @@ var player_rot = {"Main" : "Idle_Left", "Island2" : "Idle_Down", "Island2_1" : "
 var player_speed : int = 250
 #this is so that the game knows if the player did the tutorial or not
 var tuto = false
+#this is to know how many times the player has planted
+var num_complete = 0
 
 #set's the players position in a specific scene
 func set_position(pos: Vector2, place: String):
@@ -31,6 +33,9 @@ func set_player_speed(speed):
 func set_tuto():
 	tuto = true
 
+func set_planted():
+	num_complete += 1
+
 #return the players position in a specific scene
 func get_position(place):
 	print(place)
@@ -51,3 +56,6 @@ func get_player_speed():
 #return the tutorial 
 func get_tuto():
 	return tuto
+
+func get_planted():
+	return num_complete

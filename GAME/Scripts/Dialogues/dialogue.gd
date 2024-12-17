@@ -24,8 +24,6 @@ func _ready() -> void:
 	container.visible = false
 	current_dialogue_id = NpcDialog.get_Dialogue_ID(get_parent().NPCname+"_"+get_tree().current_scene.name)
 	dialogue_index = NpcDialog.get_Index(get_parent().NPCname+"_"+get_tree().current_scene.name)
-	print(dialogue_index, current_dialogue_id)
-
 #Start the dialogue
 func start():
 	if d_active:
@@ -51,18 +49,15 @@ func _input(event: InputEvent) -> void:
 #Advances to the next dialogue script, check the flags in the .json file that holds the dialog, so it knows if it should end, what's the next ste for dialogs
 #What text to show and if the choice the player made is worthless. at the end, saves the fact that the player has already talked to that npc and what path they chose
 func next_script(current):
-	print("start", current_dialogue_id)
 	lock = false
 	current_dialogue_id += 1
 	if current[current_dialogue_id]["ending"] == 1:
 		dialogue_index = current[current_dialogue_id]["next_step"]
 		current_dialogue_id = -1
-		print(dialogue_index, current_dialogue_id)
 		NpcDialog.set_info(get_parent().NPCname+"_"+get_tree().current_scene.name, dialogue_index, current_dialogue_id)
 		d_active = false
 		container.visible = false
 		d_finished.emit(Index)
-		print("ending", current_dialogue_id )
 		return
 	if current[current_dialogue_id]["give"] != 100:
 		to_give.emit(current[current_dialogue_id]["give"])
@@ -74,7 +69,6 @@ func next_script(current):
 		if current[current_dialogue_id]["Worthless"] == 1:
 			lock = true
 		dialogue_choices(current)
-	print("end", current_dialogue_id)
 #changes the index in accordance with the players choice, so that the dialog know what the next step they have to take is.
 func _on_choices_dialog_selected(index: Variant) -> void:
 	Index = index

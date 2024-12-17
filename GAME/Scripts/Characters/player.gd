@@ -13,6 +13,7 @@ extends CharacterBody2D
 @onready var Progress_bar = $Progress_bar/ProgressBar
 @onready var tuto_UI = $Tuto/Tuto1
 @onready var Arrow = $Arrow
+@onready var Ending = $Ending
 
 var speed = 150
 var last_move = ""
@@ -23,6 +24,9 @@ var tuto = false
 var tuto_visible = 0
 var dialog_stop = false
 var is_moving = false
+var num_complete = 0
+var Ending_slides_container = ["res://Assets/Ending_Slides/bamboo (1).png", "res://Assets/Ending_Slides/panel (1).png", "res://Assets/Ending_Slides/turbines (1).png"]
+var index = 0
 
 signal tree_spawn(type)
 signal tuto_done(is_done)
@@ -33,6 +37,8 @@ signal dialog_not_start(dialog_stop)
 
 #This function happens when the node is first called and checks a lot so check the comments inside for more details
 func _ready():
+	#gets the amount of times the player has planted everything
+	num_complete = PlayerData.get_planted()
 	#Makes the footsteps sound faster so it matches the characters walking speed
 	footsteps.pitch_scale = 2.0
 	#These next few lines grab the info from PlayerData to make sure it spawns at the right place
@@ -65,9 +71,10 @@ func get_input():
 		
 #Calls all of the functions to move and animate the player
 func _physics_process(_delta: float) -> void:
-	get_input()
-	move_and_slide()
-	update_animations()
+	if not Ending.visible:
+		get_input()
+		move_and_slide()
+		update_animations()
 
 #Play the footsteps sound when the player walks
 func play_footsteps():
@@ -105,30 +112,40 @@ func _input(event):
 	if event.is_action_pressed("SETTINGS"):
 		Settingss.visible = !Settingss.visible
 	if event.is_action_pressed("INFO_CARD"):
-		#The info card gets shown by the NPC so it should only hide it
-		if Info_ui.visible:
-			Info_ui.hide()
-			$Progress_bar.visible = !Inventory_UI.visible
-			tuto_done.emit($Progress_bar.visible)
-			dialog_stop = false
-			dialog_not_start.emit(dialog_stop)
-		#The tutorials are manipulated by the same key as the info card.
-		elif tuto == true:
-			tuto_UI.get_child(tuto_visible).visible = false
-			#That means all the tutorials were shown
-			if tuto_visible == 8:
-				speed = temp_speed
-				#Remebers that the tutorial had been completed and hide/show the relevant UI elements
-				PlayerData.set_tuto()
-				tuto_UI.visible = false
-				$Tuto/Skip.visible = false
-				$Progress_bar.visible = true
-				hotbar_UI.visible = true
-				tuto_done.emit(true)
+		#if the game is in it's ggwp state:
+		if Ending.visible:
+			index += 1
+			if index >= 3:
+				Ending.get_child(1).visible = false
+				Ending.get_child(2).visible = true
 			else:
-				#move to the next tuto card
-				tuto_visible += 1
-				tuto_UI.get_child(tuto_visible).visible = true
+				var current_ending_slide=load(Ending_slides_container[index])
+				Ending.get_child(1).texture=current_ending_slide
+		else:
+			#The info card gets shown by the NPC so it should only hide it
+			if Info_ui.visible:
+				Info_ui.hide()
+				$Progress_bar.visible = !Inventory_UI.visible
+				tuto_done.emit($Progress_bar.visible)
+				dialog_stop = false
+				dialog_not_start.emit(dialog_stop)
+			#The tutorials are manipulated by the same key as the info card.
+			elif tuto == true:
+				tuto_UI.get_child(tuto_visible).visible = false
+				#That means all the tutorials were shown
+				if tuto_visible == 8:
+					speed = temp_speed
+					#Remebers that the tutorial had been completed and hide/show the relevant UI elements
+					PlayerData.set_tuto()
+					tuto_UI.visible = false
+					$Tuto/Skip.visible = false
+					$Progress_bar.visible = true
+					hotbar_UI.visible = true
+					tuto_done.emit(true)
+				else:
+					#move to the next tuto card
+					tuto_visible += 1
+					tuto_UI.get_child(tuto_visible).visible = true
 
 #This function checks the effect attached to an item and applies it
 func apply_item_effect(item):
@@ -264,6 +281,11 @@ func _on_progress_bar_new_info(item, amount) -> void:
 	Left_To_Plant.get_child(1).text = "Good job, we still need %s %ss!" % [amount, item]
 	Left_To_Plant.visible = true
 	if amount == 0:
+		num_complete += 1
+		PlayerData.set_planted()
+		if num_complete == 3:
+			print("hehe")
+			ggwp()
 		Left_To_Plant.get_child(1).text = "Congratulations!"
 		await get_tree().create_timer(10).timeout
 		Left_To_Plant.visible = false
@@ -289,3 +311,12 @@ func _on_open_sesame() -> void:
 #This is called by an NPC at the spawn to show an arrow that points to Ian, this arrow was added after people started to have issues with finding Ian
 func _on_show_arrow(state) -> void:
 	Arrow.visible = state
+
+#this function will play once the player has filled up all three planting zones.
+func ggwp():
+	Ending.visible = true
+	var current_ending_slide=load(Ending_slides_container[index])
+	Ending.get_child(1).texture=current_ending_slide
+
+func _on_close_game_pressed() -> void:
+	get_tree().quit()
