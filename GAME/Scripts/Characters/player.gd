@@ -145,29 +145,40 @@ func apply_item_effect(item):
 		"Test":
 			print("test")
 		"Plant a Bambou":
+			#This items need to be planted in tree planting zones
 			if in_tree_spawn:
 				tree_spawn.emit("Bambou")
+			else:
+				Global.add_item({"quantity" : 1, "type": "Consumable", "name": "Bambou_seed", "effect": "Plant a Bambou", "texture": preload("res://Assets/Icons/BambooIcon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"}, false)
 		"Place a Wind Turbine":
+			#This items need to be planted in tree planting zones
 			if in_tree_spawn:
 				tree_spawn.emit("Wind_Turbine")
+			else:
+				Global.add_item({"quantity" : 1, "type": "Consumable", "name": "Wind_Turbines", "effect": "Place a Wind Turbine", "texture": preload("res://Assets/Icons/WindmillIcon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"}, false)
 		"Place a Solar Panel":
+			#This items need to be planted in tree planting zones
 			if in_tree_spawn:
 				tree_spawn.emit("Solar_Panel")
+			else:
+				Global.add_item({"quantity" : 1, "type": "Consumable", "name": "Solar_Panels", "effect": "Place a Solar Panel", "texture": preload("res://Assets/Island_2/SolarPanelicon.png"), "scene_path" : "res://Scenes/UI/Inventory_Stuff/inventory_item.tscn"}, false)
 
 #Hotbar shortcut keys, is called by the next function
 func use_hotbar_item(slot_index):
-	if slot_index < Global.hotbar_inventory.size():
-		var item = Global.hotbar_inventory[slot_index]
-		if item != null:
-			#use item at slot
-			apply_item_effect(item)
-			#Removes item
-			item["quantity"] -= 1
-			#Makes the item disappear if none are left
-			if item["quantity"] <= 0:
-				Global.hotbar_inventory[slot_index] = null
-				Global.remove_item(item["type"], item["effect"])
-			Global.inventory_updated.emit()
+	#All the items that are used need to be in a spawned area to be used, so this check is not very smart but it avoids lag when the player spams the hotber item button
+	if in_tree_spawn:
+		if slot_index < Global.hotbar_inventory.size():
+			var item = Global.hotbar_inventory[slot_index]
+			if item != null:
+				#use item at slot
+				apply_item_effect(item)
+				#Removes item
+				item["quantity"] -= 1
+				#Makes the item disappear if none are left
+				if item["quantity"] <= 0:
+					Global.hotbar_inventory[slot_index] = null
+					Global.remove_item(item["type"], item["effect"])
+				Global.inventory_updated.emit()
 
 #Hotbar shortcuts usage
 func _unhandled_input(event: InputEvent) -> void:
@@ -275,5 +286,6 @@ func _on_open_sesame() -> void:
 	else:
 		Settingss.visible = !Settingss.visible
 
+#This is called by an NPC at the spawn to show an arrow that points to Ian, this arrow was added after people started to have issues with finding Ian
 func _on_show_arrow(state) -> void:
 	Arrow.visible = state

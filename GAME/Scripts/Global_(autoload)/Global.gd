@@ -1,6 +1,5 @@
 extends Node
 
-
 #This script exists to store information in between scenes as godot does not do that by default
 #It is called a singleton
 #This one is focused on the inventory.
@@ -37,30 +36,38 @@ func _ready():
 	inventory.resize(27)
 	hotbar_inventory.resize(hotbar_size)
 
-#adds an item to the inventory
-func add_item(item, to_hotbar = false):
+func add_item(item, to_hotbar = false) -> bool:
 	var added_to_hotbar = false
-	#add to hotbar
+		# Add to hotbar if requested
 	if to_hotbar:
 		added_to_hotbar = add_hotbar_item(item)
-		inventory_updated.emit()
+	# If not added to hotbar, try to add to inventory
 	if not added_to_hotbar:
-		#this function will check the inventory slots to know where to place the item,
+		var empty_slot = -1  # Keep track of the first empty slot	
 		for i in range(inventory.size()):
-			 #this will check if an instance of the same item already exists to stack them.
-			if inventory[i] != null and inventory[i]["type"] == item["type"] and inventory[i]["effect"] == item["effect"]:
-				inventory[i]["quantity"] += item["quantity"]
-				inventory_updated.emit()
-				return true
-		for i in range(inventory.size()):
-			#this will check if a spot is empty, in that case, it will fill the spot.
-			if inventory[i] == null:
-					inventory[i]=item
+			if inventory[i] != null:
+				# Try to stack items
+				if inventory[i]["type"] == item["type"] and inventory[i]["effect"] == item["effect"]:
+					inventory[i]["quantity"] += item["quantity"]
 					inventory_updated.emit()
 					return true
-			#If the function arrives here, it means there is no more space in the inventory and nowhere to stack it, so it can't add it.
+			else:
+			# Record the first empty slot
+				if empty_slot == -1:
+					empty_slot = i
+	# If not stacked, place in the first empty slot
+		if empty_slot != -1:
+			inventory[empty_slot] = item
+			inventory_updated.emit()
+			return true
+	
+		# If no space available
 		print("no_space")
 		return false
+
+	# Hotbar was updated, no need to add to inventory
+	inventory_updated.emit()
+	return true
 
 #Remove an item from the inventory, checks if an item in the inventory has the same as the one that needs to be removed, if so, remove it.
 func remove_item(item_type, item_effect):
