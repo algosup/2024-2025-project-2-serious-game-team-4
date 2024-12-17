@@ -54,7 +54,6 @@ func set_item(new_item):
 #Drops the item on the floor and empties the slot
 func _on_drop_button_pressed() -> void:
 	if item != null:
-		print(item)
 		var drop_position = Global.player_node.global_position
 		var drop_offset = Vector2(0, 50)
 		drop_offset = drop_offset.rotated(Global.player_node.rotation)

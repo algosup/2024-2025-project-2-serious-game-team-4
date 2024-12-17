@@ -115,7 +115,6 @@ func _on_player_dialog_not_start(dialog_stop: Variant) -> void:
 	dialog_stopper = dialog_stop
 
 func _on_dialogue_to_give(give: Variant) -> void:
-	print("seen", give)
 	if spawner:
 		SpawnAreas.set_spawn_area(where[give])
 		Global.add_item(Asia_items[give], true)

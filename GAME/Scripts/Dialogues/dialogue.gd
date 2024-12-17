@@ -27,17 +27,17 @@ func _ready() -> void:
 
 #Start the dialogue
 func start():
+	print(current_dialogue_id)
+	print(dialogue_index)
 	if d_active:
 		return
 	d_active = true
 	container.visible = true
 	dialogue = load_dialogue()
-	current_dialogue_id = -1
 	next_script(dialogue)
 
 #Loads the dialog file that corresponds to that NPC
 func load_dialogue():
-	print("res://Scripts/Dialogues/Dialogs/"+get_parent().NPCname+"_"+get_tree().current_scene.name+"/Dialogue.json")
 	var file = FileAccess.open("res://Scripts/Dialogues/Dialogs/"+get_parent().NPCname+"_"+get_tree().current_scene.name+"/Dialogue.json", FileAccess.READ)
 	var content = JSON.parse_string(file.get_as_text())
 	return content
@@ -54,6 +54,7 @@ func _input(event: InputEvent) -> void:
 func next_script(current):
 	lock = false
 	current_dialogue_id += 1
+	NpcDialog.set_info(get_parent().NPCname+"_"+get_tree().current_scene.name, dialogue_index, current_dialogue_id)
 	if current[current_dialogue_id]["ending"] == 1:
 		dialogue_index = current[current_dialogue_id]["next_step"]
 		d_active = false
@@ -61,7 +62,6 @@ func next_script(current):
 		d_finished.emit(Index)
 		return
 	if current[current_dialogue_id]["give"] != 100:
-		print(current[current_dialogue_id]["give"])
 		to_give.emit(current[current_dialogue_id]["give"])
 	while current[current_dialogue_id]["step"] != dialogue_index:
 		current_dialogue_id += 1
@@ -71,8 +71,6 @@ func next_script(current):
 		if current[current_dialogue_id]["Worthless"] == 1:
 			lock = true
 		dialogue_choices(current)
-	NpcDialog.set_info(get_parent().NPCname+"_"+get_tree().current_scene.name, dialogue_index, current_dialogue_id)
-
 #changes the index in accordance with the players choice, so that the dialog know what the next step they have to take is.
 func _on_choices_dialog_selected(index: Variant) -> void:
 	Index = index
