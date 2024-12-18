@@ -35,6 +35,9 @@ var last_position = Vector2.ZERO
 
 #Save the temporary speed as two NPC's could have different speeds so if they stop, I am sure they are set back to the right speed
 func _ready() -> void:
+	var check = NpcDialog.get_Dialogue_ID(NPCname+"_"+get_tree().current_scene.name)
+	if check != 0:
+		exclamation_point.hide()
 	move_speed_temp=move_speed
 
 #Starts the dialogue with the player by calling the dialogue scene linked to the npc scene
