@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfgpgq0hvihtg"
-path="res://.godot/imported/bamboo (1).png-7114a137193fba69a59f3da8d52679f5.ctex"
+uid="uid://c2c476t3ffmrt"
+path="res://.godot/imported/4.png-016e6db1fe86e059f921470736a3ad26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ending_Slides/bamboo (1).png"
-dest_files=["res://.godot/imported/bamboo (1).png-7114a137193fba69a59f3da8d52679f5.ctex"]
+source_file="res://Assets/Ending_Slides/4.png"
+dest_files=["res://.godot/imported/4.png-016e6db1fe86e059f921470736a3ad26.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmrhb6xc8urwt"
-path="res://.godot/imported/turbines (1).png-877c70c41da46aa7937586a4b7d45f92.ctex"
+uid="uid://31t28qagwynw"
+path="res://.godot/imported/1_Bamboo.png-9435775ac5f77f79f1d3971b20082818.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ending_Slides/turbines (1).png"
-dest_files=["res://.godot/imported/turbines (1).png-877c70c41da46aa7937586a4b7d45f92.ctex"]
+source_file="res://Assets/Ending_Slides/1_Bamboo.png"
+dest_files=["res://.godot/imported/1_Bamboo.png-9435775ac5f77f79f1d3971b20082818.ctex"]
 
 [params]
 

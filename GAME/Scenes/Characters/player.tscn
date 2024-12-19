@@ -40,7 +40,7 @@
 [ext_resource type="Texture2D" uid="uid://vryko3fwv54l" path="res://Assets/Tutorial/6.png" id="39_03u2c"]
 [ext_resource type="Texture2D" uid="uid://b744d5wu4cafm" path="res://Assets/Tutorial/7.png" id="40_bx384"]
 [ext_resource type="Texture2D" uid="uid://dqkemvh3mv52u" path="res://Assets/Tutorial/8.png" id="41_5yn8g"]
-[ext_resource type="Texture2D" uid="uid://bfgpgq0hvihtg" path="res://Assets/Ending_Slides/bamboo (1).png" id="42_0w0hg"]
+[ext_resource type="Texture2D" uid="uid://31t28qagwynw" path="res://Assets/Ending_Slides/1_Bamboo.png" id="42_0w0hg"]
 [ext_resource type="Texture2D" uid="uid://7xqtwnehuuuu" path="res://Assets/Tutorial/9.png" id="42_vwghh"]
 [ext_resource type="Texture2D" uid="uid://bc7t25eixhkle" path="res://Assets/arrow_show.png" id="43_48bfu"]
 [ext_resource type="Script" path="res://Scripts/UI/arrow.gd" id="44_qmrt0"]
@@ -1105,7 +1105,6 @@ offset_right = 30.0
 grow_horizontal = 1
 
 [node name="Inventory_Hotbar" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Inventory_Hotbar2" parent="Inventory_Hotbar" instance=ExtResource("6_3i3iy")]
 offset_left = 140.0
@@ -1144,7 +1143,6 @@ theme_override_font_sizes/font_size = 20
 text = "You still need to plant XX Wind Turbines!"
 
 [node name="Progress_bar" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Label" type="Label" parent="Progress_bar"]
 anchors_preset = 1

@@ -25,7 +25,8 @@ var tuto_visible = 0
 var dialog_stop = false
 var is_moving = false
 var num_complete = 0
-var Ending_slides_container = ["res://Assets/Ending_Slides/bamboo (1).png", "res://Assets/Ending_Slides/panel (1).png", "res://Assets/Ending_Slides/turbines (1).png"]
+var Ending_slides_item = ["res://Assets/Ending_Slides/1_Bamboo.png", "res://Assets/Ending_Slides/1_Solar_Panels.png", "res://Assets/Ending_Slides/1_Wind_Turbines.png"]
+var Ending_slides_container = ["res://Assets/Ending_Slides/2.png", "res://Assets/Ending_Slides/3.png", "res://Assets/Ending_Slides/4.png", "res://Assets/Ending_Slides/5.png"]
 var index = 0
 
 signal tree_spawn(type)
@@ -114,13 +115,13 @@ func _input(event):
 	if event.is_action_pressed("INFO_CARD"):
 		#if the game is in it's ggwp state:
 		if Ending.visible:
-			index += 1
-			if index >= 3:
+			if index >= 4:
 				Ending.get_child(1).visible = false
 				Ending.get_child(2).visible = true
 			else:
 				var current_ending_slide=load(Ending_slides_container[index])
 				Ending.get_child(1).texture=current_ending_slide
+			index += 1
 		else:
 			#The info card gets shown by the NPC so it should only hide it
 			if Info_ui.visible:
@@ -315,8 +316,15 @@ func _on_show_arrow(state) -> void:
 #this function will play once the player has filled up all three planting zones.
 func ggwp():
 	Ending.visible = true
-	var current_ending_slide=load(Ending_slides_container[index])
-	Ending.get_child(1).texture=current_ending_slide
+	if Global.first_item == "Bambou_seed":
+		var current_ending_slide=load(Ending_slides_item[0])
+		Ending.get_child(1).texture=current_ending_slide
+	elif Global.first_item == "Wind_Turbines":
+		var current_ending_slide=load(Ending_slides_item[2])
+		Ending.get_child(1).texture=current_ending_slide
+	else:
+		var current_ending_slide=load(Ending_slides_item[1])
+		Ending.get_child(1).texture=current_ending_slide
 
 func _on_close_game_pressed() -> void:
 	get_tree().quit()

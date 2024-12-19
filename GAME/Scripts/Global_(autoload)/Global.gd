@@ -23,6 +23,8 @@ var Asia_items =[
 var hotbar_size = 7
 var hotbar_inventory = []
 
+var first_item = ""
+
 #Custom signals
 #Notifies the game that the inventory has been updated
 signal inventory_updated
@@ -37,6 +39,8 @@ func _ready():
 	hotbar_inventory.resize(hotbar_size)
 
 func add_item(item, to_hotbar = false) -> bool:
+	if first_item == "":
+		first_item = item["name"]
 	var added_to_hotbar = false
 		# Add to hotbar if requested
 	if to_hotbar:
