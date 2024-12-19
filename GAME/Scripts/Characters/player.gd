@@ -116,7 +116,6 @@ func _input(event):
 		#if the game is in it's ggwp state:
 		if Ending.visible:
 			if index >= 4:
-				Ending.get_child(1).visible = false
 				Ending.get_child(2).visible = true
 			else:
 				var current_ending_slide=load(Ending_slides_container[index])

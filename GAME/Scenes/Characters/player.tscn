@@ -1315,6 +1315,7 @@ offset_bottom = 646.0
 text = "Back to game"
 
 [node name="Ending" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="Ending"]
 offset_right = 1920.0
