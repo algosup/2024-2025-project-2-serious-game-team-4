@@ -1315,27 +1315,18 @@ offset_bottom = 646.0
 text = "Back to game"
 
 [node name="Ending" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="Ending"]
-offset_left = 192.0
-offset_top = 108.0
-offset_right = 2112.0
-offset_bottom = 1188.0
-scale = Vector2(0.8, 0.8)
+offset_right = 1920.0
+offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)
 
 [node name="Ending_Slides" type="TextureRect" parent="Ending"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 192.0
-offset_top = 108.0
-offset_right = 192.0
-offset_bottom = 108.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.8, 0.8)
 texture = ExtResource("42_0w0hg")
 
 [node name="Close_Game" type="Button" parent="Ending"]
