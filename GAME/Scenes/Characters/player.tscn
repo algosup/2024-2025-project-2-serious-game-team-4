@@ -1,4 +1,4 @@
-[gd_scene load_steps=167 format=3 uid="uid://ckyexbu8v7e3j"]
+[gd_scene load_steps=166 format=3 uid="uid://ckyexbu8v7e3j"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/player.gd" id="1_2s006"]
 [ext_resource type="Texture2D" uid="uid://qhgrt0te4js1" path="res://Assets/Red_Coupe/Red_COUPE_CLEAN_All_000-sheet.png" id="3_3jkrq"]
