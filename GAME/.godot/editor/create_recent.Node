@@ -1,14 +1,14 @@
+Camera2D
+TextureRect
+Sprite2D
 Button
 Label
 ColorRect
-Sprite2D
 CollisionShape2D
 Area2D
 Marker2D
 AspectRatioContainer
 TileMapLayer
-Camera2D
 SubViewportContainer
 SubViewport
 AudioStreamPlayer2D
-PathFollow2D
