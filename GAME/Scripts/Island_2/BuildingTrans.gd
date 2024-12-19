@@ -8,7 +8,6 @@ func _on_area_2d_body_entered_behind_building(body: Node2D) -> void:
 		Building.modulate = Color(0.77,0.74,0.69,0.8)
 		animated_sprite.z_index = -1
 
-
 #reverts the opaqueness
 func _on_area_2d_body_exited_behind_building(body: Node2D) -> void:
 	if body.is_in_group('Player'):
