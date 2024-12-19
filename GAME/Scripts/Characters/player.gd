@@ -14,6 +14,7 @@ extends CharacterBody2D
 @onready var tuto_UI = $Tuto/Tuto1
 @onready var Arrow = $Arrow
 @onready var Ending = $Ending
+@onready var Credits = $Credits
 
 var speed = 150
 var last_move = ""
@@ -327,3 +328,28 @@ func ggwp():
 
 func _on_close_game_pressed() -> void:
 	get_tree().quit()
+
+func _on_credits() -> void:
+	if Credits.visible == false:
+		print("received false")
+		$Progress_bar.visible = false
+		hotbar_UI.visible = false
+		tuto_done.emit(false)
+		speed=0
+		Credits.visible = true
+		var Credits_texture = load("res://Assets/Credits_Slides/Credits_1.png")
+		Credits.get_child(0).texture = Credits_texture
+	else:
+		print("received true")
+		var Credits_texture = load("res://Assets/Credits_Slides/Credits_1.png")
+		if Credits.get_child(0).texture == Credits_texture:
+			print("yes")
+			Credits_texture = load("res://Assets/Credits_Slides/Credits_2.png")
+			Credits.get_child(0).texture = Credits_texture
+		else:
+			print("no")
+			Credits.visible = false
+			$Progress_bar.visible = true
+			hotbar_UI.visible = true
+			tuto_done.emit(true)
+	
