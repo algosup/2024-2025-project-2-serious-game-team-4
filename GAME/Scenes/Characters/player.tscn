@@ -1002,7 +1002,6 @@ sprite_frames = SubResource("SpriteFrames_jjixu")
 animation = &"Walk_Down"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.1, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4, -25)
@@ -1106,6 +1105,7 @@ offset_right = 30.0
 grow_horizontal = 1
 
 [node name="Inventory_Hotbar" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Inventory_Hotbar2" parent="Inventory_Hotbar" instance=ExtResource("6_3i3iy")]
 offset_left = 140.0
@@ -1144,6 +1144,7 @@ theme_override_font_sizes/font_size = 20
 text = "You still need to plant XX Wind Turbines!"
 
 [node name="Progress_bar" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Label" type="Label" parent="Progress_bar"]
 anchors_preset = 1
